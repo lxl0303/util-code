@@ -32,7 +32,7 @@ tablespace MC
   );
 alter table mc.ADDRESS_GROUP_INFO
   add primary key (GROUP_ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -77,7 +77,7 @@ tablespace MC
   );
 alter table mc.ADDRESS_BOOK_INFO
   add primary key (ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -110,7 +110,7 @@ tablespace MC
   maxtrans 255;
 alter table mc.BIG_BLACK_MOBILE
   add primary key (BIG_BLACKID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -145,7 +145,7 @@ tablespace MC
   );
 alter table mc.BLACK
   add primary key (BLACK_ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -173,7 +173,7 @@ tablespace MC
   maxtrans 255;
 alter table mc.BLACK_CONFIG
   add constraint PK_BLACK_CONFIG primary key (CONFIG_KEY)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -204,7 +204,7 @@ comment on table mc.BLACK_CSMD
   is '???????';
 alter table mc.BLACK_CSMD
   add constraint PK_BLACK_CSMD primary key (BLACK_MOBILIE)
-  using index 
+  using index
   tablespace USERS
   pctfree 10
   initrans 2
@@ -253,7 +253,7 @@ tablespace MC
   );
 alter table mc.BLACK_LOG
   add primary key (BLACK_LOG_ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -301,42 +301,42 @@ tablespace MC
     maxextents unlimited
   );
 comment on table mc.CHANNEL_CFG_META_DATA
-  is '¶ÌĞÅÍ¨µÀÅäÖÃÔªÊı¾İ±í';
+  is 'çŸ­ä¿¡é€šé“é…ç½®å…ƒæ•°æ®è¡¨';
 comment on column mc.CHANNEL_CFG_META_DATA.link_mode
-  is '½ÓÈëÀàĞÍ';
+  is 'æ¥å…¥ç±»å‹';
 comment on column mc.CHANNEL_CFG_META_DATA.message_type
-  is 'ĞÅÏ¢ÀàĞÍ, SMS-¶ÌĞÅ, MMS-²ÊĞÅ';
+  is 'ä¿¡æ¯ç±»å‹, SMS-çŸ­ä¿¡, MMS-å½©ä¿¡';
 comment on column mc.CHANNEL_CFG_META_DATA.param_name
-  is '²ÎÊıÃû³Æ';
+  is 'å‚æ•°åç§°';
 comment on column mc.CHANNEL_CFG_META_DATA.param_short_name
-  is '²ÎÊıÖĞÎÄÃû³Æ';
+  is 'å‚æ•°ä¸­æ–‡åç§°';
 comment on column mc.CHANNEL_CFG_META_DATA.param_data_type
-  is '²ÎÊıµÄÊı¾İÀàĞÍ';
+  is 'å‚æ•°çš„æ•°æ®ç±»å‹';
 comment on column mc.CHANNEL_CFG_META_DATA.param_data_unit_type
-  is 'µ¥Î»';
+  is 'å•ä½';
 comment on column mc.CHANNEL_CFG_META_DATA.param_data_scope
-  is '²ÎÊıµÄÖµÓò,¼ìÑé·½Ê½, REGEXP:ÕıÔò±í´ïÊ½, JS:javascript, ENUM:ÁĞ±íÃ¶¾Ù';
+  is 'å‚æ•°çš„å€¼åŸŸ,æ£€éªŒæ–¹å¼, REGEXP:æ­£åˆ™è¡¨è¾¾å¼, JS:javascript, ENUM:åˆ—è¡¨æšä¸¾';
 comment on column mc.CHANNEL_CFG_META_DATA.param_data_reg_exp
-  is '²ÎÊıµÄÖµÓòµÄÕıÔò±í´ïÊ½';
+  is 'å‚æ•°çš„å€¼åŸŸçš„æ­£åˆ™è¡¨è¾¾å¼';
 comment on column mc.CHANNEL_CFG_META_DATA.param_data_hint
-  is '²ÎÊıÌáÊ¾';
+  is 'å‚æ•°æç¤º';
 comment on column mc.CHANNEL_CFG_META_DATA.param_default_value
-  is '²ÎÊıµÄÈ±Ê¡Öµ';
+  is 'å‚æ•°çš„ç¼ºçœå€¼';
 comment on column mc.CHANNEL_CFG_META_DATA.param_description
-  is '²ÎÊıµÄËµÃ÷';
+  is 'å‚æ•°çš„è¯´æ˜';
 comment on column mc.CHANNEL_CFG_META_DATA.hidden_me
-  is 'ÊÇ·ñ²»ÏÔÊ¾';
+  is 'æ˜¯å¦ä¸æ˜¾ç¤º';
 comment on column mc.CHANNEL_CFG_META_DATA.relation_field
-  is '´ÓÒµÎñÊı¾İµÄÄÄ¸ö×Ö¶ÎÈ¡Öµ';
+  is 'ä»ä¸šåŠ¡æ•°æ®çš„å“ªä¸ªå­—æ®µå–å€¼';
 comment on column mc.CHANNEL_CFG_META_DATA.display_index
-  is '²ÎÊıµÄËµÃ÷';
+  is 'å‚æ•°çš„è¯´æ˜';
 comment on column mc.CHANNEL_CFG_META_DATA.tag_name
-  is '´Ë²ÎÊıÓ¦ÓÃµ½ÄÄ¸öÅäÖÃÎÄ¼ş';
+  is 'æ­¤å‚æ•°åº”ç”¨åˆ°å“ªä¸ªé…ç½®æ–‡ä»¶';
 comment on column mc.CHANNEL_CFG_META_DATA.required
-  is '±ØÌî';
+  is 'å¿…å¡«';
 alter table mc.CHANNEL_CFG_META_DATA
   add constraint PK_CHANNEL_CFG_META_DATA primary key (LINK_MODE, PARAM_NAME)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -381,50 +381,50 @@ tablespace MC
   initrans 1
   maxtrans 255;
 comment on table mc.CHANNEL_CHECK_CONFIG
-  is 'Í¨µÀÇĞ»»ÅäÖÃ';
+  is 'é€šé“åˆ‡æ¢é…ç½®';
 comment on column mc.CHANNEL_CHECK_CONFIG.channel_id
-  is 'Í¨µÀ±àºÅ';
+  is 'é€šé“ç¼–å·';
 comment on column mc.CHANNEL_CHECK_CONFIG.channel_name
-  is 'Í¨µÀÃû³Æ';
+  is 'é€šé“åç§°';
 comment on column mc.CHANNEL_CHECK_CONFIG.backup_channel_id
-  is '±¸·İÍ¨µÀ±àºÅ';
+  is 'å¤‡ä»½é€šé“ç¼–å·';
 comment on column mc.CHANNEL_CHECK_CONFIG.backup_channel_name
-  is '±¸·İÍ¨µÀÃû³Æ';
+  is 'å¤‡ä»½é€šé“åç§°';
 comment on column mc.CHANNEL_CHECK_CONFIG.backup_mobile_channel_id
-  is 'ÒÆ¶¯±¸·İÍ¨µÀ±àºÅ';
+  is 'ç§»åŠ¨å¤‡ä»½é€šé“ç¼–å·';
 comment on column mc.CHANNEL_CHECK_CONFIG.backup_union_channel_id
-  is 'ÁªÍ¨±¸·İÍ¨µÀ±àºÅ';
+  is 'è”é€šå¤‡ä»½é€šé“ç¼–å·';
 comment on column mc.CHANNEL_CHECK_CONFIG.backup_dx_channel_id
-  is 'µçĞÅ±¸·İÍ¨µÀ±àºÅ';
+  is 'ç”µä¿¡å¤‡ä»½é€šé“ç¼–å·';
 comment on column mc.CHANNEL_CHECK_CONFIG.check_frequence
-  is '¼ì²âÆµÂÊ, µ¥Î»:Ãë';
+  is 'æ£€æµ‹é¢‘ç‡, å•ä½:ç§’';
 comment on column mc.CHANNEL_CHECK_CONFIG.fault_report_delay
-  is '¹ÊÕÏ±¨¾¯ÑÓ³ÙÊ±¼ä, µ¥Î»:Ãë, Îª¼õÉÙÎó±¨, µ±¹ÊÕÏÑÓĞø¸ÃÊ±¼äºóÔÙ±¨¾¯,È»ºó²ÉÈ¡´ëÊ©';
+  is 'æ•…éšœæŠ¥è­¦å»¶è¿Ÿæ—¶é—´, å•ä½:ç§’, ä¸ºå‡å°‘è¯¯æŠ¥, å½“æ•…éšœå»¶ç»­è¯¥æ—¶é—´åå†æŠ¥è­¦,ç„¶åé‡‡å–æªæ–½';
 comment on column mc.CHANNEL_CHECK_CONFIG.check_type
-  is '¼ìÑéÀàĞÍ, QUANTITY:°´¶Ñ»ı¶ÌĞÅ¼ì²â, TIME:°´ÕÕÊ±Ğ§¼ì²â';
+  is 'æ£€éªŒç±»å‹, QUANTITY:æŒ‰å †ç§¯çŸ­ä¿¡æ£€æµ‹, TIME:æŒ‰ç…§æ—¶æ•ˆæ£€æµ‹';
 comment on column mc.CHANNEL_CHECK_CONFIG.status
-  is '×´Ì¬, Y:ÉúĞ§,N:Î´ÉúĞ§';
+  is 'çŠ¶æ€, Y:ç”Ÿæ•ˆ,N:æœªç”Ÿæ•ˆ';
 comment on column mc.CHANNEL_CHECK_CONFIG.max_switch_quantity
-  is '×î´óÇĞ»»ÊıÁ¿';
+  is 'æœ€å¤§åˆ‡æ¢æ•°é‡';
 comment on column mc.CHANNEL_CHECK_CONFIG.min_sms_thredhold
-  is '»ıÑ¹¶ÌĞÅµÄ×îĞ¡·§Öµ, µ±´ı·¢¶ÌĞÅÊıÁ¿¸ßÓÚ¸ÃÖµÊ±, ±íÃ÷Í¨µÀ²»Õı³£';
+  is 'ç§¯å‹çŸ­ä¿¡çš„æœ€å°é˜€å€¼, å½“å¾…å‘çŸ­ä¿¡æ•°é‡é«˜äºè¯¥å€¼æ—¶, è¡¨æ˜é€šé“ä¸æ­£å¸¸';
 comment on column mc.CHANNEL_CHECK_CONFIG.max_sms_thredhold
-  is '»ıÑ¹¶ÌĞÅµÄ×î´ó·§Öµ, µ±´ı·¢¶ÌĞÅÊıÁ¿¸ßÓÚ¸ÃÖµÊ±, ĞèÒªÇĞ»»Í¨µÀ';
+  is 'ç§¯å‹çŸ­ä¿¡çš„æœ€å¤§é˜€å€¼, å½“å¾…å‘çŸ­ä¿¡æ•°é‡é«˜äºè¯¥å€¼æ—¶, éœ€è¦åˆ‡æ¢é€šé“';
 comment on column mc.CHANNEL_CHECK_CONFIG.send_rate
-  is '¶ÌĞÅµÄ·¢ËÍËÙ¶È, µ¥Î»:Ìõ/Ãë';
+  is 'çŸ­ä¿¡çš„å‘é€é€Ÿåº¦, å•ä½:æ¡/ç§’';
 comment on column mc.CHANNEL_CHECK_CONFIG.max_delay_minute
-  is '×î³¤ÑÓ³ÙÊ±¼ä, µ¥Î»:·ÖÖÓ';
+  is 'æœ€é•¿å»¶è¿Ÿæ—¶é—´, å•ä½:åˆ†é’Ÿ';
 comment on column mc.CHANNEL_CHECK_CONFIG.do_send_sms_alarm
-  is 'ÊÇ·ñ·¢ËÍ¶ÌĞÅ¸æ¾¯, Y:·¢ËÍ, N:²»·¢ËÍ';
+  is 'æ˜¯å¦å‘é€çŸ­ä¿¡å‘Šè­¦, Y:å‘é€, N:ä¸å‘é€';
 comment on column mc.CHANNEL_CHECK_CONFIG.do_send_email_alarm
-  is 'ÊÇ·ñ·¢ËÍÓÊ¼ş¸æ¾¯, Y:·¢ËÍ, N:²»·¢ËÍ';
+  is 'æ˜¯å¦å‘é€é‚®ä»¶å‘Šè­¦, Y:å‘é€, N:ä¸å‘é€';
 comment on column mc.CHANNEL_CHECK_CONFIG.sms_alarm_templat
-  is '¶ÌĞÅ¸æ¾¯Ä£°å';
+  is 'çŸ­ä¿¡å‘Šè­¦æ¨¡æ¿';
 comment on column mc.CHANNEL_CHECK_CONFIG.email_alarm_template
-  is 'ÓÊ¼ş¸æ¾¯Ä£°å';
+  is 'é‚®ä»¶å‘Šè­¦æ¨¡æ¿';
 alter table mc.CHANNEL_CHECK_CONFIG
   add constraint PK_CHANNEL_CHECK_CONFIG primary key (CHANNEL_ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -452,16 +452,16 @@ tablespace MC
     maxextents unlimited
   );
 comment on table mc.CHANNEL_CONSOLE_CONFIG
-  is 'Í¨µÀ¼à¿ØÅäÖÃ';
+  is 'é€šé“ç›‘æ§é…ç½®';
 comment on column mc.CHANNEL_CONSOLE_CONFIG.channel_type
-  is 'Í¨µÀÀàĞÍ, SMS:¶ÌĞÅ, MMS:²ÊĞÅ';
+  is 'é€šé“ç±»å‹, SMS:çŸ­ä¿¡, MMS:å½©ä¿¡';
 comment on column mc.CHANNEL_CONSOLE_CONFIG.status
-  is '×´Ì¬, N:²»ÔËĞĞ, Y:ÔËĞĞ';
+  is 'çŠ¶æ€, N:ä¸è¿è¡Œ, Y:è¿è¡Œ';
 comment on column mc.CHANNEL_CONSOLE_CONFIG.check_interval
-  is '¼ìÑé¼ä¸ô, µ¥Î»:Ãë';
+  is 'æ£€éªŒé—´éš”, å•ä½:ç§’';
 alter table mc.CHANNEL_CONSOLE_CONFIG
   add constraint PK_CHANNEL_CONSOLE_CONFIG primary key (CHANNEL_TYPE)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -537,88 +537,88 @@ tablespace MC
     maxextents unlimited
   );
 comment on table mc.CHANNEL_INFO
-  is '¶ÌĞÅÍ¨µÀĞÅÏ¢±í';
+  is 'çŸ­ä¿¡é€šé“ä¿¡æ¯è¡¨';
 comment on column mc.CHANNEL_INFO.channel_id
-  is 'Í¨µÀID';
+  is 'é€šé“ID';
 comment on column mc.CHANNEL_INFO.channel_name
-  is 'Í¨µÀÃû³Æ';
+  is 'é€šé“åç§°';
 comment on column mc.CHANNEL_INFO.sp_no_lt
-  is 'ÁªÍ¨ÌØ·şºÅ';
+  is 'è”é€šç‰¹æœå·';
 comment on column mc.CHANNEL_INFO.sp_no_yd
-  is 'ÒÆ¶¯ÌØ·şºÅ';
+  is 'ç§»åŠ¨ç‰¹æœå·';
 comment on column mc.CHANNEL_INFO.sp_no_dx
-  is 'µçĞÅÌØ·şºÅ';
+  is 'ç”µä¿¡ç‰¹æœå·';
 comment on column mc.CHANNEL_INFO.channel_status
-  is 'Í¨µÀ×´Ì¬,0:ÓĞĞ§, 1:ÎŞĞ§';
+  is 'é€šé“çŠ¶æ€,0:æœ‰æ•ˆ, 1:æ— æ•ˆ';
 comment on column mc.CHANNEL_INFO.channel_clz
-  is 'Í¨µÀµ÷ÓÃµÄÀàºÍ²ÎÊıÃû';
+  is 'é€šé“è°ƒç”¨çš„ç±»å’Œå‚æ•°å';
 comment on column mc.CHANNEL_INFO.channel_remark
-  is '±¸×¢';
+  is 'å¤‡æ³¨';
 comment on column mc.CHANNEL_INFO.sort_id
-  is 'Í¨µÀÅÅĞòid';
+  is 'é€šé“æ’åºid';
 comment on column mc.CHANNEL_INFO.channel_state
-  is 'Í¨µÀ·¢ËÍ×´Ì¬';
+  is 'é€šé“å‘é€çŠ¶æ€';
 comment on column mc.CHANNEL_INFO.com_type
-  is 'Ö§³ÖºÅ¶ÎÀàĞÍ,1:Ö»ÒÆ¶¯, 2:Ö»ÁªÍ¨,3:Ö»µçĞÅ,0:È«Ö§³Ö';
+  is 'æ”¯æŒå·æ®µç±»å‹,1:åªç§»åŠ¨, 2:åªè”é€š,3:åªç”µä¿¡,0:å…¨æ”¯æŒ';
 comment on column mc.CHANNEL_INFO.is_white
-  is 'ÊÇ·ñ¿ªÆô°×Ãûµ¥ 0-¿ªÆô £¬1²»¿ªÆô';
+  is 'æ˜¯å¦å¼€å¯ç™½åå• 0-å¼€å¯ ï¼Œ1ä¸å¼€å¯';
 comment on column mc.CHANNEL_INFO.most_speed
-  is '×î¸ßËÙ¶È';
+  is 'æœ€é«˜é€Ÿåº¦';
 comment on column mc.CHANNEL_INFO.normal_status
-  is 'Õı³£×´Ì¬, µ¥Î»Îª·ÖÖÓ';
+  is 'æ­£å¸¸çŠ¶æ€, å•ä½ä¸ºåˆ†é’Ÿ';
 comment on column mc.CHANNEL_INFO.warn_status
-  is '¹ÊÕÏ×´Ì¬, µ¥Î»Îª·ÖÖÓ';
+  is 'æ•…éšœçŠ¶æ€, å•ä½ä¸ºåˆ†é’Ÿ';
 comment on column mc.CHANNEL_INFO.busy_status
-  is '·±Ã¦×´Ì¬, µ¥Î»Îª·ÖÖÓ';
+  is 'ç¹å¿™çŠ¶æ€, å•ä½ä¸ºåˆ†é’Ÿ';
 comment on column mc.CHANNEL_INFO.main_channel
-  is 'Ö÷Í¨µÀ, 1:ÊÇ,0:·ñ';
+  is 'ä¸»é€šé“, 1:æ˜¯,0:å¦';
 comment on column mc.CHANNEL_INFO.ch_signature
-  is 'ÖĞÎÄÇ©Ãû';
+  is 'ä¸­æ–‡ç­¾å';
 comment on column mc.CHANNEL_INFO.en_signature
-  is 'Ó¢ÎÄÇ©Ãû';
+  is 'è‹±æ–‡ç­¾å';
 comment on column mc.CHANNEL_INFO.gateway
-  is 'Ç©Ãû·½Ê½, 0£ºÎŞÇ©Ãû£¬1:Íø¹ØÇ©Ãû£¬2:×Ô¶¯Ìí¼ÓÇ©Ãû';
+  is 'ç­¾åæ–¹å¼, 0ï¼šæ— ç­¾åï¼Œ1:ç½‘å…³ç­¾åï¼Œ2:è‡ªåŠ¨æ·»åŠ ç­¾å';
 comment on column mc.CHANNEL_INFO.lowest_send
-  is '×îµÍ·¢ËÍÁ¿';
+  is 'æœ€ä½å‘é€é‡';
 comment on column mc.CHANNEL_INFO.link_mode
-  is '½ÓÈëÀàĞÍ£¬CMPP¡¢SGIP¡¢SMGP...';
+  is 'æ¥å…¥ç±»å‹ï¼ŒCMPPã€SGIPã€SMGP...';
 comment on column mc.CHANNEL_INFO.parameters
-  is 'ÅäÖÃÊı¾İ£¬JSON¸ñÊ½±£´æ';
+  is 'é…ç½®æ•°æ®ï¼ŒJSONæ ¼å¼ä¿å­˜';
 comment on column mc.CHANNEL_INFO.deploy_status
-  is '²¿Êğ×´Ì¬, 0-Î´²¿Êğ,1-ÒÑ²¿Êğ';
+  is 'éƒ¨ç½²çŠ¶æ€, 0-æœªéƒ¨ç½²,1-å·²éƒ¨ç½²';
 comment on column mc.CHANNEL_INFO.user_name
-  is '³£ÓÃÓÃ»§';
+  is 'å¸¸ç”¨ç”¨æˆ·';
 comment on column mc.CHANNEL_INFO.is_received
-  is 'ÊÇ·ñÖ§³ÖÉÏĞĞ,0:·ñ,1:ÊÇ';
+  is 'æ˜¯å¦æ”¯æŒä¸Šè¡Œ,0:å¦,1:æ˜¯';
 comment on column mc.CHANNEL_INFO.is_sendstatus
-  is 'ÊÇ·ñÖ§³Ö×´Ì¬±¨¸æ,0:·ñ,1:ÊÇ';
+  is 'æ˜¯å¦æ”¯æŒçŠ¶æ€æŠ¥å‘Š,0:å¦,1:æ˜¯';
 comment on column mc.CHANNEL_INFO.is_extended
-  is 'ÊÇ·ñÖ§³ÖÀ©Õ¹Âë,0:·ñ,1:ÊÇ';
+  is 'æ˜¯å¦æ”¯æŒæ‰©å±•ç ,0:å¦,1:æ˜¯';
 comment on column mc.CHANNEL_INFO.is_longsms
-  is 'ÊÇ·ñÖ§³Ö³¤¶ÌĞÅ,0:·ñ,1:ÊÇ';
+  is 'æ˜¯å¦æ”¯æŒé•¿çŸ­ä¿¡,0:å¦,1:æ˜¯';
 comment on column mc.CHANNEL_INFO.spnumber_yd_type
-  is 'ÒÆ¶¯ÌØ·şºÅÀàĞÍ';
+  is 'ç§»åŠ¨ç‰¹æœå·ç±»å‹';
 comment on column mc.CHANNEL_INFO.spnumber_lt_type
-  is 'ÁªÍ¨ÌØ·şºÅÀàĞÍ';
+  is 'è”é€šç‰¹æœå·ç±»å‹';
 comment on column mc.CHANNEL_INFO.spnumber_dx_type
-  is 'µçĞÅÌØ·şºÅÀàĞÍ';
+  is 'ç”µä¿¡ç‰¹æœå·ç±»å‹';
 comment on column mc.CHANNEL_INFO.sms_max_length_en
-  is 'ÆÕÍ¨¶ÌĞÅµÄ×î´ó³¤¶È,Ò»°ã×î´óÎª70(Ó¢ÎÄ)';
+  is 'æ™®é€šçŸ­ä¿¡çš„æœ€å¤§é•¿åº¦,ä¸€èˆ¬æœ€å¤§ä¸º70(è‹±æ–‡)';
 comment on column mc.CHANNEL_INFO.long_sms_per_length_en
-  is '³¤¶ÌĞÅÖĞÃ¿¸ö·Ö¶ÌĞÅµÄ³¤¶È,Ò»°ãÎª67(Ó¢ÎÄ)';
+  is 'é•¿çŸ­ä¿¡ä¸­æ¯ä¸ªåˆ†çŸ­ä¿¡çš„é•¿åº¦,ä¸€èˆ¬ä¸º67(è‹±æ–‡)';
 comment on column mc.CHANNEL_INFO.long_sms_max_length_en
-  is '³¤¶ÌĞÅµÄ×î´ó³¤¶È,ÀıÈç250,300(Ó¢ÎÄ)';
+  is 'é•¿çŸ­ä¿¡çš„æœ€å¤§é•¿åº¦,ä¾‹å¦‚250,300(è‹±æ–‡)';
 comment on column mc.CHANNEL_INFO.sms_max_length_ch
-  is 'ÆÕÍ¨¶ÌĞÅµÄ×î´ó³¤¶È,Ò»°ã×î´óÎª70(ÖĞÎÄ)';
+  is 'æ™®é€šçŸ­ä¿¡çš„æœ€å¤§é•¿åº¦,ä¸€èˆ¬æœ€å¤§ä¸º70(ä¸­æ–‡)';
 comment on column mc.CHANNEL_INFO.long_sms_per_length_ch
-  is '³¤¶ÌĞÅÖĞÃ¿¸ö·Ö¶ÌĞÅµÄ³¤¶È,Ò»°ãÎª67(ÖĞÎÄ)';
+  is 'é•¿çŸ­ä¿¡ä¸­æ¯ä¸ªåˆ†çŸ­ä¿¡çš„é•¿åº¦,ä¸€èˆ¬ä¸º67(ä¸­æ–‡)';
 comment on column mc.CHANNEL_INFO.long_sms_max_length_ch
-  is '³¤¶ÌĞÅµÄ×î´ó³¤¶È,ÀıÈç250,300(ÖĞÎÄ)';
+  is 'é•¿çŸ­ä¿¡çš„æœ€å¤§é•¿åº¦,ä¾‹å¦‚250,300(ä¸­æ–‡)';
 comment on column mc.CHANNEL_INFO.unsubscribe_keyword
-  is 'ÍË¶©¹Ø¼ü×Ö';
+  is 'é€€è®¢å…³é”®å­—';
 alter table mc.CHANNEL_INFO
   add constraint PK_CHANNEL_INFO primary key (CHANNEL_ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -652,28 +652,28 @@ tablespace MC
   initrans 1
   maxtrans 255;
 comment on table mc.CHANNEL_PRICE_POLICY
-  is 'Í¨µÀ¼Û¸ñ²ßÂÔ±í£¬ÓÃÓÚ·ÑÓÃÍ³¼Æ';
+  is 'é€šé“ä»·æ ¼ç­–ç•¥è¡¨ï¼Œç”¨äºè´¹ç”¨ç»Ÿè®¡';
 comment on column mc.CHANNEL_PRICE_POLICY.policy_id
-  is '¼Û¸ñ²ßÂÔµÄID';
+  is 'ä»·æ ¼ç­–ç•¥çš„ID';
 comment on column mc.CHANNEL_PRICE_POLICY.channel_id
-  is 'Í¨µÀ±àºÅ';
+  is 'é€šé“ç¼–å·';
 comment on column mc.CHANNEL_PRICE_POLICY.policy_type
-  is '²ßÂÔÀàĞÍ£º1--ÊÇÖ±Á¬Í¨µÀ£¬2--ÊÇÓÃµÚÈı·½Í¨µÀ';
+  is 'ç­–ç•¥ç±»å‹ï¼š1--æ˜¯ç›´è¿é€šé“ï¼Œ2--æ˜¯ç”¨ç¬¬ä¸‰æ–¹é€šé“';
 comment on column mc.CHANNEL_PRICE_POLICY.direct_number
-  is 'Ö±Á¬Ê±£¬ÔÂ»ù±¾ÌõÊı';
+  is 'ç›´è¿æ—¶ï¼ŒæœˆåŸºæœ¬æ¡æ•°';
 comment on column mc.CHANNEL_PRICE_POLICY.direct_price
-  is 'Ö±Á¬Ê±£¬ÔÂ»ù±¾ÌõÊıµÄ¼Û¸ñ';
+  is 'ç›´è¿æ—¶ï¼ŒæœˆåŸºæœ¬æ¡æ•°çš„ä»·æ ¼';
 comment on column mc.CHANNEL_PRICE_POLICY.direct_add_price
-  is 'Ö±Á¬Ê±£¬ÔöÖµÒµÎñµÄÃ¿Ìõ¼Û¸ñ';
+  is 'ç›´è¿æ—¶ï¼Œå¢å€¼ä¸šåŠ¡çš„æ¯æ¡ä»·æ ¼';
 comment on column mc.CHANNEL_PRICE_POLICY.indirect_min_number
-  is 'Ê¹ÓÃµÚÈı·½Í¨µÀÊ±£¬×îĞ¡·¢ËÍÁ¿';
+  is 'ä½¿ç”¨ç¬¬ä¸‰æ–¹é€šé“æ—¶ï¼Œæœ€å°å‘é€é‡';
 comment on column mc.CHANNEL_PRICE_POLICY.indirect_max_number
-  is 'Ê¹ÓÃµÚÈı·½Í¨µÀÊ±£¬×î´ó·¢ËÍÁ¿';
+  is 'ä½¿ç”¨ç¬¬ä¸‰æ–¹é€šé“æ—¶ï¼Œæœ€å¤§å‘é€é‡';
 comment on column mc.CHANNEL_PRICE_POLICY.indirect_price
-  is 'Ê¹ÓÃµÚÈı·½Í¨µÀÊ±£¬·¢ËÍÃ¿ÌõµÄµ¥¼Û';
+  is 'ä½¿ç”¨ç¬¬ä¸‰æ–¹é€šé“æ—¶ï¼Œå‘é€æ¯æ¡çš„å•ä»·';
 alter table mc.CHANNEL_PRICE_POLICY
   add constraint PK_CHANNEL_PRICE_POLICY primary key (POLICY_ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -706,7 +706,7 @@ tablespace MC
   );
 alter table mc.CHANNEL_SWITCH_CONFIG
   add primary key (PID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -748,7 +748,7 @@ tablespace MC
   maxtrans 255;
 alter table mc.CHANNEL_SWITCH_LOG
   add primary key (PID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -778,7 +778,7 @@ tablespace MC
   maxtrans 255;
 alter table mc.CHANNEL_SWITCH_RULE
   add primary key (PID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -812,28 +812,28 @@ tablespace MC
     maxextents unlimited
   );
 comment on table mc.CHANNEL_TEST
-  is 'Í¨µÀ²âÊÔ¶¨Ê±ÈÎÎñ±í';
+  is 'é€šé“æµ‹è¯•å®šæ—¶ä»»åŠ¡è¡¨';
 comment on column mc.CHANNEL_TEST.channel_test_id
-  is 'Ö÷¼ü';
+  is 'ä¸»é”®';
 comment on column mc.CHANNEL_TEST.mobile_to
-  is 'Ä¿±êÊÖ»úºÅ';
+  is 'ç›®æ ‡æ‰‹æœºå·';
 comment on column mc.CHANNEL_TEST.send_msg
-  is '¶ÌĞÅÄÚÈİ';
+  is 'çŸ­ä¿¡å†…å®¹';
 comment on column mc.CHANNEL_TEST.send_time
-  is 'Æ½Ì¨·¢ËÍ¸Ã¶ÌĞÅµÄÊ±¼ä';
+  is 'å¹³å°å‘é€è¯¥çŸ­ä¿¡çš„æ—¶é—´';
 comment on column mc.CHANNEL_TEST.channel_id
-  is 'Í¨µÀID';
+  is 'é€šé“ID';
 comment on column mc.CHANNEL_TEST.create_time
-  is '´´½¨¶¨Ê±ÈÎÎñÊ±¼ä';
+  is 'åˆ›å»ºå®šæ—¶ä»»åŠ¡æ—¶é—´';
 comment on column mc.CHANNEL_TEST.remark
-  is '±¸×¢ĞÅÏ¢£¬×÷ÎªÍâ²¿ÏµÍ³À©Õ¹ÓÃ£¬CC¶ÌĞÅÏµÍ³¸Ã×Ö¶ÎÌîĞ´»ù½ğÕËºÅ';
+  is 'å¤‡æ³¨ä¿¡æ¯ï¼Œä½œä¸ºå¤–éƒ¨ç³»ç»Ÿæ‰©å±•ç”¨ï¼ŒCCçŸ­ä¿¡ç³»ç»Ÿè¯¥å­—æ®µå¡«å†™åŸºé‡‘è´¦å·';
 comment on column mc.CHANNEL_TEST.trigger_name
-  is '¶¨Ê±ÈÎÎñÃû';
+  is 'å®šæ—¶ä»»åŠ¡å';
 comment on column mc.CHANNEL_TEST.ext_num
-  is '×Ô¶¨ÒåÀ©Õ¹Âë';
+  is 'è‡ªå®šä¹‰æ‰©å±•ç ';
 alter table mc.CHANNEL_TEST
   add constraint PK_CHANNEL_TEST primary key (CHANNEL_TEST_ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -901,74 +901,74 @@ tablespace MC
     maxextents unlimited
   );
 comment on table mc.USER_INFO
-  is 'ÓÃ»§±í';
+  is 'ç”¨æˆ·è¡¨';
 comment on column mc.USER_INFO.user_id
-  is 'ÓÃ»§±àºÅ';
+  is 'ç”¨æˆ·ç¼–å·';
 comment on column mc.USER_INFO.user_name
-  is 'ÓÃ»§Ãû³Æ';
+  is 'ç”¨æˆ·åç§°';
 comment on column mc.USER_INFO.user_pass
-  is 'ÃÜÂë';
+  is 'å¯†ç ';
 comment on column mc.USER_INFO.user_stat
-  is '×´Ì¬, 0:ÎŞĞ§, 1:ÓĞĞ§,2:ÒÑÉ¾³ı,3:ÒÑËø¶¨ ';
+  is 'çŠ¶æ€, 0:æ— æ•ˆ, 1:æœ‰æ•ˆ,2:å·²åˆ é™¤,3:å·²é”å®š ';
 comment on column mc.USER_INFO.user_mome
-  is '±¸×¢';
+  is 'å¤‡æ³¨';
 comment on column mc.USER_INFO.user_def_role
-  is 'ÓÃ»§Ä¬ÈÏ½ÇÉ«';
+  is 'ç”¨æˆ·é»˜è®¤è§’è‰²';
 comment on column mc.USER_INFO.user_type
-  is 'ÓÃ»§ÀàĞÍ, 2:ÆÕÍ¨Ô±¹¤, 1:×é¹ÜÀíÔ±';
+  is 'ç”¨æˆ·ç±»å‹, 2:æ™®é€šå‘˜å·¥, 1:ç»„ç®¡ç†å‘˜';
 comment on column mc.USER_INFO.user_balance
-  is 'ÓÃ»§¿ÉÓÃ·ÑÓÃ';
+  is 'ç”¨æˆ·å¯ç”¨è´¹ç”¨';
 comment on column mc.USER_INFO.create_time
-  is '´´½¨Ê±¼ä';
+  is 'åˆ›å»ºæ—¶é—´';
 comment on column mc.USER_INFO.organization_id
-  is '»ú¹¹ID';
+  is 'æœºæ„ID';
 comment on column mc.USER_INFO.eng_signature
-  is 'ÓÃ»§µÄÓ¢ÎÄÇ©Ãû';
+  is 'ç”¨æˆ·çš„è‹±æ–‡ç­¾å';
 comment on column mc.USER_INFO.chn_signature
-  is 'ÓÃ»§µÄÖĞÎÄÇ©Ãû';
+  is 'ç”¨æˆ·çš„ä¸­æ–‡ç­¾å';
 comment on column mc.USER_INFO.use_user_signature
-  is 'ÊÇ·ñĞèÒªÓÃ»§Ç©Ãû, 0:ĞèÒª, 1:²»ĞèÒª';
+  is 'æ˜¯å¦éœ€è¦ç”¨æˆ·ç­¾å, 0:éœ€è¦, 1:ä¸éœ€è¦';
 comment on column mc.USER_INFO.extend_number
-  is 'ÓÃ»§À©Õ¹ºÅ';
+  is 'ç”¨æˆ·æ‰©å±•å·';
 comment on column mc.USER_INFO.user_quota
-  is '¶ÌĞÅÅä¶î';
+  is 'çŸ­ä¿¡é…é¢';
 comment on column mc.USER_INFO.pay_type
-  is '³äÖµÀàĞÍ, 0:Ô¤¸¶·Ñ, 1:ºó¸¶·Ñ';
+  is 'å……å€¼ç±»å‹, 0:é¢„ä»˜è´¹, 1:åä»˜è´¹';
 comment on column mc.USER_INFO.pay_mode
-  is '¼Æ·Ñµ¥Î», 0:Åä¶î¸¶·Ñ, 1:½ğ¶î¸¶·Ñ';
+  is 'è®¡è´¹å•ä½, 0:é…é¢ä»˜è´¹, 1:é‡‘é¢ä»˜è´¹';
 comment on column mc.USER_INFO.fee_mode
-  is '¿Û·Ñ·½Ê½, 0:×Ô¸¶·Ñ, 1:×é¸¶·Ñ';
+  is 'æ‰£è´¹æ–¹å¼, 0:è‡ªä»˜è´¹, 1:ç»„ä»˜è´¹';
 comment on column mc.USER_INFO.channel_type
-  is 'ÊÇ·ñÇø·ÖÍ¨µÀ, 0:²»Çø·Ö, 1:Çø·Ö';
+  is 'æ˜¯å¦åŒºåˆ†é€šé“, 0:ä¸åŒºåˆ†, 1:åŒºåˆ†';
 comment on column mc.USER_INFO.mobile_type
-  is 'ÊÇ·ñÇø·ÖºÅ¶Î, 0:²»Çø·Ö, 1:Çø·Ö';
+  is 'æ˜¯å¦åŒºåˆ†å·æ®µ, 0:ä¸åŒºåˆ†, 1:åŒºåˆ†';
 comment on column mc.USER_INFO.email
   is 'E-mail';
 comment on column mc.USER_INFO.mobile
-  is 'ÊÖ»úºÅÂë';
+  is 'æ‰‹æœºå·ç ';
 comment on column mc.USER_INFO.sms_alert
-  is 'ÉóÅú¶ÌĞÅÌáĞÑ, 0:ÊÇ, 1:·ñ';
+  is 'å®¡æ‰¹çŸ­ä¿¡æé†’, 0:æ˜¯, 1:å¦';
 comment on column mc.USER_INFO.mms_quota
-  is '²ÊĞÅÅä¶î';
+  is 'å½©ä¿¡é…é¢';
 comment on column mc.USER_INFO.recharge_explain
-  is '³äÖµËµÃ÷';
+  is 'å……å€¼è¯´æ˜';
 comment on column mc.USER_INFO.user_kind
-  is 'ÓÃ»§ÖÖÀà£º1£ºWebÆ½Ì¨ÓÃ»§£»2£ºWebService½Ó¿ÚÓÃ»§£»3£ºCMPP½Ó¿ÚÓÃ»§£»4£ºHTTP½Ó¿ÚÓÃ»§';
+  is 'ç”¨æˆ·ç§ç±»ï¼š1ï¼šWebå¹³å°ç”¨æˆ·ï¼›2ï¼šWebServiceæ¥å£ç”¨æˆ·ï¼›3ï¼šCMPPæ¥å£ç”¨æˆ·ï¼›4ï¼šHTTPæ¥å£ç”¨æˆ·';
 comment on column mc.USER_INFO.is_instead_send
-  is 'ÊÇ·ñÔÊĞí´ú·¢ĞÅÏ¢   0:·ñ  1£ºÊÇ';
+  is 'æ˜¯å¦å…è®¸ä»£å‘ä¿¡æ¯   0:å¦  1ï¼šæ˜¯';
 comment on column mc.USER_INFO.login_error_num
-  is 'µÇÂ¼Ê§°Ü´ÎÊı  Èç¹û´ÎÊıµÈÓÚ3£¬ĞŞ¸ÄÓÃ»§×´Ì¬ÎªÎŞĞ§£¬²»ÔÊĞíÔÙ¼ÌĞøµÇÂ¼';
+  is 'ç™»å½•å¤±è´¥æ¬¡æ•°  å¦‚æœæ¬¡æ•°ç­‰äº3ï¼Œä¿®æ”¹ç”¨æˆ·çŠ¶æ€ä¸ºæ— æ•ˆï¼Œä¸å…è®¸å†ç»§ç»­ç™»å½•';
 comment on column mc.USER_INFO.valid_ip
-  is 'ÓÃ»§°ó¶¨µÄIPµØÖ·';
+  is 'ç”¨æˆ·ç»‘å®šçš„IPåœ°å€';
 comment on column mc.USER_INFO.valid_mobile
-  is 'ÓÃ»§°ó¶¨µÄÊÖ»úºÅÂë';
+  is 'ç”¨æˆ·ç»‘å®šçš„æ‰‹æœºå·ç ';
 comment on column mc.USER_INFO.ip_status
-  is 'ÓÃ»§IP°ó¶¨µÄ×´Ì¬, 0:²»°ó¶¨ , 1:°ó¶¨ ';
+  is 'ç”¨æˆ·IPç»‘å®šçš„çŠ¶æ€, 0:ä¸ç»‘å®š , 1:ç»‘å®š ';
 comment on column mc.USER_INFO.mobile_status
-  is 'ÓÃ»§ÊÖ»úºÅÂë°ó¶¨µÄ×´Ì¬, 0:²»°ó¶¨ , 1:°ó¶¨ ';
+  is 'ç”¨æˆ·æ‰‹æœºå·ç ç»‘å®šçš„çŠ¶æ€, 0:ä¸ç»‘å®š , 1:ç»‘å®š ';
 alter table mc.USER_INFO
   add constraint PK_USER_INFO primary key (USER_ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -1008,22 +1008,22 @@ tablespace MC
     maxextents unlimited
   );
 comment on column mc.CHANNEL_USER.id
-  is 'Ö÷¼ü';
+  is 'ä¸»é”®';
 comment on column mc.CHANNEL_USER.user_id
-  is 'ÓÃ»§id';
+  is 'ç”¨æˆ·id';
 comment on column mc.CHANNEL_USER.channel_id
-  is 'Í¨µÀid';
+  is 'é€šé“id';
 comment on column mc.CHANNEL_USER.create_user
-  is '´´½¨ÈË';
+  is 'åˆ›å»ºäºº';
 comment on column mc.CHANNEL_USER.create_time
-  is '´´½¨Ê±¼ä';
+  is 'åˆ›å»ºæ—¶é—´';
 comment on column mc.CHANNEL_USER.com_type
-  is '1:ÒÆ¶¯, 2:ÁªÍ¨,3:µçĞÅ,0:È«Ö§³Ö';
+  is '1:ç§»åŠ¨, 2:è”é€š,3:ç”µä¿¡,0:å…¨æ”¯æŒ';
 comment on column mc.CHANNEL_USER.cascade_id
-  is '¼¶Áªid:ÓÃÓÚ¶Ô±í¼¶ÁªÉ¾³ı»ò¸üĞÂ';
+  is 'çº§è”id:ç”¨äºå¯¹è¡¨çº§è”åˆ é™¤æˆ–æ›´æ–°';
 alter table mc.CHANNEL_USER
   add constraint PK_ID primary key (ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -1069,26 +1069,26 @@ tablespace MC
     maxextents unlimited
   );
 comment on table mc.COMMON_MODULE_INFO
-  is '¹«¹²¹ÜÀíÆ½Ì¨Ä£¿é±í';
+  is 'å…¬å…±ç®¡ç†å¹³å°æ¨¡å—è¡¨';
 comment on column mc.COMMON_MODULE_INFO.module_id
-  is 'Ä£¿éID';
+  is 'æ¨¡å—ID';
 comment on column mc.COMMON_MODULE_INFO.p_module_id
-  is '¸¸Ä£¿éID';
+  is 'çˆ¶æ¨¡å—ID';
 comment on column mc.COMMON_MODULE_INFO.module_name
-  is 'Ä£¿éÃû³Æ';
+  is 'æ¨¡å—åç§°';
 comment on column mc.COMMON_MODULE_INFO.module_url
-  is 'Ä£¿éURL';
+  is 'æ¨¡å—URL';
 comment on column mc.COMMON_MODULE_INFO.module_remark
-  is 'Ä£¿é±¸×¢';
+  is 'æ¨¡å—å¤‡æ³¨';
 comment on column mc.COMMON_MODULE_INFO.module_sort
-  is 'ÏÔÊ¾Ë³Ğò';
+  is 'æ˜¾ç¤ºé¡ºåº';
 comment on column mc.COMMON_MODULE_INFO.module_level
-  is 'Ä£¿é¼¶±ğ';
+  is 'æ¨¡å—çº§åˆ«';
 comment on column mc.COMMON_MODULE_INFO.module_status
-  is 'Ä£¿é×´Ì¬ 0:Í£ÓÃ, 1:ÆôÓÃ';
+  is 'æ¨¡å—çŠ¶æ€ 0:åœç”¨, 1:å¯ç”¨';
 alter table mc.COMMON_MODULE_INFO
   add constraint PK_COMMON_MODULE_INFO primary key (MODULE_ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -1140,50 +1140,50 @@ tablespace MC
     maxextents unlimited
   );
 comment on table mc.CONSUME_RECORD_INFO
-  is 'Ïû·ÑÁ÷Ë®¼ÇÂ¼';
+  is 'æ¶ˆè´¹æµæ°´è®°å½•';
 comment on column mc.CONSUME_RECORD_INFO.record_id
   is 'id';
 comment on column mc.CONSUME_RECORD_INFO.consumer_id
-  is 'ÓÃ»§id';
+  is 'ç”¨æˆ·id';
 comment on column mc.CONSUME_RECORD_INFO.consumer_name
-  is 'ÓÃ»§µÇÂ¼Ãû';
+  is 'ç”¨æˆ·ç™»å½•å';
 comment on column mc.CONSUME_RECORD_INFO.send_time
-  is '·¢ËÍÊ±¼ä';
+  is 'å‘é€æ—¶é—´';
 comment on column mc.CONSUME_RECORD_INFO.send_quantity
-  is '·¢ËÍÁ¿';
+  is 'å‘é€é‡';
 comment on column mc.CONSUME_RECORD_INFO.send_type
-  is '·¢ËÍÀàĞÍ¡£0ÆÕÍ¨·¢ËÍ,1ÅúÁ¿·¢ËÍ,2»Ø¸´¶ÌĞÅ,3Èº×é·¢ËÍ,4socket·¢ËÍ,5webservice·¢ËÍ,6ÊÖ¹¤·¢ËÍ,7Ô¤¾¯¶ÌĞÅ,8µ÷²éÎÊ¾í,9ÉúÈÕ×£¸£,10ÆÕÍ¨²ÊĞÅ,11ÕËµ¥²ÊĞÅ,20ÆÕÍ¨email';
+  is 'å‘é€ç±»å‹ã€‚0æ™®é€šå‘é€,1æ‰¹é‡å‘é€,2å›å¤çŸ­ä¿¡,3ç¾¤ç»„å‘é€,4socketå‘é€,5webserviceå‘é€,6æ‰‹å·¥å‘é€,7é¢„è­¦çŸ­ä¿¡,8è°ƒæŸ¥é—®å·,9ç”Ÿæ—¥ç¥ç¦,10æ™®é€šå½©ä¿¡,11è´¦å•å½©ä¿¡,20æ™®é€šemail';
 comment on column mc.CONSUME_RECORD_INFO.remain_quota
-  is 'Ê£ÓàÅä¶î';
+  is 'å‰©ä½™é…é¢';
 comment on column mc.CONSUME_RECORD_INFO.unit_price
-  is 'µ¥¼Û';
+  is 'å•ä»·';
 comment on column mc.CONSUME_RECORD_INFO.cost_fee
-  is '±¾´Î¶ÌĞÅ·ÑÓÃ';
+  is 'æœ¬æ¬¡çŸ­ä¿¡è´¹ç”¨';
 comment on column mc.CONSUME_RECORD_INFO.remark
-  is '±¸×¢';
+  is 'å¤‡æ³¨';
 comment on column mc.CONSUME_RECORD_INFO.send_msg
-  is '¸ÃÅú´Î¶ÌĞÅµÄÄÚÈİ(ÅúÁ¿·¢ËÍ·½Ê½Ö»¼ÇÂ¼µÚÒ»Ìõ¶ÌĞÅµÄÄÚÈİ)';
+  is 'è¯¥æ‰¹æ¬¡çŸ­ä¿¡çš„å†…å®¹(æ‰¹é‡å‘é€æ–¹å¼åªè®°å½•ç¬¬ä¸€æ¡çŸ­ä¿¡çš„å†…å®¹)';
 comment on column mc.CONSUME_RECORD_INFO.gw_type
-  is 'ºÅ¶ÎÀàĞÍ¡£0-È«ÍøÂ·£¬1-ÒÆ¶¯ºÅ¶Î£¬2-ÁªÍ¨ºÅ¶Î£¬3-Ğ¡ÁéÍ¨ºÅ¶Î';
+  is 'å·æ®µç±»å‹ã€‚0-å…¨ç½‘è·¯ï¼Œ1-ç§»åŠ¨å·æ®µï¼Œ2-è”é€šå·æ®µï¼Œ3-å°çµé€šå·æ®µ';
 comment on column mc.CONSUME_RECORD_INFO.biz_type
-  is 'ÒµÎñÀàĞÍ¡£0-ÆÕÍ¨¶ÌĞÅÒµÎñ£¬1-²ÊĞÅÒµÎñ£¬2-emailÒµÎñ';
+  is 'ä¸šåŠ¡ç±»å‹ã€‚0-æ™®é€šçŸ­ä¿¡ä¸šåŠ¡ï¼Œ1-å½©ä¿¡ä¸šåŠ¡ï¼Œ2-emailä¸šåŠ¡';
 comment on column mc.CONSUME_RECORD_INFO.channel_id
-  is '·¢ËÍÍ¨µÀ¡£0-ËùÓĞÍ¨µÀ';
+  is 'å‘é€é€šé“ã€‚0-æ‰€æœ‰é€šé“';
 comment on column mc.CONSUME_RECORD_INFO.user_mome
-  is 'ÓÃ»§¼ò½é';
+  is 'ç”¨æˆ·ç®€ä»‹';
 comment on column mc.CONSUME_RECORD_INFO.batch_id
-  is 'Åú´ÎºÅ';
+  is 'æ‰¹æ¬¡å·';
 comment on column mc.CONSUME_RECORD_INFO.remain_balance
-  is 'Ê£Óà½ğ¶î';
+  is 'å‰©ä½™é‡‘é¢';
 comment on column mc.CONSUME_RECORD_INFO.organization_id
-  is '»ú¹¹id ';
+  is 'æœºæ„id ';
 comment on column mc.CONSUME_RECORD_INFO.fee_mode
-  is '»ú¹¹µÄ¸¶·ÑÀàĞÍ 0:×Ô¸¶·Ñ, 1:×é¸¶·Ñ';
+  is 'æœºæ„çš„ä»˜è´¹ç±»å‹ 0:è‡ªä»˜è´¹, 1:ç»„ä»˜è´¹';
 comment on column mc.CONSUME_RECORD_INFO.pay_type
-  is '³äÖµÀàĞÍ, 0:Ô¤¸¶·Ñ, 1:ºó¸¶·Ñ';
+  is 'å……å€¼ç±»å‹, 0:é¢„ä»˜è´¹, 1:åä»˜è´¹';
 alter table mc.CONSUME_RECORD_INFO
   add primary key (RECORD_ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -1216,26 +1216,26 @@ tablespace MC
   initrans 1
   maxtrans 255;
 comment on table mc.COUNT_SEND_STATUS
-  is '¸÷×´Ì¬µÄ×ÜÊı±í';
+  is 'å„çŠ¶æ€çš„æ€»æ•°è¡¨';
 comment on column mc.COUNT_SEND_STATUS.id
-  is 'Ö÷¼ü';
+  is 'ä¸»é”®';
 comment on column mc.COUNT_SEND_STATUS.all_count
-  is '×ÜÊı';
+  is 'æ€»æ•°';
 comment on column mc.COUNT_SEND_STATUS.sending_count
-  is '´ı·¢ËÍ×ÜÊı';
+  is 'å¾…å‘é€æ€»æ•°';
 comment on column mc.COUNT_SEND_STATUS.create_time
-  is '´´½¨µÄÊ±¼ä';
+  is 'åˆ›å»ºçš„æ—¶é—´';
 comment on column mc.COUNT_SEND_STATUS.sent_count
-  is 'ÒÑÌá½»×ÜÊı';
+  is 'å·²æäº¤æ€»æ•°';
 comment on column mc.COUNT_SEND_STATUS.receive_count
-  is 'ÉÏĞĞ×ÜÊı';
+  is 'ä¸Šè¡Œæ€»æ•°';
 comment on column mc.COUNT_SEND_STATUS.suc_count
-  is '³É¹¦×ÜÊı';
+  is 'æˆåŠŸæ€»æ•°';
 comment on column mc.COUNT_SEND_STATUS.channel_id
-  is '0ÎªËùÓĞÍ¨µÀ';
+  is '0ä¸ºæ‰€æœ‰é€šé“';
 alter table mc.COUNT_SEND_STATUS
   add constraint PK_COUNT_SEND_STATUS primary key (ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -1293,7 +1293,7 @@ tablespace MC
   );
 alter table mc.CUSTOMER
   add primary key (CUSTOMER_ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -1338,7 +1338,7 @@ tablespace MC
   );
 alter table mc.GROUP_INFO
   add primary key (GROUP_ID, USER_ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -1374,7 +1374,7 @@ tablespace MC
   );
 alter table mc.CUSTOMER_GROUP
   add primary key (CUSTOMER_ID, GROUP_ID, USER_ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -1410,20 +1410,20 @@ tablespace MC
   initrans 1
   maxtrans 255;
 comment on table mc.CUSTOMER_INFO
-  is '¿Í»§±í';
+  is 'å®¢æˆ·è¡¨';
 comment on column mc.CUSTOMER_INFO.customer_id
-  is '¿Í»§±íµÄÖ÷¼ü';
+  is 'å®¢æˆ·è¡¨çš„ä¸»é”®';
 comment on column mc.CUSTOMER_INFO.mobile_user_name
-  is '¿Í»§µÄÃû×Ö';
+  is 'å®¢æˆ·çš„åå­—';
 comment on column mc.CUSTOMER_INFO.mobile
-  is '¿Í»§ÊÖ»úºÅ';
+  is 'å®¢æˆ·æ‰‹æœºå·';
 comment on column mc.CUSTOMER_INFO.group_id
-  is '¿Í»§ËùÊôµÄ×é';
+  is 'å®¢æˆ·æ‰€å±çš„ç»„';
 comment on column mc.CUSTOMER_INFO.create_time
-  is 'Ìí¼Ó¿Í»§Ê±µÄÊ±¼ä';
+  is 'æ·»åŠ å®¢æˆ·æ—¶çš„æ—¶é—´';
 alter table mc.CUSTOMER_INFO
   add constraint PK_CUSTOMER_INFO primary key (CUSTOMER_ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -1460,10 +1460,10 @@ tablespace MC
   initrans 1
   maxtrans 255;
 comment on table mc.CUSTOMER_LOG
-  is '¿Í»§ĞÅÏ¢±í';
+  is 'å®¢æˆ·ä¿¡æ¯è¡¨';
 alter table mc.CUSTOMER_LOG
   add constraint PK_CUSTOMER_LOG primary key (LOG_ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -1496,7 +1496,7 @@ tablespace MC
   );
 alter table mc.CUSTOMER_TYPE
   add primary key (CUSTOMER_TYPE_ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -1537,7 +1537,7 @@ tablespace MC
   );
 alter table mc.CUSTOMER_TYPE_ATTR
   add primary key (CUSTOMER_TYPE_ID, ATTR_NAME)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -1585,40 +1585,40 @@ tablespace MC
     maxextents unlimited
   );
 comment on table mc.DAILY_RECKONING_INFO
-  is 'ÈÕ½áµ¥±í';
+  is 'æ—¥ç»“å•è¡¨';
 comment on column mc.DAILY_RECKONING_INFO.daily_reckoning_id
   is 'id';
 comment on column mc.DAILY_RECKONING_INFO.user_id
-  is 'ÕË»§id';
+  is 'è´¦æˆ·id';
 comment on column mc.DAILY_RECKONING_INFO.user_name
-  is 'ÕË»§Ãû';
+  is 'è´¦æˆ·å';
 comment on column mc.DAILY_RECKONING_INFO.send_status
-  is '¶ÌĞÅ×´Ì¬(ÏÖÖ»¼ÆÌá½»ºÍ·¢ËÍ³É¹¦µÄ)';
+  is 'çŸ­ä¿¡çŠ¶æ€(ç°åªè®¡æäº¤å’Œå‘é€æˆåŠŸçš„)';
 comment on column mc.DAILY_RECKONING_INFO.send_quantity
-  is '¼Æ·Ñ¶ÌĞÅµÄÊıÁ¿';
+  is 'è®¡è´¹çŸ­ä¿¡çš„æ•°é‡';
 comment on column mc.DAILY_RECKONING_INFO.sub_total_fee
-  is '¶ÌĞÅ·ÑÓÃ';
+  is 'çŸ­ä¿¡è´¹ç”¨';
 comment on column mc.DAILY_RECKONING_INFO.remain_message_quota
-  is 'Ê£Óà¶ÌĞÅÅä¶î';
+  is 'å‰©ä½™çŸ­ä¿¡é…é¢';
 comment on column mc.DAILY_RECKONING_INFO.remain_mms_quota
-  is 'Ê£Óà²ÊĞÅÅä¶î';
+  is 'å‰©ä½™å½©ä¿¡é…é¢';
 comment on column mc.DAILY_RECKONING_INFO.reckoning_date
-  is '¶ÌĞÅ·¢ËÍµÄÈÕÆÚ';
+  is 'çŸ­ä¿¡å‘é€çš„æ—¥æœŸ';
 comment on column mc.DAILY_RECKONING_INFO.record_date
-  is '¼ÇÂ¼ÈÕÆÚ';
+  is 'è®°å½•æ—¥æœŸ';
 comment on column mc.DAILY_RECKONING_INFO.pay_mode
-  is '¼Æ·ÑÄ£Ê½';
+  is 'è®¡è´¹æ¨¡å¼';
 comment on column mc.DAILY_RECKONING_INFO.remain_balance
-  is 'Ê£Óà½ğ¶î';
+  is 'å‰©ä½™é‡‘é¢';
 comment on column mc.DAILY_RECKONING_INFO.user_mome
-  is 'ÕË»§Ãû³Æ';
+  is 'è´¦æˆ·åç§°';
 comment on column mc.DAILY_RECKONING_INFO.mobile_com
-  is 'ÔËÓªÉÌID£¬1ÎªÒÆ¶¯£¬2ÎªÁªÍ¨,3ÎªµçĞÅ,0ÎªÈ«Íø ';
+  is 'è¿è¥å•†IDï¼Œ1ä¸ºç§»åŠ¨ï¼Œ2ä¸ºè”é€š,3ä¸ºç”µä¿¡,0ä¸ºå…¨ç½‘ ';
 comment on column mc.DAILY_RECKONING_INFO.channel_id
-  is 'Í¨µÀID';
+  is 'é€šé“ID';
 alter table mc.DAILY_RECKONING_INFO
   add constraint PK_DAILY_RECKONING_INFO primary key (DAILY_RECKONING_ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -1650,7 +1650,7 @@ tablespace MC
   maxtrans 255;
 alter table mc.DATA_SOURCE_TYPE
   add constraint PK_DATA_SOURCE_TYPE primary key (DATA_SOURCE_TYPE_ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -1686,7 +1686,7 @@ tablespace MC
   maxtrans 255;
 alter table mc.DATA_SOURCE
   add constraint PK_DATA_SOURCE primary key (DATA_SOURCE_ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -1730,26 +1730,26 @@ tablespace MC
   initrans 1
   maxtrans 255;
 comment on table mc.DB_INTERFACE_INFO
-  is 'Êı¾İ¿â½Ó¿Ú';
+  is 'æ•°æ®åº“æ¥å£';
 comment on column mc.DB_INTERFACE_INFO.db_interface_id
-  is 'Êı¾İ¿â½Ó¿ÚµÄID';
+  is 'æ•°æ®åº“æ¥å£çš„ID';
 comment on column mc.DB_INTERFACE_INFO.zhang_hao
-  is 'ÕËºÅ';
+  is 'è´¦å·';
 comment on column mc.DB_INTERFACE_INFO.pass_word
-  is 'ÃÜÂë';
+  is 'å¯†ç ';
 comment on column mc.DB_INTERFACE_INFO.send_select_limit
-  is 'sms_send±íµÄÈ¨ÏŞ:select--²éÑ¯È¨ÏŞ';
+  is 'sms_sendè¡¨çš„æƒé™:select--æŸ¥è¯¢æƒé™';
 comment on column mc.DB_INTERFACE_INFO.send_insert_limit
-  is 'sms_send±íµÄÈ¨ÏŞ:insert--²åÈëÈ¨ÏŞ';
+  is 'sms_sendè¡¨çš„æƒé™:insert--æ’å…¥æƒé™';
 comment on column mc.DB_INTERFACE_INFO.receive_limit
-  is 'sms_receive±íµÄÈ¨ÏŞ£ºselect--²éÑ¯È¨ÏŞ';
+  is 'sms_receiveè¡¨çš„æƒé™ï¼šselect--æŸ¥è¯¢æƒé™';
 comment on column mc.DB_INTERFACE_INFO.pro_class_limit
-  is '·¢ËÍÎ¥½û´Ê·ÖÀàµÄÈ¨ÏŞ£ºselect--²éÑ¯È¨ÏŞ';
+  is 'å‘é€è¿ç¦è¯åˆ†ç±»çš„æƒé™ï¼šselect--æŸ¥è¯¢æƒé™';
 comment on column mc.DB_INTERFACE_INFO.pro_limit
-  is '·¢ËÍÎ¥½û´ÊµÄÈ¨ÏŞ£ºselect--²éÑ¯È¨ÏŞ';
+  is 'å‘é€è¿ç¦è¯çš„æƒé™ï¼šselect--æŸ¥è¯¢æƒé™';
 alter table mc.DB_INTERFACE_INFO
   add constraint PK_DB_INTERFACE_INFO primary key (DB_INTERFACE_ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -1805,19 +1805,19 @@ tablespace MC
     maxextents unlimited
   );
 comment on table mc.DIC_ALL_KIND
-  is 'ÏµÍ³×Öµä±í';
+  is 'ç³»ç»Ÿå­—å…¸è¡¨';
 comment on column mc.DIC_ALL_KIND.kind_code
-  is '×Öµä´úÂë';
+  is 'å­—å…¸ä»£ç ';
 comment on column mc.DIC_ALL_KIND.kind_name
-  is '×ÖµäÃû³Æ';
+  is 'å­—å…¸åç§°';
 comment on column mc.DIC_ALL_KIND.memo
-  is '±¸×¢';
+  is 'å¤‡æ³¨';
 comment on column mc.DIC_ALL_KIND.operation_kind
-  is '²Ù×÷ÀàĞÍ';
+  is 'æ“ä½œç±»å‹';
 comment on column mc.DIC_ALL_KIND.operation_name
-  is '²Ù×÷ÀàĞÍÃèÊö';
+  is 'æ“ä½œç±»å‹æè¿°';
 comment on column mc.DIC_ALL_KIND.user_id
-  is 'ÓÃ»§id';
+  is 'ç”¨æˆ·id';
 
 prompt
 prompt Creating table DRAFT_INFO
@@ -1848,20 +1848,20 @@ tablespace MC
     maxextents unlimited
   );
 comment on table mc.DRAFT_INFO
-  is '¶ÌĞÅ²İ¸å';
+  is 'çŸ­ä¿¡è‰ç¨¿';
 comment on column mc.DRAFT_INFO.draft_id
-  is '²İ¸å±àºÅ';
+  is 'è‰ç¨¿ç¼–å·';
 comment on column mc.DRAFT_INFO.context
-  is '¶ÌĞÅÄÚÈİ';
+  is 'çŸ­ä¿¡å†…å®¹';
 comment on column mc.DRAFT_INFO.mobile_to
-  is 'ÊÖ»úºÅ';
+  is 'æ‰‹æœºå·';
 comment on column mc.DRAFT_INFO.user_id
-  is 'ÓÃ»§±àºÅ';
+  is 'ç”¨æˆ·ç¼–å·';
 comment on column mc.DRAFT_INFO.create_date
-  is '´´½¨ÈÕÆÚ';
+  is 'åˆ›å»ºæ—¥æœŸ';
 alter table mc.DRAFT_INFO
   add constraint PK_DRAFT_INFO primary key (DRAFT_ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -1894,26 +1894,26 @@ tablespace MC
   initrans 1
   maxtrans 255;
 comment on table mc.D_ORG_INFO
-  is 'ÁÙÊ±»ú¹¹ĞÅÏ¢±í';
+  is 'ä¸´æ—¶æœºæ„ä¿¡æ¯è¡¨';
 comment on column mc.D_ORG_INFO.org_id
-  is '»ú¹¹±àºÅ';
+  is 'æœºæ„ç¼–å·';
 comment on column mc.D_ORG_INFO.org_name
-  is '»ú¹¹Ãû³Æ';
+  is 'æœºæ„åç§°';
 comment on column mc.D_ORG_INFO.org_full_name
-  is '»ú¹¹È«Ãû';
+  is 'æœºæ„å…¨å';
 comment on column mc.D_ORG_INFO.org_sts
-  is '»ú¹¹×´Ì¬0 Õı³£,9 ×¢Ïú';
+  is 'æœºæ„çŠ¶æ€0 æ­£å¸¸,9 æ³¨é”€';
 comment on column mc.D_ORG_INFO.org_type_code
-  is '»ú¹¹ÀàĞÍ´úÂë£¬01:´ú±í´¦£¬02£ºÓªÒµ²¿';
+  is 'æœºæ„ç±»å‹ä»£ç ï¼Œ01:ä»£è¡¨å¤„ï¼Œ02ï¼šè¥ä¸šéƒ¨';
 comment on column mc.D_ORG_INFO.super_org_no
-  is 'ÉÏ¼¶»ú¹¹±àºÅ';
+  is 'ä¸Šçº§æœºæ„ç¼–å·';
 comment on column mc.D_ORG_INFO.is_frz
-  is 'ÊÇ·ñ¶³½á 0 Î´¶³½á,1 ¶³½á';
+  is 'æ˜¯å¦å†»ç»“ 0 æœªå†»ç»“,1 å†»ç»“';
 comment on column mc.D_ORG_INFO.extend_str
-  is 'Ô¤Áô';
+  is 'é¢„ç•™';
 alter table mc.D_ORG_INFO
   add constraint PK_D_ORG_INFO primary key (ORG_ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -1935,18 +1935,18 @@ tablespace MC
   initrans 1
   maxtrans 255;
 comment on table mc.D_SYS_CODE
-  is 'ÁÙÊ±ĞÅÏ¢À´Ô´Êı¾İ×Öµä';
+  is 'ä¸´æ—¶ä¿¡æ¯æ¥æºæ•°æ®å­—å…¸';
 comment on column mc.D_SYS_CODE.subsys_code_id
-  is 'ĞÅÏ¢À´Ô´±àºÅ';
+  is 'ä¿¡æ¯æ¥æºç¼–å·';
 comment on column mc.D_SYS_CODE.subsys_code_name
-  is 'ĞÅÏ¢À´Ô´Ãû³Æ';
+  is 'ä¿¡æ¯æ¥æºåç§°';
 comment on column mc.D_SYS_CODE.description
-  is '±¸×¢';
+  is 'å¤‡æ³¨';
 comment on column mc.D_SYS_CODE.sys_id
-  is 'ĞÅÏ¢À´Ô´À©Õ¹ºÅ';
+  is 'ä¿¡æ¯æ¥æºæ‰©å±•å·';
 alter table mc.D_SYS_CODE
   add constraint PK_D_SYS_CODE primary key (SUBSYS_CODE_ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -1971,7 +1971,7 @@ tablespace MC
   maxtrans 255;
 alter table mc.ENTITY_GROUP
   add constraint PK_ENTITY_GROUP primary key (ENTITY_GROUP_ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -2007,7 +2007,7 @@ tablespace MC
   maxtrans 255;
 alter table mc.ENTITY_GROUP_ENTRY
   add constraint PK_ENTITY_GROUP_ENTRY primary key (ENTITY_GROUP_ID, ENTITY_OR_PACKAGE)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -2057,7 +2057,7 @@ tablespace MC
   );
 alter table mc.ENTITY_KEY_STORE
   add constraint PK_ENTITY_KEY_STORE primary key (KEY_NAME)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -2125,7 +2125,7 @@ tablespace MC
   maxtrans 255;
 alter table mc.ENTITY_SYNC
   add constraint PK_ENTITY_SYNC primary key (ENTITY_SYNC_ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -2184,7 +2184,7 @@ tablespace MC
   maxtrans 255;
 alter table mc.ENTITY_SYNC_HISTORY
   add constraint PK_ENTITY_SYNC_HISTORY primary key (ENTITY_SYNC_ID, START_DATE)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -2228,7 +2228,7 @@ tablespace MC
   maxtrans 255;
 alter table mc.ENTITY_SYNC_INCLUDE
   add constraint PK_ENTITY_SYNC_INCLUDE primary key (ENTITY_SYNC_ID, ENTITY_OR_PACKAGE)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -2271,7 +2271,7 @@ tablespace MC
   maxtrans 255;
 alter table mc.ENTITY_SYNC_INCLUDE_GROUP
   add constraint PK_ENTITY_SYNC_INCLUDE_GROUP primary key (ENTITY_SYNC_ID, ENTITY_GROUP_ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -2322,7 +2322,7 @@ tablespace MC
   maxtrans 255;
 alter table mc.ENTITY_SYNC_REMOVE
   add constraint PK_ENTITY_SYNC_REMOVE primary key (ENTITY_SYNC_REMOVE_ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -2366,7 +2366,7 @@ tablespace MC
   );
 alter table mc.ENUMERATION_TYPE
   add constraint PK_ENUMERATION_TYPE primary key (ENUM_TYPE_ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -2447,7 +2447,7 @@ tablespace MC
   );
 alter table mc.ENUMERATION
   add constraint PK_ENUMERATION primary key (ENUM_ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -2521,7 +2521,7 @@ tablespace MC
   maxtrans 255;
 alter table mc.EXCEL
   add constraint PK_EXCEL primary key (EXCEL_ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -2553,10 +2553,10 @@ tablespace MC
   initrans 1
   maxtrans 255;
 comment on table mc.GROUPINFO
-  is '¿Í»§¹ÜÀíÄ£¿é×éĞÅÏ¢±í';
+  is 'å®¢æˆ·ç®¡ç†æ¨¡å—ç»„ä¿¡æ¯è¡¨';
 alter table mc.GROUPINFO
   add constraint PK_GROUPINFO primary key (GROUP_ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -2581,24 +2581,24 @@ tablespace MC
   initrans 1
   maxtrans 255;
 comment on table mc.GROUP_EXCEL_INFO
-  is 'Èº×éEXCELµ¼ÈëÊÖ»úºÅÂë';
+  is 'ç¾¤ç»„EXCELå¯¼å…¥æ‰‹æœºå·ç ';
 comment on column mc.GROUP_EXCEL_INFO.excel_id
-  is '±àºÅ';
+  is 'ç¼–å·';
 comment on column mc.GROUP_EXCEL_INFO.excel_name
-  is 'ExcelÃû³Æ';
+  is 'Excelåç§°';
 comment on column mc.GROUP_EXCEL_INFO.mobile
-  is 'ÊÖ»úºÅ';
+  is 'æ‰‹æœºå·';
 comment on column mc.GROUP_EXCEL_INFO.mobile_user_name
-  is 'ÓÃ»§Ãû';
+  is 'ç”¨æˆ·å';
 comment on column mc.GROUP_EXCEL_INFO.group_id
-  is 'ËùÊô»ú¹¹';
+  is 'æ‰€å±æœºæ„';
 comment on column mc.GROUP_EXCEL_INFO.mobile_remark
-  is '±¸×¢';
+  is 'å¤‡æ³¨';
 comment on column mc.GROUP_EXCEL_INFO.birthday
-  is 'ÉúÈÕ';
+  is 'ç”Ÿæ—¥';
 alter table mc.GROUP_EXCEL_INFO
   add constraint PK_GROUP_EXCEL_INFO primary key (EXCEL_ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -2633,44 +2633,44 @@ tablespace MC
   initrans 1
   maxtrans 255;
 comment on table mc.GROUP_ORDER_INFO
-  is '¿Í»§×é¶©ÔÄ²úÆ·µÄÄ£ĞÍ';
+  is 'å®¢æˆ·ç»„è®¢é˜…äº§å“çš„æ¨¡å‹';
 comment on column mc.GROUP_ORDER_INFO.order_id
-  is '¶©¹º±àºÅ';
+  is 'è®¢è´­ç¼–å·';
 comment on column mc.GROUP_ORDER_INFO.product_id
-  is '²úÆ·±àºÅ';
+  is 'äº§å“ç¼–å·';
 comment on column mc.GROUP_ORDER_INFO.organization_id
-  is '»ú¹¹±àºÅ';
+  is 'æœºæ„ç¼–å·';
 comment on column mc.GROUP_ORDER_INFO.order_type
-  is '¶¨ÖÆ·½Ê½£¬0£º¶ÌĞÅ¡¢1£º²ÊĞÅ';
+  is 'å®šåˆ¶æ–¹å¼ï¼Œ0ï¼šçŸ­ä¿¡ã€1ï¼šå½©ä¿¡';
 comment on column mc.GROUP_ORDER_INFO.order_address
-  is '¶¨ÖÆµÄµØÖ·:	ÊÖ»úºÅ»òemail';
+  is 'å®šåˆ¶çš„åœ°å€:	æ‰‹æœºå·æˆ–email';
 comment on column mc.GROUP_ORDER_INFO.group_id
-  is '¶¨ÖÆ×é±àºÅ';
+  is 'å®šåˆ¶ç»„ç¼–å·';
 comment on column mc.GROUP_ORDER_INFO.order_params
-  is '¶¨ÖÆ²ÎÊı:¹ÉÆ±´úÂë£¬¿É¶àÖ»';
+  is 'å®šåˆ¶å‚æ•°:è‚¡ç¥¨ä»£ç ï¼Œå¯å¤šåª';
 comment on column mc.GROUP_ORDER_INFO.begin_time
-  is '¶¨ÖÆ¿ªÊ¼Ê±¼ä';
+  is 'å®šåˆ¶å¼€å§‹æ—¶é—´';
 comment on column mc.GROUP_ORDER_INFO.end_time
-  is '¶¨ÖÆ½áÊøÊ±¼ä';
+  is 'å®šåˆ¶ç»“æŸæ—¶é—´';
 comment on column mc.GROUP_ORDER_INFO.order_status
-  is '¶¨ÖÆÓĞĞ§×´Ì¬£¬0£ºÕı³£¡¢1£ºÎ´¿ªÊ¼¡¢2¹ıÆÚ¡¢3£º×÷·Ï¡¢4£ºÔİÍ£¡¢5£ºÍË¶©';
+  is 'å®šåˆ¶æœ‰æ•ˆçŠ¶æ€ï¼Œ0ï¼šæ­£å¸¸ã€1ï¼šæœªå¼€å§‹ã€2è¿‡æœŸã€3ï¼šä½œåºŸã€4ï¼šæš‚åœã€5ï¼šé€€è®¢';
 comment on column mc.GROUP_ORDER_INFO.order_time
-  is '¶¨ÖÆÈÕÆÚ';
+  is 'å®šåˆ¶æ—¥æœŸ';
 comment on column mc.GROUP_ORDER_INFO.order_deprecated_flag
-  is '¹ıÆÚ¡¢É¾³ı±ê¼Ç¡£¶©µ¥Õı³£×´Ì¬ÏÂ¸ÃÖµÎª¿Õ¡£¶©µ¥×÷·Ï¡¢¹ıÆÚ¡¢ÔİÍ£¡¢Î´¿ªÊ¼×´Ì¬Ê±£¬Ëæ»úÉú³ÉÒ»¸ö±ê¼Ç£¬ÓÃÓÚÓëÕı³£¶©µ¥¶¨ÖÆµØÖ·Çø±ğ(Ö÷ÒªÓÃÓÚÊı¾İ¿âÅĞÖØ)';
+  is 'è¿‡æœŸã€åˆ é™¤æ ‡è®°ã€‚è®¢å•æ­£å¸¸çŠ¶æ€ä¸‹è¯¥å€¼ä¸ºç©ºã€‚è®¢å•ä½œåºŸã€è¿‡æœŸã€æš‚åœã€æœªå¼€å§‹çŠ¶æ€æ—¶ï¼Œéšæœºç”Ÿæˆä¸€ä¸ªæ ‡è®°ï¼Œç”¨äºä¸æ­£å¸¸è®¢å•å®šåˆ¶åœ°å€åŒºåˆ«(ä¸»è¦ç”¨äºæ•°æ®åº“åˆ¤é‡)';
 comment on column mc.GROUP_ORDER_INFO.product_name
-  is '·şÎñ²úÆ·Ãû³Æ';
+  is 'æœåŠ¡äº§å“åç§°';
 comment on column mc.GROUP_ORDER_INFO.customer_id
-  is '¿Í»§±àºÅ¡£ÓÉ¿Í»§×ÔĞĞÎ¬»¤';
+  is 'å®¢æˆ·ç¼–å·ã€‚ç”±å®¢æˆ·è‡ªè¡Œç»´æŠ¤';
 comment on column mc.GROUP_ORDER_INFO.notify_status
-  is '·¢ËÍ¸æÖª¶ÌĞÅµÄ×´Ì¬£¬0£ºÎ´·¢ËÍ¡¢1£ºÒÑ·¢ËÍ';
+  is 'å‘é€å‘ŠçŸ¥çŸ­ä¿¡çš„çŠ¶æ€ï¼Œ0ï¼šæœªå‘é€ã€1ï¼šå·²å‘é€';
 comment on column mc.GROUP_ORDER_INFO.user_name
-  is '²Ù×÷µ±Ç°¼ÇÂ¼¿Í»§ĞÕÃû';
+  is 'æ“ä½œå½“å‰è®°å½•å®¢æˆ·å§“å';
 comment on column mc.GROUP_ORDER_INFO.prority
-  is '¶©µ¥ÓÅÏÈ¼¶Ô½Ğ¡Ô½ÓÅÏÈ';
+  is 'è®¢å•ä¼˜å…ˆçº§è¶Šå°è¶Šä¼˜å…ˆ';
 alter table mc.GROUP_ORDER_INFO
   add constraint PK_GROUP_ORDER_INFO primary key (ORDER_ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -2704,28 +2704,28 @@ tablespace MC
     maxextents unlimited
   );
 comment on table mc.LOGIN_SMS_VERCODE
-  is 'Æ½Ì¨µÇÂ¼ÊÖ»úÑéÖ¤Âë±í';
+  is 'å¹³å°ç™»å½•æ‰‹æœºéªŒè¯ç è¡¨';
 comment on column mc.LOGIN_SMS_VERCODE.vercode_id
-  is 'Ö÷¼ü';
+  is 'ä¸»é”®';
 comment on column mc.LOGIN_SMS_VERCODE.vercode
-  is 'ÏµÍ³Îª±¾´ÎµÇÂ¼Éú³ÉµÄ6Î»ÑéÖ¤Âë';
+  is 'ç³»ç»Ÿä¸ºæœ¬æ¬¡ç™»å½•ç”Ÿæˆçš„6ä½éªŒè¯ç ';
 comment on column mc.LOGIN_SMS_VERCODE.mobile_to
-  is '½ÓÊÕµÄÊÖ»úºÅ';
+  is 'æ¥æ”¶çš„æ‰‹æœºå·';
 comment on column mc.LOGIN_SMS_VERCODE.user_id
-  is '½ÓÊÕÊÖ»úÑéÖ¤ÂëµÄÓÃ»§ID';
+  is 'æ¥æ”¶æ‰‹æœºéªŒè¯ç çš„ç”¨æˆ·ID';
 comment on column mc.LOGIN_SMS_VERCODE.send_msg
-  is 'Îª±¾´ÎµÇÂ¼·¢ËÍµÄ¶ÌĞÅÄÚÈİ';
+  is 'ä¸ºæœ¬æ¬¡ç™»å½•å‘é€çš„çŸ­ä¿¡å†…å®¹';
 comment on column mc.LOGIN_SMS_VERCODE.send_time
-  is '·¢ËÍÊ±¼ä';
+  is 'å‘é€æ—¶é—´';
 comment on column mc.LOGIN_SMS_VERCODE.vercode_type
-  is 'ÑéÖ¤ÂëÀàĞÍ 0£ºÕÒ»ØÃÜÂë  1£ºÊÖ»úÑéÖ¤ÂëµÇÂ¼';
+  is 'éªŒè¯ç ç±»å‹ 0ï¼šæ‰¾å›å¯†ç   1ï¼šæ‰‹æœºéªŒè¯ç ç™»å½•';
 comment on column mc.LOGIN_SMS_VERCODE.remark
-  is '±¸×¢';
+  is 'å¤‡æ³¨';
 comment on column mc.LOGIN_SMS_VERCODE.status
-  is 'ÊÇ·ñÓĞĞ§×´Ì¬Öµ  0£ºÎŞĞ§  1:ÓĞĞ§';
+  is 'æ˜¯å¦æœ‰æ•ˆçŠ¶æ€å€¼  0ï¼šæ— æ•ˆ  1:æœ‰æ•ˆ';
 alter table mc.LOGIN_SMS_VERCODE
   add constraint VERCODE_ID primary key (VERCODE_ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -2839,30 +2839,30 @@ tablespace MC
     maxextents unlimited
   );
 comment on table mc.MMS_CHANNEL_INFO
-  is '²ÊĞÅÍ¨µÀ±í';
+  is 'å½©ä¿¡é€šé“è¡¨';
 comment on column mc.MMS_CHANNEL_INFO.channel_id
-  is 'Í¨µÀID';
+  is 'é€šé“ID';
 comment on column mc.MMS_CHANNEL_INFO.channel_name
-  is 'Í¨µÀÃû³Æ';
+  is 'é€šé“åç§°';
 comment on column mc.MMS_CHANNEL_INFO.channel_status
-  is 'Í¨µÀ×´Ì¬£¬0Æô¶¯,1,Í£Ö¹,2Î´Æô¶¯';
+  is 'é€šé“çŠ¶æ€ï¼Œ0å¯åŠ¨,1,åœæ­¢,2æœªå¯åŠ¨';
 comment on column mc.MMS_CHANNEL_INFO.channel_remark
-  is '±¸×¢';
+  is 'å¤‡æ³¨';
 comment on column mc.MMS_CHANNEL_INFO.sort_id
-  is 'Í¨µÀÅÅĞòid';
+  is 'é€šé“æ’åºid';
 comment on column mc.MMS_CHANNEL_INFO.channel_state
-  is 'Í¨µÀ·¢ËÍ×´Ì¬(´Ë×Ö¶ÎÎŞĞ§)';
+  is 'é€šé“å‘é€çŠ¶æ€(æ­¤å­—æ®µæ— æ•ˆ)';
 comment on column mc.MMS_CHANNEL_INFO.com_type
-  is 'Ö§³ÖºÅ¶ÎÀàĞÍ£º1-Ö»ÒÆ¶¯,2-Ö»ÁªÍ¨,3-µçĞÅ  0-È«Ö§³Ö';
+  is 'æ”¯æŒå·æ®µç±»å‹ï¼š1-åªç§»åŠ¨,2-åªè”é€š,3-ç”µä¿¡  0-å…¨æ”¯æŒ';
 comment on column mc.MMS_CHANNEL_INFO.sp_no_yd
-  is 'ÒÆ¶¯ÌØ·şºÅ';
+  is 'ç§»åŠ¨ç‰¹æœå·';
 comment on column mc.MMS_CHANNEL_INFO.sp_no_lt
-  is 'ÁªÍ¨ÌØ·şºÅ';
+  is 'è”é€šç‰¹æœå·';
 comment on column mc.MMS_CHANNEL_INFO.sp_no_dx
-  is 'µçĞÅÌØ·şºÅ';
+  is 'ç”µä¿¡ç‰¹æœå·';
 alter table mc.MMS_CHANNEL_INFO
   add constraint PK_MMS_CHANNEL_INFO primary key (CHANNEL_ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -2904,30 +2904,30 @@ tablespace MC
     maxextents unlimited
   );
 comment on table mc.MMS_CHANNEL_RULE_SET
-  is '²ÊĞÅÍ¨µÀ¹æÔò±í';
+  is 'å½©ä¿¡é€šé“è§„åˆ™è¡¨';
 comment on column mc.MMS_CHANNEL_RULE_SET.rule_set_id
-  is '¹æÔò±àºÅ';
+  is 'è§„åˆ™ç¼–å·';
 comment on column mc.MMS_CHANNEL_RULE_SET.rule_set_name
-  is '¹æÔòÃû³Æ';
+  is 'è§„åˆ™åç§°';
 comment on column mc.MMS_CHANNEL_RULE_SET.rule_set_type
-  is '¹æÔòÀàĞÍ, ITEMS:ÊÖ¹¤ÊäÈëµÄ¹æÔò, DECISIONTABLE:¾ö²ß±í';
+  is 'è§„åˆ™ç±»å‹, ITEMS:æ‰‹å·¥è¾“å…¥çš„è§„åˆ™, DECISIONTABLE:å†³ç­–è¡¨';
 comment on column mc.MMS_CHANNEL_RULE_SET.dc_file_path
-  is '¾ö²ß±í±£´æÂ·¾¶';
+  is 'å†³ç­–è¡¨ä¿å­˜è·¯å¾„';
 comment on column mc.MMS_CHANNEL_RULE_SET.rule_status
-  is '×´Ì¬, -1:²İ¸å×´Ì¬, 0:±¸Ñ¡, 1:ÉúĞ§';
+  is 'çŠ¶æ€, -1:è‰ç¨¿çŠ¶æ€, 0:å¤‡é€‰, 1:ç”Ÿæ•ˆ';
 comment on column mc.MMS_CHANNEL_RULE_SET.user_organization
-  is '»ú¹¹±àºÅ';
+  is 'æœºæ„ç¼–å·';
 comment on column mc.MMS_CHANNEL_RULE_SET.user_org_name
-  is '»ú¹¹Ãû³Æ';
+  is 'æœºæ„åç§°';
 comment on column mc.MMS_CHANNEL_RULE_SET.user_id
-  is 'ÓÃ»§±àºÅ';
+  is 'ç”¨æˆ·ç¼–å·';
 comment on column mc.MMS_CHANNEL_RULE_SET.user_name
-  is 'ÓÃ»§Ãû³Æ';
+  is 'ç”¨æˆ·åç§°';
 comment on column mc.MMS_CHANNEL_RULE_SET.descriptions
-  is '±¸×¢';
+  is 'å¤‡æ³¨';
 alter table mc.MMS_CHANNEL_RULE_SET
   add constraint PK_MMS_CHANNEL_RULE_SET primary key (RULE_SET_ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -2975,56 +2975,56 @@ tablespace MC
   initrans 1
   maxtrans 255;
 comment on table mc.MMS_CHANNEL_RULE_SET_ITEM
-  is '¶ÌĞÅÍ¨µÀ¹æÔò±íÃ÷Ï¸±í';
+  is 'çŸ­ä¿¡é€šé“è§„åˆ™è¡¨æ˜ç»†è¡¨';
 comment on column mc.MMS_CHANNEL_RULE_SET_ITEM.rule_set_id
-  is '¹æÔò±àºÅ';
+  is 'è§„åˆ™ç¼–å·';
 comment on column mc.MMS_CHANNEL_RULE_SET_ITEM.rule_set_item_id
-  is '¹æÔòÃ÷Ï¸±àºÅ';
+  is 'è§„åˆ™æ˜ç»†ç¼–å·';
 comment on column mc.MMS_CHANNEL_RULE_SET_ITEM.rule_set_item_name
-  is '¹æÔòÃ÷Ï¸Ãû³Æ';
+  is 'è§„åˆ™æ˜ç»†åç§°';
 comment on column mc.MMS_CHANNEL_RULE_SET_ITEM.salience
-  is 'ÓÅÏÈ¼¶';
+  is 'ä¼˜å…ˆçº§';
 comment on column mc.MMS_CHANNEL_RULE_SET_ITEM.message_type
-  is 'ĞÅÏ¢ĞÔÖÊ, ¿ÉÒÔ¶àÑ¡';
+  is 'ä¿¡æ¯æ€§è´¨, å¯ä»¥å¤šé€‰';
 comment on column mc.MMS_CHANNEL_RULE_SET_ITEM.org_id
-  is '»ú¹¹±àºÅ, ¿ÉÒÔ¶àÑ¡';
+  is 'æœºæ„ç¼–å·, å¯ä»¥å¤šé€‰';
 comment on column mc.MMS_CHANNEL_RULE_SET_ITEM.user_id
-  is 'ÓÃ»§±àºÅ, ¿ÉÒÔ¶àÑ¡';
+  is 'ç”¨æˆ·ç¼–å·, å¯ä»¥å¤šé€‰';
 comment on column mc.MMS_CHANNEL_RULE_SET_ITEM.mobile_com
-  is 'ÔËÓªÉÌ, ¿ÉÒÔ¶àÑ¡';
+  is 'è¿è¥å•†, å¯ä»¥å¤šé€‰';
 comment on column mc.MMS_CHANNEL_RULE_SET_ITEM.num_scope
-  is 'ºÅ¶Î, ¿ÉÒÔÌîĞ´¶à¸ö, ÒÔÓ¢ÎÄ¶ººÅ·Ö¸î';
+  is 'å·æ®µ, å¯ä»¥å¡«å†™å¤šä¸ª, ä»¥è‹±æ–‡é€—å·åˆ†å‰²';
 comment on column mc.MMS_CHANNEL_RULE_SET_ITEM.num_region
-  is 'ÊÖ»úËùÊôÇøÓò, ¿ÉÒÔÌîĞ´¶à¸ö, ÒÔÓ¢ÎÄ¶ººÅ·Ö';
+  is 'æ‰‹æœºæ‰€å±åŒºåŸŸ, å¯ä»¥å¡«å†™å¤šä¸ª, ä»¥è‹±æ–‡é€—å·åˆ†';
 comment on column mc.MMS_CHANNEL_RULE_SET_ITEM.mobile
-  is 'ÊÖ»úºÅÂë, ¿ÉÒÔÌîĞ´¶à¸ö';
+  is 'æ‰‹æœºå·ç , å¯ä»¥å¡«å†™å¤šä¸ª';
 comment on column mc.MMS_CHANNEL_RULE_SET_ITEM.channel_id
-  is 'ËùÑ¡Í¨µÀ';
+  is 'æ‰€é€‰é€šé“';
 comment on column mc.MMS_CHANNEL_RULE_SET_ITEM.msg_type
-  is 'ĞÅÏ¢ÀàĞÍ';
+  is 'ä¿¡æ¯ç±»å‹';
 comment on column mc.MMS_CHANNEL_RULE_SET_ITEM.day_start_time
-  is '°×Ìì¿ªÊ¼Ê±¼ä';
+  is 'ç™½å¤©å¼€å§‹æ—¶é—´';
 comment on column mc.MMS_CHANNEL_RULE_SET_ITEM.day_end_time
-  is '°×Ìì½áÊøÊ±¼ä';
+  is 'ç™½å¤©ç»“æŸæ—¶é—´';
 comment on column mc.MMS_CHANNEL_RULE_SET_ITEM.night_start_time
-  is 'Ò¹¼ä¿ªÊ¼Ê±¼ä';
+  is 'å¤œé—´å¼€å§‹æ—¶é—´';
 comment on column mc.MMS_CHANNEL_RULE_SET_ITEM.night_end_time
-  is 'Ò¹¼ä½áÊøÊ±¼ä';
+  is 'å¤œé—´ç»“æŸæ—¶é—´';
 comment on column mc.MMS_CHANNEL_RULE_SET_ITEM.default_channel_id
-  is 'È±Ê¡Ê¹ÓÃµÄÍ¨µÀ';
+  is 'ç¼ºçœä½¿ç”¨çš„é€šé“';
 comment on column mc.MMS_CHANNEL_RULE_SET_ITEM.default_mobile_channel_id
-  is 'È±Ê¡Ê¹ÓÃµÄÒÆ¶¯Í¨µÀ';
+  is 'ç¼ºçœä½¿ç”¨çš„ç§»åŠ¨é€šé“';
 comment on column mc.MMS_CHANNEL_RULE_SET_ITEM.default_union_channel_id
-  is 'È±Ê¡Ê¹ÓÃµÄÁªÍ¨Í¨µÀ';
+  is 'ç¼ºçœä½¿ç”¨çš„è”é€šé€šé“';
 comment on column mc.MMS_CHANNEL_RULE_SET_ITEM.default_dx_channel_id
-  is 'È±Ê¡Ê¹ÓÃµÄµçĞÅÍ¨µÀ';
+  is 'ç¼ºçœä½¿ç”¨çš„ç”µä¿¡é€šé“';
 comment on column mc.MMS_CHANNEL_RULE_SET_ITEM.use_channel_id
-  is '×îÖÕÊ¹ÓÃµÄÍ¨µÀ±àºÅ';
+  is 'æœ€ç»ˆä½¿ç”¨çš„é€šé“ç¼–å·';
 comment on column mc.MMS_CHANNEL_RULE_SET_ITEM.use_status
-  is '²ÊĞÅµÄÈ±Ê¡×´Ì¬';
+  is 'å½©ä¿¡çš„ç¼ºçœçŠ¶æ€';
 alter table mc.MMS_CHANNEL_RULE_SET_ITEM
   add constraint PK_MMS_CHANNEL_RULE_SET_ITEM primary key (RULE_SET_ITEM_ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -3052,30 +3052,30 @@ tablespace MC
   initrans 1
   maxtrans 255;
 comment on table mc.MMS_HIS
-  is '²ÊĞÅ¹éµµ±í';
+  is 'å½©ä¿¡å½’æ¡£è¡¨';
 comment on column mc.MMS_HIS.mms_his_id
   is 'id';
 comment on column mc.MMS_HIS.send_status
-  is '·¢ËÍ×´Ì¬';
+  is 'å‘é€çŠ¶æ€';
 comment on column mc.MMS_HIS.user_organization
-  is '»ú¹¹';
+  is 'æœºæ„';
 comment on column mc.MMS_HIS.channel_id
-  is 'Í¨µÀ';
+  is 'é€šé“';
 comment on column mc.MMS_HIS.mobile_com
-  is 'ÔËÓªÉÌ';
+  is 'è¿è¥å•†';
 comment on column mc.MMS_HIS.sys_id
-  is 'ĞÅÏ¢À´Ô´';
+  is 'ä¿¡æ¯æ¥æº';
 comment on column mc.MMS_HIS.message_type
-  is 'ĞÅÏ¢ĞÔÖÊ';
+  is 'ä¿¡æ¯æ€§è´¨';
 comment on column mc.MMS_HIS.batch_id
-  is 'Åú´ÎºÅ';
+  is 'æ‰¹æ¬¡å·';
 comment on column mc.MMS_HIS.mobile_quantities
-  is '·¢ËÍ×ÜÁ¿';
+  is 'å‘é€æ€»é‡';
 comment on column mc.MMS_HIS.send_time
-  is '·¢ËÍÊ±¼ä';
+  is 'å‘é€æ—¶é—´';
 alter table mc.MMS_HIS
   add constraint PK_MMS_HIS primary key (MMS_HIS_ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -3104,32 +3104,32 @@ tablespace MC
   initrans 1
   maxtrans 255;
 comment on table mc.MMS_RECEIVE
-  is '²ÊĞÅÉÏĞĞĞÅÏ¢±í';
+  is 'å½©ä¿¡ä¸Šè¡Œä¿¡æ¯è¡¨';
 comment on column mc.MMS_RECEIVE.receive_id
-  is 'ÉÏĞĞ²ÊĞÅ±àºÅ';
+  is 'ä¸Šè¡Œå½©ä¿¡ç¼–å·';
 comment on column mc.MMS_RECEIVE.mobile_from
-  is 'ÉÏĞĞÊÖ»úºÅ';
+  is 'ä¸Šè¡Œæ‰‹æœºå·';
 comment on column mc.MMS_RECEIVE.subject
-  is '²ÊĞÅ±êÌâ';
+  is 'å½©ä¿¡æ ‡é¢˜';
 comment on column mc.MMS_RECEIVE.receive_msg
-  is '²ÊĞÅÄÚÈİ';
+  is 'å½©ä¿¡å†…å®¹';
 comment on column mc.MMS_RECEIVE.receive_time
-  is 'ÉÏĞĞÊ±¼ä';
+  is 'ä¸Šè¡Œæ—¶é—´';
 comment on column mc.MMS_RECEIVE.sp_no
-  is 'ÌØ·şºÅ';
+  is 'ç‰¹æœå·';
 comment on column mc.MMS_RECEIVE.sp_serv_no
-  is 'ÒµÎñ±àºÅ';
+  is 'ä¸šåŠ¡ç¼–å·';
 comment on column mc.MMS_RECEIVE.receive_status
-  is 'ÉÏĞĞ×´Ì¬';
+  is 'ä¸Šè¡ŒçŠ¶æ€';
 comment on column mc.MMS_RECEIVE.read_time
-  is 'ÔÄ¶ÁÊ±¼ä';
+  is 'é˜…è¯»æ—¶é—´';
 comment on column mc.MMS_RECEIVE.channel_id
-  is 'Í¨µÀ±àºÅ';
+  is 'é€šé“ç¼–å·';
 comment on column mc.MMS_RECEIVE.organization_id
-  is 'ËùÊô»ú¹¹';
+  is 'æ‰€å±æœºæ„';
 alter table mc.MMS_RECEIVE
   add constraint PK_MMS_RECEIVE primary key (RECEIVE_ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -3151,18 +3151,18 @@ tablespace MC
   initrans 1
   maxtrans 255;
 comment on table mc.MMS_SCHED_MOBILE_TEMP
-  is '²ÊĞÅ·¢ËÍµ¼ÈëÊÖ»úºÅµÄÁÙÊ±±í';
+  is 'å½©ä¿¡å‘é€å¯¼å…¥æ‰‹æœºå·çš„ä¸´æ—¶è¡¨';
 comment on column mc.MMS_SCHED_MOBILE_TEMP.schedule_id
-  is '²ÊĞÅ·¢ËÍ¼ÇÂ¼±àºÅ';
+  is 'å½©ä¿¡å‘é€è®°å½•ç¼–å·';
 comment on column mc.MMS_SCHED_MOBILE_TEMP.mobile
-  is 'ÊÖ»úºÅÂë';
+  is 'æ‰‹æœºå·ç ';
 comment on column mc.MMS_SCHED_MOBILE_TEMP.import_type
-  is 'µ¼Èë·½Ê½';
+  is 'å¯¼å…¥æ–¹å¼';
 comment on column mc.MMS_SCHED_MOBILE_TEMP.batch_id
-  is 'µ¼ÈëÅúºÅ, ÓÃÓÚÍ³¼Æµ¼ÈëÊıÁ¿';
+  is 'å¯¼å…¥æ‰¹å·, ç”¨äºç»Ÿè®¡å¯¼å…¥æ•°é‡';
 alter table mc.MMS_SCHED_MOBILE_TEMP
   add constraint PK_MMS_SCHED_MOBILE_TEMP primary key (SCHEDULE_ID, MOBILE)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -3225,86 +3225,86 @@ tablespace MC
     maxextents unlimited
   );
 comment on table mc.MMS_SEND
-  is 'ÏÂĞĞ²ÊĞÅĞÅÏ¢±í';
+  is 'ä¸‹è¡Œå½©ä¿¡ä¿¡æ¯è¡¨';
 comment on column mc.MMS_SEND.mms_send_id
-  is '²ÊĞÅ±àºÅ';
+  is 'å½©ä¿¡ç¼–å·';
 comment on column mc.MMS_SEND.subject
-  is '²ÊĞÅ±êÌâ';
+  is 'å½©ä¿¡æ ‡é¢˜';
 comment on column mc.MMS_SEND.mobile_to
-  is 'ÊÖ»úºÅ';
+  is 'æ‰‹æœºå·';
 comment on column mc.MMS_SEND.ext_num
-  is 'À©Õ¹ºÅÂë';
+  is 'æ‰©å±•å·ç ';
 comment on column mc.MMS_SEND.prior_id
-  is 'ÓÅÏÈ¼¶';
+  is 'ä¼˜å…ˆçº§';
 comment on column mc.MMS_SEND.send_status
-  is '·¢ËÍ×´Ì¬, -2:Éú³ÉÖĞ, 0,Î´·¢ËÍ, 1:ÒÑÌá½», 2:·¢ËÍÖĞ, 5:·¢ËÍ³É¹¦, 6:·¢ËÍÊ§°Ü, 7:ÏµÍ³ºÚÃûµ¥';
+  is 'å‘é€çŠ¶æ€, -2:ç”Ÿæˆä¸­, 0,æœªå‘é€, 1:å·²æäº¤, 2:å‘é€ä¸­, 5:å‘é€æˆåŠŸ, 6:å‘é€å¤±è´¥, 7:ç³»ç»Ÿé»‘åå•';
 comment on column mc.MMS_SEND.sys_time
-  is 'Èë¿âÊ±¼ä';
+  is 'å…¥åº“æ—¶é—´';
 comment on column mc.MMS_SEND.sys_date_id
-  is '²ÊĞÅÈë¿âÈÕÆÚ';
+  is 'å½©ä¿¡å…¥åº“æ—¥æœŸ';
 comment on column mc.MMS_SEND.pre_send_time
-  is 'Ô¤¼Æ·¢ËÍÊ±¼ä';
+  is 'é¢„è®¡å‘é€æ—¶é—´';
 comment on column mc.MMS_SEND.event_latest_time
-  is 'Íí¼ä×îÍí·¢ËÍÊ±¼ä';
+  is 'æ™šé—´æœ€æ™šå‘é€æ—¶é—´';
 comment on column mc.MMS_SEND.morning_earlest_time
-  is 'Ôç³¿×îÔç·¢ËÍÊ±¼ä';
+  is 'æ—©æ™¨æœ€æ—©å‘é€æ—¶é—´';
 comment on column mc.MMS_SEND.morning_latest_time
-  is 'Ôç³¿×îÍí·¢ËÍÊ±¼ä';
+  is 'æ—©æ™¨æœ€æ™šå‘é€æ—¶é—´';
 comment on column mc.MMS_SEND.send_time
-  is 'Æ½Ì¨·¢ËÍ¸Ã¶ÌĞÅµÄÊ±¼ä';
+  is 'å¹³å°å‘é€è¯¥çŸ­ä¿¡çš„æ—¶é—´';
 comment on column mc.MMS_SEND.send_date_id
-  is 'Æ½Ì¨·¢ËÍ²ÊĞÅµÄÈÕÆÚ';
+  is 'å¹³å°å‘é€å½©ä¿¡çš„æ—¥æœŸ';
 comment on column mc.MMS_SEND.com_rtn_time
-  is '·¢ËÍºóÒÆ¶¯»òÁªÍ¨Íø¹Ø·µ»Ø½á¹ûµÄÊ±¼ä';
+  is 'å‘é€åç§»åŠ¨æˆ–è”é€šç½‘å…³è¿”å›ç»“æœçš„æ—¶é—´';
 comment on column mc.MMS_SEND.err_msg
-  is '·¢ËÍÊ§°ÜÊ±£¬ÔËÓªÉÌÍø¹Ø·µ»ØµÄ´íÎóĞÅÏ¢£¬Ö»ÓĞÔÚ·¢ËÍÊ§°ÜÊ±£¬¸Ã×Ö¶ÎÓĞÖµ£¬ÆäÓàÊ±ºòÎ´¿Õ';
+  is 'å‘é€å¤±è´¥æ—¶ï¼Œè¿è¥å•†ç½‘å…³è¿”å›çš„é”™è¯¯ä¿¡æ¯ï¼Œåªæœ‰åœ¨å‘é€å¤±è´¥æ—¶ï¼Œè¯¥å­—æ®µæœ‰å€¼ï¼Œå…¶ä½™æ—¶å€™æœªç©º';
 comment on column mc.MMS_SEND.fail_resend_times
-  is '·¢ËÍÊ§°Ü´ÎÊı';
+  is 'å‘é€å¤±è´¥æ¬¡æ•°';
 comment on column mc.MMS_SEND.err_id
-  is '´íÎó´úÂë£¬°üº¬¶ÌÏ¢Æ½Ì¨´íÎó´úÂëºÍ²ÊĞÅÍø¹Ø´íÎó´úÂë';
+  is 'é”™è¯¯ä»£ç ï¼ŒåŒ…å«çŸ­æ¯å¹³å°é”™è¯¯ä»£ç å’Œå½©ä¿¡ç½‘å…³é”™è¯¯ä»£ç ';
 comment on column mc.MMS_SEND.report_time
-  is 'ÊÖ»ú½ÓÊÕ×´Ì¬±¨¸æ·µ»ØÊ±¼ä';
+  is 'æ‰‹æœºæ¥æ”¶çŠ¶æ€æŠ¥å‘Šè¿”å›æ—¶é—´';
 comment on column mc.MMS_SEND.gw_send_time
-  is 'Íø¹Ø·¢ËÍ²ÊĞÅÊ±¼ä';
+  is 'ç½‘å…³å‘é€å½©ä¿¡æ—¶é—´';
 comment on column mc.MMS_SEND.gw_report_time
-  is 'Íø¹Ø½ÓÊÕ×´Ì¬±¨¸æÊ±¼ä';
+  is 'ç½‘å…³æ¥æ”¶çŠ¶æ€æŠ¥å‘Šæ—¶é—´';
 comment on column mc.MMS_SEND.channel_id
-  is 'Í¨µÀ±àºÅ';
+  is 'é€šé“ç¼–å·';
 comment on column mc.MMS_SEND.mobile_quantities
-  is '±¾ÌõĞÅÏ¢µÄÊÖ»úÊıÁ¿';
+  is 'æœ¬æ¡ä¿¡æ¯çš„æ‰‹æœºæ•°é‡';
 comment on column mc.MMS_SEND.resend_times
-  is 'ÖØ·¢´ËÊı';
+  is 'é‡å‘æ­¤æ•°';
 comment on column mc.MMS_SEND.org_name
-  is '»ú¹¹Ãû³Æ';
+  is 'æœºæ„åç§°';
 comment on column mc.MMS_SEND.org_id
-  is '»ú¹¹±àºÅ';
+  is 'æœºæ„ç¼–å·';
 comment on column mc.MMS_SEND.user_id
-  is 'ÓÃ»§±àºÅ';
+  is 'ç”¨æˆ·ç¼–å·';
 comment on column mc.MMS_SEND.user_name
-  is 'ÓÃ»§Ãû³Æ';
+  is 'ç”¨æˆ·åç§°';
 comment on column mc.MMS_SEND.batch_id
-  is '²ÊĞÅÅúºÅ';
+  is 'å½©ä¿¡æ‰¹å·';
 comment on column mc.MMS_SEND.gw_batch
-  is '²ÊĞÅÍø¹Ø·µ»ØµÄÅúºÅ';
+  is 'å½©ä¿¡ç½‘å…³è¿”å›çš„æ‰¹å·';
 comment on column mc.MMS_SEND.sequence
-  is '²ÊĞÅÍø¹Ø·µ»ØµÄ²ÊĞÅ±àºÅ';
+  is 'å½©ä¿¡ç½‘å…³è¿”å›çš„å½©ä¿¡ç¼–å·';
 comment on column mc.MMS_SEND.send_type
-  is '·¢ËÍÀàĞÍ';
+  is 'å‘é€ç±»å‹';
 comment on column mc.MMS_SEND.mobile_com
-  is 'ÔËÓªÉÌ±àºÅ, 1:ÒÆ¶¯, 2:ÁªÍ¨,3:µçĞÅ,0:´íÎóºÅÂë';
+  is 'è¿è¥å•†ç¼–å·, 1:ç§»åŠ¨, 2:è”é€š,3:ç”µä¿¡,0:é”™è¯¯å·ç ';
 comment on column mc.MMS_SEND.message_type
-  is 'ĞÅÏ¢ĞÔÖÊ';
+  is 'ä¿¡æ¯æ€§è´¨';
 comment on column mc.MMS_SEND.sys_id
-  is 'ÒµÎñÏµÍ³µÄ±àºÅ, ÓÃÓÚ±êÊ¶¶ÌĞÅÀ´×ÅÄÄ¸öÒµÎñÏµÍ³µÄ±àºÅ £¨ÈçÌîĞ´´íÎóÔòERR_ID×Ö¶ÎÏÔÊ¾1010´íÎó)';
+  is 'ä¸šåŠ¡ç³»ç»Ÿçš„ç¼–å·, ç”¨äºæ ‡è¯†çŸ­ä¿¡æ¥ç€å“ªä¸ªä¸šåŠ¡ç³»ç»Ÿçš„ç¼–å· ï¼ˆå¦‚å¡«å†™é”™è¯¯åˆ™ERR_IDå­—æ®µæ˜¾ç¤º1010é”™è¯¯)';
 comment on column mc.MMS_SEND.msg_id
-  is 'Éú³É²ÊĞÅµÄÒµÎñÏµÍ³µÄ²ÊĞÅ±àºÅ';
+  is 'ç”Ÿæˆå½©ä¿¡çš„ä¸šåŠ¡ç³»ç»Ÿçš„å½©ä¿¡ç¼–å·';
 comment on column mc.MMS_SEND.sender_id
-  is '½Ó¿ÚÓÃ»§±àºÅ';
+  is 'æ¥å£ç”¨æˆ·ç¼–å·';
 comment on column mc.MMS_SEND.remark
-  is '±¸×¢ĞÅÏ¢£¬±£Áô×Ö¶Î£¬À©Õ¹Ê±Ê¹ÓÃ';
+  is 'å¤‡æ³¨ä¿¡æ¯ï¼Œä¿ç•™å­—æ®µï¼Œæ‰©å±•æ—¶ä½¿ç”¨';
 alter table mc.MMS_SEND
   add constraint PK_MMS_SEND primary key (MMS_SEND_ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -3385,48 +3385,48 @@ tablespace MC
     maxextents unlimited
   );
 comment on table mc.MMS_SEND_CONTENT
-  is '²ÊĞÅ·¢ËÍÄÚÈİ±í';
+  is 'å½©ä¿¡å‘é€å†…å®¹è¡¨';
 comment on column mc.MMS_SEND_CONTENT.batch_id
-  is 'ÅúºÅ';
+  is 'æ‰¹å·';
 comment on column mc.MMS_SEND_CONTENT.subject
-  is '²ÊĞÅ±êÌâ';
+  is 'å½©ä¿¡æ ‡é¢˜';
 comment on column mc.MMS_SEND_CONTENT.sys_time
-  is 'Èë¿âÊ±¼ä';
+  is 'å…¥åº“æ—¶é—´';
 comment on column mc.MMS_SEND_CONTENT.send_msg
-  is '²ÊĞÅÄÚÈİ';
+  is 'å½©ä¿¡å†…å®¹';
 comment on column mc.MMS_SEND_CONTENT.user_organization
-  is '»ú¹¹±àºÅ';
+  is 'æœºæ„ç¼–å·';
 comment on column mc.MMS_SEND_CONTENT.user_org_name
-  is '»ú¹¹Ãû³Æ';
+  is 'æœºæ„åç§°';
 comment on column mc.MMS_SEND_CONTENT.user_id
-  is 'ÓÃ»§±àºÅ';
+  is 'ç”¨æˆ·ç¼–å·';
 comment on column mc.MMS_SEND_CONTENT.user_name
-  is 'ÓÃ»§Ãû³Æ';
+  is 'ç”¨æˆ·åç§°';
 comment on column mc.MMS_SEND_CONTENT.sender_id
-  is '½Ó¿ÚÓÃ»§±àºÅ';
+  is 'æ¥å£ç”¨æˆ·ç¼–å·';
 comment on column mc.MMS_SEND_CONTENT.gw_mms_id
-  is 'Íø¹Ø·µ»ØµÄ²ÊĞÅ±àºÅ';
+  is 'ç½‘å…³è¿”å›çš„å½©ä¿¡ç¼–å·';
 comment on column mc.MMS_SEND_CONTENT.gw_mms_id1
-  is 'Íø¹Ø·µ»ØµÄ²ÊĞÅ±àºÅ(±£Áô×Ö¶Î)';
+  is 'ç½‘å…³è¿”å›çš„å½©ä¿¡ç¼–å·(ä¿ç•™å­—æ®µ)';
 comment on column mc.MMS_SEND_CONTENT.gw_mms_id2
-  is 'Íø¹Ø·µ»ØµÄ²ÊĞÅ±àºÅ(±£Áô×Ö¶Î)';
+  is 'ç½‘å…³è¿”å›çš„å½©ä¿¡ç¼–å·(ä¿ç•™å­—æ®µ)';
 comment on column mc.MMS_SEND_CONTENT.gw_mms_id3
-  is 'Íø¹Ø·µ»ØµÄ²ÊĞÅ±àºÅ(±£Áô×Ö¶Î)';
+  is 'ç½‘å…³è¿”å›çš„å½©ä¿¡ç¼–å·(ä¿ç•™å­—æ®µ)';
 comment on column mc.MMS_SEND_CONTENT.gw_mms_id4
-  is 'Íø¹Ø·µ»ØµÄ²ÊĞÅ±àºÅ(±£Áô×Ö¶Î)';
+  is 'ç½‘å…³è¿”å›çš„å½©ä¿¡ç¼–å·(ä¿ç•™å­—æ®µ)';
 comment on column mc.MMS_SEND_CONTENT.gw_mms_id5
-  is 'Íø¹Ø·µ»ØµÄ²ÊĞÅ±àºÅ(±£Áô×Ö¶Î)';
+  is 'ç½‘å…³è¿”å›çš„å½©ä¿¡ç¼–å·(ä¿ç•™å­—æ®µ)';
 comment on column mc.MMS_SEND_CONTENT.gw_mms_id6
-  is 'Íø¹Ø·µ»ØµÄ²ÊĞÅ±àºÅ(±£Áô×Ö¶Î)';
+  is 'ç½‘å…³è¿”å›çš„å½©ä¿¡ç¼–å·(ä¿ç•™å­—æ®µ)';
 comment on column mc.MMS_SEND_CONTENT.gw_mms_id7
-  is 'Íø¹Ø·µ»ØµÄ²ÊĞÅ±àºÅ(±£Áô×Ö¶Î)';
+  is 'ç½‘å…³è¿”å›çš„å½©ä¿¡ç¼–å·(ä¿ç•™å­—æ®µ)';
 comment on column mc.MMS_SEND_CONTENT.gw_mms_id8
-  is 'Íø¹Ø·µ»ØµÄ²ÊĞÅ±àºÅ(±£Áô×Ö¶Î)';
+  is 'ç½‘å…³è¿”å›çš„å½©ä¿¡ç¼–å·(ä¿ç•™å­—æ®µ)';
 comment on column mc.MMS_SEND_CONTENT.gw_mms_id9
-  is 'Íø¹Ø·µ»ØµÄ²ÊĞÅ±àºÅ(±£Áô×Ö¶Î)';
+  is 'ç½‘å…³è¿”å›çš„å½©ä¿¡ç¼–å·(ä¿ç•™å­—æ®µ)';
 alter table mc.MMS_SEND_CONTENT
   add constraint PK_MMS_SEND_CONTENT primary key (BATCH_ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -3489,86 +3489,86 @@ tablespace MC
   initrans 1
   maxtrans 255;
 comment on table mc.MMS_SEND_HIS
-  is 'ÏÂĞĞ²ÊĞÅĞÅÏ¢±í';
+  is 'ä¸‹è¡Œå½©ä¿¡ä¿¡æ¯è¡¨';
 comment on column mc.MMS_SEND_HIS.mms_send_id
-  is '²ÊĞÅ±àºÅ';
+  is 'å½©ä¿¡ç¼–å·';
 comment on column mc.MMS_SEND_HIS.subject
-  is '²ÊĞÅ±êÌâ';
+  is 'å½©ä¿¡æ ‡é¢˜';
 comment on column mc.MMS_SEND_HIS.mobile_to
-  is 'ÊÖ»úºÅ';
+  is 'æ‰‹æœºå·';
 comment on column mc.MMS_SEND_HIS.ext_num
-  is 'À©Õ¹ºÅÂë';
+  is 'æ‰©å±•å·ç ';
 comment on column mc.MMS_SEND_HIS.prior_id
-  is 'ÓÅÏÈ¼¶';
+  is 'ä¼˜å…ˆçº§';
 comment on column mc.MMS_SEND_HIS.send_status
-  is '·¢ËÍ×´Ì¬, -2:Éú³ÉÖĞ, 0,Î´·¢ËÍ, 1:ÒÑÌá½», 2:·¢ËÍÖĞ, 5:·¢ËÍ³É¹¦, 6:·¢ËÍÊ§°Ü, 7:ÏµÍ³ºÚÃûµ¥';
+  is 'å‘é€çŠ¶æ€, -2:ç”Ÿæˆä¸­, 0,æœªå‘é€, 1:å·²æäº¤, 2:å‘é€ä¸­, 5:å‘é€æˆåŠŸ, 6:å‘é€å¤±è´¥, 7:ç³»ç»Ÿé»‘åå•';
 comment on column mc.MMS_SEND_HIS.sys_time
-  is 'Èë¿âÊ±¼ä';
+  is 'å…¥åº“æ—¶é—´';
 comment on column mc.MMS_SEND_HIS.sys_date_id
-  is '²ÊĞÅÈë¿âÈÕÆÚ';
+  is 'å½©ä¿¡å…¥åº“æ—¥æœŸ';
 comment on column mc.MMS_SEND_HIS.pre_send_time
-  is 'Ô¤¼Æ·¢ËÍÊ±¼ä';
+  is 'é¢„è®¡å‘é€æ—¶é—´';
 comment on column mc.MMS_SEND_HIS.event_latest_time
-  is 'Íí¼ä×îÍí·¢ËÍÊ±¼ä';
+  is 'æ™šé—´æœ€æ™šå‘é€æ—¶é—´';
 comment on column mc.MMS_SEND_HIS.morning_earlest_time
-  is 'Ôç³¿×îÔç·¢ËÍÊ±¼ä';
+  is 'æ—©æ™¨æœ€æ—©å‘é€æ—¶é—´';
 comment on column mc.MMS_SEND_HIS.morning_latest_time
-  is 'Ôç³¿×îÍí·¢ËÍÊ±¼ä';
+  is 'æ—©æ™¨æœ€æ™šå‘é€æ—¶é—´';
 comment on column mc.MMS_SEND_HIS.send_time
-  is 'Æ½Ì¨·¢ËÍ¸Ã¶ÌĞÅµÄÊ±¼ä';
+  is 'å¹³å°å‘é€è¯¥çŸ­ä¿¡çš„æ—¶é—´';
 comment on column mc.MMS_SEND_HIS.send_date_id
-  is 'Æ½Ì¨·¢ËÍ²ÊĞÅµÄÈÕÆÚ';
+  is 'å¹³å°å‘é€å½©ä¿¡çš„æ—¥æœŸ';
 comment on column mc.MMS_SEND_HIS.com_rtn_time
-  is '·¢ËÍºóÒÆ¶¯»òÁªÍ¨Íø¹Ø·µ»Ø½á¹ûµÄÊ±¼ä';
+  is 'å‘é€åç§»åŠ¨æˆ–è”é€šç½‘å…³è¿”å›ç»“æœçš„æ—¶é—´';
 comment on column mc.MMS_SEND_HIS.err_msg
-  is '·¢ËÍÊ§°ÜÊ±£¬ÔËÓªÉÌÍø¹Ø·µ»ØµÄ´íÎóĞÅÏ¢£¬Ö»ÓĞÔÚ·¢ËÍÊ§°ÜÊ±£¬¸Ã×Ö¶ÎÓĞÖµ£¬ÆäÓàÊ±ºòÎ´¿Õ';
+  is 'å‘é€å¤±è´¥æ—¶ï¼Œè¿è¥å•†ç½‘å…³è¿”å›çš„é”™è¯¯ä¿¡æ¯ï¼Œåªæœ‰åœ¨å‘é€å¤±è´¥æ—¶ï¼Œè¯¥å­—æ®µæœ‰å€¼ï¼Œå…¶ä½™æ—¶å€™æœªç©º';
 comment on column mc.MMS_SEND_HIS.fail_resend_times
-  is '·¢ËÍÊ§°Ü´ÎÊı';
+  is 'å‘é€å¤±è´¥æ¬¡æ•°';
 comment on column mc.MMS_SEND_HIS.err_id
-  is '´íÎó´úÂë£¬°üº¬¶ÌÏ¢Æ½Ì¨´íÎó´úÂëºÍ²ÊĞÅÍø¹Ø´íÎó´úÂë';
+  is 'é”™è¯¯ä»£ç ï¼ŒåŒ…å«çŸ­æ¯å¹³å°é”™è¯¯ä»£ç å’Œå½©ä¿¡ç½‘å…³é”™è¯¯ä»£ç ';
 comment on column mc.MMS_SEND_HIS.report_time
-  is 'ÊÖ»ú½ÓÊÕ×´Ì¬±¨¸æ·µ»ØÊ±¼ä';
+  is 'æ‰‹æœºæ¥æ”¶çŠ¶æ€æŠ¥å‘Šè¿”å›æ—¶é—´';
 comment on column mc.MMS_SEND_HIS.gw_send_time
-  is 'Íø¹Ø·¢ËÍ²ÊĞÅÊ±¼ä';
+  is 'ç½‘å…³å‘é€å½©ä¿¡æ—¶é—´';
 comment on column mc.MMS_SEND_HIS.gw_report_time
-  is 'Íø¹Ø½ÓÊÕ×´Ì¬±¨¸æÊ±¼ä';
+  is 'ç½‘å…³æ¥æ”¶çŠ¶æ€æŠ¥å‘Šæ—¶é—´';
 comment on column mc.MMS_SEND_HIS.channel_id
-  is 'Í¨µÀ±àºÅ';
+  is 'é€šé“ç¼–å·';
 comment on column mc.MMS_SEND_HIS.mobile_quantities
-  is '±¾ÌõĞÅÏ¢µÄÊÖ»úÊıÁ¿';
+  is 'æœ¬æ¡ä¿¡æ¯çš„æ‰‹æœºæ•°é‡';
 comment on column mc.MMS_SEND_HIS.resend_times
-  is 'ÖØ·¢´ËÊı';
+  is 'é‡å‘æ­¤æ•°';
 comment on column mc.MMS_SEND_HIS.org_name
-  is '»ú¹¹Ãû³Æ';
+  is 'æœºæ„åç§°';
 comment on column mc.MMS_SEND_HIS.org_id
-  is '»ú¹¹±àºÅ';
+  is 'æœºæ„ç¼–å·';
 comment on column mc.MMS_SEND_HIS.user_id
-  is 'ÓÃ»§±àºÅ';
+  is 'ç”¨æˆ·ç¼–å·';
 comment on column mc.MMS_SEND_HIS.user_name
-  is 'ÓÃ»§Ãû³Æ';
+  is 'ç”¨æˆ·åç§°';
 comment on column mc.MMS_SEND_HIS.batch_id
-  is '²ÊĞÅÅúºÅ';
+  is 'å½©ä¿¡æ‰¹å·';
 comment on column mc.MMS_SEND_HIS.gw_batch
-  is '²ÊĞÅÍø¹Ø·µ»ØµÄÅúºÅ';
+  is 'å½©ä¿¡ç½‘å…³è¿”å›çš„æ‰¹å·';
 comment on column mc.MMS_SEND_HIS.sequence
-  is '²ÊĞÅÍø¹Ø·µ»ØµÄ²ÊĞÅ±àºÅ';
+  is 'å½©ä¿¡ç½‘å…³è¿”å›çš„å½©ä¿¡ç¼–å·';
 comment on column mc.MMS_SEND_HIS.send_type
-  is '·¢ËÍÀàĞÍ';
+  is 'å‘é€ç±»å‹';
 comment on column mc.MMS_SEND_HIS.mobile_com
-  is 'ÔËÓªÉÌ±àºÅ, 1:ÒÆ¶¯, 2:ÁªÍ¨,3:µçĞÅ,0:´íÎóºÅÂë';
+  is 'è¿è¥å•†ç¼–å·, 1:ç§»åŠ¨, 2:è”é€š,3:ç”µä¿¡,0:é”™è¯¯å·ç ';
 comment on column mc.MMS_SEND_HIS.message_type
-  is 'ĞÅÏ¢ĞÔÖÊ';
+  is 'ä¿¡æ¯æ€§è´¨';
 comment on column mc.MMS_SEND_HIS.sys_id
-  is 'ÒµÎñÏµÍ³µÄ±àºÅ, ÓÃÓÚ±êÊ¶¶ÌĞÅÀ´×ÅÄÄ¸öÒµÎñÏµÍ³µÄ±àºÅ £¨ÈçÌîĞ´´íÎóÔòERR_ID×Ö¶ÎÏÔÊ¾1010´íÎó)';
+  is 'ä¸šåŠ¡ç³»ç»Ÿçš„ç¼–å·, ç”¨äºæ ‡è¯†çŸ­ä¿¡æ¥ç€å“ªä¸ªä¸šåŠ¡ç³»ç»Ÿçš„ç¼–å· ï¼ˆå¦‚å¡«å†™é”™è¯¯åˆ™ERR_IDå­—æ®µæ˜¾ç¤º1010é”™è¯¯)';
 comment on column mc.MMS_SEND_HIS.msg_id
-  is 'Éú³É²ÊĞÅµÄÒµÎñÏµÍ³µÄ²ÊĞÅ±àºÅ';
+  is 'ç”Ÿæˆå½©ä¿¡çš„ä¸šåŠ¡ç³»ç»Ÿçš„å½©ä¿¡ç¼–å·';
 comment on column mc.MMS_SEND_HIS.sender_id
-  is '½Ó¿ÚÓÃ»§±àºÅ';
+  is 'æ¥å£ç”¨æˆ·ç¼–å·';
 comment on column mc.MMS_SEND_HIS.remark
-  is '±¸×¢ĞÅÏ¢£¬±£Áô×Ö¶Î£¬À©Õ¹Ê±Ê¹ÓÃ';
+  is 'å¤‡æ³¨ä¿¡æ¯ï¼Œä¿ç•™å­—æ®µï¼Œæ‰©å±•æ—¶ä½¿ç”¨';
 alter table mc.MMS_SEND_HIS
   add constraint PK_MMS_SEND_HIS primary key (MMS_SEND_ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -3621,56 +3621,56 @@ tablespace MC
     maxextents unlimited
   );
 comment on table mc.MMS_SEND_SCHEDULE
-  is '²ÊĞÅ·¢ËÍ¼ÇÂ¼±í';
+  is 'å½©ä¿¡å‘é€è®°å½•è¡¨';
 comment on column mc.MMS_SEND_SCHEDULE.mms_send_schedule_id
-  is '±àºÅ';
+  is 'ç¼–å·';
 comment on column mc.MMS_SEND_SCHEDULE.mms_template_id
-  is 'Ä£°å±àºÅ';
+  is 'æ¨¡æ¿ç¼–å·';
 comment on column mc.MMS_SEND_SCHEDULE.subject
-  is '²ÊĞÅ±êÌâ';
+  is 'å½©ä¿¡æ ‡é¢˜';
 comment on column mc.MMS_SEND_SCHEDULE.mobile_to
-  is 'ÊÖ»úºÅ,ÒÔ¶ººÅ·Ö¸ô';
+  is 'æ‰‹æœºå·,ä»¥é€—å·åˆ†éš”';
 comment on column mc.MMS_SEND_SCHEDULE.groups
-  is '¿Í»§Èº×é, ÒÔÓ¢ÎÄ·ÖºÅ·Ö¸î';
+  is 'å®¢æˆ·ç¾¤ç»„, ä»¥è‹±æ–‡åˆ†å·åˆ†å‰²';
 comment on column mc.MMS_SEND_SCHEDULE.groups_name
-  is '¿Í»§×éÃû×Ö, ÒÔÓ¢ÎÄ·ÖºÅ·Ö¸î';
+  is 'å®¢æˆ·ç»„åå­—, ä»¥è‹±æ–‡åˆ†å·åˆ†å‰²';
 comment on column mc.MMS_SEND_SCHEDULE.data_file
-  is 'ÊÖ»úºÅÂëÎÄ¼ş';
+  is 'æ‰‹æœºå·ç æ–‡ä»¶';
 comment on column mc.MMS_SEND_SCHEDULE.data_file_type
-  is 'ºÅÂëÎÄ¼şÀàĞÍ';
+  is 'å·ç æ–‡ä»¶ç±»å‹';
 comment on column mc.MMS_SEND_SCHEDULE.send_msg
-  is '²ÊĞÅÄÚÈİ';
+  is 'å½©ä¿¡å†…å®¹';
 comment on column mc.MMS_SEND_SCHEDULE.prior_id
-  is 'ÓÅÏÈ¼¶';
+  is 'ä¼˜å…ˆçº§';
 comment on column mc.MMS_SEND_SCHEDULE.send_status
-  is '·¢ËÍ×´Ì¬, -2:Éú³ÉÖĞ, 0:´ı·¢ËÍ, 1:ÒÑ·¢ËÍ, 2:·¢ËÍÖĞ, 5:·¢ËÍ³É¹¦, 6:·¢ËÍÊ§°Ü, 7:ºÚÃûµ¥';
+  is 'å‘é€çŠ¶æ€, -2:ç”Ÿæˆä¸­, 0:å¾…å‘é€, 1:å·²å‘é€, 2:å‘é€ä¸­, 5:å‘é€æˆåŠŸ, 6:å‘é€å¤±è´¥, 7:é»‘åå•';
 comment on column mc.MMS_SEND_SCHEDULE.sys_time
-  is 'Èë¿âÊ±¼ä';
+  is 'å…¥åº“æ—¶é—´';
 comment on column mc.MMS_SEND_SCHEDULE.pre_send_time
-  is 'Ô¤¶¨·¢ËÍÊ±¼ä';
+  is 'é¢„å®šå‘é€æ—¶é—´';
 comment on column mc.MMS_SEND_SCHEDULE.channel_id
-  is 'Í¨µÀ±àºÅ';
+  is 'é€šé“ç¼–å·';
 comment on column mc.MMS_SEND_SCHEDULE.mobile_quantities
-  is '±¾ÌõĞÅÏ¢µÄÊÖ»úÊıÁ¿';
+  is 'æœ¬æ¡ä¿¡æ¯çš„æ‰‹æœºæ•°é‡';
 comment on column mc.MMS_SEND_SCHEDULE.temp_temp
-  is '»º´æÄ£°åÄÚÈİ';
+  is 'ç¼“å­˜æ¨¡æ¿å†…å®¹';
 comment on column mc.MMS_SEND_SCHEDULE.temp_msg
-  is '»º´æ²ÊĞÅÄÚÈİ';
+  is 'ç¼“å­˜å½©ä¿¡å†…å®¹';
 comment on column mc.MMS_SEND_SCHEDULE.param_map
-  is 'Ìá½»ĞÅÏ¢Ê±ºòµÄ²ÎÊı';
+  is 'æäº¤ä¿¡æ¯æ—¶å€™çš„å‚æ•°';
 comment on column mc.MMS_SEND_SCHEDULE.mobile_list_id
-  is '»º´æÊÖ»úºÅÂëµÄ¶ÓÁĞ';
+  is 'ç¼“å­˜æ‰‹æœºå·ç çš„é˜Ÿåˆ—';
 comment on column mc.MMS_SEND_SCHEDULE.user_organization
-  is '»ú¹¹±àºÅ';
+  is 'æœºæ„ç¼–å·';
 comment on column mc.MMS_SEND_SCHEDULE.user_org_name
-  is '»ú¹¹Ãû³Æ';
+  is 'æœºæ„åç§°';
 comment on column mc.MMS_SEND_SCHEDULE.user_id
-  is 'ÓÃ»§±àºÅ';
+  is 'ç”¨æˆ·ç¼–å·';
 comment on column mc.MMS_SEND_SCHEDULE.user_name
-  is 'ÓÃ»§Ãû³Æ';
+  is 'ç”¨æˆ·åç§°';
 alter table mc.MMS_SEND_SCHEDULE
   add constraint PK_MMS_SEND_SCHEDULE primary key (MMS_SEND_SCHEDULE_ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -3711,7 +3711,7 @@ tablespace MC
   maxtrans 255;
 alter table mc.MMS_STOCK_PAPER
   add constraint PK_MMS_STOCK_PAPER primary key (MMS_STOCK_PAPER_ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -3746,30 +3746,30 @@ tablespace MC
     maxextents unlimited
   );
 comment on table mc.MMS_TEMPLATE
-  is '²ÊĞÅÄ£°å';
+  is 'å½©ä¿¡æ¨¡æ¿';
 comment on column mc.MMS_TEMPLATE.mms_template_id
-  is 'Ä£°å±àºÅ';
+  is 'æ¨¡æ¿ç¼–å·';
 comment on column mc.MMS_TEMPLATE.subject
-  is '²ÊĞÅ±êÌâ';
+  is 'å½©ä¿¡æ ‡é¢˜';
 comment on column mc.MMS_TEMPLATE.frame_size
-  is 'Ö¡Êı';
+  is 'å¸§æ•°';
 comment on column mc.MMS_TEMPLATE.content_size
-  is '²ÊĞÅ´óĞ¡';
+  is 'å½©ä¿¡å¤§å°';
 comment on column mc.MMS_TEMPLATE.duration
-  is '³ÖĞøÊ±¼ä, µ¥Î»:Ãë';
+  is 'æŒç»­æ—¶é—´, å•ä½:ç§’';
 comment on column mc.MMS_TEMPLATE.user_organization
-  is '»ú¹¹±àºÅ';
+  is 'æœºæ„ç¼–å·';
 comment on column mc.MMS_TEMPLATE.user_org_name
-  is '»ú¹¹Ãû³Æ';
+  is 'æœºæ„åç§°';
 comment on column mc.MMS_TEMPLATE.user_id
-  is 'ÓÃ»§±àºÅ';
+  is 'ç”¨æˆ·ç¼–å·';
 comment on column mc.MMS_TEMPLATE.user_name
-  is 'ÓÃ»§Ãû³Æ';
+  is 'ç”¨æˆ·åç§°';
 comment on column mc.MMS_TEMPLATE.is_default
-  is 'ÊÇ·ñÊÇÈ±Ê¡Ä£°å';
+  is 'æ˜¯å¦æ˜¯ç¼ºçœæ¨¡æ¿';
 alter table mc.MMS_TEMPLATE
   add constraint PK_MMS_TEMPLATE primary key (MMS_TEMPLATE_ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -3817,42 +3817,42 @@ tablespace MC
     maxextents unlimited
   );
 comment on table mc.MMS_TMPL_FRAME
-  is '²ÊĞÅÄ£°åÖĞµÄÖ¡';
+  is 'å½©ä¿¡æ¨¡æ¿ä¸­çš„å¸§';
 comment on column mc.MMS_TMPL_FRAME.mms_tmpl_frame_id
-  is 'Ö¡±àºÅ';
+  is 'å¸§ç¼–å·';
 comment on column mc.MMS_TMPL_FRAME.mms_template_id
-  is 'Ä£°å±àºÅ';
+  is 'æ¨¡æ¿ç¼–å·';
 comment on column mc.MMS_TMPL_FRAME.sequence_id
-  is 'Ë³ĞòºÅ';
+  is 'é¡ºåºå·';
 comment on column mc.MMS_TMPL_FRAME.duration
-  is '³ÖĞøÊ±¼ä, µ¥Î»:Ãë';
+  is 'æŒç»­æ—¶é—´, å•ä½:ç§’';
 comment on column mc.MMS_TMPL_FRAME.frame_size
-  is 'Ö¡µÄ´óĞ¡';
+  is 'å¸§çš„å¤§å°';
 comment on column mc.MMS_TMPL_FRAME.picture_name
-  is 'Í¼Æ¬Ãû³Æ';
+  is 'å›¾ç‰‡åç§°';
 comment on column mc.MMS_TMPL_FRAME.picture_type
-  is 'Í¼Æ¬ÀàĞÍ';
+  is 'å›¾ç‰‡ç±»å‹';
 comment on column mc.MMS_TMPL_FRAME.picture_size
-  is 'Í¼Æ¬´óĞ¡';
+  is 'å›¾ç‰‡å¤§å°';
 comment on column mc.MMS_TMPL_FRAME.picture_file
-  is 'Í¼Æ¬ÎÄ¼ş';
+  is 'å›¾ç‰‡æ–‡ä»¶';
 comment on column mc.MMS_TMPL_FRAME.audio_name
-  is 'ÒôÀÖÃû³Æ';
+  is 'éŸ³ä¹åç§°';
 comment on column mc.MMS_TMPL_FRAME.audio_type
-  is 'ÒôÀÖÀàĞÍ';
+  is 'éŸ³ä¹ç±»å‹';
 comment on column mc.MMS_TMPL_FRAME.audio_size
-  is 'ÒôÀÖ´óĞ¡';
+  is 'éŸ³ä¹å¤§å°';
 comment on column mc.MMS_TMPL_FRAME.audio_file
-  is 'ÒôÀÖÎÄ¼ş';
+  is 'éŸ³ä¹æ–‡ä»¶';
 comment on column mc.MMS_TMPL_FRAME.message_content
-  is 'ÎÄ×ÖÄÚÈİ';
+  is 'æ–‡å­—å†…å®¹';
 comment on column mc.MMS_TMPL_FRAME.message_size
-  is 'ÎÄ×Ö´óĞ¡';
+  is 'æ–‡å­—å¤§å°';
 comment on column mc.MMS_TMPL_FRAME.message_location
-  is 'ÎÄ×ÖÎ»ÖÃ, TOP:ÉÏ·½, BOTTOM:ÏÂ·½';
+  is 'æ–‡å­—ä½ç½®, TOP:ä¸Šæ–¹, BOTTOM:ä¸‹æ–¹';
 alter table mc.MMS_TMPL_FRAME
   add constraint PK_MMS_TMPL_FRAME primary key (MMS_TMPL_FRAME_ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -3885,20 +3885,20 @@ tablespace MC
   initrans 1
   maxtrans 255;
 comment on table mc.MOBILENUM_REGION
-  is 'ÊÖ»úºÅ¶Î¹éÊôµØ±í';
+  is 'æ‰‹æœºå·æ®µå½’å±åœ°è¡¨';
 comment on column mc.MOBILENUM_REGION.numscope
-  is 'ÊÖ»úºÅ¶Î';
+  is 'æ‰‹æœºå·æ®µ';
 comment on column mc.MOBILENUM_REGION.province
-  is 'ÊÖ»úºÅ¶ÎËùÊôÊ¡';
+  is 'æ‰‹æœºå·æ®µæ‰€å±çœ';
 comment on column mc.MOBILENUM_REGION.city
-  is 'ÊÖ»úºÅ¶ÎËùÊô³ÇÊĞ';
+  is 'æ‰‹æœºå·æ®µæ‰€å±åŸå¸‚';
 comment on column mc.MOBILENUM_REGION.card_type
-  is 'ÊÖ»ú¿¨ÀàĞÍ';
+  is 'æ‰‹æœºå¡ç±»å‹';
 comment on column mc.MOBILENUM_REGION.region_num
-  is 'ÓÊÕş±àÂë';
+  is 'é‚®æ”¿ç¼–ç ';
 alter table mc.MOBILENUM_REGION
   add constraint PK_MOBILENUM_REGION primary key (NUMSCOPE)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -3925,14 +3925,14 @@ tablespace MC
     maxextents unlimited
   );
 comment on table mc.MOBILE_COM
-  is 'ÊÖ»úºÅ¶ÎËùÊôÔËÓªÉÌ±íµÄÊı¾İ×Öµä±í';
+  is 'æ‰‹æœºå·æ®µæ‰€å±è¿è¥å•†è¡¨çš„æ•°æ®å­—å…¸è¡¨';
 comment on column mc.MOBILE_COM.numscope
-  is 'ÊÖ»úºÅ¶Î';
+  is 'æ‰‹æœºå·æ®µ';
 comment on column mc.MOBILE_COM.mobile_com
-  is 'ÔËÓªÉÌ±àºÅ, 1:ÒÆ¶¯, 2:ÁªÍ¨, 3:µçĞÅ';
+  is 'è¿è¥å•†ç¼–å·, 1:ç§»åŠ¨, 2:è”é€š, 3:ç”µä¿¡';
 alter table mc.MOBILE_COM
   add constraint PK_MOBILE_COM primary key (NUMSCOPE)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -3961,7 +3961,7 @@ tablespace MC
   maxtrans 255;
 alter table mc.MOBILE_EXCEL_INFO
   add constraint PK_MOBILE_EXCEL_INFO primary key (EXCEL_ID, MOBILE)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -3984,20 +3984,20 @@ tablespace MC
   initrans 1
   maxtrans 255;
 comment on table mc.MOBILE_INVALID
-  is 'ÎŞĞ§ÊÖ»úºÅÂë';
+  is 'æ— æ•ˆæ‰‹æœºå·ç ';
 comment on column mc.MOBILE_INVALID.mobile_id
-  is 'ÎŞĞ§ÊÖ»úºÅ±íµÄÖ÷¼ü';
+  is 'æ— æ•ˆæ‰‹æœºå·è¡¨çš„ä¸»é”®';
 comment on column mc.MOBILE_INVALID.mobile
-  is 'ÎŞĞ§ÊÖ»úºÅ';
+  is 'æ— æ•ˆæ‰‹æœºå·';
 comment on column mc.MOBILE_INVALID.mobile_type
-  is 'ÀàĞÍ, 1:¶ÌĞÅ, 2:²ÊĞÅ';
+  is 'ç±»å‹, 1:çŸ­ä¿¡, 2:å½©ä¿¡';
 comment on column mc.MOBILE_INVALID.mobile_remark
-  is 'ÎŞĞ§ÊÖ»úºÅµÄ×¢ÊÍ';
+  is 'æ— æ•ˆæ‰‹æœºå·çš„æ³¨é‡Š';
 comment on column mc.MOBILE_INVALID.create_time
-  is 'Ìí¼ÓÎŞĞ§ÊÖ»úºÅÊ±µÄÊ±¼ä';
+  is 'æ·»åŠ æ— æ•ˆæ‰‹æœºå·æ—¶çš„æ—¶é—´';
 alter table mc.MOBILE_INVALID
   add constraint PK_MOBILE_INVALID primary key (MOBILE_ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -4017,14 +4017,14 @@ tablespace MC
   initrans 1
   maxtrans 255;
 comment on table mc.MOBILE_TEMP
-  is 'ÊÖ»úºÅÂëÁÙÊ±´æ·Å±í';
+  is 'æ‰‹æœºå·ç ä¸´æ—¶å­˜æ”¾è¡¨';
 comment on column mc.MOBILE_TEMP.mobile
-  is 'ÊÖ»úºÅ';
+  is 'æ‰‹æœºå·';
 comment on column mc.MOBILE_TEMP.type
-  is 'ÀàĞÍ';
+  is 'ç±»å‹';
 alter table mc.MOBILE_TEMP
   add constraint PK_MOBILE_TEMP primary key (MOBILE)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -4044,14 +4044,14 @@ tablespace MC
   initrans 1
   maxtrans 255;
 comment on table mc.MOBILE_TO_OPERATORS
-  is 'Î¬»¤´øºÅ×ªÍøºÅÂë±í';
+  is 'ç»´æŠ¤å¸¦å·è½¬ç½‘å·ç è¡¨';
 comment on column mc.MOBILE_TO_OPERATORS.mobile
-  is 'ÊÖ»úºÅ';
+  is 'æ‰‹æœºå·';
 comment on column mc.MOBILE_TO_OPERATORS.mobile_com
-  is 'ÔËÓªÉÌ±àºÅ, 1:ÒÆ¶¯,2:ÁªÍ¨, 3:µçĞÅ';
+  is 'è¿è¥å•†ç¼–å·, 1:ç§»åŠ¨,2:è”é€š, 3:ç”µä¿¡';
 alter table mc.MOBILE_TO_OPERATORS
   add constraint PK_MOBILE_TO_OPERATORS primary key (MOBILE)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -4074,20 +4074,20 @@ tablespace MC
   initrans 1
   maxtrans 255;
 comment on table mc.MOBILE_WHITE_LIST
-  is 'ËùÓĞµÄ°×Ãûµ¥';
+  is 'æ‰€æœ‰çš„ç™½åå•';
 comment on column mc.MOBILE_WHITE_LIST.white_list_id
-  is '°×Ãûµ¥±àºÅ';
+  is 'ç™½åå•ç¼–å·';
 comment on column mc.MOBILE_WHITE_LIST.mobile
-  is 'ÊÖ»úºÅÂë';
+  is 'æ‰‹æœºå·ç ';
 comment on column mc.MOBILE_WHITE_LIST.mobile_com
-  is 'ÔËÓªÉÌ±àºÅ, 1:ÒÆ¶¯, 2:ÁªÍ¨, 3:µçĞÅ';
+  is 'è¿è¥å•†ç¼–å·, 1:ç§»åŠ¨, 2:è”é€š, 3:ç”µä¿¡';
 comment on column mc.MOBILE_WHITE_LIST.batch_id
-  is 'ÅúºÅ';
+  is 'æ‰¹å·';
 comment on column mc.MOBILE_WHITE_LIST.create_time
-  is 'Ê±¼ä';
+  is 'æ—¶é—´';
 alter table mc.MOBILE_WHITE_LIST
   add constraint PK_MOBILE_WHITE_LIST primary key (WHITE_LIST_ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -4115,20 +4115,20 @@ tablespace MC
   initrans 1
   maxtrans 255;
 comment on table mc.MOBILE_WHITE_LIST_CHANNEL
-  is 'Í¨µÀµÄ°×Ãûµ¥';
+  is 'é€šé“çš„ç™½åå•';
 comment on column mc.MOBILE_WHITE_LIST_CHANNEL.white_list_channel_id
-  is '°×Ãûµ¥±àºÅ';
+  is 'ç™½åå•ç¼–å·';
 comment on column mc.MOBILE_WHITE_LIST_CHANNEL.mobile
-  is 'ÊÖ»úºÅÂë';
+  is 'æ‰‹æœºå·ç ';
 comment on column mc.MOBILE_WHITE_LIST_CHANNEL.channel_id
-  is 'ÔËÓªÉÌ±àºÅ, 1:ÒÆ¶¯, 2:ÁªÍ¨, 3:µçĞÅ';
+  is 'è¿è¥å•†ç¼–å·, 1:ç§»åŠ¨, 2:è”é€š, 3:ç”µä¿¡';
 comment on column mc.MOBILE_WHITE_LIST_CHANNEL.status
-  is '×´Ì¬, 0:Î´Í¬²½µ½ÒÆ¶¯µÄÍ¨µÀ, 1:Í¬²½³É¹¦, -1:Í¬²½Ê§°Ü';
+  is 'çŠ¶æ€, 0:æœªåŒæ­¥åˆ°ç§»åŠ¨çš„é€šé“, 1:åŒæ­¥æˆåŠŸ, -1:åŒæ­¥å¤±è´¥';
 comment on column mc.MOBILE_WHITE_LIST_CHANNEL.create_time
-  is '´´½¨Ê±¼ä';
+  is 'åˆ›å»ºæ—¶é—´';
 alter table mc.MOBILE_WHITE_LIST_CHANNEL
   add constraint PK_MOBILE_WHITE_LIST_CHANNEL primary key (WHITE_LIST_CHANNEL_ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -4153,14 +4153,14 @@ tablespace MC
   initrans 1
   maxtrans 255;
 comment on table mc.MOBILE_WHITE_LIST_CONFIG
-  is '°×Ãûµ¥Ïà¹ØÅäÖÃ±í';
+  is 'ç™½åå•ç›¸å…³é…ç½®è¡¨';
 comment on column mc.MOBILE_WHITE_LIST_CONFIG.config_key
-  is 'ÅäÖÃÏî';
+  is 'é…ç½®é¡¹';
 comment on column mc.MOBILE_WHITE_LIST_CONFIG.config_value
-  is 'ÅäÖÃÖµ';
+  is 'é…ç½®å€¼';
 alter table mc.MOBILE_WHITE_LIST_CONFIG
   add constraint PK_MOBILE_WHITE_LIST_CONFIG primary key (CONFIG_KEY)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -4188,30 +4188,30 @@ tablespace MC
   initrans 1
   maxtrans 255;
 comment on table mc.MONITOR_DETAIL
-  is '¼à¿ØÊı¾İÏêÏ¸±í,Ö÷ÒªÓÃÓÚ²éÑ¯Ö®Ç°µÄ×ßÊÆÍ¼²éÑ¯';
+  is 'ç›‘æ§æ•°æ®è¯¦ç»†è¡¨,ä¸»è¦ç”¨äºæŸ¥è¯¢ä¹‹å‰çš„èµ°åŠ¿å›¾æŸ¥è¯¢';
 comment on column mc.MONITOR_DETAIL.id
-  is 'ÏµÍ³id';
+  is 'ç³»ç»Ÿid';
 comment on column mc.MONITOR_DETAIL.not_sendcount
-  is '´ı·¢¶ÌĞÅÌõÊı(×´Ì¬°üÀ¨0,2)';
+  is 'å¾…å‘çŸ­ä¿¡æ¡æ•°(çŠ¶æ€åŒ…æ‹¬0,2)';
 comment on column mc.MONITOR_DETAIL.submitedcount
-  is 'ÒÑÌá½»¶ÌĞÅÌõÊı';
+  is 'å·²æäº¤çŸ­ä¿¡æ¡æ•°';
 comment on column mc.MONITOR_DETAIL.send_succount
-  is '³É¹¦¶ÌĞÅÌõÊı';
+  is 'æˆåŠŸçŸ­ä¿¡æ¡æ•°';
 comment on column mc.MONITOR_DETAIL.send_failcount
-  is 'Ê§°Ü¶ÌĞÅÌõÊı(×´Ì¬°üÀ¨6,7,8)';
+  is 'å¤±è´¥çŸ­ä¿¡æ¡æ•°(çŠ¶æ€åŒ…æ‹¬6,7,8)';
 comment on column mc.MONITOR_DETAIL.sys_time
-  is '»ñÈ¡ĞÅÏ¢µÄÊ±¼ä';
+  is 'è·å–ä¿¡æ¯çš„æ—¶é—´';
 comment on column mc.MONITOR_DETAIL.mo_count
-  is 'ÉÏĞĞ¶ÌĞÅµÄÌõÊı';
+  is 'ä¸Šè¡ŒçŸ­ä¿¡çš„æ¡æ•°';
 comment on column mc.MONITOR_DETAIL.channel
-  is 'Í¨µÀºÅÂë';
+  is 'é€šé“å·ç ';
 comment on column mc.MONITOR_DETAIL.speed
-  is 'ËÙ¶È';
+  is 'é€Ÿåº¦';
 comment on column mc.MONITOR_DETAIL.create_time
-  is '´´½¨Ê±¼ä';
+  is 'åˆ›å»ºæ—¶é—´';
 alter table mc.MONITOR_DETAIL
   add constraint PK_MONITOR_DETAIL primary key (ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -4244,7 +4244,7 @@ tablespace MC
   );
 alter table mc.MONTH_MAIN_INFO
   add primary key (MONTH_MAIN_INFO_ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -4290,38 +4290,38 @@ tablespace MC
     maxextents unlimited
   );
 comment on table mc.MONTH_RECKONING_INFO
-  is 'ÔÂ½áµ¥±í';
+  is 'æœˆç»“å•è¡¨';
 comment on column mc.MONTH_RECKONING_INFO.month_reckoning_id
   is 'id';
 comment on column mc.MONTH_RECKONING_INFO.user_id
-  is 'ÕË»§id';
+  is 'è´¦æˆ·id';
 comment on column mc.MONTH_RECKONING_INFO.organization_id
-  is '»ú¹¹Ãû³Æ';
+  is 'æœºæ„åç§°';
 comment on column mc.MONTH_RECKONING_INFO.month_payment
-  is '±¾ÆÚ³äÖµ';
+  is 'æœ¬æœŸå……å€¼';
 comment on column mc.MONTH_RECKONING_INFO.month_begin_balance
-  is 'Æğ³õÕË»§Óà¶î';
+  is 'èµ·åˆè´¦æˆ·ä½™é¢';
 comment on column mc.MONTH_RECKONING_INFO.month_end_balance
-  is 'ÆÚÄ©ÕË»§Óà¶î';
+  is 'æœŸæœ«è´¦æˆ·ä½™é¢';
 comment on column mc.MONTH_RECKONING_INFO.send_quantity
-  is 'µ±ÔÂ·¢ËÍÊıÁ¿';
+  is 'å½“æœˆå‘é€æ•°é‡';
 comment on column mc.MONTH_RECKONING_INFO.cost_fee
-  is '·ÑÓÃºÏ¼Æ';
+  is 'è´¹ç”¨åˆè®¡';
 comment on column mc.MONTH_RECKONING_INFO.record_date
-  is '¼ÇÂ¼Ê±¼ä';
+  is 'è®°å½•æ—¶é—´';
 comment on column mc.MONTH_RECKONING_INFO.inner_payment
-  is '×éÄÚÕË»§³äÖµ';
+  is 'ç»„å†…è´¦æˆ·å……å€¼';
 comment on column mc.MONTH_RECKONING_INFO.mobile_com
-  is 'ÔËÓªÉÌID£¬1ÎªÒÆ¶¯£¬2ÎªÁªÍ¨,3ÎªµçĞÅ,0ÎªÈ«Íø ';
+  is 'è¿è¥å•†IDï¼Œ1ä¸ºç§»åŠ¨ï¼Œ2ä¸ºè”é€š,3ä¸ºç”µä¿¡,0ä¸ºå…¨ç½‘ ';
 comment on column mc.MONTH_RECKONING_INFO.channel_id
-  is 'Í¨µÀID';
+  is 'é€šé“ID';
 comment on column mc.MONTH_RECKONING_INFO.account_time
-  is '½áËãÈÕÆÚ';
+  is 'ç»“ç®—æ—¥æœŸ';
 comment on column mc.MONTH_RECKONING_INFO.unit_price
-  is '¶ÌĞÅµ¥¼Û';
+  is 'çŸ­ä¿¡å•ä»·';
 alter table mc.MONTH_RECKONING_INFO
   add constraint PK_MONTH_RECKONING_INFO primary key (MONTH_RECKONING_ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -4370,7 +4370,7 @@ tablespace MC
   );
 alter table mc.MO_BIZ
   add constraint PK_MO_BIZ primary key (MO_BIZ_ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -4408,7 +4408,7 @@ tablespace MC
   );
 alter table mc.MO_BIZ_CONFIG
   add constraint PK_MO_BIZ_CONFIG primary key (ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -4462,7 +4462,7 @@ tablespace MC
   );
 alter table mc.MO_BIZ_DBPUSH
   add constraint PK_MO_BIZ_DBPUSH primary key (PUSH_ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -4501,7 +4501,7 @@ tablespace MC
   maxtrans 255;
 alter table mc.MO_BIZ_HTTPPUSH
   add constraint PK_MO_BIZ_HTTPPUSH primary key (PUSH_ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -4537,7 +4537,7 @@ tablespace MC
   maxtrans 255;
 alter table mc.MO_BIZ_TASK
   add constraint PK_MO_BIZ_TASK primary key (MO_BIZ_TASK_ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -4564,7 +4564,7 @@ tablespace MC
   maxtrans 255;
 alter table mc.MO_BIZ_WSPUSH
   add constraint PK_MO_BIZ_WSPUSH primary key (PUSH_ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -4596,21 +4596,21 @@ tablespace MC
     maxextents unlimited
   );
 comment on table mc.MO_LAST_EXPORT_TIME
-  is '»ú¹¹ÉÏĞĞ¶ÌĞÅµÄµ¼³öÊ±¼äµÄ¼ÇÂ¼±í';
+  is 'æœºæ„ä¸Šè¡ŒçŸ­ä¿¡çš„å¯¼å‡ºæ—¶é—´çš„è®°å½•è¡¨';
 comment on column mc.MO_LAST_EXPORT_TIME.id
-  is 'Ö÷¼üid';
+  is 'ä¸»é”®id';
 comment on column mc.MO_LAST_EXPORT_TIME.org_id
-  is '»ú¹¹id';
+  is 'æœºæ„id';
 comment on column mc.MO_LAST_EXPORT_TIME.user_id
-  is 'ÓÃ»§id';
+  is 'ç”¨æˆ·id';
 comment on column mc.MO_LAST_EXPORT_TIME.last_export_time
-  is 'ÉÏ´Îµ¼³öÊ±¼ä';
+  is 'ä¸Šæ¬¡å¯¼å‡ºæ—¶é—´';
 comment on column mc.MO_LAST_EXPORT_TIME.status
-  is 'ÊÇ·ñÊ¹ÓÃ×´Ì¬ 0 ²»ÓÃ  1 Ê¹ÓÃ';
+  is 'æ˜¯å¦ä½¿ç”¨çŠ¶æ€ 0 ä¸ç”¨  1 ä½¿ç”¨';
 comment on column mc.MO_LAST_EXPORT_TIME.create_time
-  is '¸ÃÌõ´´½¨ÈÕÆÚ';
+  is 'è¯¥æ¡åˆ›å»ºæ—¥æœŸ';
 comment on column mc.MO_LAST_EXPORT_TIME.description
-  is 'ÃèÊöĞÅÏ¢';
+  is 'æè¿°ä¿¡æ¯';
 alter table mc.MO_LAST_EXPORT_TIME
   add constraint PK_MO_LAST_EXPORT_TIME primary key (ID)
   disable;
@@ -4633,7 +4633,7 @@ tablespace MC
   maxtrans 255;
 alter table mc.MO_LOGGER
   add constraint PK_MO_LOGGER primary key (ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -4667,7 +4667,7 @@ tablespace MC
   );
 alter table mc.NOTICE
   add primary key (ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -4705,7 +4705,7 @@ tablespace MC
   );
 alter table mc.NOTICE_USER
   add primary key (ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -4760,44 +4760,44 @@ tablespace MC
     maxextents unlimited
   );
 comment on table mc.ORDER_INFO
-  is 'ÔÚÏßÖ§¸¶¶©µ¥±í';
+  is 'åœ¨çº¿æ”¯ä»˜è®¢å•è¡¨';
 comment on column mc.ORDER_INFO.id
   is 'id';
 comment on column mc.ORDER_INFO.orderid
-  is '¶©µ¥±àºÅ ÏµÍ³Î¨Ò»';
+  is 'è®¢å•ç¼–å· ç³»ç»Ÿå”¯ä¸€';
 comment on column mc.ORDER_INFO.subject
-  is '²úÆ·Ãû³Æ';
+  is 'äº§å“åç§°';
 comment on column mc.ORDER_INFO.price
-  is '¼Û¸ñ£¨½ğ¶î³äÖµÎŞ¸ÃÏî£©';
+  is 'ä»·æ ¼ï¼ˆé‡‘é¢å……å€¼æ— è¯¥é¡¹ï¼‰';
 comment on column mc.ORDER_INFO.total_fee
-  is '³äÖµ½ğ¶î';
+  is 'å……å€¼é‡‘é¢';
 comment on column mc.ORDER_INFO.quantity
-  is '³äÖµ×ÜÌõÊı£¨½ğ¶î³äÖµÎŞ¸ÃÏî£©';
+  is 'å……å€¼æ€»æ¡æ•°ï¼ˆé‡‘é¢å……å€¼æ— è¯¥é¡¹ï¼‰';
 comment on column mc.ORDER_INFO.gift_quantity
-  is 'ÔùËÍÊıÁ¿£¨½ğ¶î³äÖµÎŞ¸ÃÏî£©';
+  is 'èµ é€æ•°é‡ï¼ˆé‡‘é¢å……å€¼æ— è¯¥é¡¹ï¼‰';
 comment on column mc.ORDER_INFO.orgid
-  is '³äÖµ»ú¹¹id';
+  is 'å……å€¼æœºæ„id';
 comment on column mc.ORDER_INFO.creater
-  is '³äÖµÈË';
+  is 'å……å€¼äºº';
 comment on column mc.ORDER_INFO.type
-  is '½ğ¶î³äÖµ / Åä¶î³äÖµ £º 0/1';
+  is 'é‡‘é¢å……å€¼ / é…é¢å……å€¼ ï¼š 0/1';
 comment on column mc.ORDER_INFO.infotype
-  is '¶ÌĞÅ / ²ÊĞÅ £º 0/1  £¨½ğ¶î³äÖµÎŞ¸ÃÏî£©';
+  is 'çŸ­ä¿¡ / å½©ä¿¡ ï¼š 0/1  ï¼ˆé‡‘é¢å……å€¼æ— è¯¥é¡¹ï¼‰';
 comment on column mc.ORDER_INFO.trade_state
-  is '½»Ò××´Ì¬ 0£º´ı¸¶¿î£»1£º³äÖµÖĞ£»2£º³äÖµ³É¹¦£»3£º³äÖµÊ§°Ü;4:½»Ò×¹Ø±Õ';
+  is 'äº¤æ˜“çŠ¶æ€ 0ï¼šå¾…ä»˜æ¬¾ï¼›1ï¼šå……å€¼ä¸­ï¼›2ï¼šå……å€¼æˆåŠŸï¼›3ï¼šå……å€¼å¤±è´¥;4:äº¤æ˜“å…³é—­';
 comment on column mc.ORDER_INFO.createtime
-  is '´´½¨¶©µ¥Ê±¼ä';
+  is 'åˆ›å»ºè®¢å•æ—¶é—´';
 comment on column mc.ORDER_INFO.tradetime
-  is '½»Ò×¶©µ¥Ê±¼ä';
+  is 'äº¤æ˜“è®¢å•æ—¶é—´';
 comment on column mc.ORDER_INFO.endtime
-  is '½»Ò×½áÊøÊ±¼ä';
+  is 'äº¤æ˜“ç»“æŸæ—¶é—´';
 comment on column mc.ORDER_INFO.state
-  is '¶©µ¥×´Ì¬   £¨Ä¬ÈÏ0£ºÏÔÊ¾£»1£º½»Ò×³É¹¦ºóÒ³ÃæÉ¾³ı¶©µ¥(Òş²Ø)£©';
+  is 'è®¢å•çŠ¶æ€   ï¼ˆé»˜è®¤0ï¼šæ˜¾ç¤ºï¼›1ï¼šäº¤æ˜“æˆåŠŸåé¡µé¢åˆ é™¤è®¢å•(éšè—)ï¼‰';
 comment on column mc.ORDER_INFO.remark
-  is '±¸×¢';
+  is 'å¤‡æ³¨';
 alter table mc.ORDER_INFO
   add constraint ORDER_INFO_PK primary key (ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -4852,52 +4852,52 @@ tablespace MC
     maxextents unlimited
   );
 comment on table mc.ORGANIZATION
-  is '»ú¹¹ĞÅÏ¢±í';
+  is 'æœºæ„ä¿¡æ¯è¡¨';
 comment on column mc.ORGANIZATION.user_id
-  is '»ú¹¹±àºÅ';
+  is 'æœºæ„ç¼–å·';
 comment on column mc.ORGANIZATION.user_name
-  is '»ú¹¹Ãû³Æ';
+  is 'æœºæ„åç§°';
 comment on column mc.ORGANIZATION.user_mome
-  is '×¢ÊÍ';
+  is 'æ³¨é‡Š';
 comment on column mc.ORGANIZATION.user_balance
-  is '¿ÉÓÃ·ÑÓÃ';
+  is 'å¯ç”¨è´¹ç”¨';
 comment on column mc.ORGANIZATION.create_time
-  is '´´½¨Ê±¼ä';
+  is 'åˆ›å»ºæ—¶é—´';
 comment on column mc.ORGANIZATION.user_stat
-  is '×´Ì¬, 0:ÓĞĞ§, 1:ÎŞĞ§';
+  is 'çŠ¶æ€, 0:æœ‰æ•ˆ, 1:æ— æ•ˆ';
 comment on column mc.ORGANIZATION.extend_number
-  is 'À©Õ¹ºÅ';
+  is 'æ‰©å±•å·';
 comment on column mc.ORGANIZATION.eng_signature
-  is 'Ó¢ÎÄÇ©Ãû';
+  is 'è‹±æ–‡ç­¾å';
 comment on column mc.ORGANIZATION.chn_signature
-  is 'ÖĞÎÄÇ©Ãû';
+  is 'ä¸­æ–‡ç­¾å';
 comment on column mc.ORGANIZATION.user_quota
-  is '¶ÌĞÅÅä¶î';
+  is 'çŸ­ä¿¡é…é¢';
 comment on column mc.ORGANIZATION.pay_type
-  is '³äÖµÀàĞÍ, 0:Ô¤¸¶·Ñ, 1:ºó¸¶·Ñ';
+  is 'å……å€¼ç±»å‹, 0:é¢„ä»˜è´¹, 1:åä»˜è´¹';
 comment on column mc.ORGANIZATION.pay_mode
-  is '¼Æ·Ñµ¥Î», 0:Åä¶î¸¶·Ñ, 1:½ğ¶î¸¶·Ñ';
+  is 'è®¡è´¹å•ä½, 0:é…é¢ä»˜è´¹, 1:é‡‘é¢ä»˜è´¹';
 comment on column mc.ORGANIZATION.fee_mode
-  is '¿Û·Ñ·½Ê½, 0:×Ô¸¶·Ñ, 1:×é¸¶·Ñ';
+  is 'æ‰£è´¹æ–¹å¼, 0:è‡ªä»˜è´¹, 1:ç»„ä»˜è´¹';
 comment on column mc.ORGANIZATION.channel_type
-  is 'ÊÇ·ñÇø·ÖÍ¨µÀ, 0:²»Çø·Ö, 1:Çø·Ö';
+  is 'æ˜¯å¦åŒºåˆ†é€šé“, 0:ä¸åŒºåˆ†, 1:åŒºåˆ†';
 comment on column mc.ORGANIZATION.mobile_type
-  is 'ÊÇ·ñÇø·ÖºÅ¶Î, 0:²»Çø·Ö, 1:Çø·Ö';
+  is 'æ˜¯å¦åŒºåˆ†å·æ®µ, 0:ä¸åŒºåˆ†, 1:åŒºåˆ†';
 comment on column mc.ORGANIZATION.super_org_no
-  is '»ú¹¹·ÖÀà£¬ÓÃÓÚÁªÏµÈËÊ÷×´ÏÔÊ¾£¬6000£ºÓªÒµ²¿£»7000£º´ú±í´¦£»8000£º±¾²¿£»9000£º×Ó¹«Ë¾';
+  is 'æœºæ„åˆ†ç±»ï¼Œç”¨äºè”ç³»äººæ ‘çŠ¶æ˜¾ç¤ºï¼Œ6000ï¼šè¥ä¸šéƒ¨ï¼›7000ï¼šä»£è¡¨å¤„ï¼›8000ï¼šæœ¬éƒ¨ï¼›9000ï¼šå­å…¬å¸';
 comment on column mc.ORGANIZATION.organ_type
-  is '0:ÇşµÀ 1:Ö±¿Í';
+  is '0:æ¸ é“ 1:ç›´å®¢';
 comment on column mc.ORGANIZATION.mo_type
-  is '0:²»½ÓÊÕÉÏĞĞ 1:ÉÏĞĞµ½»ú¹¹ 2:ÉÏĞĞµ½ÓÃ»§';
+  is '0:ä¸æ¥æ”¶ä¸Šè¡Œ 1:ä¸Šè¡Œåˆ°æœºæ„ 2:ä¸Šè¡Œåˆ°ç”¨æˆ·';
 comment on column mc.ORGANIZATION.recharge_explain
-  is '³äÖµËµÃ÷';
+  is 'å……å€¼è¯´æ˜';
 comment on column mc.ORGANIZATION.mms_quota
-  is '²ÊĞÅÅä¶î';
+  is 'å½©ä¿¡é…é¢';
 comment on column mc.ORGANIZATION.deduct_mode
-  is '¿Û·Ñ·½Ê½ 0:Ìá½»¿Û·Ñ 1:³É¹¦¿Û·Ñ';
+  is 'æ‰£è´¹æ–¹å¼ 0:æäº¤æ‰£è´¹ 1:æˆåŠŸæ‰£è´¹';
 alter table mc.ORGANIZATION
   add constraint PK_ORGANIZATION primary key (USER_ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -4940,7 +4940,7 @@ tablespace MC
   );
 alter table mc.ORG_CONFIG
   add primary key (ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -4972,10 +4972,10 @@ tablespace MC
   initrans 1
   maxtrans 255;
 comment on table mc.ORG_MMS_SEND_CONFIG
-  is '»ú¹¹²ÊĞÅ·¢ËÍµ÷Åä±í';
+  is 'æœºæ„å½©ä¿¡å‘é€è°ƒé…è¡¨';
 alter table mc.ORG_MMS_SEND_CONFIG
   add constraint PK_ORG_MMS_SEND_CONFIG primary key (CONFIG_ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -5012,34 +5012,34 @@ tablespace MC
     maxextents unlimited
   );
 comment on table mc.ORG_REMAIN_BALANCE
-  is '½ğ¶î»ú¹¹Óà¶î±í';
+  is 'é‡‘é¢æœºæ„ä½™é¢è¡¨';
 comment on column mc.ORG_REMAIN_BALANCE.row_id
-  is 'Ö÷¼ü';
+  is 'ä¸»é”®';
 comment on column mc.ORG_REMAIN_BALANCE.user_id
-  is '»ú¹¹ID';
+  is 'æœºæ„ID';
 comment on column mc.ORG_REMAIN_BALANCE.status
-  is '×´Ì¬, 1:ÓĞĞ§, 0:ÎŞĞ§';
+  is 'çŠ¶æ€, 1:æœ‰æ•ˆ, 0:æ— æ•ˆ';
 comment on column mc.ORG_REMAIN_BALANCE.sms_quota
-  is '¿ÉÓÃ¶ÌĞÅÌõÊı';
+  is 'å¯ç”¨çŸ­ä¿¡æ¡æ•°';
 comment on column mc.ORG_REMAIN_BALANCE.unit_price
-  is 'µ¥¼Û';
+  is 'å•ä»·';
 comment on column mc.ORG_REMAIN_BALANCE.gw_type
-  is 'ºÅ¶ÎÀàĞÍ¡£0-È«ÍøÂ·£¬1-ÒÆ¶¯ºÅ¶Î£¬2-ÁªÍ¨ºÅ¶Î£¬3-Ğ¡ÁéÍ¨ºÅ¶Î';
+  is 'å·æ®µç±»å‹ã€‚0-å…¨ç½‘è·¯ï¼Œ1-ç§»åŠ¨å·æ®µï¼Œ2-è”é€šå·æ®µï¼Œ3-å°çµé€šå·æ®µ';
 comment on column mc.ORG_REMAIN_BALANCE.update_unitprice_date
-  is 'ĞŞ¸ÄĞ­Òé¼ÛÊ±¼ä';
+  is 'ä¿®æ”¹åè®®ä»·æ—¶é—´';
 comment on column mc.ORG_REMAIN_BALANCE.update_user
-  is 'ĞŞ¸ÄÈË';
+  is 'ä¿®æ”¹äºº';
 comment on column mc.ORG_REMAIN_BALANCE.remark
-  is '±¸×¢';
+  is 'å¤‡æ³¨';
 comment on column mc.ORG_REMAIN_BALANCE.last_update_quota_date
-  is '×î½üÒ»´ÎĞŞ¸ÄÓà¶îÊ±¼ä';
+  is 'æœ€è¿‘ä¸€æ¬¡ä¿®æ”¹ä½™é¢æ—¶é—´';
 comment on column mc.ORG_REMAIN_BALANCE.user_type
-  is 'ÓÃ»§ÀàĞÍ: 0ÓÃ»§  1»ú¹¹';
+  is 'ç”¨æˆ·ç±»å‹: 0ç”¨æˆ·  1æœºæ„';
 comment on column mc.ORG_REMAIN_BALANCE.mms_quota
-  is '¿ÉÓÃ²ÊĞÅÌõÊı';
+  is 'å¯ç”¨å½©ä¿¡æ¡æ•°';
 alter table mc.ORG_REMAIN_BALANCE
   add constraint PK_ROW_ID primary key (ROW_ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -5083,32 +5083,32 @@ tablespace MC
     maxextents unlimited
   );
 comment on column mc.PAYMENT_RECORD.payment_id
-  is 'Ö÷¼ü';
+  is 'ä¸»é”®';
 comment on column mc.PAYMENT_RECORD.user_id
-  is '³äÖµµÄÓÃ»§»òÕß»ú¹¹';
+  is 'å……å€¼çš„ç”¨æˆ·æˆ–è€…æœºæ„';
 comment on column mc.PAYMENT_RECORD.payment_time
-  is '³äÖµÊ±¼ä';
+  is 'å……å€¼æ—¶é—´';
 comment on column mc.PAYMENT_RECORD.payment_money
-  is '³äÖµµÄ½ğ¶î';
+  is 'å……å€¼çš„é‡‘é¢';
 comment on column mc.PAYMENT_RECORD.payment_quota
-  is '³äÖµµÄÅä¶î';
+  is 'å……å€¼çš„é…é¢';
 comment on column mc.PAYMENT_RECORD.operator_id
-  is '³äÖµ²Ù×÷Õß';
+  is 'å……å€¼æ“ä½œè€…';
 comment on column mc.PAYMENT_RECORD.payment_type
-  is '³äÖµÀàĞÍ 1:½ğ¶î  0:Åä¶î 2:½ğ¶î³åÕË 3:½ğ¶î²¹ÕË 4:Åä¶î³åÕË 5:Åä¶î²¹ÕË';
+  is 'å……å€¼ç±»å‹ 1:é‡‘é¢  0:é…é¢ 2:é‡‘é¢å†²è´¦ 3:é‡‘é¢è¡¥è´¦ 4:é…é¢å†²è´¦ 5:é…é¢è¡¥è´¦';
 comment on column mc.PAYMENT_RECORD.is_online
-  is 'ÊÇ·ñÊÇÔÚÏß³äÖµ 1:ÊÇ 0:·ñ';
+  is 'æ˜¯å¦æ˜¯åœ¨çº¿å……å€¼ 1:æ˜¯ 0:å¦';
 comment on column mc.PAYMENT_RECORD.user_type
-  is '±»¼ÇÂ¼µÄÓÃ»§ÀàĞÍ 1:»ú¹¹ 0:ÓÃ»§';
+  is 'è¢«è®°å½•çš„ç”¨æˆ·ç±»å‹ 1:æœºæ„ 0:ç”¨æˆ·';
 comment on column mc.PAYMENT_RECORD.recharge_explain
-  is '¼ÇÂ¼³äÖµËµÃ÷';
+  is 'è®°å½•å……å€¼è¯´æ˜';
 comment on column mc.PAYMENT_RECORD.quota_type
-  is 'Åä¶îÀàĞÍ 1:¶ÌĞÅ 0:²ÊĞÅ';
+  is 'é…é¢ç±»å‹ 1:çŸ­ä¿¡ 0:å½©ä¿¡';
 comment on column mc.PAYMENT_RECORD.is_success
-  is 'ÊÇ·ñ³äÖµ³É¹¦ 1:³É¹¦ 0:Ê§°Ü';
+  is 'æ˜¯å¦å……å€¼æˆåŠŸ 1:æˆåŠŸ 0:å¤±è´¥';
 alter table mc.PAYMENT_RECORD
   add constraint PK_PAYMENTID primary key (PAYMENT_ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -5147,22 +5147,22 @@ tablespace MC
     maxextents unlimited
   );
 comment on column mc.PB_LIST_OF_VALUE.row_id
-  is 'Ö÷¼ü';
+  is 'ä¸»é”®';
 comment on column mc.PB_LIST_OF_VALUE.status
-  is '×´Ì¬:0ÎŞĞ§,1,ÓĞĞ§';
+  is 'çŠ¶æ€:0æ— æ•ˆ,1,æœ‰æ•ˆ';
 comment on column mc.PB_LIST_OF_VALUE.stand_code
-  is '×Ö¶Î±àÂë';
+  is 'å­—æ®µç¼–ç ';
 comment on column mc.PB_LIST_OF_VALUE.type_id
-  is 'ÀàĞÍ';
+  is 'ç±»å‹';
 comment on column mc.PB_LIST_OF_VALUE.type_name
-  is 'ÀàĞÍÃû';
+  is 'ç±»å‹å';
 comment on column mc.PB_LIST_OF_VALUE.display_value
-  is 'ÏÔÊ¾Ãû';
+  is 'æ˜¾ç¤ºå';
 comment on column mc.PB_LIST_OF_VALUE.value_desc
-  is 'Öµ×¢ÊÍ';
+  is 'å€¼æ³¨é‡Š';
 alter table mc.PB_LIST_OF_VALUE
   add constraint PK_PB_LIST_OF_VALUE primary key (ROW_ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -5201,24 +5201,24 @@ tablespace MC
     maxextents unlimited
   );
 comment on table mc.PERMIT_WORD
-  is 'Ğí¿É´Ê±í';
+  is 'è®¸å¯è¯è¡¨';
 comment on column mc.PERMIT_WORD.id
-  is 'Ö÷¼ü';
+  is 'ä¸»é”®';
 comment on column mc.PERMIT_WORD.permit_word
-  is 'Ğí¿É´Ê';
+  is 'è®¸å¯è¯';
 comment on column mc.PERMIT_WORD.description
-  is '±¸×¢';
+  is 'å¤‡æ³¨';
 comment on column mc.PERMIT_WORD.createtime
-  is '´´½¨Ê±¼ä';
+  is 'åˆ›å»ºæ—¶é—´';
 comment on column mc.PERMIT_WORD.modifytime
-  is 'ĞŞ¸ÄÊ±¼ä';
+  is 'ä¿®æ”¹æ—¶é—´';
 comment on column mc.PERMIT_WORD.create_user_id
-  is '´´½¨Õß';
+  is 'åˆ›å»ºè€…';
 comment on column mc.PERMIT_WORD.permit_word_status
-  is '×´Ì¬, 0:Í£ÓÃ, 1:ÆôÓÃ';
+  is 'çŠ¶æ€, 0:åœç”¨, 1:å¯ç”¨';
 alter table mc.PERMIT_WORD
   add constraint PK_PERMIT_WORD primary key (ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -5260,20 +5260,20 @@ tablespace MC
   initrans 1
   maxtrans 255;
 comment on table mc.PHRASE_GROUP
-  is '³£ÓÃ¶ÌÓï×é';
+  is 'å¸¸ç”¨çŸ­è¯­ç»„';
 comment on column mc.PHRASE_GROUP.group_id
-  is '³£ÓÃ¶ÌÓï×é±àºÅ';
+  is 'å¸¸ç”¨çŸ­è¯­ç»„ç¼–å·';
 comment on column mc.PHRASE_GROUP.group_name
-  is '³£ÓÃ¶ÌÓï×éÃû³Æ';
+  is 'å¸¸ç”¨çŸ­è¯­ç»„åç§°';
 comment on column mc.PHRASE_GROUP.group_remark
-  is '±¸×¢';
+  is 'å¤‡æ³¨';
 comment on column mc.PHRASE_GROUP.user_id
-  is 'ÓÃ»§±àºÅ';
+  is 'ç”¨æˆ·ç¼–å·';
 comment on column mc.PHRASE_GROUP.create_time
-  is '´´½¨Ê±¼ä';
+  is 'åˆ›å»ºæ—¶é—´';
 alter table mc.PHRASE_GROUP
   add constraint PK_PHRASE_GROUP primary key (GROUP_ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -5304,22 +5304,22 @@ tablespace MC
     maxextents unlimited
   );
 comment on table mc.PHRASE_INFO
-  is '³£ÓÃ¶ÌÓï';
+  is 'å¸¸ç”¨çŸ­è¯­';
 comment on column mc.PHRASE_INFO.phrase_id
-  is '¶ÌÓï±àºÅ';
+  is 'çŸ­è¯­ç¼–å·';
 comment on column mc.PHRASE_INFO.phrase_name
-  is '¶ÌÓïÃû³Æ';
+  is 'çŸ­è¯­åç§°';
 comment on column mc.PHRASE_INFO.phrase_content
-  is '¶ÌÓïÄÚÈİ';
+  is 'çŸ­è¯­å†…å®¹';
 comment on column mc.PHRASE_INFO.phrase_remark
-  is '±¸×¢';
+  is 'å¤‡æ³¨';
 comment on column mc.PHRASE_INFO.group_id
-  is '³£ÓÃ¶ÌÓï×é±àºÅ';
+  is 'å¸¸ç”¨çŸ­è¯­ç»„ç¼–å·';
 comment on column mc.PHRASE_INFO.create_time
-  is '´´½¨Ê±¼ä';
+  is 'åˆ›å»ºæ—¶é—´';
 alter table mc.PHRASE_INFO
   add constraint PK_PHRASE_INFO primary key (PHRASE_ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -5359,26 +5359,26 @@ tablespace MC
     maxextents unlimited
   );
 comment on table mc.PLAT_LOG
-  is '¶ÌĞÅÆ½Ì¨ÈÕÖ¾±í';
+  is 'çŸ­ä¿¡å¹³å°æ—¥å¿—è¡¨';
 comment on column mc.PLAT_LOG.plat_log_id
-  is 'ÈÕÖ¾±àºÅ';
+  is 'æ—¥å¿—ç¼–å·';
 comment on column mc.PLAT_LOG.user_id
-  is '²Ù×÷Õß±àºÅ';
+  is 'æ“ä½œè€…ç¼–å·';
 comment on column mc.PLAT_LOG.user_name
-  is '²Ù×÷ÕßÓÃ»§Ãû';
+  is 'æ“ä½œè€…ç”¨æˆ·å';
 comment on column mc.PLAT_LOG.user_organization
-  is '²Ù×÷ÕßËùÊô»ú¹¹±àºÅ';
+  is 'æ“ä½œè€…æ‰€å±æœºæ„ç¼–å·';
 comment on column mc.PLAT_LOG.user_organization_name
-  is '²Ù×÷ÕßËùÊô»ú¹¹Ãû³Æ';
+  is 'æ“ä½œè€…æ‰€å±æœºæ„åç§°';
 comment on column mc.PLAT_LOG.log_type
-  is 'ÈÕÖ¾ÀàĞÍ, 1:µÇÈë\µÇ³ö, 4:ÏµÍ³¿ªÆô\¹Ø±Õ, 8£ºÈÕ³£ĞÅÏ¢, 9£º´íÎóĞÅÏ¢';
+  is 'æ—¥å¿—ç±»å‹, 1:ç™»å…¥\ç™»å‡º, 4:ç³»ç»Ÿå¼€å¯\å…³é—­, 8ï¼šæ—¥å¸¸ä¿¡æ¯, 9ï¼šé”™è¯¯ä¿¡æ¯';
 comment on column mc.PLAT_LOG.description
-  is 'ÏêÏ¸ĞÅÏ¢';
+  is 'è¯¦ç»†ä¿¡æ¯';
 comment on column mc.PLAT_LOG.log_time
-  is 'ÈÕÖ¾Ê±¼ä';
+  is 'æ—¥å¿—æ—¶é—´';
 alter table mc.PLAT_LOG
   add constraint PK_PLAT_LOG primary key (PLAT_LOG_ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -5424,38 +5424,38 @@ tablespace MC
     maxextents unlimited
   );
 comment on table mc.PRICING_PACKAGE_INFO
-  is 'Ì×²Í±í';
+  is 'å¥—é¤è¡¨';
 comment on column mc.PRICING_PACKAGE_INFO.id
-  is 'Ö÷¼üid';
+  is 'ä¸»é”®id';
 comment on column mc.PRICING_PACKAGE_INFO.packagename
-  is 'Ì×²ÍÃû³Æ';
+  is 'å¥—é¤åç§°';
 comment on column mc.PRICING_PACKAGE_INFO.type
-  is 'Ì×²ÍÀàĞÍ£¨0£º¶ÌĞÅ/1£º²ÊĞÅ£©';
+  is 'å¥—é¤ç±»å‹ï¼ˆ0ï¼šçŸ­ä¿¡/1ï¼šå½©ä¿¡ï¼‰';
 comment on column mc.PRICING_PACKAGE_INFO.rule
-  is 'Ì×²Í¹æÔò±êÖ¾  0£º¶àÌõÒ»ÏÂ£»1£º¶àÉÙÌõµ½¶àÉÙÌõ¼ä£»2£º¶àÉÙÌõÒÔÉÏ';
+  is 'å¥—é¤è§„åˆ™æ ‡å¿—  0ï¼šå¤šæ¡ä¸€ä¸‹ï¼›1ï¼šå¤šå°‘æ¡åˆ°å¤šå°‘æ¡é—´ï¼›2ï¼šå¤šå°‘æ¡ä»¥ä¸Š';
 comment on column mc.PRICING_PACKAGE_INFO.infonum1
-  is 'Ì×²ÍÌõÊı1';
+  is 'å¥—é¤æ¡æ•°1';
 comment on column mc.PRICING_PACKAGE_INFO.infonum2
-  is 'Ì×²ÍÌõÊı2';
+  is 'å¥—é¤æ¡æ•°2';
 comment on column mc.PRICING_PACKAGE_INFO.price
-  is 'µ¥¼Û';
+  is 'å•ä»·';
 comment on column mc.PRICING_PACKAGE_INFO.coupon
-  is 'ÊÇ·ñÓÅ»İ(0:ÊÇ£»1:·ñ)';
+  is 'æ˜¯å¦ä¼˜æƒ (0:æ˜¯ï¼›1:å¦)';
 comment on column mc.PRICING_PACKAGE_INFO.infonum3
-  is 'ÓÅ»İÌõÊı1';
+  is 'ä¼˜æƒ æ¡æ•°1';
 comment on column mc.PRICING_PACKAGE_INFO.infonum4
-  is 'ÓÅ»İÌõÊı2';
+  is 'ä¼˜æƒ æ¡æ•°2';
 comment on column mc.PRICING_PACKAGE_INFO.createdate
-  is '´´½¨ÈÕÆÚ';
+  is 'åˆ›å»ºæ—¥æœŸ';
 comment on column mc.PRICING_PACKAGE_INFO.creater
-  is '´´½¨ÈË';
+  is 'åˆ›å»ºäºº';
 comment on column mc.PRICING_PACKAGE_INFO.remark
-  is '±¸×¢';
+  is 'å¤‡æ³¨';
 comment on column mc.PRICING_PACKAGE_INFO.state
-  is '×´Ì¬ 0£ºÆôÓÃ;1:Í£ÓÃ';
+  is 'çŠ¶æ€ 0ï¼šå¯ç”¨;1:åœç”¨';
 alter table mc.PRICING_PACKAGE_INFO
   add constraint PRICING_PACKAGE_INFO_PK primary key (ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -5490,30 +5490,30 @@ tablespace MC
   initrans 1
   maxtrans 255;
 comment on table mc.PRODUCT
-  is '²úÆ·ĞÅÏ¢';
+  is 'äº§å“ä¿¡æ¯';
 comment on column mc.PRODUCT.productid
-  is '±ØĞë£¬·şÎñ²úÆ·Î¨Ò»±êÊ¶£¬¸Ã±àºÅÓÉ¹ÜÀíÔ±ÊÖ¹¤±àĞ´£¬¶ÌĞÅ±àºÅÎªD001¡­£¬²ÊĞÅ²úÆ·ÎªC001¡­¸Ã×Ö¶ÎÎªÖ÷¼ü';
+  is 'å¿…é¡»ï¼ŒæœåŠ¡äº§å“å”¯ä¸€æ ‡è¯†ï¼Œè¯¥ç¼–å·ç”±ç®¡ç†å‘˜æ‰‹å·¥ç¼–å†™ï¼ŒçŸ­ä¿¡ç¼–å·ä¸ºD001â€¦ï¼Œå½©ä¿¡äº§å“ä¸ºC001â€¦è¯¥å­—æ®µä¸ºä¸»é”®';
 comment on column mc.PRODUCT.productname
-  is '±ØĞë£¬·şÎñ²úÆ·¼òÒªÃû³Æ';
+  is 'å¿…é¡»ï¼ŒæœåŠ¡äº§å“ç®€è¦åç§°';
 comment on column mc.PRODUCT.catalogid
-  is '·şÎñÄ¿Â¼µÄID';
+  is 'æœåŠ¡ç›®å½•çš„ID';
 comment on column mc.PRODUCT.description
-  is '·şÎñ²úÆ·ÌØĞÔµÈµÄËµÃ÷ÎÄ×Ö';
+  is 'æœåŠ¡äº§å“ç‰¹æ€§ç­‰çš„è¯´æ˜æ–‡å­—';
 comment on column mc.PRODUCT.reservedint
-  is '±¸ÓÃ';
+  is 'å¤‡ç”¨';
 comment on column mc.PRODUCT.reservedchar
-  is 'JSON¸ñÊ½´®¼ÇÂ¼´ËÄÜ·¢²¼²úÆ·ÄÚÈİµÄ»ú¹¹ID¸ñÊ½';
+  is 'JSONæ ¼å¼ä¸²è®°å½•æ­¤èƒ½å‘å¸ƒäº§å“å†…å®¹çš„æœºæ„IDæ ¼å¼';
 comment on column mc.PRODUCT.stautus
-  is '0:¿ÉÓÃ£¬1:¶³½á£»Ôİ±£Áô¹¦ÄÜ';
+  is '0:å¯ç”¨ï¼Œ1:å†»ç»“ï¼›æš‚ä¿ç•™åŠŸèƒ½';
 comment on column mc.PRODUCT.createtime
-  is '²úÆ·´´½¨Ê±¼ä';
+  is 'äº§å“åˆ›å»ºæ—¶é—´';
 comment on column mc.PRODUCT.modifytime
-  is '²úÆ·ĞŞ¸ÄÊ±¼ä';
+  is 'äº§å“ä¿®æ”¹æ—¶é—´';
 comment on column mc.PRODUCT.user_id
-  is 'ÓÃ»§±àºÅ';
+  is 'ç”¨æˆ·ç¼–å·';
 alter table mc.PRODUCT
   add constraint PK_PRODUCT primary key (PRODUCTID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -5542,32 +5542,32 @@ tablespace MC
   initrans 1
   maxtrans 255;
 comment on table mc.PRODUCT_ORGANIZATION_ITEMS
-  is 'Îª»ú¹¹ÅäÖÃ²úÆ·µÄÅäÖÃÏî';
+  is 'ä¸ºæœºæ„é…ç½®äº§å“çš„é…ç½®é¡¹';
 comment on column mc.PRODUCT_ORGANIZATION_ITEMS.id
   is 'ID';
 comment on column mc.PRODUCT_ORGANIZATION_ITEMS.productid
-  is '²úÆ·±àºÅ';
+  is 'äº§å“ç¼–å·';
 comment on column mc.PRODUCT_ORGANIZATION_ITEMS.organizationid
-  is '»ú¹¹±àºÅ';
+  is 'æœºæ„ç¼–å·';
 comment on column mc.PRODUCT_ORGANIZATION_ITEMS.status
-  is '¼ÇÂ¼×´Ì¬';
+  is 'è®°å½•çŠ¶æ€';
 comment on column mc.PRODUCT_ORGANIZATION_ITEMS.itemsjson
-  is 'µ±Ç°»ú¹¹Õë¶Ôµ±Ç°²úÆ·µÄÅäÖÃÏîĞÅÏ¢';
+  is 'å½“å‰æœºæ„é’ˆå¯¹å½“å‰äº§å“çš„é…ç½®é¡¹ä¿¡æ¯';
 comment on column mc.PRODUCT_ORGANIZATION_ITEMS.createtime
-  is '´´½¨Ê±¼ä';
+  is 'åˆ›å»ºæ—¶é—´';
 comment on column mc.PRODUCT_ORGANIZATION_ITEMS.modifytime
-  is 'ĞŞ¸ÄÊ±¼ä';
+  is 'ä¿®æ”¹æ—¶é—´';
 comment on column mc.PRODUCT_ORGANIZATION_ITEMS.reservedint
-  is 'INT±¸ÓÃ×Ö¶Î,¼ÇÂ¼ÁËµ±Ç°ÅäÖÃµÄÓÅÏÈ¼¶1-8Êı×ÖÔ½´óÓÅÏÈ¼¶Ô½¸ß';
+  is 'INTå¤‡ç”¨å­—æ®µ,è®°å½•äº†å½“å‰é…ç½®çš„ä¼˜å…ˆçº§1-8æ•°å­—è¶Šå¤§ä¼˜å…ˆçº§è¶Šé«˜';
 comment on column mc.PRODUCT_ORGANIZATION_ITEMS.reservedchar
-  is 'CHAR±¸ÓÃ×Ö¶Î';
+  is 'CHARå¤‡ç”¨å­—æ®µ';
 comment on column mc.PRODUCT_ORGANIZATION_ITEMS.isextends
-  is '¶ÔÓ¦×éÊÇ·ñ¿ÉÒÔ¼Ì³ĞËùÔÚ»ú¹¹¶ÔÓ¦²úÆ·ÅäÖÃÏîĞÅÏ¢£»0:²»¼ÌËæ£»1£º¼Ì³Ğ';
+  is 'å¯¹åº”ç»„æ˜¯å¦å¯ä»¥ç»§æ‰¿æ‰€åœ¨æœºæ„å¯¹åº”äº§å“é…ç½®é¡¹ä¿¡æ¯ï¼›0:ä¸ç»§éšï¼›1ï¼šç»§æ‰¿';
 comment on column mc.PRODUCT_ORGANIZATION_ITEMS.groupid
-  is '×éID';
+  is 'ç»„ID';
 alter table mc.PRODUCT_ORGANIZATION_ITEMS
   add constraint PK_PRODUCT_ORGANIZATION_ITEMS primary key (ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -5593,26 +5593,26 @@ tablespace MC
   initrans 1
   maxtrans 255;
 comment on table mc.PROHIBITEDWORD
-  is 'Î¥½û´Ê±í';
+  is 'è¿ç¦è¯è¡¨';
 comment on column mc.PROHIBITEDWORD.id
-  is 'Ö÷¼ü';
+  is 'ä¸»é”®';
 comment on column mc.PROHIBITEDWORD.prohibitedword
-  is 'Î¥½û´Ê';
+  is 'è¿ç¦è¯';
 comment on column mc.PROHIBITEDWORD.description
-  is '±¸×¢';
+  is 'å¤‡æ³¨';
 comment on column mc.PROHIBITEDWORD.createtime
-  is '´´½¨Ê±¼ä';
+  is 'åˆ›å»ºæ—¶é—´';
 comment on column mc.PROHIBITEDWORD.modifytime
-  is 'ĞŞ¸ÄÊ±¼ä';
+  is 'ä¿®æ”¹æ—¶é—´';
 comment on column mc.PROHIBITEDWORD.create_user
-  is '´´½¨Õß';
+  is 'åˆ›å»ºè€…';
 comment on column mc.PROHIBITEDWORD.class_id
-  is 'Î¥½û´Ê·ÖÀàId';
+  is 'è¿ç¦è¯åˆ†ç±»Id';
 comment on column mc.PROHIBITEDWORD.status
-  is 'Î¥½û´Ê×´Ì¬, 0:Í£ÓÃ, 1:ÆôÓÃ';
+  is 'è¿ç¦è¯çŠ¶æ€, 0:åœç”¨, 1:å¯ç”¨';
 alter table mc.PROHIBITEDWORD
   add constraint PK_PROHIBITEDWORD primary key (ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -5642,20 +5642,20 @@ tablespace MC
     maxextents unlimited
   );
 comment on table mc.PROHIBITEDWORD_CLASS
-  is 'Î¥½û´Ê·ÖÀà±í';
+  is 'è¿ç¦è¯åˆ†ç±»è¡¨';
 comment on column mc.PROHIBITEDWORD_CLASS.id
-  is 'Ö÷¼ü';
+  is 'ä¸»é”®';
 comment on column mc.PROHIBITEDWORD_CLASS.name
-  is '·ÖÀàÃû×Ö';
+  is 'åˆ†ç±»åå­—';
 comment on column mc.PROHIBITEDWORD_CLASS.description
-  is '±¸×¢';
+  is 'å¤‡æ³¨';
 comment on column mc.PROHIBITEDWORD_CLASS.createtime
-  is '´´½¨Ê±¼ä';
+  is 'åˆ›å»ºæ—¶é—´';
 comment on column mc.PROHIBITEDWORD_CLASS.create_user
-  is '´´½¨Õß';
+  is 'åˆ›å»ºè€…';
 alter table mc.PROHIBITEDWORD_CLASS
   add constraint PK_PROHIBITEDWORD_CLASS primary key (ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -5684,14 +5684,14 @@ tablespace MC
   maxtrans 255;
 alter table mc.PROHIBITED_CHANNEL_TYPE_INFO
   add primary key (CHANNEL_TYPE_ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
   maxtrans 255;
 alter table mc.PROHIBITED_CHANNEL_TYPE_INFO
   add unique (CHANNEL_TYPE_NAME)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -5729,7 +5729,7 @@ tablespace MC
   );
 alter table mc.PROHIBITED_WORD
   add primary key (ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -5743,7 +5743,7 @@ alter table mc.PROHIBITED_WORD
   );
 alter table mc.PROHIBITED_WORD
   add unique (CHANNEL_TYPE_ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -5785,24 +5785,24 @@ tablespace MC
     maxextents unlimited
   );
 comment on table mc.PROHIBIT_WORD
-  is 'Î¥½û´Ê±í';
+  is 'è¿ç¦è¯è¡¨';
 comment on column mc.PROHIBIT_WORD.id
-  is 'Ö÷¼ü';
+  is 'ä¸»é”®';
 comment on column mc.PROHIBIT_WORD.prohibit_word
-  is 'Î¥½û´Ê';
+  is 'è¿ç¦è¯';
 comment on column mc.PROHIBIT_WORD.description
-  is '±¸×¢';
+  is 'å¤‡æ³¨';
 comment on column mc.PROHIBIT_WORD.createtime
-  is '´´½¨Ê±¼ä';
+  is 'åˆ›å»ºæ—¶é—´';
 comment on column mc.PROHIBIT_WORD.modifytime
-  is 'ĞŞ¸ÄÊ±¼ä';
+  is 'ä¿®æ”¹æ—¶é—´';
 comment on column mc.PROHIBIT_WORD.create_user_id
-  is '´´½¨ÕßID';
+  is 'åˆ›å»ºè€…ID';
 comment on column mc.PROHIBIT_WORD.prohibited_word_status
-  is 'Î¥½û´Ê×´Ì¬, 0:Í£ÓÃ, 1:ÆôÓÃ';
+  is 'è¿ç¦è¯çŠ¶æ€, 0:åœç”¨, 1:å¯ç”¨';
 alter table mc.PROHIBIT_WORD
   add constraint PK_PROHIBIT_WORD primary key (ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -5856,7 +5856,7 @@ tablespace MC
   );
 alter table mc.QRTZ_JOB_DETAILS
   add primary key (JOB_NAME, JOB_GROUP)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -5917,7 +5917,7 @@ tablespace MC
   );
 alter table mc.QRTZ_TRIGGERS
   add primary key (TRIGGER_NAME, TRIGGER_GROUP)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -5997,7 +5997,7 @@ tablespace MC
   maxtrans 255;
 alter table mc.QRTZ_BLOB_TRIGGERS
   add primary key (TRIGGER_NAME, TRIGGER_GROUP)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -6021,7 +6021,7 @@ tablespace MC
   maxtrans 255;
 alter table mc.QRTZ_CALENDARS
   add primary key (CALENDAR_NAME)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -6051,7 +6051,7 @@ tablespace MC
   );
 alter table mc.QRTZ_CRON_TRIGGERS
   add primary key (TRIGGER_NAME, TRIGGER_GROUP)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -6099,7 +6099,7 @@ tablespace MC
   );
 alter table mc.QRTZ_FIRED_TRIGGERS
   add primary key (ENTRY_ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -6236,7 +6236,7 @@ tablespace MC
   maxtrans 255;
 alter table mc.QRTZ_JOB_LISTENERS
   add primary key (JOB_NAME, JOB_GROUP, JOB_LISTENER)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -6266,7 +6266,7 @@ tablespace MC
   );
 alter table mc.QRTZ_LOCKS
   add primary key (LOCK_NAME)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -6293,7 +6293,7 @@ tablespace MC
   maxtrans 255;
 alter table mc.QRTZ_PAUSED_TRIGGER_GRPS
   add primary key (TRIGGER_GROUP)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -6315,7 +6315,7 @@ tablespace MC
   maxtrans 255;
 alter table mc.QRTZ_SCHEDULER_STATE
   add primary key (INSTANCE_NAME)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -6346,7 +6346,7 @@ tablespace MC
   );
 alter table mc.QRTZ_SIMPLE_TRIGGERS
   add primary key (TRIGGER_NAME, TRIGGER_GROUP)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -6378,7 +6378,7 @@ tablespace MC
   maxtrans 255;
 alter table mc.QRTZ_TRIGGER_LISTENERS
   add primary key (TRIGGER_NAME, TRIGGER_GROUP, TRIGGER_LISTENER)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -6414,26 +6414,26 @@ tablespace MC
     maxextents unlimited
   );
 comment on table mc.RECBIZ_DB
-  is 'µã²¥¶ÌĞÅ¹ÜÀí';
+  is 'ç‚¹æ’­çŸ­ä¿¡ç®¡ç†';
 comment on column mc.RECBIZ_DB.db_id
-  is '±àºÅ';
+  is 'ç¼–å·';
 comment on column mc.RECBIZ_DB.db_name
-  is 'µã²¥µÄÃû×Ö';
+  is 'ç‚¹æ’­çš„åå­—';
 comment on column mc.RECBIZ_DB.db_content
-  is 'µã²¥µÄÄÚÈİ';
+  is 'ç‚¹æ’­çš„å†…å®¹';
 comment on column mc.RECBIZ_DB.db_channel
-  is 'µã²¥µÄÍ¨µÀ';
+  is 'ç‚¹æ’­çš„é€šé“';
 comment on column mc.RECBIZ_DB.db_user
-  is 'Ìí¼Óµã²¥µÄ»ú¹¹';
+  is 'æ·»åŠ ç‚¹æ’­çš„æœºæ„';
 comment on column mc.RECBIZ_DB.db_service
-  is 'µã²¥µÄÌØ·şºÅ';
+  is 'ç‚¹æ’­çš„ç‰¹æœå·';
 comment on column mc.RECBIZ_DB.remark
-  is '±¸×¢';
+  is 'å¤‡æ³¨';
 comment on column mc.RECBIZ_DB.organization_id
-  is '»ú¹¹id';
+  is 'æœºæ„id';
 alter table mc.RECBIZ_DB
   add constraint PK_RECBIZ_DB primary key (DB_ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -6477,32 +6477,32 @@ tablespace MC
     maxextents unlimited
   );
 comment on table mc.RESOURCE_INFO
-  is '×ÊÔ´±í';
+  is 'èµ„æºè¡¨';
 comment on column mc.RESOURCE_INFO.resource_id
-  is '×ÊÔ´±àºÅ';
+  is 'èµ„æºç¼–å·';
 comment on column mc.RESOURCE_INFO.resource_name
-  is '×ÊÔ´Ãû³Æ';
+  is 'èµ„æºåç§°';
 comment on column mc.RESOURCE_INFO.resource_content
-  is '×ÊÔ´ÄÚÈİ';
+  is 'èµ„æºå†…å®¹';
 comment on column mc.RESOURCE_INFO.resource_type_id
-  is '×ÊÔ´ÀàĞÍ';
+  is 'èµ„æºç±»å‹';
 comment on column mc.RESOURCE_INFO.resource_remark
-  is '×ÊÔ´±¸×¢';
+  is 'èµ„æºå¤‡æ³¨';
 comment on column mc.RESOURCE_INFO.resource_parentid
-  is '¸¸×ÊÔ´id';
+  is 'çˆ¶èµ„æºid';
 comment on column mc.RESOURCE_INFO.resource_access
-  is '×ÊÔ´·ÃÎÊÊôĞÔ,0:ÆÕÍ¨×ÊÔ´, 1:ÏµÍ³×ÊÔ´';
+  is 'èµ„æºè®¿é—®å±æ€§,0:æ™®é€šèµ„æº, 1:ç³»ç»Ÿèµ„æº';
 comment on column mc.RESOURCE_INFO.resource_image
-  is 'ÏÔÊ¾Í¼Æ¬';
+  is 'æ˜¾ç¤ºå›¾ç‰‡';
 comment on column mc.RESOURCE_INFO.resource_sort
-  is 'ÏÔÊ¾Ë³Ğò';
+  is 'æ˜¾ç¤ºé¡ºåº';
 comment on column mc.RESOURCE_INFO.is_default
-  is 'ÊÇ·ñÊÇÄ¬ÈÏÏÔÊ¾';
+  is 'æ˜¯å¦æ˜¯é»˜è®¤æ˜¾ç¤º';
 comment on column mc.RESOURCE_INFO.resource_role_type
-  is '×ÊÔ´È¨ÏŞÀàĞÍ£¬SYSTEM:ÏµÍ³È¨ÏŞ£¬ORGADMIN£º»ú¹¹¹ÜÀíÔ±£¬COMMON£ºÆÕÍ¨È¨ÏŞ';
+  is 'èµ„æºæƒé™ç±»å‹ï¼ŒSYSTEM:ç³»ç»Ÿæƒé™ï¼ŒORGADMINï¼šæœºæ„ç®¡ç†å‘˜ï¼ŒCOMMONï¼šæ™®é€šæƒé™';
 alter table mc.RESOURCE_INFO
   add constraint PK_RESOURCE_INFO primary key (RESOURCE_ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -6533,7 +6533,7 @@ tablespace MC
   maxtrans 255;
 alter table mc.RT_ACQUIRE_TIMESTAMP
   add primary key (ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -6571,7 +6571,7 @@ tablespace MC
   );
 alter table mc.RT_RECEIVE
   add primary key (RT_RECEIVE_ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -6617,7 +6617,7 @@ tablespace MC
   );
 alter table mc.RT_RECEIVE_BACKUP
   add primary key (RT_RECEIVE_ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -6660,7 +6660,7 @@ tablespace MC
   );
 alter table mc.RT_RECEIVE_REPORT_CONFIG
   add primary key (CONFIG_ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -6706,7 +6706,7 @@ tablespace MC
   );
 alter table mc.RT_RECEIVE_REPORT_URL
   add primary key (URL_ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -6750,7 +6750,7 @@ tablespace MC
   );
 alter table mc.RT_REPORT
   add primary key (SMS_ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -6795,7 +6795,7 @@ tablespace MC
   );
 alter table mc.RT_REPORT_BACKUP
   add primary key (SMS_ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -6862,26 +6862,26 @@ tablespace MC
   initrans 1
   maxtrans 255;
 comment on table mc.SEC_ACL
-  is '·ÃÎÊ¿ØÖÆÁĞ±í£¬ÊÚÓèÓÃ»§¶ÔÄ³×ÊÔ´ÓĞÄ³½ÇÉ«£¨¼´Ò»×éÈ¨ÏŞ£©';
+  is 'è®¿é—®æ§åˆ¶åˆ—è¡¨ï¼Œæˆäºˆç”¨æˆ·å¯¹æŸèµ„æºæœ‰æŸè§’è‰²ï¼ˆå³ä¸€ç»„æƒé™ï¼‰';
 comment on column mc.SEC_ACL.resource_id
-  is '×ÊÔ´±àºÅ';
+  is 'èµ„æºç¼–å·';
 comment on column mc.SEC_ACL.resource_type
-  is '×ÊÔ´ÀàĞÍ,ColumnCategoryÎªÀ¸Ä¿£¬ColumnInfoÎªÀ¸Ä¿·ÖÀà';
+  is 'èµ„æºç±»å‹,ColumnCategoryä¸ºæ ç›®ï¼ŒColumnInfoä¸ºæ ç›®åˆ†ç±»';
 comment on column mc.SEC_ACL.role_id
-  is '½ÇÉ«±àºÅ';
+  is 'è§’è‰²ç¼–å·';
 comment on column mc.SEC_ACL.party_id
-  is '±»ÊÚÈ¨ÈË';
+  is 'è¢«æˆæƒäºº';
 comment on column mc.SEC_ACL.party_type
-  is '±»ÊÚÈ¨ÀàĞÍ';
+  is 'è¢«æˆæƒç±»å‹';
 comment on column mc.SEC_ACL.created_by
-  is '²Ù×÷ÈË';
+  is 'æ“ä½œäºº';
 comment on column mc.SEC_ACL.created_by_name
-  is '²Ù×÷ÈËÃû³Æ';
+  is 'æ“ä½œäººåç§°';
 comment on column mc.SEC_ACL.is_default
-  is 'ÊÇ·ñÈ±Ê¡ÓÃ»§';
+  is 'æ˜¯å¦ç¼ºçœç”¨æˆ·';
 alter table mc.SEC_ACL
   add constraint PK_SEC_ACL primary key (RESOURCE_ID, RESOURCE_TYPE, ROLE_ID, PARTY_ID, PARTY_TYPE)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -6920,18 +6920,18 @@ tablespace MC
     maxextents unlimited
   );
 comment on table mc.SEC_PARTY_ROLE
-  is 'PartyºÍ½ÇÉ«';
+  is 'Partyå’Œè§’è‰²';
 comment on column mc.SEC_PARTY_ROLE.party_type
-  is 'PartyÀàĞÍ';
+  is 'Partyç±»å‹';
 comment on column mc.SEC_PARTY_ROLE.party_id
-  is 'Party±àºÅ';
+  is 'Partyç¼–å·';
 comment on column mc.SEC_PARTY_ROLE.role_id
-  is '½ÇÉ«±àºÅ';
+  is 'è§’è‰²ç¼–å·';
 comment on column mc.SEC_PARTY_ROLE.is_default
-  is 'ÊÇ·ñÈ±Ê¡ÓÃ»§';
+  is 'æ˜¯å¦ç¼ºçœç”¨æˆ·';
 alter table mc.SEC_PARTY_ROLE
   add constraint PK_SEC_PARTY_ROLE primary key (PARTY_TYPE, PARTY_ID, ROLE_ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -6966,16 +6966,16 @@ tablespace MC
     maxextents unlimited
   );
 comment on table mc.SEC_PERMISSION
-  is 'È¨ÏŞµÄÊı¾İ×Öµä';
+  is 'æƒé™çš„æ•°æ®å­—å…¸';
 comment on column mc.SEC_PERMISSION.resource_type
-  is '×ÊÔ´ÀàĞÍ£º²Ëµ¥¡¢À¸Ä¿¡¢À¸Ä¿·ÖÀà¡¢¿Í»§';
+  is 'èµ„æºç±»å‹ï¼šèœå•ã€æ ç›®ã€æ ç›®åˆ†ç±»ã€å®¢æˆ·';
 comment on column mc.SEC_PERMISSION.permission_type
-  is '²Ù×÷È¨ÏŞ£¬ÀıÈçVIEW¡¢CREATE......';
+  is 'æ“ä½œæƒé™ï¼Œä¾‹å¦‚VIEWã€CREATE......';
 comment on column mc.SEC_PERMISSION.description
-  is '±¸×¢';
+  is 'å¤‡æ³¨';
 alter table mc.SEC_PERMISSION
   add constraint PK_SEC_PERMISSION primary key (RESOURCE_TYPE, PERMISSION_TYPE)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -7013,22 +7013,22 @@ tablespace MC
     maxextents unlimited
   );
 comment on table mc.SEC_RESOURCE_TYPE
-  is '×ÊÔ´ÀàĞÍ±í';
+  is 'èµ„æºç±»å‹è¡¨';
 comment on column mc.SEC_RESOURCE_TYPE.resource_type
-  is '×ÊÔ´ÀàĞÍ, ²Ëµ¥¡¢À¸Ä¿¡¢À¸Ä¿·ÖÀà¡¢¿Í»§';
+  is 'èµ„æºç±»å‹, èœå•ã€æ ç›®ã€æ ç›®åˆ†ç±»ã€å®¢æˆ·';
 comment on column mc.SEC_RESOURCE_TYPE.sequence_id
-  is 'ĞòºÅ';
+  is 'åºå·';
 comment on column mc.SEC_RESOURCE_TYPE.resource_type_code
-  is '×ÊÔ´ÀàĞÍ±àºÅ';
+  is 'èµ„æºç±»å‹ç¼–å·';
 comment on column mc.SEC_RESOURCE_TYPE.resource_type_name
-  is '×ÊÔ´ÀàĞÍÃû³Æ';
+  is 'èµ„æºç±»å‹åç§°';
 comment on column mc.SEC_RESOURCE_TYPE.is_for_instance
-  is '´ËÖÖ×ÊÔ´ÊÇ·ñĞèÒªÏò×ÊÔ´ÊµÀıÊÚÈ¨£¬YÔò²»¿ÉÒÔÖ±½ÓÊÚÈ¨¸øÓÃ»§¸ÃÀà×ÊÔ´µÄ½ÇÉ«£¬NÔò¿ÉÒÔ';
+  is 'æ­¤ç§èµ„æºæ˜¯å¦éœ€è¦å‘èµ„æºå®ä¾‹æˆæƒï¼ŒYåˆ™ä¸å¯ä»¥ç›´æ¥æˆæƒç»™ç”¨æˆ·è¯¥ç±»èµ„æºçš„è§’è‰²ï¼ŒNåˆ™å¯ä»¥';
 comment on column mc.SEC_RESOURCE_TYPE.description
-  is '±¸×¢';
+  is 'å¤‡æ³¨';
 alter table mc.SEC_RESOURCE_TYPE
   add constraint PK_SEC_RESOURCE_TYPE primary key (RESOURCE_TYPE)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -7067,20 +7067,20 @@ tablespace MC
     maxextents unlimited
   );
 comment on table mc.SEC_ROLE
-  is '½ÇÉ«ÊµÌå';
+  is 'è§’è‰²å®ä½“';
 comment on column mc.SEC_ROLE.role_id
-  is 'ÏµÍ³±àºÅ';
+  is 'ç³»ç»Ÿç¼–å·';
 comment on column mc.SEC_ROLE.role_type
-  is '½ÇÉ«ÀàĞÍ£¬¶ÔÓÚÀàĞÍÊÇSYSTEMµÄ½ÇÉ«Ò³Ãæ²»¿É¼û¡¢²»¿É±à¼­£¬µ«ÊÇºóÌ¨»áÊ¹ÓÃ£¬COMMONÔò¿ÉÒÔ';
+  is 'è§’è‰²ç±»å‹ï¼Œå¯¹äºç±»å‹æ˜¯SYSTEMçš„è§’è‰²é¡µé¢ä¸å¯è§ã€ä¸å¯ç¼–è¾‘ï¼Œä½†æ˜¯åå°ä¼šä½¿ç”¨ï¼ŒCOMMONåˆ™å¯ä»¥';
 comment on column mc.SEC_ROLE.resource_type
-  is '×ÊÔ´ÀàĞÍ£º²Ëµ¥¡¢À¸Ä¿¡¢À¸Ä¿·ÖÀà¡¢¿Í»§';
+  is 'èµ„æºç±»å‹ï¼šèœå•ã€æ ç›®ã€æ ç›®åˆ†ç±»ã€å®¢æˆ·';
 comment on column mc.SEC_ROLE.role_name
-  is '½ÇÉ«Ãû³Æ';
+  is 'è§’è‰²åç§°';
 comment on column mc.SEC_ROLE.description
-  is '±¸×¢';
+  is 'å¤‡æ³¨';
 alter table mc.SEC_ROLE
   add constraint PK_SEC_ROLE primary key (ROLE_ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -7117,16 +7117,16 @@ tablespace MC
     maxextents unlimited
   );
 comment on table mc.SEC_ROLE_PERMISSION
-  is '½ÇÉ«ÓµÓĞµÄÈ¨ÏŞ';
+  is 'è§’è‰²æ‹¥æœ‰çš„æƒé™';
 comment on column mc.SEC_ROLE_PERMISSION.role_id
-  is '½ÇÉ«µÄ±àºÅ';
+  is 'è§’è‰²çš„ç¼–å·';
 comment on column mc.SEC_ROLE_PERMISSION.resource_type
-  is '×ÊÔ´ÀàĞÍ';
+  is 'èµ„æºç±»å‹';
 comment on column mc.SEC_ROLE_PERMISSION.resource_id
-  is 'È¨ÏŞ';
+  is 'æƒé™';
 alter table mc.SEC_ROLE_PERMISSION
   add constraint PK_SEC_ROLE_PERMISSION primary key (ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -7161,16 +7161,16 @@ tablespace MC
     maxextents unlimited
   );
 comment on table mc.SEC_ROLE_TYPE
-  is '½ÇÉ«ÀàĞÍ';
+  is 'è§’è‰²ç±»å‹';
 comment on column mc.SEC_ROLE_TYPE.role_type
-  is '½ÇÉ«ÀàĞÍ£¬¶ÔÓÚÀàĞÍÊÇSYSTEMµÄ½ÇÉ«Ò³Ãæ²»¿É¼û¡¢²»¿É±à¼­£¬µ«ÊÇºóÌ¨»áÊ¹ÓÃ£¬COMMONÔò¿ÉÒÔ';
+  is 'è§’è‰²ç±»å‹ï¼Œå¯¹äºç±»å‹æ˜¯SYSTEMçš„è§’è‰²é¡µé¢ä¸å¯è§ã€ä¸å¯ç¼–è¾‘ï¼Œä½†æ˜¯åå°ä¼šä½¿ç”¨ï¼ŒCOMMONåˆ™å¯ä»¥';
 comment on column mc.SEC_ROLE_TYPE.role_name
-  is '½ÇÉ«Ãû³Æ';
+  is 'è§’è‰²åç§°';
 comment on column mc.SEC_ROLE_TYPE.description
-  is '±¸×¢';
+  is 'å¤‡æ³¨';
 alter table mc.SEC_ROLE_TYPE
   add constraint PK_SEC_ROLE_TYPE primary key (ROLE_TYPE)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -11041,86 +11041,86 @@ partition by range (SYS_TIME)
     )
 );
 comment on table mc.SEND
-  is 'ÏÂĞĞ¶ÌĞÅĞÅÏ¢±í';
+  is 'ä¸‹è¡ŒçŸ­ä¿¡ä¿¡æ¯è¡¨';
 comment on column mc.SEND.send_id
-  is 'ÏÂĞĞ¶ÌĞÅĞòºÅ£¬ÏÂĞĞ¶ÌĞÅµÄÎ¨Ò»±êÊ¶';
+  is 'ä¸‹è¡ŒçŸ­ä¿¡åºå·ï¼Œä¸‹è¡ŒçŸ­ä¿¡çš„å”¯ä¸€æ ‡è¯†';
 comment on column mc.SEND.mobile_to
-  is 'Ä¿±êÊÖ»úºÅ';
+  is 'ç›®æ ‡æ‰‹æœºå·';
 comment on column mc.SEND.send_msg
-  is '¶ÌĞÅÄÚÈİ';
+  is 'çŸ­ä¿¡å†…å®¹';
 comment on column mc.SEND.sp_serv_no
-  is 'À©Õ¹ºÅ';
+  is 'æ‰©å±•å·';
 comment on column mc.SEND.sys_time
-  is 'Èë¿âÊ±¼ä';
+  is 'å…¥åº“æ—¶é—´';
 comment on column mc.SEND.prior_id
-  is 'ÓÅÏÈ¼¶£¬Ö»ÓĞ3¸öÓÅÏÈ¼¶£¬3Îª×î¸ß ,8Îª×îµÍ£¬5ÎªÖĞµÈÓÅÏÈ¼¶';
+  is 'ä¼˜å…ˆçº§ï¼Œåªæœ‰3ä¸ªä¼˜å…ˆçº§ï¼Œ3ä¸ºæœ€é«˜ ,8ä¸ºæœ€ä½ï¼Œ5ä¸ºä¸­ç­‰ä¼˜å…ˆçº§';
 comment on column mc.SEND.pre_send_time
-  is 'Ô¤¼Æ·¢ËÍÊ±¼ä';
+  is 'é¢„è®¡å‘é€æ—¶é—´';
 comment on column mc.SEND.send_status
-  is '·¢ËÍ×´Ì¬ -2Î´¼Æ·Ñ, 0´ı·¢, 1ÒÑÌá½», 2·¢ËÍÖĞ, 4ÒÑÉ¾³ı, 5·¢ËÍ³É¹¦, 6·¢ËÍÊ§°Ü, 7ÏµÍ³ºÚÃûµ¥.8 Î¥½û´Ê±£ÁôÈçÏÂ×´Ì¬£º-1¼Æ»®ÈÎÎñ 3ÖØ·¢ÖĞ 8¶ş´ÎÖØ·¢Ê§°Ü¡£ÆäËü´ı¶¨';
+  is 'å‘é€çŠ¶æ€ -2æœªè®¡è´¹, 0å¾…å‘, 1å·²æäº¤, 2å‘é€ä¸­, 4å·²åˆ é™¤, 5å‘é€æˆåŠŸ, 6å‘é€å¤±è´¥, 7ç³»ç»Ÿé»‘åå•.8 è¿ç¦è¯ä¿ç•™å¦‚ä¸‹çŠ¶æ€ï¼š-1è®¡åˆ’ä»»åŠ¡ 3é‡å‘ä¸­ 8äºŒæ¬¡é‡å‘å¤±è´¥ã€‚å…¶å®ƒå¾…å®š';
 comment on column mc.SEND.send_time
-  is 'Æ½Ì¨·¢ËÍ¸Ã¶ÌĞÅµÄÊ±¼ä';
+  is 'å¹³å°å‘é€è¯¥çŸ­ä¿¡çš„æ—¶é—´';
 comment on column mc.SEND.com_rtn_time
-  is '·¢ËÍºóÒÆ¶¯»òÁªÍ¨Íø¹Ø·µ»Ø½á¹ûµÄÊ±¼ä';
+  is 'å‘é€åç§»åŠ¨æˆ–è”é€šç½‘å…³è¿”å›ç»“æœçš„æ—¶é—´';
 comment on column mc.SEND.err_msg
-  is '·¢ËÍÊ§°ÜÊ±£¬ÒÆ¶¯ÁªÍ¨Íø¹Ø·µ»ØµÄ´íÎóĞÅÏ¢£¬Ö»ÓĞÔÚ·¢ËÍÊ§°ÜÊ±£¬¸Ã×Ö¶ÎÓĞÖµ£¬ÆäÓàÊ±ºòÎ´¿Õ';
+  is 'å‘é€å¤±è´¥æ—¶ï¼Œç§»åŠ¨è”é€šç½‘å…³è¿”å›çš„é”™è¯¯ä¿¡æ¯ï¼Œåªæœ‰åœ¨å‘é€å¤±è´¥æ—¶ï¼Œè¯¥å­—æ®µæœ‰å€¼ï¼Œå…¶ä½™æ—¶å€™æœªç©º';
 comment on column mc.SEND.report
-  is 'ÊÖ»ú½ÓÊÕ×´Ì¬±¨¸æ¡£±£Áô×Ö¶Î';
+  is 'æ‰‹æœºæ¥æ”¶çŠ¶æ€æŠ¥å‘Šã€‚ä¿ç•™å­—æ®µ';
 comment on column mc.SEND.report_time
-  is 'ÊÖ»ú½ÓÊÕ×´Ì¬±¨¸æ·µ»ØÊ±¼ä';
+  is 'æ‰‹æœºæ¥æ”¶çŠ¶æ€æŠ¥å‘Šè¿”å›æ—¶é—´';
 comment on column mc.SEND.channel_id
-  is 'Í¨µÀID';
+  is 'é€šé“ID';
 comment on column mc.SEND.mobile_com
-  is 'ÔËÓªÉÌID£¬1ÎªÒÆ¶¯£¬2ÎªÁªÍ¨,3ÎªµçĞÅ';
+  is 'è¿è¥å•†IDï¼Œ1ä¸ºç§»åŠ¨ï¼Œ2ä¸ºè”é€š,3ä¸ºç”µä¿¡';
 comment on column mc.SEND.remark
-  is '±¸×¢ĞÅÏ¢£¬×÷ÎªÍâ²¿ÏµÍ³À©Õ¹ÓÃ£¬CC¶ÌĞÅÏµÍ³¸Ã×Ö¶ÎÌîĞ´»ù½ğÕËºÅ';
+  is 'å¤‡æ³¨ä¿¡æ¯ï¼Œä½œä¸ºå¤–éƒ¨ç³»ç»Ÿæ‰©å±•ç”¨ï¼ŒCCçŸ­ä¿¡ç³»ç»Ÿè¯¥å­—æ®µå¡«å†™åŸºé‡‘è´¦å·';
 comment on column mc.SEND.user_id
-  is 'ÓÉÓÃ»§id¸ü¸ÄÎª¶ÌĞÅËùÊôÈË';
+  is 'ç”±ç”¨æˆ·idæ›´æ”¹ä¸ºçŸ­ä¿¡æ‰€å±äºº';
 comment on column mc.SEND.sequence
-  is 'Íø¹ØĞòÁĞ';
+  is 'ç½‘å…³åºåˆ—';
 comment on column mc.SEND.mobile_quantities
-  is '±¾ÌõĞÅÏ¢µÄÊıÁ¿';
+  is 'æœ¬æ¡ä¿¡æ¯çš„æ•°é‡';
 comment on column mc.SEND.resend_times
-  is 'Æ½Ì¨ÏòÍø¹ØÌá½»¸Ã¶ÌĞÅµÄ´ÎÊı';
+  is 'å¹³å°å‘ç½‘å…³æäº¤è¯¥çŸ­ä¿¡çš„æ¬¡æ•°';
 comment on column mc.SEND.signature
-  is 'Ç©Ãû';
+  is 'ç­¾å';
 comment on column mc.SEND.user_organization
-  is 'ÓÃ»§×éid';
+  is 'ç”¨æˆ·ç»„id';
 comment on column mc.SEND.batch_id
-  is 'Åú´ÎºÅ';
+  is 'æ‰¹æ¬¡å·';
 comment on column mc.SEND.msg_type
-  is 'ĞÅÏ¢ÀàĞÍ,¼ÇÂ¼¶ÌĞÅ²úÉúµÄ·½Ê½';
+  is 'ä¿¡æ¯ç±»å‹,è®°å½•çŸ­ä¿¡äº§ç”Ÿçš„æ–¹å¼';
 comment on column mc.SEND.consume_send_id
-  is '¿Í»§¶Ë¶ÌĞÅid¡£';
+  is 'å®¢æˆ·ç«¯çŸ­ä¿¡idã€‚';
 comment on column mc.SEND.is_longsms
-  is '¸Ã¶ÌĞÅÊÇ·ñÊÇ³¤¶ÌĞÅ,0:²»ÊÇ³¤¶ÌĞÅ,1:ÊÇ³¤¶ÌĞÅ';
+  is 'è¯¥çŸ­ä¿¡æ˜¯å¦æ˜¯é•¿çŸ­ä¿¡,0:ä¸æ˜¯é•¿çŸ­ä¿¡,1:æ˜¯é•¿çŸ­ä¿¡';
 comment on column mc.SEND.is_original_sms
-  is '¸Ã¶ÌĞÅÊÇ·ñÊÇÔ­Ê¼¶ÌĞÅ,·ÇÔ­Ê¼¶ÌĞÅÖ¸³¤¶ÌĞÅ·¢ËÍÊ±²ğ·Ö³öµÄ¶ÌĞÅ,0:ÊÇÔ­Ê¼¶ÌĞÅ, 1:²»ÊÇÔ­Ê¼¶ÌĞÅ';
+  is 'è¯¥çŸ­ä¿¡æ˜¯å¦æ˜¯åŸå§‹çŸ­ä¿¡,éåŸå§‹çŸ­ä¿¡æŒ‡é•¿çŸ­ä¿¡å‘é€æ—¶æ‹†åˆ†å‡ºçš„çŸ­ä¿¡,0:æ˜¯åŸå§‹çŸ­ä¿¡, 1:ä¸æ˜¯åŸå§‹çŸ­ä¿¡';
 comment on column mc.SEND.originalsms_sendid
-  is 'Ô­Ê¼¶ÌĞÅ±àºÅ£¬µ±±¾¶ÌĞÅÎªÓÉ³¤¶ÌĞÅ²ğ·Ö³ÉµÄ¶Ì¶ÌĞÅÊ±, ¿ÉÒÔÒÀ¾İ´Ë±àºÅ²éÑ¯µ½Ô­Ê¼¶ÌĞÅ';
+  is 'åŸå§‹çŸ­ä¿¡ç¼–å·ï¼Œå½“æœ¬çŸ­ä¿¡ä¸ºç”±é•¿çŸ­ä¿¡æ‹†åˆ†æˆçš„çŸ­çŸ­ä¿¡æ—¶, å¯ä»¥ä¾æ®æ­¤ç¼–å·æŸ¥è¯¢åˆ°åŸå§‹çŸ­ä¿¡';
 comment on column mc.SEND.current_pageno
-  is 'µ±Ç°¶ÌĞÅµÄÒ³ºÅ,¼´³¤¶ÌĞÅµÄµÚ¼¸Ìõ¶Ì¶ÌĞÅ';
+  is 'å½“å‰çŸ­ä¿¡çš„é¡µå·,å³é•¿çŸ­ä¿¡çš„ç¬¬å‡ æ¡çŸ­çŸ­ä¿¡';
 comment on column mc.SEND.originalsms_totalpages
-  is '±¾Ìõ¶Ì¶ÌĞÅËùÊô³¤¶ÌĞÅ¹²ÓĞ¶ÌĞÅµÄÒ³Êı';
+  is 'æœ¬æ¡çŸ­çŸ­ä¿¡æ‰€å±é•¿çŸ­ä¿¡å…±æœ‰çŸ­ä¿¡çš„é¡µæ•°';
 comment on column mc.SEND.longsms_tag
-  is '³¤¶ÌĞÅ¶¼±êÊ¶·û£ºÍ¬Ò»Ìõ³¤¶ÌĞÅµÄ¶Ì¶ÌĞÅ¸Ã±êÊ¶ÏàÍ¬';
+  is 'é•¿çŸ­ä¿¡éƒ½æ ‡è¯†ç¬¦ï¼šåŒä¸€æ¡é•¿çŸ­ä¿¡çš„çŸ­çŸ­ä¿¡è¯¥æ ‡è¯†ç›¸åŒ';
 comment on column mc.SEND.longsms_splited
-  is '³¤¶ÌĞÅÊÇ·ñ±»²ğ·Ö£º0Ã»ÓĞ±»²ğ·Ö»òÕßÊÇÆÕÍ¨¶ÌĞÅ£»1ÒÑ¾­±»²ğ·Ö¡£±»²ğ·ÖµÄ¶ÌĞÅ²éÑ¯Í³¼ÆÊ±²»Ó¦¼ÆËãÊıÁ¿¡£Ä¬ÈÏ0';
+  is 'é•¿çŸ­ä¿¡æ˜¯å¦è¢«æ‹†åˆ†ï¼š0æ²¡æœ‰è¢«æ‹†åˆ†æˆ–è€…æ˜¯æ™®é€šçŸ­ä¿¡ï¼›1å·²ç»è¢«æ‹†åˆ†ã€‚è¢«æ‹†åˆ†çš„çŸ­ä¿¡æŸ¥è¯¢ç»Ÿè®¡æ—¶ä¸åº”è®¡ç®—æ•°é‡ã€‚é»˜è®¤0';
 comment on column mc.SEND.gw_submit_time
-  is 'Ìá½»µ½Íø¹ØµÄÊ±¼ä';
+  is 'æäº¤åˆ°ç½‘å…³çš„æ—¶é—´';
 comment on column mc.SEND.gw_done_time
-  is 'ÊÖ»úÊÕµ½¶ÌĞÅµÄÊ±¼ä';
+  is 'æ‰‹æœºæ”¶åˆ°çŸ­ä¿¡çš„æ—¶é—´';
 comment on column mc.SEND.unit_price
-  is '¶ÌĞÅµ¥¼Û';
+  is 'çŸ­ä¿¡å•ä»·';
 comment on column mc.SEND.return_fee
-  is 'ÊÇ·ñÒÑ¸øÕâÌõ¶ÌĞÅ·µ»¹·ÑÓÃ,0:Ã»·µ»¹,1:ÒÑ·µ»¹';
+  is 'æ˜¯å¦å·²ç»™è¿™æ¡çŸ­ä¿¡è¿”è¿˜è´¹ç”¨,0:æ²¡è¿”è¿˜,1:å·²è¿”è¿˜';
 comment on column mc.SEND.receive_id
-  is 'CMPPÕËºÅ';
+  is 'CMPPè´¦å·';
 comment on column mc.SEND.operator_id
-  is '¶ÌĞÅ·¢ËÍÈË(¶ÌĞÅ·¢ËÍµÄ²Ù×÷Õß)';
+  is 'çŸ­ä¿¡å‘é€äºº(çŸ­ä¿¡å‘é€çš„æ“ä½œè€…)';
 alter table mc.SEND
   add constraint PK_SEND primary key (SEND_ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -11237,26 +11237,26 @@ tablespace MC
   initrans 1
   maxtrans 255;
 comment on table mc.SEND_SPEED_TIME
-  is '±£ÁôÃ¿´Î¼ÆËã·¢ËÍÍê¶ÌĞÅĞèÒªµ½µÄÊ±¼ä¼ÇÂ¼';
+  is 'ä¿ç•™æ¯æ¬¡è®¡ç®—å‘é€å®ŒçŸ­ä¿¡éœ€è¦åˆ°çš„æ—¶é—´è®°å½•';
 comment on column mc.SEND_SPEED_TIME.id
-  is 'ÏµÍ³id';
+  is 'ç³»ç»Ÿid';
 comment on column mc.SEND_SPEED_TIME.not_sendcount
-  is '´ı·¢¶ÌĞÅÌõÊı(×´Ì¬°üÀ¨0,2)';
+  is 'å¾…å‘çŸ­ä¿¡æ¡æ•°(çŠ¶æ€åŒ…æ‹¬0,2)';
 comment on column mc.SEND_SPEED_TIME.channel
-  is 'Í¨µÀºÅÂë';
+  is 'é€šé“å·ç ';
 comment on column mc.SEND_SPEED_TIME.speed
-  is 'ËÙ¶È';
+  is 'é€Ÿåº¦';
 comment on column mc.SEND_SPEED_TIME.time
-  is 'ĞèÒª»¨·ÑµÄÊ±¼ä,µ¥Î»ÊÇÃë';
+  is 'éœ€è¦èŠ±è´¹çš„æ—¶é—´,å•ä½æ˜¯ç§’';
 comment on column mc.SEND_SPEED_TIME.status
-  is '1Õı³£,2·±Ã¦,3Òì³£';
+  is '1æ­£å¸¸,2ç¹å¿™,3å¼‚å¸¸';
 comment on column mc.SEND_SPEED_TIME.sys_time
-  is '»ñÈ¡ĞÅÏ¢µÄÊ±¼ä';
+  is 'è·å–ä¿¡æ¯çš„æ—¶é—´';
 comment on column mc.SEND_SPEED_TIME.create_time
-  is '´´½¨Ê±¼ä';
+  is 'åˆ›å»ºæ—¶é—´';
 alter table mc.SEND_SPEED_TIME
   add constraint PK_SEND_SPEED_TIME primary key (ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -11285,32 +11285,32 @@ tablespace MC
   initrans 1
   maxtrans 255;
 comment on table mc.SEND_STATICS_QUANTITY
-  is '¸÷×´Ì¬µÄ×ÜÊı±í';
+  is 'å„çŠ¶æ€çš„æ€»æ•°è¡¨';
 comment on column mc.SEND_STATICS_QUANTITY.channel_id
-  is '0ÎªËùÓĞÍ¨µÀ';
+  is '0ä¸ºæ‰€æœ‰é€šé“';
 comment on column mc.SEND_STATICS_QUANTITY.total_quantity
-  is '×ÜÊı';
+  is 'æ€»æ•°';
 comment on column mc.SEND_STATICS_QUANTITY.wait_send_quantity
-  is '´ı·¢ËÍ×ÜÊı,×´Ì¬Îª0';
+  is 'å¾…å‘é€æ€»æ•°,çŠ¶æ€ä¸º0';
 comment on column mc.SEND_STATICS_QUANTITY.sending_quantity
-  is '´ı·¢ËÍ×ÜÊı,×´Ì¬Îª2';
+  is 'å¾…å‘é€æ€»æ•°,çŠ¶æ€ä¸º2';
 comment on column mc.SEND_STATICS_QUANTITY.sent_quantity
-  is 'ÒÑÌá½»×ÜÊı';
+  is 'å·²æäº¤æ€»æ•°';
 comment on column mc.SEND_STATICS_QUANTITY.success_quantity
-  is '³É¹¦×ÜÊı';
+  is 'æˆåŠŸæ€»æ•°';
 comment on column mc.SEND_STATICS_QUANTITY.failed_quantity
-  is 'Ê§°Ü×ÜÊı';
+  is 'å¤±è´¥æ€»æ•°';
 comment on column mc.SEND_STATICS_QUANTITY.black_quantity
-  is 'ºÚÃûµ¥×ÜÊı';
+  is 'é»‘åå•æ€»æ•°';
 comment on column mc.SEND_STATICS_QUANTITY.prohibited_quantity
-  is 'Î¥½û´Ê×ÜÊı';
+  is 'è¿ç¦è¯æ€»æ•°';
 comment on column mc.SEND_STATICS_QUANTITY.receive_quantity
-  is 'ÉÏĞĞ×ÜÊı';
+  is 'ä¸Šè¡Œæ€»æ•°';
 comment on column mc.SEND_STATICS_QUANTITY.create_time
-  is '´´½¨µÄÊ±¼ä';
+  is 'åˆ›å»ºçš„æ—¶é—´';
 alter table mc.SEND_STATICS_QUANTITY
   add constraint PK_SEND_STATICS_QUANTITY primary key (CHANNEL_ID, CREATE_TIME)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -11339,32 +11339,32 @@ tablespace MC
   initrans 1
   maxtrans 255;
 comment on table mc.SEND_STATICS_QUANTITY_TEMP
-  is '¸÷×´Ì¬µÄ×ÜÊı±í';
+  is 'å„çŠ¶æ€çš„æ€»æ•°è¡¨';
 comment on column mc.SEND_STATICS_QUANTITY_TEMP.channel_id
-  is '0ÎªËùÓĞÍ¨µÀ';
+  is '0ä¸ºæ‰€æœ‰é€šé“';
 comment on column mc.SEND_STATICS_QUANTITY_TEMP.total_quantity
-  is '×ÜÊı';
+  is 'æ€»æ•°';
 comment on column mc.SEND_STATICS_QUANTITY_TEMP.wait_send_quantity
-  is '´ı·¢ËÍ×ÜÊı,×´Ì¬Îª0';
+  is 'å¾…å‘é€æ€»æ•°,çŠ¶æ€ä¸º0';
 comment on column mc.SEND_STATICS_QUANTITY_TEMP.sending_quantity
-  is '´ı·¢ËÍ×ÜÊı,×´Ì¬Îª2';
+  is 'å¾…å‘é€æ€»æ•°,çŠ¶æ€ä¸º2';
 comment on column mc.SEND_STATICS_QUANTITY_TEMP.sent_quantity
-  is 'ÒÑÌá½»×ÜÊı';
+  is 'å·²æäº¤æ€»æ•°';
 comment on column mc.SEND_STATICS_QUANTITY_TEMP.success_quantity
-  is '³É¹¦×ÜÊı';
+  is 'æˆåŠŸæ€»æ•°';
 comment on column mc.SEND_STATICS_QUANTITY_TEMP.failed_quantity
-  is 'Ê§°Ü×ÜÊı';
+  is 'å¤±è´¥æ€»æ•°';
 comment on column mc.SEND_STATICS_QUANTITY_TEMP.black_quantity
-  is 'ºÚÃûµ¥×ÜÊı';
+  is 'é»‘åå•æ€»æ•°';
 comment on column mc.SEND_STATICS_QUANTITY_TEMP.prohibited_quantity
-  is 'Î¥½û´Ê×ÜÊı';
+  is 'è¿ç¦è¯æ€»æ•°';
 comment on column mc.SEND_STATICS_QUANTITY_TEMP.receive_quantity
-  is 'ÉÏĞĞ×ÜÊı';
+  is 'ä¸Šè¡Œæ€»æ•°';
 comment on column mc.SEND_STATICS_QUANTITY_TEMP.create_time
-  is '´´½¨µÄÊ±¼ä';
+  is 'åˆ›å»ºçš„æ—¶é—´';
 alter table mc.SEND_STATICS_QUANTITY_TEMP
   add constraint PK_SEND_STATICS_QUANTITY_TEMP primary key (CHANNEL_ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -11396,7 +11396,7 @@ tablespace MC
   );
 alter table mc.SEQUENCE_VALUE_ITEM
   add constraint PK_SEQUENCE_VALUE_ITEM primary key (SEQ_NAME)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -11460,26 +11460,26 @@ tablespace MC
     maxextents unlimited
   );
 comment on table mc.SGW_ACCOUNT_CHANNEL
-  is 'CMPPÕË»§Í¨µÀ±í';
+  is 'CMPPè´¦æˆ·é€šé“è¡¨';
 comment on column mc.SGW_ACCOUNT_CHANNEL.id
-  is 'Ö÷¼ü';
+  is 'ä¸»é”®';
 comment on column mc.SGW_ACCOUNT_CHANNEL.sgw_id
-  is 'Íø¹ØID';
+  is 'ç½‘å…³ID';
 comment on column mc.SGW_ACCOUNT_CHANNEL.sp_number
-  is 'ÌØ·şºÅ';
+  is 'ç‰¹æœå·';
 comment on column mc.SGW_ACCOUNT_CHANNEL.channel_id
-  is 'Í¨µÀID';
+  is 'é€šé“ID';
 comment on column mc.SGW_ACCOUNT_CHANNEL.sub_extend_number
-  is '×ÓÀ©Õ¹ºÅ';
+  is 'å­æ‰©å±•å·';
 comment on column mc.SGW_ACCOUNT_CHANNEL.mobile_com
-  is 'ÔËÓªÉÌ±àºÅ, 1:ÒÆ¶¯, 2:ÁªÍ¨, 3:µçĞÅ';
+  is 'è¿è¥å•†ç¼–å·, 1:ç§»åŠ¨, 2:è”é€š, 3:ç”µä¿¡';
 comment on column mc.SGW_ACCOUNT_CHANNEL.channel_status
-  is 'Í¨µÀ×´Ì¬ 0:Í£ÓÃ, 1:ÆôÓÃ';
+  is 'é€šé“çŠ¶æ€ 0:åœç”¨, 1:å¯ç”¨';
 comment on column mc.SGW_ACCOUNT_CHANNEL.sys_time
-  is 'Èë¿âÊ±¼ä';
+  is 'å…¥åº“æ—¶é—´';
 alter table mc.SGW_ACCOUNT_CHANNEL
   add constraint PK_SGW_ACCOUNT_CHANNEL primary key (ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -11526,40 +11526,40 @@ tablespace MC
     maxextents unlimited
   );
 comment on table mc.SGW_ACCOUNT_INFO
-  is 'CMPPÍø¹ØĞÅÏ¢±í';
+  is 'CMPPç½‘å…³ä¿¡æ¯è¡¨';
 comment on column mc.SGW_ACCOUNT_INFO.sgw_id
-  is 'Íø¹ØID';
+  is 'ç½‘å…³ID';
 comment on column mc.SGW_ACCOUNT_INFO.user_id
-  is 'ÓÃ»§UUID';
+  is 'ç”¨æˆ·UUID';
 comment on column mc.SGW_ACCOUNT_INFO.account_pass
-  is 'CMPPÕË»§Ã÷ÎÄÃÜÂë';
+  is 'CMPPè´¦æˆ·æ˜æ–‡å¯†ç ';
 comment on column mc.SGW_ACCOUNT_INFO.registed_ip
-  is 'ÈÏÖ¤IP';
+  is 'è®¤è¯IP';
 comment on column mc.SGW_ACCOUNT_INFO.prior_id
-  is 'ÓÅÏÈ¼¶';
+  is 'ä¼˜å…ˆçº§';
 comment on column mc.SGW_ACCOUNT_INFO.flux_limit
-  is 'Á÷¿Ø';
+  is 'æµæ§';
 comment on column mc.SGW_ACCOUNT_INFO.mt_worker_num
-  is 'ÏÂĞĞ´¦ÀíÏß³ÌÊıÁ¿';
+  is 'ä¸‹è¡Œå¤„ç†çº¿ç¨‹æ•°é‡';
 comment on column mc.SGW_ACCOUNT_INFO.mt_cache_num
-  is 'ÏÂĞĞ»º´æ¶ÓÁĞ³¤¶È';
+  is 'ä¸‹è¡Œç¼“å­˜é˜Ÿåˆ—é•¿åº¦';
 comment on column mc.SGW_ACCOUNT_INFO.server_active_test
-  is '·şÎñ¶Ë·¢ËÍÁ´Â·¼ì²â 0:²»·¢ËÍ, 1:·¢ËÍ';
+  is 'æœåŠ¡ç«¯å‘é€é“¾è·¯æ£€æµ‹ 0:ä¸å‘é€, 1:å‘é€';
 comment on column mc.SGW_ACCOUNT_INFO.is_channel_account
-  is 'ÊÇ·ñÇşµÀÕËºÅ£¬ 0:·ñ, 1:ÊÇ';
+  is 'æ˜¯å¦æ¸ é“è´¦å·ï¼Œ 0:å¦, 1:æ˜¯';
 comment on column mc.SGW_ACCOUNT_INFO.signature_type
-  is 'Ç©ÃûÀàĞÍ£º1£ºÆÕÍ¨Íø¹ØÇ©Ãû£»2£º×Ó¶Ë¿ÚÍø¹ØÇ©Ãû£»3£º×ÔÖ÷Ç©Ãû£¨ĞèÒªÍ¨¹ıÇ©Ãû³Ø¹ıÂË¼ì²é£©';
+  is 'ç­¾åç±»å‹ï¼š1ï¼šæ™®é€šç½‘å…³ç­¾åï¼›2ï¼šå­ç«¯å£ç½‘å…³ç­¾åï¼›3ï¼šè‡ªä¸»ç­¾åï¼ˆéœ€è¦é€šè¿‡ç­¾åæ± è¿‡æ»¤æ£€æŸ¥ï¼‰';
 comment on column mc.SGW_ACCOUNT_INFO.check_prohibitedword
-  is 'ÊÇ·ñ¼ì²éÎ¥½û´Ê£¬ 0:·ñ, 1:ÊÇ';
+  is 'æ˜¯å¦æ£€æŸ¥è¿ç¦è¯ï¼Œ 0:å¦, 1:æ˜¯';
 comment on column mc.SGW_ACCOUNT_INFO.comments
-  is '±¸×¢';
+  is 'å¤‡æ³¨';
 comment on column mc.SGW_ACCOUNT_INFO.sys_time
-  is 'Èë¿âÊ±¼ä';
+  is 'å…¥åº“æ—¶é—´';
 comment on column mc.SGW_ACCOUNT_INFO.trustedaccount
-  is 'ÊÇ·ñÊÇ¿ÉĞÅÓÃ»§¡£0»ònullÊ±ÊÇ²»¿ÉĞÅÕË»§£¬1£º¿ÉĞÅÕË»§';
+  is 'æ˜¯å¦æ˜¯å¯ä¿¡ç”¨æˆ·ã€‚0æˆ–nullæ—¶æ˜¯ä¸å¯ä¿¡è´¦æˆ·ï¼Œ1ï¼šå¯ä¿¡è´¦æˆ·';
 alter table mc.SGW_ACCOUNT_INFO
   add constraint PK_SGW_ACCOUNT_INFO primary key (SGW_ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -11615,28 +11615,28 @@ tablespace MC
     maxextents unlimited
   );
 comment on table mc.SGW_CUSTOMER
-  is 'Íø¹Ø¿Í»§±í';
+  is 'ç½‘å…³å®¢æˆ·è¡¨';
 comment on column mc.SGW_CUSTOMER.customer_id
-  is '¿Í»§ID';
+  is 'å®¢æˆ·ID';
 comment on column mc.SGW_CUSTOMER.customer_name
-  is '¿Í»§Ãû³Æ';
+  is 'å®¢æˆ·åç§°';
 comment on column mc.SGW_CUSTOMER.p_customer_id
-  is '¸¸¿Í»§ID£º¶¥¼¶Îª0';
+  is 'çˆ¶å®¢æˆ·IDï¼šé¡¶çº§ä¸º0';
 comment on column mc.SGW_CUSTOMER.user_id
-  is 'ÓÃ»§UUID';
+  is 'ç”¨æˆ·UUID';
 comment on column mc.SGW_CUSTOMER.org_id
-  is '»ú¹¹±àºÅ';
+  is 'æœºæ„ç¼–å·';
 comment on column mc.SGW_CUSTOMER.sub_extend_number
-  is '×ÓÀ©Õ¹ºÅ';
+  is 'å­æ‰©å±•å·';
 comment on column mc.SGW_CUSTOMER.comments
-  is '±¸×¢';
+  is 'å¤‡æ³¨';
 comment on column mc.SGW_CUSTOMER.customer_status
-  is 'ÕËºÅ×´Ì¬ 0:Í£ÓÃ, 1:ÆôÓÃ';
+  is 'è´¦å·çŠ¶æ€ 0:åœç”¨, 1:å¯ç”¨';
 comment on column mc.SGW_CUSTOMER.sys_time
-  is 'Èë¿âÊ±¼ä';
+  is 'å…¥åº“æ—¶é—´';
 alter table mc.SGW_CUSTOMER
   add constraint PK_SGW_CHANNEL_CUSTOMER primary key (CUSTOMER_ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -11679,12 +11679,12 @@ tablespace MC
     maxextents unlimited
   );
 comment on table mc.SGW_MO_TASK
-  is 'ÉÏĞĞ¶ÌĞÅÈÎÎñ·ÇHTTPÍÆËÍ´¦Àí±í';
+  is 'ä¸Šè¡ŒçŸ­ä¿¡ä»»åŠ¡éHTTPæ¨é€å¤„ç†è¡¨';
 comment on column mc.SGW_MO_TASK.mobile_from
-  is 'ÉÏĞĞÊÖ»úºÅÂë';
+  is 'ä¸Šè¡Œæ‰‹æœºå·ç ';
 alter table mc.SGW_MO_TASK
   add constraint PK_SGW_MO_TASK primary key (RECEIVE_ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -11732,42 +11732,42 @@ tablespace MC
     maxextents unlimited
   );
 comment on table mc.SGW_REPORT_TASK
-  is '¶ÌĞÅÍø¹Ø×´Ì¬±¨¸æÈÎÎñ±í';
+  is 'çŸ­ä¿¡ç½‘å…³çŠ¶æ€æŠ¥å‘Šä»»åŠ¡è¡¨';
 comment on column mc.SGW_REPORT_TASK.task_id
-  is 'ÈÎÎñ±àºÅ';
+  is 'ä»»åŠ¡ç¼–å·';
 comment on column mc.SGW_REPORT_TASK.send_id
-  is '¶ÌĞÅ±àºÅ';
+  is 'çŸ­ä¿¡ç¼–å·';
 comment on column mc.SGW_REPORT_TASK.mobile_to
-  is 'ÊÖ»úºÅ';
+  is 'æ‰‹æœºå·';
 comment on column mc.SGW_REPORT_TASK.destnation_id
-  is 'ÌØ·şºÅ';
+  is 'ç‰¹æœå·';
 comment on column mc.SGW_REPORT_TASK.msg_id
-  is '·ÖÅä¸ø¿Í»§¶ËµÄ¶ÌĞÅ±àºÅ';
+  is 'åˆ†é…ç»™å®¢æˆ·ç«¯çš„çŸ­ä¿¡ç¼–å·';
 comment on column mc.SGW_REPORT_TASK.user_organization
-  is '»ú¹¹±àºÅ';
+  is 'æœºæ„ç¼–å·';
 comment on column mc.SGW_REPORT_TASK.user_id
-  is 'ÓÃ»§±àºÅ';
+  is 'ç”¨æˆ·ç¼–å·';
 comment on column mc.SGW_REPORT_TASK.channel_id
-  is 'Í¨µÀ±àºÅ';
+  is 'é€šé“ç¼–å·';
 comment on column mc.SGW_REPORT_TASK.sys_time
-  is 'Èë¿âÊ±¼ä';
+  is 'å…¥åº“æ—¶é—´';
 comment on column mc.SGW_REPORT_TASK.submit_time
-  is '¶ÌĞÅÌá½»Ê±¼ä';
+  is 'çŸ­ä¿¡æäº¤æ—¶é—´';
 comment on column mc.SGW_REPORT_TASK.done_time
-  is '¶ÌĞÅ·¢ËÍÊ±¼ä';
+  is 'çŸ­ä¿¡å‘é€æ—¶é—´';
 comment on column mc.SGW_REPORT_TASK.report_time
-  is '×´Ì¬±¨¸æÊ±¼ä';
+  is 'çŠ¶æ€æŠ¥å‘Šæ—¶é—´';
 comment on column mc.SGW_REPORT_TASK.push_status
-  is 'ÍÆËÍ×´Ì¬£º0£º´ıÍÆËÍ£»2£ºÍÆËÍÖĞ£»5£ºÍÆËÍ³É¹¦£»6£ºÍÆËÍÊ§°Ü';
+  is 'æ¨é€çŠ¶æ€ï¼š0ï¼šå¾…æ¨é€ï¼›2ï¼šæ¨é€ä¸­ï¼›5ï¼šæ¨é€æˆåŠŸï¼›6ï¼šæ¨é€å¤±è´¥';
 comment on column mc.SGW_REPORT_TASK.next_push_time
-  is 'ÏÂ´ÎÍÆËÍÊ±¼ä';
+  is 'ä¸‹æ¬¡æ¨é€æ—¶é—´';
 comment on column mc.SGW_REPORT_TASK.push_times
-  is 'ÍÆËÍ´ÎÊı';
+  is 'æ¨é€æ¬¡æ•°';
 comment on column mc.SGW_REPORT_TASK.stat
-  is '×´Ì¬Âë';
+  is 'çŠ¶æ€ç ';
 alter table mc.SGW_REPORT_TASK
   add constraint PK_SGW_REPORT_TASK primary key (TASK_ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -11828,42 +11828,42 @@ tablespace MC
     maxextents unlimited
   );
 comment on table mc.SGW_REPORT_TASK_HIS
-  is 'Íø¹Ø×´Ì¬±¨¸æÈÎÎñ´¦ÀíÀúÊ·±í';
+  is 'ç½‘å…³çŠ¶æ€æŠ¥å‘Šä»»åŠ¡å¤„ç†å†å²è¡¨';
 comment on column mc.SGW_REPORT_TASK_HIS.task_id
-  is 'ÈÎÎñ±àºÅ';
+  is 'ä»»åŠ¡ç¼–å·';
 comment on column mc.SGW_REPORT_TASK_HIS.send_id
-  is '¶ÌĞÅ±àºÅ';
+  is 'çŸ­ä¿¡ç¼–å·';
 comment on column mc.SGW_REPORT_TASK_HIS.mobile_to
-  is 'ÊÖ»úºÅ';
+  is 'æ‰‹æœºå·';
 comment on column mc.SGW_REPORT_TASK_HIS.destnation_id
-  is 'ÌØ·şºÅ';
+  is 'ç‰¹æœå·';
 comment on column mc.SGW_REPORT_TASK_HIS.stat
-  is '×´Ì¬Âë';
+  is 'çŠ¶æ€ç ';
 comment on column mc.SGW_REPORT_TASK_HIS.msg_id
-  is '·ÖÅä¸ø¿Í»§¶ËµÄ¶ÌĞÅ±àºÅ';
+  is 'åˆ†é…ç»™å®¢æˆ·ç«¯çš„çŸ­ä¿¡ç¼–å·';
 comment on column mc.SGW_REPORT_TASK_HIS.user_organization
-  is '»ú¹¹±àºÅ';
+  is 'æœºæ„ç¼–å·';
 comment on column mc.SGW_REPORT_TASK_HIS.user_id
-  is 'ÓÃ»§±àºÅ';
+  is 'ç”¨æˆ·ç¼–å·';
 comment on column mc.SGW_REPORT_TASK_HIS.channel_id
-  is 'Í¨µÀ±àºÅ';
+  is 'é€šé“ç¼–å·';
 comment on column mc.SGW_REPORT_TASK_HIS.sys_time
-  is 'Èë¿âÊ±¼ä';
+  is 'å…¥åº“æ—¶é—´';
 comment on column mc.SGW_REPORT_TASK_HIS.submit_time
-  is '¶ÌĞÅÌá½»Ê±¼ä';
+  is 'çŸ­ä¿¡æäº¤æ—¶é—´';
 comment on column mc.SGW_REPORT_TASK_HIS.done_time
-  is '¶ÌĞÅ·¢ËÍÊ±¼ä';
+  is 'çŸ­ä¿¡å‘é€æ—¶é—´';
 comment on column mc.SGW_REPORT_TASK_HIS.report_time
-  is '×´Ì¬±¨¸æÊ±¼ä';
+  is 'çŠ¶æ€æŠ¥å‘Šæ—¶é—´';
 comment on column mc.SGW_REPORT_TASK_HIS.push_status
-  is 'ÍÆËÍ×´Ì¬';
+  is 'æ¨é€çŠ¶æ€';
 comment on column mc.SGW_REPORT_TASK_HIS.next_push_time
-  is 'ÏÂ´ÎÍÆËÍÊ±¼ä';
+  is 'ä¸‹æ¬¡æ¨é€æ—¶é—´';
 comment on column mc.SGW_REPORT_TASK_HIS.push_times
-  is 'ÍÆËÍ´ÎÊı';
+  is 'æ¨é€æ¬¡æ•°';
 alter table mc.SGW_REPORT_TASK_HIS
   add constraint PK_SGW_REPORT_TASK_HIS primary key (TASK_ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -11918,32 +11918,32 @@ tablespace MC
     maxextents unlimited
   );
 comment on table mc.SGW_SIGNATURE_POOL
-  is 'Íø¹Ø¿Í»§Ç©Ãû³Ø±í';
+  is 'ç½‘å…³å®¢æˆ·ç­¾åæ± è¡¨';
 comment on column mc.SGW_SIGNATURE_POOL.signature_id
-  is 'Ç©ÃûID';
+  is 'ç­¾åID';
 comment on column mc.SGW_SIGNATURE_POOL.customer_id
-  is '¿Í»§ID';
+  is 'å®¢æˆ·ID';
 comment on column mc.SGW_SIGNATURE_POOL.signature
-  is 'Ç©Ãû';
+  is 'ç­¾å';
 comment on column mc.SGW_SIGNATURE_POOL.description
-  is 'ÃèÊö';
+  is 'æè¿°';
 comment on column mc.SGW_SIGNATURE_POOL.sort_index
-  is 'ÅÅĞò±àºÅ';
+  is 'æ’åºç¼–å·';
 comment on column mc.SGW_SIGNATURE_POOL.do_append_msg
-  is 'ÊÇ·ñ×Ô¶¯Ìí¼Ó¶ÌĞÅÄÚÈİ 0:²»Ìí¼Ó, 1:Ìí¼Ó';
+  is 'æ˜¯å¦è‡ªåŠ¨æ·»åŠ çŸ­ä¿¡å†…å®¹ 0:ä¸æ·»åŠ , 1:æ·»åŠ ';
 comment on column mc.SGW_SIGNATURE_POOL.append_msg
-  is '×Ô¶¯Ìí¼ÓµÄ¶ÌĞÅÄÚÈİ';
+  is 'è‡ªåŠ¨æ·»åŠ çš„çŸ­ä¿¡å†…å®¹';
 comment on column mc.SGW_SIGNATURE_POOL.black_level
-  is 'ºÚÃûµ¥¼¶±ğ£º0£ºÖ»¼ì²âBLACKºÚÃûµ¥£»1£º¼ì²âBLACKºÍBLACK_CSMDºÚÃûµ¥£»2£º¼ì²âBLACKºÍBLACK_CSMD¡¢BLACK_ZHUOYUEºÚÃûµ¥';
+  is 'é»‘åå•çº§åˆ«ï¼š0ï¼šåªæ£€æµ‹BLACKé»‘åå•ï¼›1ï¼šæ£€æµ‹BLACKå’ŒBLACK_CSMDé»‘åå•ï¼›2ï¼šæ£€æµ‹BLACKå’ŒBLACK_CSMDã€BLACK_ZHUOYUEé»‘åå•';
 comment on column mc.SGW_SIGNATURE_POOL.comments
-  is '±¸×¢';
+  is 'å¤‡æ³¨';
 comment on column mc.SGW_SIGNATURE_POOL.signature_status
-  is '×´Ì¬ 0:Í£ÓÃ, 1:ÆôÓÃ';
+  is 'çŠ¶æ€ 0:åœç”¨, 1:å¯ç”¨';
 comment on column mc.SGW_SIGNATURE_POOL.sys_time
-  is 'Èë¿âÊ±¼ä';
+  is 'å…¥åº“æ—¶é—´';
 alter table mc.SGW_SIGNATURE_POOL
   add constraint PK_SGW_SIGNATURE_POOL primary key (SIGNATURE_ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -12002,32 +12002,32 @@ tablespace MC
     maxextents unlimited
   );
 comment on column mc.SMS_BIR_CONFIG.user_group_id
-  is 'ËùÊôÓÃ»§×é';
+  is 'æ‰€å±ç”¨æˆ·ç»„';
 comment on column mc.SMS_BIR_CONFIG.user_group_name
-  is ' ËùÊôÓÃ»§×éÃû³Æ';
+  is ' æ‰€å±ç”¨æˆ·ç»„åç§°';
 comment on column mc.SMS_BIR_CONFIG.do_congratulations
-  is 'ÊÇ·ñ½øĞĞÉúÈÕ×£¸£';
+  is 'æ˜¯å¦è¿›è¡Œç”Ÿæ—¥ç¥ç¦';
 comment on column mc.SMS_BIR_CONFIG.source_entity_name
-  is 'Êı¾İÔ´Ãû³Æ';
+  is 'æ•°æ®æºåç§°';
 comment on column mc.SMS_BIR_CONFIG.account_name_field
-  is '¿Í»§ĞÕÃû×Ö¶Î';
+  is 'å®¢æˆ·å§“åå­—æ®µ';
 comment on column mc.SMS_BIR_CONFIG.account_birthday_field
-  is 'ÉúÈÕ×Ö¶Î';
+  is 'ç”Ÿæ—¥å­—æ®µ';
 comment on column mc.SMS_BIR_CONFIG.mobile_number_field
-  is 'ÊÖ»úºÅÂë×Ö¶Î';
+  is 'æ‰‹æœºå·ç å­—æ®µ';
 comment on column mc.SMS_BIR_CONFIG.message_template
-  is '¶ÌĞÅÄ£°å';
+  is 'çŸ­ä¿¡æ¨¡æ¿';
 comment on column mc.SMS_BIR_CONFIG.send_time
-  is '¶ÌĞÅ·¢ËÍÊ±¼ä';
+  is 'çŸ­ä¿¡å‘é€æ—¶é—´';
 comment on column mc.SMS_BIR_CONFIG.group_ids
-  is 'Èº×éID';
+  is 'ç¾¤ç»„ID';
 comment on column mc.SMS_BIR_CONFIG.user_id
-  is ' ËùÊôÓÃ»§';
+  is ' æ‰€å±ç”¨æˆ·';
 comment on column mc.SMS_BIR_CONFIG.user_name
-  is ' ËùÊôÓÃ»§Ãû³Æ';
+  is ' æ‰€å±ç”¨æˆ·åç§°';
 alter table mc.SMS_BIR_CONFIG
   add primary key (SMS_BIR_CONFIG_ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -12068,20 +12068,20 @@ tablespace MC
     maxextents unlimited
   );
 comment on column mc.SMS_BIR_RECORD.user_id
-  is '·¢ËÍÊ±¼ä';
+  is 'å‘é€æ—¶é—´';
 comment on column mc.SMS_BIR_RECORD.send_time
-  is '¶ÌĞÅ·¢ËÍÊ±¼ä';
+  is 'çŸ­ä¿¡å‘é€æ—¶é—´';
 comment on column mc.SMS_BIR_RECORD.status
-  is '2:ÒÑ·¢ËÍ';
+  is '2:å·²å‘é€';
 comment on column mc.SMS_BIR_RECORD.send_quantity
-  is '·¢ËÍÊıÁ¿';
+  is 'å‘é€æ•°é‡';
 comment on column mc.SMS_BIR_RECORD.template
-  is '¶ÌĞÅÄ£°å';
+  is 'çŸ­ä¿¡æ¨¡æ¿';
 comment on column mc.SMS_BIR_RECORD.user_name
-  is 'ÓÃ»§Ãû';
+  is 'ç”¨æˆ·å';
 alter table mc.SMS_BIR_RECORD
   add primary key (SMS_BIR_RECORD_ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -12115,7 +12115,7 @@ tablespace MC
   maxtrans 255;
 alter table mc.SMS_BIR_RECORD_DETAIL
   add primary key (SMS_BIR_RECORD_DETAIL_ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -12175,30 +12175,30 @@ tablespace MC
     maxextents unlimited
   );
 comment on table mc.SMS_CHANNEL_RULE_SET
-  is '¶ÌĞÅÍ¨µÀ¹æÔò±í';
+  is 'çŸ­ä¿¡é€šé“è§„åˆ™è¡¨';
 comment on column mc.SMS_CHANNEL_RULE_SET.rule_set_id
-  is '¹æÔò±àºÅ';
+  is 'è§„åˆ™ç¼–å·';
 comment on column mc.SMS_CHANNEL_RULE_SET.rule_set_name
-  is '¹æÔòÃû³Æ';
+  is 'è§„åˆ™åç§°';
 comment on column mc.SMS_CHANNEL_RULE_SET.rule_set_type
-  is '¹æÔòÀàĞÍ, ITEMS:ÊÖ¹¤ÊäÈëµÄ¹æÔò, DECISIONTABLE:¾ö²ß±í';
+  is 'è§„åˆ™ç±»å‹, ITEMS:æ‰‹å·¥è¾“å…¥çš„è§„åˆ™, DECISIONTABLE:å†³ç­–è¡¨';
 comment on column mc.SMS_CHANNEL_RULE_SET.dc_file_path
-  is '¾ö²ß±í±£´æÂ·¾¶';
+  is 'å†³ç­–è¡¨ä¿å­˜è·¯å¾„';
 comment on column mc.SMS_CHANNEL_RULE_SET.rule_status
-  is '×´Ì¬, -1:²İ¸å×´Ì¬, 0:±¸Ñ¡, 1:ÉúĞ§';
+  is 'çŠ¶æ€, -1:è‰ç¨¿çŠ¶æ€, 0:å¤‡é€‰, 1:ç”Ÿæ•ˆ';
 comment on column mc.SMS_CHANNEL_RULE_SET.user_organization
-  is '»ú¹¹±àºÅ';
+  is 'æœºæ„ç¼–å·';
 comment on column mc.SMS_CHANNEL_RULE_SET.user_org_name
-  is '»ú¹¹Ãû³Æ';
+  is 'æœºæ„åç§°';
 comment on column mc.SMS_CHANNEL_RULE_SET.user_id
-  is 'ÓÃ»§±àºÅ';
+  is 'ç”¨æˆ·ç¼–å·';
 comment on column mc.SMS_CHANNEL_RULE_SET.user_name
-  is 'ÓÃ»§Ãû³Æ';
+  is 'ç”¨æˆ·åç§°';
 comment on column mc.SMS_CHANNEL_RULE_SET.descriptions
-  is '±¸×¢';
+  is 'å¤‡æ³¨';
 alter table mc.SMS_CHANNEL_RULE_SET
   add constraint PK_SMS_CHANNEL_RULE_SET primary key (RULE_SET_ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -12257,64 +12257,64 @@ tablespace MC
     maxextents unlimited
   );
 comment on table mc.SMS_CHANNEL_RULE_SET_ITEM
-  is '¶ÌĞÅÍ¨µÀ¹æÔò±íÃ÷Ï¸±í';
+  is 'çŸ­ä¿¡é€šé“è§„åˆ™è¡¨æ˜ç»†è¡¨';
 comment on column mc.SMS_CHANNEL_RULE_SET_ITEM.rule_set_id
-  is '¹æÔò±àºÅ';
+  is 'è§„åˆ™ç¼–å·';
 comment on column mc.SMS_CHANNEL_RULE_SET_ITEM.rule_set_item_id
-  is '¹æÔòÃ÷Ï¸±àºÅ';
+  is 'è§„åˆ™æ˜ç»†ç¼–å·';
 comment on column mc.SMS_CHANNEL_RULE_SET_ITEM.rule_set_item_name
-  is '¹æÔòÃû³Æ';
+  is 'è§„åˆ™åç§°';
 comment on column mc.SMS_CHANNEL_RULE_SET_ITEM.salience
-  is 'ÓÅÏÈ¼¶';
+  is 'ä¼˜å…ˆçº§';
 comment on column mc.SMS_CHANNEL_RULE_SET_ITEM.message_class
-  is 'ĞÅÏ¢·ÖÀà, ¿ÉÒÔ¶àÑ¡';
+  is 'ä¿¡æ¯åˆ†ç±», å¯ä»¥å¤šé€‰';
 comment on column mc.SMS_CHANNEL_RULE_SET_ITEM.sys_id
-  is 'ĞÅÏ¢À´Ô´, ¿ÉÒÔ¶àÑ¡';
+  is 'ä¿¡æ¯æ¥æº, å¯ä»¥å¤šé€‰';
 comment on column mc.SMS_CHANNEL_RULE_SET_ITEM.message_type
-  is 'ĞÅÏ¢ĞÔÖÊ, ¿ÉÒÔ¶àÑ¡';
+  is 'ä¿¡æ¯æ€§è´¨, å¯ä»¥å¤šé€‰';
 comment on column mc.SMS_CHANNEL_RULE_SET_ITEM.org_id
-  is '»ú¹¹±àºÅ, ¿ÉÒÔ¶àÑ¡';
+  is 'æœºæ„ç¼–å·, å¯ä»¥å¤šé€‰';
 comment on column mc.SMS_CHANNEL_RULE_SET_ITEM.user_id
-  is 'ÓÃ»§±àºÅ, ¿ÉÒÔ¶àÑ¡';
+  is 'ç”¨æˆ·ç¼–å·, å¯ä»¥å¤šé€‰';
 comment on column mc.SMS_CHANNEL_RULE_SET_ITEM.mobile_com
-  is 'ÔËÓªÉÌ, ¿ÉÒÔ¶àÑ¡';
+  is 'è¿è¥å•†, å¯ä»¥å¤šé€‰';
 comment on column mc.SMS_CHANNEL_RULE_SET_ITEM.is_wappush
-  is 'ÊÇ·ñÊÇWAPPUSH¶ÌĞÅ, true:ÊÇ, false:²»ÊÇ';
+  is 'æ˜¯å¦æ˜¯WAPPUSHçŸ­ä¿¡, true:æ˜¯, false:ä¸æ˜¯';
 comment on column mc.SMS_CHANNEL_RULE_SET_ITEM.num_scope
-  is 'ºÅ¶Î';
+  is 'å·æ®µ';
 comment on column mc.SMS_CHANNEL_RULE_SET_ITEM.num_region
-  is 'ÊÖ»úËùÊôÇøÓò';
+  is 'æ‰‹æœºæ‰€å±åŒºåŸŸ';
 comment on column mc.SMS_CHANNEL_RULE_SET_ITEM.mobile
-  is 'ÊÖ»úºÅÂë£¬¿ÉÒÔ¶àÑ¡';
+  is 'æ‰‹æœºå·ç ï¼Œå¯ä»¥å¤šé€‰';
 comment on column mc.SMS_CHANNEL_RULE_SET_ITEM.is_long_sms
-  is 'ÊÇ·ñÊÇ³¤¶ÌĞÅ£¬ÓÃÓÚÔÚÑ¡Ôñ¹æÔòÊ±½øĞĞÅĞ¶Ï';
+  is 'æ˜¯å¦æ˜¯é•¿çŸ­ä¿¡ï¼Œç”¨äºåœ¨é€‰æ‹©è§„åˆ™æ—¶è¿›è¡Œåˆ¤æ–­';
 comment on column mc.SMS_CHANNEL_RULE_SET_ITEM.channel_id
-  is 'ËùÑ¡Í¨µÀ';
+  is 'æ‰€é€‰é€šé“';
 comment on column mc.SMS_CHANNEL_RULE_SET_ITEM.msg_type
-  is 'ĞÅÏ¢ÀàĞÍ';
+  is 'ä¿¡æ¯ç±»å‹';
 comment on column mc.SMS_CHANNEL_RULE_SET_ITEM.day_start_time
-  is '°×Ìì¿ªÊ¼Ê±¼ä';
+  is 'ç™½å¤©å¼€å§‹æ—¶é—´';
 comment on column mc.SMS_CHANNEL_RULE_SET_ITEM.day_end_time
-  is '°×Ìì½áÊøÊ±¼ä';
+  is 'ç™½å¤©ç»“æŸæ—¶é—´';
 comment on column mc.SMS_CHANNEL_RULE_SET_ITEM.night_start_time
-  is 'Ò¹¼ä¿ªÊ¼Ê±¼ä';
+  is 'å¤œé—´å¼€å§‹æ—¶é—´';
 comment on column mc.SMS_CHANNEL_RULE_SET_ITEM.night_end_time
-  is 'Ò¹¼ä½áÊøÊ±¼ä';
+  is 'å¤œé—´ç»“æŸæ—¶é—´';
 comment on column mc.SMS_CHANNEL_RULE_SET_ITEM.default_channel_id
-  is 'È±Ê¡Ê¹ÓÃµÄÍ¨µÀ';
+  is 'ç¼ºçœä½¿ç”¨çš„é€šé“';
 comment on column mc.SMS_CHANNEL_RULE_SET_ITEM.default_mobile_channel_id
-  is 'È±Ê¡Ê¹ÓÃµÄÒÆ¶¯Í¨µÀ';
+  is 'ç¼ºçœä½¿ç”¨çš„ç§»åŠ¨é€šé“';
 comment on column mc.SMS_CHANNEL_RULE_SET_ITEM.default_union_channel_id
-  is 'È±Ê¡Ê¹ÓÃµÄÁªÍ¨Í¨µÀ';
+  is 'ç¼ºçœä½¿ç”¨çš„è”é€šé€šé“';
 comment on column mc.SMS_CHANNEL_RULE_SET_ITEM.default_dx_channel_id
-  is 'È±Ê¡Ê¹ÓÃµÄµçĞÅÍ¨µÀ';
+  is 'ç¼ºçœä½¿ç”¨çš„ç”µä¿¡é€šé“';
 comment on column mc.SMS_CHANNEL_RULE_SET_ITEM.use_channel_id
-  is '×îÖÕÊ¹ÓÃµÄÍ¨µÀ±àºÅ';
+  is 'æœ€ç»ˆä½¿ç”¨çš„é€šé“ç¼–å·';
 comment on column mc.SMS_CHANNEL_RULE_SET_ITEM.use_long_sms
-  is 'ÊÇ·ñÊ¹ÓÃ³¤¶ÌĞÅ·½Ê½·¢ËÍ';
+  is 'æ˜¯å¦ä½¿ç”¨é•¿çŸ­ä¿¡æ–¹å¼å‘é€';
 alter table mc.SMS_CHANNEL_RULE_SET_ITEM
   add constraint PK_SMS_CHANNEL_RULE_SET_ITEM primary key (RULE_SET_ITEM_ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -12351,20 +12351,20 @@ tablespace MC
     maxextents unlimited
   );
 comment on table mc.SMS_ERR_CODE
-  is '¶ÌĞÅÍ¨µÀ×´Ì¬±¨¸æ±í';
+  is 'çŸ­ä¿¡é€šé“çŠ¶æ€æŠ¥å‘Šè¡¨';
 comment on column mc.SMS_ERR_CODE.channel_id
-  is 'Í¨µÀ±àºÅ';
+  is 'é€šé“ç¼–å·';
 comment on column mc.SMS_ERR_CODE.err_code
-  is '´íÎóÂë';
+  is 'é”™è¯¯ç ';
 comment on column mc.SMS_ERR_CODE.err_desc
-  is 'ËµÃ÷';
+  is 'è¯´æ˜';
 comment on column mc.SMS_ERR_CODE.suggestion
-  is '´¦Àí½¨Òé';
+  is 'å¤„ç†å»ºè®®';
 comment on column mc.SMS_ERR_CODE.description
-  is '±¸×¢';
+  is 'å¤‡æ³¨';
 alter table mc.SMS_ERR_CODE
   add constraint PK_SMS_ERR_CODE primary key (CHANNEL_ID, ERR_CODE)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -12400,32 +12400,32 @@ tablespace MC
   initrans 1
   maxtrans 255;
 comment on table mc.SMS_HIS
-  is '¶ÌĞÅ¹éµµ±í';
+  is 'çŸ­ä¿¡å½’æ¡£è¡¨';
 comment on column mc.SMS_HIS.sms_his_id
   is 'id';
 comment on column mc.SMS_HIS.send_status
-  is '·¢ËÍ×´Ì¬';
+  is 'å‘é€çŠ¶æ€';
 comment on column mc.SMS_HIS.user_organization
-  is '»ú¹¹';
+  is 'æœºæ„';
 comment on column mc.SMS_HIS.channel_id
-  is 'Í¨µÀ';
+  is 'é€šé“';
 comment on column mc.SMS_HIS.mobile_com
-  is 'ÔËÓªÉÌ';
+  is 'è¿è¥å•†';
 comment on column mc.SMS_HIS.sys_id
-  is 'ĞÅÏ¢À´Ô´';
+  is 'ä¿¡æ¯æ¥æº';
 comment on column mc.SMS_HIS.message_type
-  is 'ĞÅÏ¢ĞÔÖÊ';
+  is 'ä¿¡æ¯æ€§è´¨';
 comment on column mc.SMS_HIS.message_class
-  is 'ĞÅÏ¢·ÖÀà';
+  is 'ä¿¡æ¯åˆ†ç±»';
 comment on column mc.SMS_HIS.batch_id
-  is 'Åú´ÎºÅ';
+  is 'æ‰¹æ¬¡å·';
 comment on column mc.SMS_HIS.mobile_quantities
-  is '·¢ËÍ×ÜÁ¿';
+  is 'å‘é€æ€»é‡';
 comment on column mc.SMS_HIS.send_time
-  is '·¢ËÍÊ±¼ä';
+  is 'å‘é€æ—¶é—´';
 alter table mc.SMS_HIS
   add constraint PK_SMS_HIS primary key (SMS_HIS_ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -12446,10 +12446,10 @@ tablespace MC
   initrans 1
   maxtrans 255;
 comment on table mc.SMS_MESSAGE_CLASS
-  is 'ĞÅÏ¢·ÖÀàÊı¾İ×Öµä';
+  is 'ä¿¡æ¯åˆ†ç±»æ•°æ®å­—å…¸';
 alter table mc.SMS_MESSAGE_CLASS
   add constraint PK_SMS_MESSAGE_CLASS primary key (SMS_MESSAGE_CLASS_ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -12478,18 +12478,18 @@ tablespace MC
     maxextents unlimited
   );
 comment on table mc.SMS_MESSAGE_TYPE
-  is 'ĞÅÏ¢ĞÔÖÊÊı¾İ×Öµä';
+  is 'ä¿¡æ¯æ€§è´¨æ•°æ®å­—å…¸';
 comment on column mc.SMS_MESSAGE_TYPE.sms_message_type_id
-  is 'ĞÅÏ¢ĞÔÖÊ±àºÅ';
+  is 'ä¿¡æ¯æ€§è´¨ç¼–å·';
 comment on column mc.SMS_MESSAGE_TYPE.sms_message_type_name
-  is 'ĞÅÏ¢ĞÔÖÊÃû³Æ';
+  is 'ä¿¡æ¯æ€§è´¨åç§°';
 comment on column mc.SMS_MESSAGE_TYPE.default_priority
-  is 'È±Ê¡µÄÓÅÏÈ¼¶';
+  is 'ç¼ºçœçš„ä¼˜å…ˆçº§';
 comment on column mc.SMS_MESSAGE_TYPE.max_priority
-  is '×î¸ßÓÅÏÈ¼¶';
+  is 'æœ€é«˜ä¼˜å…ˆçº§';
 alter table mc.SMS_MESSAGE_TYPE
   add constraint PK_SMS_MESSAGE_TYPE primary key (SMS_MESSAGE_TYPE_ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -12523,10 +12523,10 @@ tablespace MC
   initrans 1
   maxtrans 255;
 comment on table mc.SMS_MO_DISPATCH
-  is 'ÒµÎñ¶ÌĞÅ·ÖÅÉ±í';
+  is 'ä¸šåŠ¡çŸ­ä¿¡åˆ†æ´¾è¡¨';
 alter table mc.SMS_MO_DISPATCH
   add constraint PK_SMS_MO_DISPATCH primary key (SMS_MO_DISPATCH_ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -12547,10 +12547,10 @@ tablespace MC
   initrans 1
   maxtrans 255;
 comment on table mc.SMS_MO_DISPATCH_TYPE
-  is 'ÒµÎñ¶ÌĞÅ·ÖÅÉÀàĞÍ±í';
+  is 'ä¸šåŠ¡çŸ­ä¿¡åˆ†æ´¾ç±»å‹è¡¨';
 alter table mc.SMS_MO_DISPATCH_TYPE
   add constraint PK_SMS_MO_DISPATCH_TYPE primary key (BIZ_TYPE)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -12851,35 +12851,35 @@ partition by range (SYS_TIME)
     )
 );
 comment on column mc.SMS_RECEIVE.receive_id
-  is 'ÉÏĞĞId';
+  is 'ä¸Šè¡ŒId';
 comment on column mc.SMS_RECEIVE.mobile_from
-  is 'ÉÏĞĞºÅÂë';
+  is 'ä¸Šè¡Œå·ç ';
 comment on column mc.SMS_RECEIVE.receive_msg
-  is 'ÉÏĞĞ¶ÌĞÅ';
+  is 'ä¸Šè¡ŒçŸ­ä¿¡';
 comment on column mc.SMS_RECEIVE.sys_time
-  is 'ÉÏĞĞÊ±¼ä';
+  is 'ä¸Šè¡Œæ—¶é—´';
 comment on column mc.SMS_RECEIVE.sp_num
-  is 'ÌØ·şºÅ£¬ÉÏĞĞ¶ÌĞÅÊ±ÊäÈë»ò»Ø¸´µÄÍêÕûºÅÂë';
+  is 'ç‰¹æœå·ï¼Œä¸Šè¡ŒçŸ­ä¿¡æ—¶è¾“å…¥æˆ–å›å¤çš„å®Œæ•´å·ç ';
 comment on column mc.SMS_RECEIVE.ext_num
-  is 'À©Õ¹ºÅ';
+  is 'æ‰©å±•å·';
 comment on column mc.SMS_RECEIVE.channel_id
-  is 'ÉÏĞĞ¶ÌĞÅµÄÍ¨µÀ±àºÅ Ä¬ÈÏ0';
+  is 'ä¸Šè¡ŒçŸ­ä¿¡çš„é€šé“ç¼–å· é»˜è®¤0';
 comment on column mc.SMS_RECEIVE.org_id
-  is 'ÉÏĞĞËùÊô»ú¹¹';
+  is 'ä¸Šè¡Œæ‰€å±æœºæ„';
 comment on column mc.SMS_RECEIVE.user_id
-  is 'ÉÏĞĞËùÊôÓÃ»§';
+  is 'ä¸Šè¡Œæ‰€å±ç”¨æˆ·';
 comment on column mc.SMS_RECEIVE.receive_status
-  is '¶ÌĞÅ×´Ì¬, 0:Î´±»ÒµÎñÏµÍ³¶ÁÈ¡, 1:ÒÑ±»ÒµÎñÏµÍ³¶ÁÈ¡, ÒµÎñÏµÍ³¶ÁÈ¡ÉÏĞĞ¶ÌĞÅºóÓ¦½«¸Ã×Ö¶ÎÖÃÎª1 Ä¬ÈÏ0';
+  is 'çŸ­ä¿¡çŠ¶æ€, 0:æœªè¢«ä¸šåŠ¡ç³»ç»Ÿè¯»å–, 1:å·²è¢«ä¸šåŠ¡ç³»ç»Ÿè¯»å–, ä¸šåŠ¡ç³»ç»Ÿè¯»å–ä¸Šè¡ŒçŸ­ä¿¡ååº”å°†è¯¥å­—æ®µç½®ä¸º1 é»˜è®¤0';
 comment on column mc.SMS_RECEIVE.read_time
-  is 'ÒµÎñÏµÍ³¶ÁÈ¡¶ÌĞÅµÄÊ±¼ä';
+  is 'ä¸šåŠ¡ç³»ç»Ÿè¯»å–çŸ­ä¿¡çš„æ—¶é—´';
 comment on column mc.SMS_RECEIVE.msg_id
-  is 'Éú³É¶ÌĞÅµÄÒµÎñÏµÍ³µÄ¶ÌĞÅ±àºÅ';
+  is 'ç”ŸæˆçŸ­ä¿¡çš„ä¸šåŠ¡ç³»ç»Ÿçš„çŸ­ä¿¡ç¼–å·';
 comment on column mc.SMS_RECEIVE.remark
-  is '±£Áô×Ö¶Î';
+  is 'ä¿ç•™å­—æ®µ';
 comment on column mc.SMS_RECEIVE.msg_type
-  is 'ÉÏĞĞ¶ÌĞÅµÄÀàĞÍ£º0:×ÉÑ¯¶ÌĞÅ£¬1£ºµã²¥¶ÌĞÅ,2£º¶ÌĞÅµ÷²é Ä¬ÈÏÖµ0';
+  is 'ä¸Šè¡ŒçŸ­ä¿¡çš„ç±»å‹ï¼š0:å’¨è¯¢çŸ­ä¿¡ï¼Œ1ï¼šç‚¹æ’­çŸ­ä¿¡,2ï¼šçŸ­ä¿¡è°ƒæŸ¥ é»˜è®¤å€¼0';
 comment on column mc.SMS_RECEIVE.reply_msg
-  is '»Ø¸´ÄÚÈİ';
+  is 'å›å¤å†…å®¹';
 
 prompt
 prompt Creating table SMS_RECEIVE_CLIENT
@@ -12910,7 +12910,7 @@ tablespace MC
   );
 alter table mc.SMS_RECEIVE_CLIENT
   add primary key (SMS_RECEIVE_CLIENT_ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -12953,7 +12953,7 @@ tablespace MC
   maxtrans 255;
 alter table mc.SMS_RECEIVE_HIS
   add constraint PK_SMS_RECEIVE_HIS primary key (RECEIVE_ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -12998,44 +12998,44 @@ tablespace MC
   initrans 1
   maxtrans 255;
 comment on table mc.SMS_RECEIVE_OLD
-  is '½ÓÊÕ±í';
+  is 'æ¥æ”¶è¡¨';
 comment on column mc.SMS_RECEIVE_OLD.receive_id
-  is 'ÉÏĞĞ¶ÌĞÅ±àºÅ, UUID';
+  is 'ä¸Šè¡ŒçŸ­ä¿¡ç¼–å·, UUID';
 comment on column mc.SMS_RECEIVE_OLD.mobile_from
-  is 'ÉÏĞĞ¶ÌĞÅµÄÊÖ»úºÅ';
+  is 'ä¸Šè¡ŒçŸ­ä¿¡çš„æ‰‹æœºå·';
 comment on column mc.SMS_RECEIVE_OLD.receive_msg
-  is 'ÉÏĞĞ¶ÌĞÅÄÚÈİ';
+  is 'ä¸Šè¡ŒçŸ­ä¿¡å†…å®¹';
 comment on column mc.SMS_RECEIVE_OLD.sys_time
-  is 'ÉÏĞĞ¶ÌĞÅÊ±¼ä';
+  is 'ä¸Šè¡ŒçŸ­ä¿¡æ—¶é—´';
 comment on column mc.SMS_RECEIVE_OLD.sys_date_id
-  is 'ÉÏĞĞ¶ÌĞÅÈÕÆÚ(¸ñÊ½YYYYMMDD)';
+  is 'ä¸Šè¡ŒçŸ­ä¿¡æ—¥æœŸ(æ ¼å¼YYYYMMDD)';
 comment on column mc.SMS_RECEIVE_OLD.sp_num
-  is 'ÌØ·şºÅ£¬ÉÏĞĞ¶ÌĞÅÊ±ÊäÈë»ò»Ø¸´µÄÍêÕûºÅÂë';
+  is 'ç‰¹æœå·ï¼Œä¸Šè¡ŒçŸ­ä¿¡æ—¶è¾“å…¥æˆ–å›å¤çš„å®Œæ•´å·ç ';
 comment on column mc.SMS_RECEIVE_OLD.sys_ext
-  is 'ĞÅÏ¢À´Ô´£¨¸÷ÒµÎñÏµÍ³£©¶ÔÓ¦µÄÀ©Õ¹ºÅ£¨ÈçÉÏĞĞÌØ·şºÅSP_NUMÎª95551121234£¬ÔòSYS_EXTÄÚÈİÎª12[£¨²ÎÕÕÒµÎñÏµÍ³¶ÔÓ¦À©Õ¹ºÅ±í×Öµä£©ÊÇ·ñÖÆ¶¨Îª2Î»£¬¸÷ÏµÍ³¶ÔÓ¦µÄ»ú¹¹ÈçºÎ·¢²¼¸ø¸÷ÒµÎñÏµÍ³]¡£¸÷ÒµÎñÏµÍ³¸ù¾İ¡°ÒµÎñÏµÍ³¶ÔÓ¦À©Õ¹ºÅ¡±À´Æ¥ÅäÄÄÌõÉÏĞĞĞÅÏ¢ÊôÓÚ±¾ÏµÍ³µÄ¶ÌĞÅ';
+  is 'ä¿¡æ¯æ¥æºï¼ˆå„ä¸šåŠ¡ç³»ç»Ÿï¼‰å¯¹åº”çš„æ‰©å±•å·ï¼ˆå¦‚ä¸Šè¡Œç‰¹æœå·SP_NUMä¸º95551121234ï¼Œåˆ™SYS_EXTå†…å®¹ä¸º12[ï¼ˆå‚ç…§ä¸šåŠ¡ç³»ç»Ÿå¯¹åº”æ‰©å±•å·è¡¨å­—å…¸ï¼‰æ˜¯å¦åˆ¶å®šä¸º2ä½ï¼Œå„ç³»ç»Ÿå¯¹åº”çš„æœºæ„å¦‚ä½•å‘å¸ƒç»™å„ä¸šåŠ¡ç³»ç»Ÿ]ã€‚å„ä¸šåŠ¡ç³»ç»Ÿæ ¹æ®â€œä¸šåŠ¡ç³»ç»Ÿå¯¹åº”æ‰©å±•å·â€æ¥åŒ¹é…å“ªæ¡ä¸Šè¡Œä¿¡æ¯å±äºæœ¬ç³»ç»Ÿçš„çŸ­ä¿¡';
 comment on column mc.SMS_RECEIVE_OLD.ext_num
-  is 'ÒµÎñÀ©Õ¹Âë£¬¶ÔÓ¦ÒµÎñÏµÍ³µÄÒµÎñ±àºÅ£¨ÈçÉÏĞĞÌØ·şºÅSP_NUMÎª95551121234£¬ÔòBIZ_EXTÄÚÈİÎª1234£¬Æ¥ÅäÏÂĞĞ±ísms_sendÖĞµÄEXT_NUM[½¨ÒéÃû³ÆÍ³Ò»]×Ö¶Î£©';
+  is 'ä¸šåŠ¡æ‰©å±•ç ï¼Œå¯¹åº”ä¸šåŠ¡ç³»ç»Ÿçš„ä¸šåŠ¡ç¼–å·ï¼ˆå¦‚ä¸Šè¡Œç‰¹æœå·SP_NUMä¸º95551121234ï¼Œåˆ™BIZ_EXTå†…å®¹ä¸º1234ï¼ŒåŒ¹é…ä¸‹è¡Œè¡¨sms_sendä¸­çš„EXT_NUM[å»ºè®®åç§°ç»Ÿä¸€]å­—æ®µï¼‰';
 comment on column mc.SMS_RECEIVE_OLD.channel_id
-  is 'ÉÏĞĞ¶ÌĞÅµÄÍ¨µÀ±àºÅ';
+  is 'ä¸Šè¡ŒçŸ­ä¿¡çš„é€šé“ç¼–å·';
 comment on column mc.SMS_RECEIVE_OLD.org_id
-  is 'ÉÏĞĞ¶ÌĞÅËùÊô»ú¹¹';
+  is 'ä¸Šè¡ŒçŸ­ä¿¡æ‰€å±æœºæ„';
 comment on column mc.SMS_RECEIVE_OLD.receive_status
-  is '¶ÌĞÅ×´Ì¬, 0:Î´±»ÒµÎñÏµÍ³¶ÁÈ¡, 1:ÒÑ±»ÒµÎñÏµÍ³¶ÁÈ¡, ÒµÎñÏµÍ³¶ÁÈ¡ÉÏĞĞ¶ÌĞÅºóÓ¦½«¸Ã×Ö¶ÎÖÃÎª1,ÒÔÃâÖØ¸´¶ÁÈ¡';
+  is 'çŸ­ä¿¡çŠ¶æ€, 0:æœªè¢«ä¸šåŠ¡ç³»ç»Ÿè¯»å–, 1:å·²è¢«ä¸šåŠ¡ç³»ç»Ÿè¯»å–, ä¸šåŠ¡ç³»ç»Ÿè¯»å–ä¸Šè¡ŒçŸ­ä¿¡ååº”å°†è¯¥å­—æ®µç½®ä¸º1,ä»¥å…é‡å¤è¯»å–';
 comment on column mc.SMS_RECEIVE_OLD.read_time
-  is 'ÒµÎñÏµÍ³¶ÁÈ¡¶ÌĞÅµÄÊ±¼ä';
+  is 'ä¸šåŠ¡ç³»ç»Ÿè¯»å–çŸ­ä¿¡çš„æ—¶é—´';
 comment on column mc.SMS_RECEIVE_OLD.sys_id
-  is 'ÒµÎñÏµÍ³µÄ±àºÅ, ÓÃÓÚ±êÊ¶¶ÌĞÅÊôÓÚÄÄ¸öÒµÎñÏµÍ³,ÀıÈç¿Í»§¹ØÏµ¹ÜÀíÏµÍ³ÎªCRM';
+  is 'ä¸šåŠ¡ç³»ç»Ÿçš„ç¼–å·, ç”¨äºæ ‡è¯†çŸ­ä¿¡å±äºå“ªä¸ªä¸šåŠ¡ç³»ç»Ÿ,ä¾‹å¦‚å®¢æˆ·å…³ç³»ç®¡ç†ç³»ç»Ÿä¸ºCRM';
 comment on column mc.SMS_RECEIVE_OLD.msg_id
-  is 'Éú³É¶ÌĞÅµÄÒµÎñÏµÍ³µÄ¶ÌĞÅ±àºÅ';
+  is 'ç”ŸæˆçŸ­ä¿¡çš„ä¸šåŠ¡ç³»ç»Ÿçš„çŸ­ä¿¡ç¼–å·';
 comment on column mc.SMS_RECEIVE_OLD.remark
-  is '±£Áô×Ö¶Î£¬ÎŞÓÃ';
+  is 'ä¿ç•™å­—æ®µï¼Œæ— ç”¨';
 comment on column mc.SMS_RECEIVE_OLD.msg_key
-  is 'ÉÏĞĞ¶ÌĞÅµÄÀàĞÍ£º0:×ÉÑ¯¶ÌĞÅ£¬1£ºµã²¥¶ÌĞÅ,2£º¶ÌĞÅµ÷²é';
+  is 'ä¸Šè¡ŒçŸ­ä¿¡çš„ç±»å‹ï¼š0:å’¨è¯¢çŸ­ä¿¡ï¼Œ1ï¼šç‚¹æ’­çŸ­ä¿¡,2ï¼šçŸ­ä¿¡è°ƒæŸ¥';
 comment on column mc.SMS_RECEIVE_OLD.reply_msg
-  is '×ÉÑ¯¶ÌĞÅµÄ»Ø¸´ĞÅÏ¢';
+  is 'å’¨è¯¢çŸ­ä¿¡çš„å›å¤ä¿¡æ¯';
 alter table mc.SMS_RECEIVE_OLD
   add constraint PK_SMS_RECEIVE primary key (RECEIVE_ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -13081,46 +13081,46 @@ tablespace MC
   initrans 1
   maxtrans 255;
 comment on table mc.SMS_REPORT
-  is '¶ÌĞÅ×´Ì¬±¨¸æ';
+  is 'çŸ­ä¿¡çŠ¶æ€æŠ¥å‘Š';
 comment on column mc.SMS_REPORT.sequence
-  is '¶ÌĞÅÔÚ¶ÌĞÅÍø¹ØµÄ±àºÅ';
+  is 'çŸ­ä¿¡åœ¨çŸ­ä¿¡ç½‘å…³çš„ç¼–å·';
 comment on column mc.SMS_REPORT.channel_id
-  is 'Í¨µÀ±àºÅ';
+  is 'é€šé“ç¼–å·';
 comment on column mc.SMS_REPORT.gw_status
-  is 'Íø¹ØµÄ×´Ì¬±¨¸æ';
+  is 'ç½‘å…³çš„çŠ¶æ€æŠ¥å‘Š';
 comment on column mc.SMS_REPORT.gw_status_desc
-  is 'Íø¹ØµÄ×´Ì¬±¨¸æÃèÊö';
+  is 'ç½‘å…³çš„çŠ¶æ€æŠ¥å‘Šæè¿°';
 comment on column mc.SMS_REPORT.sms_status
-  is '´Ë×´Ì¬±¨¸æ¶ÔÓ¦¶ÌĞÅÆ½Ì¨µÄ×´Ì¬,1:ÒÑÌá½», 5:¿Í»§ÊÕµ½¶ÌĞÅ, 6:¿Í»§Î´ÊÕµ½¶ÌĞÅ';
+  is 'æ­¤çŠ¶æ€æŠ¥å‘Šå¯¹åº”çŸ­ä¿¡å¹³å°çš„çŠ¶æ€,1:å·²æäº¤, 5:å®¢æˆ·æ”¶åˆ°çŸ­ä¿¡, 6:å®¢æˆ·æœªæ”¶åˆ°çŸ­ä¿¡';
 comment on column mc.SMS_REPORT.submit_time
-  is '¶ÌĞÅÌá½»µ½¶ÌĞÅÍø¹ØµÄÊ±¼ä';
+  is 'çŸ­ä¿¡æäº¤åˆ°çŸ­ä¿¡ç½‘å…³çš„æ—¶é—´';
 comment on column mc.SMS_REPORT.report_time
-  is '¿Í»§ÊÕµ½¶ÌĞÅÊ±¼ä';
+  is 'å®¢æˆ·æ”¶åˆ°çŸ­ä¿¡æ—¶é—´';
 comment on column mc.SMS_REPORT.sys_time
-  is '×´Ì¬±¨¸æÈë¿âÊ±¼ä';
+  is 'çŠ¶æ€æŠ¥å‘Šå…¥åº“æ—¶é—´';
 comment on column mc.SMS_REPORT.send_id
-  is '×´Ì¬±¨¸æ¶ÔÓ¦µÄ¶ÌĞÅµÄ±àºÅ';
+  is 'çŠ¶æ€æŠ¥å‘Šå¯¹åº”çš„çŸ­ä¿¡çš„ç¼–å·';
 comment on column mc.SMS_REPORT.originalsms_sendid
-  is 'Ô­Ê¼¶ÌĞÅ±àºÅ£¬µ±±¾¶ÌĞÅÎªÓÉ³¤¶ÌĞÅ²ğ·Ö³ÉµÄ¶Ì¶ÌĞÅÊ±, ¿ÉÒÔÒÀ¾İ´Ë±àºÅ²éÑ¯µ½Ô­Ê¼¶ÌĞÅ';
+  is 'åŸå§‹çŸ­ä¿¡ç¼–å·ï¼Œå½“æœ¬çŸ­ä¿¡ä¸ºç”±é•¿çŸ­ä¿¡æ‹†åˆ†æˆçš„çŸ­çŸ­ä¿¡æ—¶, å¯ä»¥ä¾æ®æ­¤ç¼–å·æŸ¥è¯¢åˆ°åŸå§‹çŸ­ä¿¡';
 comment on column mc.SMS_REPORT.originalsms_totalpages
-  is '±¾Ìõ¶Ì¶ÌĞÅËùÊô³¤¶ÌĞÅ¹²ÓĞ¶ÌĞÅµÄÒ³Êı';
+  is 'æœ¬æ¡çŸ­çŸ­ä¿¡æ‰€å±é•¿çŸ­ä¿¡å…±æœ‰çŸ­ä¿¡çš„é¡µæ•°';
 comment on column mc.SMS_REPORT.current_pageno
-  is 'µ±Ç°¶ÌĞÅµÄÒ³ºÅ,¼´³¤¶ÌĞÅµÄµÚ¼¸Ìõ¶Ì¶ÌĞÅ';
+  is 'å½“å‰çŸ­ä¿¡çš„é¡µå·,å³é•¿çŸ­ä¿¡çš„ç¬¬å‡ æ¡çŸ­çŸ­ä¿¡';
 comment on column mc.SMS_REPORT.batch_id
-  is '¶ÌĞÅÅúºÅ,ÓÃÓÚ±êÊ¶Í¬Ò»Åú¶ÌĞÅ';
+  is 'çŸ­ä¿¡æ‰¹å·,ç”¨äºæ ‡è¯†åŒä¸€æ‰¹çŸ­ä¿¡';
 comment on column mc.SMS_REPORT.msg_id
-  is '¶ÔÓ¦ÒµÎñÏµÍ³µÄ¶ÌĞÅ±àºÅ';
+  is 'å¯¹åº”ä¸šåŠ¡ç³»ç»Ÿçš„çŸ­ä¿¡ç¼–å·';
 comment on column mc.SMS_REPORT.sys_id
-  is 'ĞÅÏ¢À´Ô´, ¼´¸Ä¶ÌĞÅÀ´×ÔÄÄ¸öÒµÎñÏµÍ³';
+  is 'ä¿¡æ¯æ¥æº, å³æ”¹çŸ­ä¿¡æ¥è‡ªå“ªä¸ªä¸šåŠ¡ç³»ç»Ÿ';
 comment on column mc.SMS_REPORT.mobile_to
-  is '¶ÔÓ¦ÊÖ»úºÅ';
+  is 'å¯¹åº”æ‰‹æœºå·';
 comment on column mc.SMS_REPORT.status
-  is '×´Ì¬±¨¸æ×´Ì¬£¬0£ºÎ´³É¹¦¸üĞÂ¶ÌĞÅ, 1:³É¹¦¸üĞÂ¶ÌĞÅ×´Ì¬';
+  is 'çŠ¶æ€æŠ¥å‘ŠçŠ¶æ€ï¼Œ0ï¼šæœªæˆåŠŸæ›´æ–°çŸ­ä¿¡, 1:æˆåŠŸæ›´æ–°çŸ­ä¿¡çŠ¶æ€';
 comment on column mc.SMS_REPORT.fetch_status
-  is 'ÒµÎñÏµÍ³¶ÁÈ¡×´Ì¬±¨¸æµÄ×´Ì¬£¬0£ºÎ´¶ÁÈ¡, 1:ÒÑ¶ÁÈ¡';
+  is 'ä¸šåŠ¡ç³»ç»Ÿè¯»å–çŠ¶æ€æŠ¥å‘Šçš„çŠ¶æ€ï¼Œ0ï¼šæœªè¯»å–, 1:å·²è¯»å–';
 alter table mc.SMS_REPORT
   add constraint PK_SMS_REPORT primary key (SEQUENCE)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -13175,7 +13175,7 @@ tablespace MC
   );
 alter table mc.SMS_REPORT_CLIENT
   add primary key (SMS_REPORT_CLIENT_ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -13233,7 +13233,7 @@ tablespace MC
   );
 alter table mc.SMS_REPORT_HIS
   add constraint PK_SMS_REPORT_HIS primary key (SMS_REPORT_ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -13312,94 +13312,94 @@ tablespace MC
   initrans 1
   maxtrans 255;
 comment on table mc.SMS_SEND
-  is 'ÏÂĞĞ¶ÌĞÅĞÅÏ¢±í';
+  is 'ä¸‹è¡ŒçŸ­ä¿¡ä¿¡æ¯è¡¨';
 comment on column mc.SMS_SEND.send_id
-  is 'ÏÂĞĞ¶ÌĞÅĞòºÅ£¬ÏÂĞĞ¶ÌĞÅµÄÎ¨Ò»±êÊ¶';
+  is 'ä¸‹è¡ŒçŸ­ä¿¡åºå·ï¼Œä¸‹è¡ŒçŸ­ä¿¡çš„å”¯ä¸€æ ‡è¯†';
 comment on column mc.SMS_SEND.mobile_to
-  is 'Ä¿±êÊÖ»úºÅ(Ò»¸öÊÖ»úºÅÂë£©';
+  is 'ç›®æ ‡æ‰‹æœºå·(ä¸€ä¸ªæ‰‹æœºå·ç ï¼‰';
 comment on column mc.SMS_SEND.send_msg
-  is '¶ÌĞÅÄÚÈİ,×î³¤Îª300×Ö';
+  is 'çŸ­ä¿¡å†…å®¹,æœ€é•¿ä¸º300å­—';
 comment on column mc.SMS_SEND.org_id
-  is '»ú¹¹±àºÅ';
+  is 'æœºæ„ç¼–å·';
 comment on column mc.SMS_SEND.sys_id
-  is 'ÒµÎñÏµÍ³µÄ±àºÅ, ÓÃÓÚ±êÊ¶¶ÌĞÅÀ´×ÅÄÄ¸öÒµÎñÏµÍ³µÄ±àºÅ £¨ÈçÌîĞ´´íÎóÔòERR_ID×Ö¶ÎÏÔÊ¾1010´íÎó)';
+  is 'ä¸šåŠ¡ç³»ç»Ÿçš„ç¼–å·, ç”¨äºæ ‡è¯†çŸ­ä¿¡æ¥ç€å“ªä¸ªä¸šåŠ¡ç³»ç»Ÿçš„ç¼–å· ï¼ˆå¦‚å¡«å†™é”™è¯¯åˆ™ERR_IDå­—æ®µæ˜¾ç¤º1010é”™è¯¯)';
 comment on column mc.SMS_SEND.prior_id
-  is 'ÓÅÏÈ¼¶';
+  is 'ä¼˜å…ˆçº§';
 comment on column mc.SMS_SEND.pre_send_time
-  is 'Ô¤¼Æ·¢ËÍÊ±¼ä';
+  is 'é¢„è®¡å‘é€æ—¶é—´';
 comment on column mc.SMS_SEND.ext_num
-  is 'À©Õ¹ºÅÂë';
+  is 'æ‰©å±•å·ç ';
 comment on column mc.SMS_SEND.user_id
-  is 'ÓÃ»§±àºÅ';
+  is 'ç”¨æˆ·ç¼–å·';
 comment on column mc.SMS_SEND.cust_id
-  is '±àĞ´¶ÌĞÅµÄ¿Í»§±àºÅ, ¿Í»§×ÔĞ´¶ÌĞÅÊ±¼ÇÂ¼';
+  is 'ç¼–å†™çŸ­ä¿¡çš„å®¢æˆ·ç¼–å·, å®¢æˆ·è‡ªå†™çŸ­ä¿¡æ—¶è®°å½•';
 comment on column mc.SMS_SEND.batch_id
-  is '¶ÌĞÅÅúºÅ,ÓÃÓÚ±êÊ¶Í¬Ò»Åú¶ÌĞÅ';
+  is 'çŸ­ä¿¡æ‰¹å·,ç”¨äºæ ‡è¯†åŒä¸€æ‰¹çŸ­ä¿¡';
 comment on column mc.SMS_SEND.msg_id
-  is 'Éú³É¶ÌĞÅµÄÒµÎñÏµÍ³µÄ¶ÌĞÅ±àºÅ';
+  is 'ç”ŸæˆçŸ­ä¿¡çš„ä¸šåŠ¡ç³»ç»Ÿçš„çŸ­ä¿¡ç¼–å·';
 comment on column mc.SMS_SEND.message_class
-  is 'ĞÅÏ¢·ÖÀàµÄ±àºÅ';
+  is 'ä¿¡æ¯åˆ†ç±»çš„ç¼–å·';
 comment on column mc.SMS_SEND.message_type
-  is 'ĞÅÏ¢ĞÔÖÊ';
+  is 'ä¿¡æ¯æ€§è´¨';
 comment on column mc.SMS_SEND.wappush_url
-  is 'WAPPUSHÁ´½Ó, ´Ë×Ö¶ÎÌîĞ´ÖµÊ±±íÃ÷¸Ã¶ÌĞÅÎªWAPPUSH¶ÌĞÅ, ÏµÍ³½«ÒÔWAPPUSH·½Ê½·¢ËÍ¸Ã¶ÌĞÅ';
+  is 'WAPPUSHé“¾æ¥, æ­¤å­—æ®µå¡«å†™å€¼æ—¶è¡¨æ˜è¯¥çŸ­ä¿¡ä¸ºWAPPUSHçŸ­ä¿¡, ç³»ç»Ÿå°†ä»¥WAPPUSHæ–¹å¼å‘é€è¯¥çŸ­ä¿¡';
 comment on column mc.SMS_SEND.send_deadline
-  is '·¢ËÍµÄ½ØÖ¹Ê±¼ä, µ«·¢ËÍÊ±¼äÍíÓÚ¸ÃÊ±¼äÊ±, ÏµÍ³½«È¡Ïû¸Ã¶ÌĞÅµÄ·¢ËÍ';
+  is 'å‘é€çš„æˆªæ­¢æ—¶é—´, ä½†å‘é€æ—¶é—´æ™šäºè¯¥æ—¶é—´æ—¶, ç³»ç»Ÿå°†å–æ¶ˆè¯¥çŸ­ä¿¡çš„å‘é€';
 comment on column mc.SMS_SEND.send_status
-  is '·¢ËÍ×´Ì¬,-2:ÒÑÈë¿âÎ´¿ªÊ¼·¢ËÍ, 0:Î´·¢ËÍ, 1:ÒÑ·¢ËÍ, 2:·¢ËÍÖĞ, 5:·¢ËÍ³É¹¦, 6:·¢ËÍÊ§°Ü£¨ÈçÖµÏàÓ¦µÄÊ§°ÜÔ­Òò±àºÅÇë²é¿´ERR_ID±í)';
+  is 'å‘é€çŠ¶æ€,-2:å·²å…¥åº“æœªå¼€å§‹å‘é€, 0:æœªå‘é€, 1:å·²å‘é€, 2:å‘é€ä¸­, 5:å‘é€æˆåŠŸ, 6:å‘é€å¤±è´¥ï¼ˆå¦‚å€¼ç›¸åº”çš„å¤±è´¥åŸå› ç¼–å·è¯·æŸ¥çœ‹ERR_IDè¡¨)';
 comment on column mc.SMS_SEND.sys_time
-  is '¶ÌĞÅÈë¿âÊ±¼ä';
+  is 'çŸ­ä¿¡å…¥åº“æ—¶é—´';
 comment on column mc.SMS_SEND.sys_date_id
-  is '¶ÌĞÅÈë¿âÈÕÆÚ£¨¸ñÊ½YYYYMMDD£©';
+  is 'çŸ­ä¿¡å…¥åº“æ—¥æœŸï¼ˆæ ¼å¼YYYYMMDDï¼‰';
 comment on column mc.SMS_SEND.send_time
-  is 'Æ½Ì¨·¢ËÍ¸Ã¶ÌĞÅµÄÊ±¼ä';
+  is 'å¹³å°å‘é€è¯¥çŸ­ä¿¡çš„æ—¶é—´';
 comment on column mc.SMS_SEND.send_date_id
-  is 'Æ½Ì¨·¢ËÍ¸Ã¶ÌĞÅµÄÈÕÆÚ£¬¹éµµ±í½«ÒÔ´Ë×÷Îª·ÖÇø£¨¸ñÊ½YYYYMMDD£©';
+  is 'å¹³å°å‘é€è¯¥çŸ­ä¿¡çš„æ—¥æœŸï¼Œå½’æ¡£è¡¨å°†ä»¥æ­¤ä½œä¸ºåˆ†åŒºï¼ˆæ ¼å¼YYYYMMDDï¼‰';
 comment on column mc.SMS_SEND.send_weekdate
-  is 'Æ½Ì¨·¢ËÍ¸Ã¶ÌĞÅµÄÊ±¼äÎªÖÜ¼¸, 0:Î´·¢ËÍ, 1:ÖÜÈÕ, 2:ÖÜÒ», 3:ÖÜ¶ş, 4:ÖÜÈı, 5:ÖÜËÄ, 6:ÖÜÎå, 7:ÖÜÁù';
+  is 'å¹³å°å‘é€è¯¥çŸ­ä¿¡çš„æ—¶é—´ä¸ºå‘¨å‡ , 0:æœªå‘é€, 1:å‘¨æ—¥, 2:å‘¨ä¸€, 3:å‘¨äºŒ, 4:å‘¨ä¸‰, 5:å‘¨å››, 6:å‘¨äº”, 7:å‘¨å…­';
 comment on column mc.SMS_SEND.com_rtn_time
-  is '¶ÌĞÅÍø¹Ø·µ»ØÌá½»Ó¦´ğµÄÊ±¼ä';
+  is 'çŸ­ä¿¡ç½‘å…³è¿”å›æäº¤åº”ç­”çš„æ—¶é—´';
 comment on column mc.SMS_SEND.report_time
-  is '×´Ì¬±¨¸æÊ±¼ä';
+  is 'çŠ¶æ€æŠ¥å‘Šæ—¶é—´';
 comment on column mc.SMS_SEND.channel_id
-  is 'Í¨µÀ±àºÅ ÏµÍ³´¦ÀíÊ§°Ü£¨ÈçºÅÂëÔÚºÚÃûµ¥¡¢ĞÅÏ¢ÖĞ°üº¬Ãô¸Ğ´Ê£©ÔòÌîĞ´0£¨';
+  is 'é€šé“ç¼–å· ç³»ç»Ÿå¤„ç†å¤±è´¥ï¼ˆå¦‚å·ç åœ¨é»‘åå•ã€ä¿¡æ¯ä¸­åŒ…å«æ•æ„Ÿè¯ï¼‰åˆ™å¡«å†™0ï¼ˆ';
 comment on column mc.SMS_SEND.mobile_com
-  is 'ÔËÓªÉÌ±àºÅ, 1:ÒÆ¶¯,2:ÁªÍ¨, 3:µçĞÅ 0:´íÎóºÅÂë';
+  is 'è¿è¥å•†ç¼–å·, 1:ç§»åŠ¨,2:è”é€š, 3:ç”µä¿¡ 0:é”™è¯¯å·ç ';
 comment on column mc.SMS_SEND.sequence
-  is '¶ÌĞÅÍø¹ØµÄ¶ÌĞÅ±àºÅ, ¶ÌĞÅÍø¹Ø·µ»Ø×´Ì¬±¨¸æÊ±ÓÃÓÚÆ¥ÅäÔ­Ê¼¶ÌĞÅ';
+  is 'çŸ­ä¿¡ç½‘å…³çš„çŸ­ä¿¡ç¼–å·, çŸ­ä¿¡ç½‘å…³è¿”å›çŠ¶æ€æŠ¥å‘Šæ—¶ç”¨äºåŒ¹é…åŸå§‹çŸ­ä¿¡';
 comment on column mc.SMS_SEND.mobile_quantities
-  is '±¾Ìõ¶ÌĞÅµÄ¶ÌĞÅÌõÊı';
+  is 'æœ¬æ¡çŸ­ä¿¡çš„çŸ­ä¿¡æ¡æ•°';
 comment on column mc.SMS_SEND.resend_times
-  is '¶ÌĞÅµÄÖØ·¢´ÎÊı';
+  is 'çŸ­ä¿¡çš„é‡å‘æ¬¡æ•°';
 comment on column mc.SMS_SEND.signature
-  is '¶ÌĞÅÇ©Ãû';
+  is 'çŸ­ä¿¡ç­¾å';
 comment on column mc.SMS_SEND.msg_type
-  is 'ĞÅÏ¢ÀàĞÍ,ÓÃÓÚ±êÊ¶¶ÌĞÅµÄÉú³É·½Ê½»òÕßÀ´Ô´';
+  is 'ä¿¡æ¯ç±»å‹,ç”¨äºæ ‡è¯†çŸ­ä¿¡çš„ç”Ÿæˆæ–¹å¼æˆ–è€…æ¥æº';
 comment on column mc.SMS_SEND.err_id
-  is '´íÎó´úÂë£¬°üº¬¶ÌÏ¢Æ½Ì¨´íÎó´úÂëºÍ¶ÌĞÅÍø¹Ø´íÎó´úÂë ¶ÌĞÅ´íÎó´úÂë 1007£ººÚÃûµ¥ºÅÂë 1008£º¶ÌĞÅ°üº¬Î¥½û´Ê 1009£º´íÎóÊÖ»úºÅ 1010£ºSYS_ID ÌîĞ´´íÎó';
+  is 'é”™è¯¯ä»£ç ï¼ŒåŒ…å«çŸ­æ¯å¹³å°é”™è¯¯ä»£ç å’ŒçŸ­ä¿¡ç½‘å…³é”™è¯¯ä»£ç  çŸ­ä¿¡é”™è¯¯ä»£ç  1007ï¼šé»‘åå•å·ç  1008ï¼šçŸ­ä¿¡åŒ…å«è¿ç¦è¯ 1009ï¼šé”™è¯¯æ‰‹æœºå· 1010ï¼šSYS_ID å¡«å†™é”™è¯¯';
 comment on column mc.SMS_SEND.err_msg
-  is '´íÎó´úÂëµÄËµÃ÷ĞÅÏ¢';
+  is 'é”™è¯¯ä»£ç çš„è¯´æ˜ä¿¡æ¯';
 comment on column mc.SMS_SEND.is_longsms
-  is '¸Ã¶ÌĞÅÊÇ·ñÊÇ³¤¶ÌĞÅ,0:²»ÊÇ³¤¶ÌĞÅ,1:ÊÇ³¤¶ÌĞÅ';
+  is 'è¯¥çŸ­ä¿¡æ˜¯å¦æ˜¯é•¿çŸ­ä¿¡,0:ä¸æ˜¯é•¿çŸ­ä¿¡,1:æ˜¯é•¿çŸ­ä¿¡';
 comment on column mc.SMS_SEND.is_original_sms
-  is '¸Ã¶ÌĞÅÊÇ·ñÊÇÔ­Ê¼¶ÌĞÅ,·ÇÔ­Ê¼¶ÌĞÅÖ¸³¤¶ÌĞÅ·¢ËÍÊ±²ğ·Ö³öµÄ¶ÌĞÅ,0:ÊÇÔ­Ê¼¶ÌĞÅ, 1:²»ÊÇÔ­Ê¼¶ÌĞÅ';
+  is 'è¯¥çŸ­ä¿¡æ˜¯å¦æ˜¯åŸå§‹çŸ­ä¿¡,éåŸå§‹çŸ­ä¿¡æŒ‡é•¿çŸ­ä¿¡å‘é€æ—¶æ‹†åˆ†å‡ºçš„çŸ­ä¿¡,0:æ˜¯åŸå§‹çŸ­ä¿¡, 1:ä¸æ˜¯åŸå§‹çŸ­ä¿¡';
 comment on column mc.SMS_SEND.originalsms_sendid
-  is 'Ô­Ê¼¶ÌĞÅ±àºÅ£¬µ±±¾¶ÌĞÅÎªÓÉ³¤¶ÌĞÅ²ğ·Ö³ÉµÄ¶Ì¶ÌĞÅÊ±, ¿ÉÒÔÒÀ¾İ´Ë±àºÅ²éÑ¯µ½Ô­Ê¼¶ÌĞÅ';
+  is 'åŸå§‹çŸ­ä¿¡ç¼–å·ï¼Œå½“æœ¬çŸ­ä¿¡ä¸ºç”±é•¿çŸ­ä¿¡æ‹†åˆ†æˆçš„çŸ­çŸ­ä¿¡æ—¶, å¯ä»¥ä¾æ®æ­¤ç¼–å·æŸ¥è¯¢åˆ°åŸå§‹çŸ­ä¿¡';
 comment on column mc.SMS_SEND.current_pageno
-  is 'µ±Ç°¶ÌĞÅµÄÒ³ºÅ,¼´³¤¶ÌĞÅµÄµÚ¼¸Ìõ¶Ì¶ÌĞÅ';
+  is 'å½“å‰çŸ­ä¿¡çš„é¡µå·,å³é•¿çŸ­ä¿¡çš„ç¬¬å‡ æ¡çŸ­çŸ­ä¿¡';
 comment on column mc.SMS_SEND.originalsms_totalpages
-  is '±¾Ìõ¶Ì¶ÌĞÅËùÊô³¤¶ÌĞÅ¹²ÓĞ¶ÌĞÅµÄÒ³Êı';
+  is 'æœ¬æ¡çŸ­çŸ­ä¿¡æ‰€å±é•¿çŸ­ä¿¡å…±æœ‰çŸ­ä¿¡çš„é¡µæ•°';
 comment on column mc.SMS_SEND.longsms_tag
-  is '³¤¶ÌĞÅ¶¼±êÊ¶·û£ºÍ¬Ò»Ìõ³¤¶ÌĞÅµÄ¶Ì¶ÌĞÅ¸Ã±êÊ¶ÏàÍ¬';
+  is 'é•¿çŸ­ä¿¡éƒ½æ ‡è¯†ç¬¦ï¼šåŒä¸€æ¡é•¿çŸ­ä¿¡çš„çŸ­çŸ­ä¿¡è¯¥æ ‡è¯†ç›¸åŒ';
 comment on column mc.SMS_SEND.longsms_splited
-  is '³¤¶ÌĞÅÊÇ·ñ±»²ğ·Ö£º0Ã»ÓĞ±»²ğ·Ö»òÕßÊÇÆÕÍ¨¶ÌĞÅ£»1ÒÑ¾­±»²ğ·Ö¡£±»²ğ·ÖµÄ¶ÌĞÅ²éÑ¯Í³¼ÆÊ±²»Ó¦¼ÆËãÊıÁ¿¡£Ä¬ÈÏ0';
+  is 'é•¿çŸ­ä¿¡æ˜¯å¦è¢«æ‹†åˆ†ï¼š0æ²¡æœ‰è¢«æ‹†åˆ†æˆ–è€…æ˜¯æ™®é€šçŸ­ä¿¡ï¼›1å·²ç»è¢«æ‹†åˆ†ã€‚è¢«æ‹†åˆ†çš„çŸ­ä¿¡æŸ¥è¯¢ç»Ÿè®¡æ—¶ä¸åº”è®¡ç®—æ•°é‡ã€‚é»˜è®¤0';
 comment on column mc.SMS_SEND.remark
-  is '±¸×¢ĞÅÏ¢£¬±£Áô×Ö¶Î£¬À©Õ¹Ê±Ê¹ÓÃ';
+  is 'å¤‡æ³¨ä¿¡æ¯ï¼Œä¿ç•™å­—æ®µï¼Œæ‰©å±•æ—¶ä½¿ç”¨';
 comment on column mc.SMS_SEND.sender_id
-  is '·¢ËÍÕßID£¬Êı¾İ¿â½Ó¿ÚÊ±£¬¾ÍÊÇÊı¾İ¿âÕÊºÅ';
+  is 'å‘é€è€…IDï¼Œæ•°æ®åº“æ¥å£æ—¶ï¼Œå°±æ˜¯æ•°æ®åº“å¸å·';
 alter table mc.SMS_SEND
   add constraint PK_SMS_SEND primary key (SEND_ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -13539,94 +13539,94 @@ tablespace MC
   initrans 1
   maxtrans 255;
 comment on table mc.SMS_SEND_HIS
-  is 'ÏÂĞĞ¶ÌĞÅĞÅÏ¢±í';
+  is 'ä¸‹è¡ŒçŸ­ä¿¡ä¿¡æ¯è¡¨';
 comment on column mc.SMS_SEND_HIS.send_id
-  is 'ÏÂĞĞ¶ÌĞÅĞòºÅ£¬ÏÂĞĞ¶ÌĞÅµÄÎ¨Ò»±êÊ¶';
+  is 'ä¸‹è¡ŒçŸ­ä¿¡åºå·ï¼Œä¸‹è¡ŒçŸ­ä¿¡çš„å”¯ä¸€æ ‡è¯†';
 comment on column mc.SMS_SEND_HIS.mobile_to
-  is 'Ä¿±êÊÖ»úºÅ(Ò»¸öÊÖ»úºÅÂë£©';
+  is 'ç›®æ ‡æ‰‹æœºå·(ä¸€ä¸ªæ‰‹æœºå·ç ï¼‰';
 comment on column mc.SMS_SEND_HIS.send_msg
-  is '¶ÌĞÅÄÚÈİ,×î³¤Îª300×Ö';
+  is 'çŸ­ä¿¡å†…å®¹,æœ€é•¿ä¸º300å­—';
 comment on column mc.SMS_SEND_HIS.org_id
-  is '»ú¹¹±àºÅ';
+  is 'æœºæ„ç¼–å·';
 comment on column mc.SMS_SEND_HIS.sys_id
-  is 'ÒµÎñÏµÍ³µÄ±àºÅ, ÓÃÓÚ±êÊ¶¶ÌĞÅÀ´×ÅÄÄ¸öÒµÎñÏµÍ³µÄ±àºÅ £¨ÈçÌîĞ´´íÎóÔòERR_ID×Ö¶ÎÏÔÊ¾1010´íÎó)';
+  is 'ä¸šåŠ¡ç³»ç»Ÿçš„ç¼–å·, ç”¨äºæ ‡è¯†çŸ­ä¿¡æ¥ç€å“ªä¸ªä¸šåŠ¡ç³»ç»Ÿçš„ç¼–å· ï¼ˆå¦‚å¡«å†™é”™è¯¯åˆ™ERR_IDå­—æ®µæ˜¾ç¤º1010é”™è¯¯)';
 comment on column mc.SMS_SEND_HIS.prior_id
-  is 'ÓÅÏÈ¼¶';
+  is 'ä¼˜å…ˆçº§';
 comment on column mc.SMS_SEND_HIS.pre_send_time
-  is 'Ô¤¼Æ·¢ËÍÊ±¼ä';
+  is 'é¢„è®¡å‘é€æ—¶é—´';
 comment on column mc.SMS_SEND_HIS.ext_num
-  is 'À©Õ¹ºÅÂë';
+  is 'æ‰©å±•å·ç ';
 comment on column mc.SMS_SEND_HIS.user_id
-  is 'ÓÃ»§±àºÅ';
+  is 'ç”¨æˆ·ç¼–å·';
 comment on column mc.SMS_SEND_HIS.cust_id
-  is '±àĞ´¶ÌĞÅµÄ¿Í»§±àºÅ, ¿Í»§×ÔĞ´¶ÌĞÅÊ±¼ÇÂ¼';
+  is 'ç¼–å†™çŸ­ä¿¡çš„å®¢æˆ·ç¼–å·, å®¢æˆ·è‡ªå†™çŸ­ä¿¡æ—¶è®°å½•';
 comment on column mc.SMS_SEND_HIS.batch_id
-  is '¶ÌĞÅÅúºÅ,ÓÃÓÚ±êÊ¶Í¬Ò»Åú¶ÌĞÅ';
+  is 'çŸ­ä¿¡æ‰¹å·,ç”¨äºæ ‡è¯†åŒä¸€æ‰¹çŸ­ä¿¡';
 comment on column mc.SMS_SEND_HIS.msg_id
-  is 'Éú³É¶ÌĞÅµÄÒµÎñÏµÍ³µÄ¶ÌĞÅ±àºÅ';
+  is 'ç”ŸæˆçŸ­ä¿¡çš„ä¸šåŠ¡ç³»ç»Ÿçš„çŸ­ä¿¡ç¼–å·';
 comment on column mc.SMS_SEND_HIS.message_class
-  is 'ĞÅÏ¢·ÖÀàµÄ±àºÅ';
+  is 'ä¿¡æ¯åˆ†ç±»çš„ç¼–å·';
 comment on column mc.SMS_SEND_HIS.message_type
-  is 'ĞÅÏ¢ĞÔÖÊ';
+  is 'ä¿¡æ¯æ€§è´¨';
 comment on column mc.SMS_SEND_HIS.wappush_url
-  is 'WAPPUSHÁ´½Ó, ´Ë×Ö¶ÎÌîĞ´ÖµÊ±±íÃ÷¸Ã¶ÌĞÅÎªWAPPUSH¶ÌĞÅ, ÏµÍ³½«ÒÔWAPPUSH·½Ê½·¢ËÍ¸Ã¶ÌĞÅ';
+  is 'WAPPUSHé“¾æ¥, æ­¤å­—æ®µå¡«å†™å€¼æ—¶è¡¨æ˜è¯¥çŸ­ä¿¡ä¸ºWAPPUSHçŸ­ä¿¡, ç³»ç»Ÿå°†ä»¥WAPPUSHæ–¹å¼å‘é€è¯¥çŸ­ä¿¡';
 comment on column mc.SMS_SEND_HIS.send_deadline
-  is '·¢ËÍµÄ½ØÖ¹Ê±¼ä, µ«·¢ËÍÊ±¼äÍíÓÚ¸ÃÊ±¼äÊ±, ÏµÍ³½«È¡Ïû¸Ã¶ÌĞÅµÄ·¢ËÍ';
+  is 'å‘é€çš„æˆªæ­¢æ—¶é—´, ä½†å‘é€æ—¶é—´æ™šäºè¯¥æ—¶é—´æ—¶, ç³»ç»Ÿå°†å–æ¶ˆè¯¥çŸ­ä¿¡çš„å‘é€';
 comment on column mc.SMS_SEND_HIS.send_status
-  is '·¢ËÍ×´Ì¬,-2:ÒÑÈë¿âÎ´¿ªÊ¼·¢ËÍ, 0:Î´·¢ËÍ, 1:ÒÑ·¢ËÍ, 2:·¢ËÍÖĞ, 5:·¢ËÍ³É¹¦, 6:·¢ËÍÊ§°Ü£¨ÈçÖµÏàÓ¦µÄÊ§°ÜÔ­Òò±àºÅÇë²é¿´ERR_ID±í)';
+  is 'å‘é€çŠ¶æ€,-2:å·²å…¥åº“æœªå¼€å§‹å‘é€, 0:æœªå‘é€, 1:å·²å‘é€, 2:å‘é€ä¸­, 5:å‘é€æˆåŠŸ, 6:å‘é€å¤±è´¥ï¼ˆå¦‚å€¼ç›¸åº”çš„å¤±è´¥åŸå› ç¼–å·è¯·æŸ¥çœ‹ERR_IDè¡¨)';
 comment on column mc.SMS_SEND_HIS.sys_time
-  is '¶ÌĞÅÈë¿âÊ±¼ä';
+  is 'çŸ­ä¿¡å…¥åº“æ—¶é—´';
 comment on column mc.SMS_SEND_HIS.sys_date_id
-  is '¶ÌĞÅÈë¿âÈÕÆÚ£¨¸ñÊ½YYYYMMDD£©';
+  is 'çŸ­ä¿¡å…¥åº“æ—¥æœŸï¼ˆæ ¼å¼YYYYMMDDï¼‰';
 comment on column mc.SMS_SEND_HIS.send_time
-  is 'Æ½Ì¨·¢ËÍ¸Ã¶ÌĞÅµÄÊ±¼ä';
+  is 'å¹³å°å‘é€è¯¥çŸ­ä¿¡çš„æ—¶é—´';
 comment on column mc.SMS_SEND_HIS.send_date_id
-  is 'Æ½Ì¨·¢ËÍ¸Ã¶ÌĞÅµÄÈÕÆÚ£¬¹éµµ±í½«ÒÔ´Ë×÷Îª·ÖÇø£¨¸ñÊ½YYYYMMDD£©';
+  is 'å¹³å°å‘é€è¯¥çŸ­ä¿¡çš„æ—¥æœŸï¼Œå½’æ¡£è¡¨å°†ä»¥æ­¤ä½œä¸ºåˆ†åŒºï¼ˆæ ¼å¼YYYYMMDDï¼‰';
 comment on column mc.SMS_SEND_HIS.send_weekdate
-  is 'Æ½Ì¨·¢ËÍ¸Ã¶ÌĞÅµÄÊ±¼äÎªÖÜ¼¸, 0:Î´·¢ËÍ, 1:ÖÜÈÕ, 2:ÖÜÒ», 3:ÖÜ¶ş, 4:ÖÜÈı, 5:ÖÜËÄ, 6:ÖÜÎå, 7:ÖÜÁù';
+  is 'å¹³å°å‘é€è¯¥çŸ­ä¿¡çš„æ—¶é—´ä¸ºå‘¨å‡ , 0:æœªå‘é€, 1:å‘¨æ—¥, 2:å‘¨ä¸€, 3:å‘¨äºŒ, 4:å‘¨ä¸‰, 5:å‘¨å››, 6:å‘¨äº”, 7:å‘¨å…­';
 comment on column mc.SMS_SEND_HIS.com_rtn_time
-  is '¶ÌĞÅÍø¹Ø·µ»ØÌá½»Ó¦´ğµÄÊ±¼ä';
+  is 'çŸ­ä¿¡ç½‘å…³è¿”å›æäº¤åº”ç­”çš„æ—¶é—´';
 comment on column mc.SMS_SEND_HIS.report_time
-  is '×´Ì¬±¨¸æÊ±¼ä';
+  is 'çŠ¶æ€æŠ¥å‘Šæ—¶é—´';
 comment on column mc.SMS_SEND_HIS.channel_id
-  is 'Í¨µÀ±àºÅ ÏµÍ³´¦ÀíÊ§°Ü£¨ÈçºÅÂëÔÚºÚÃûµ¥¡¢ĞÅÏ¢ÖĞ°üº¬Ãô¸Ğ´Ê£©ÔòÌîĞ´0£¨';
+  is 'é€šé“ç¼–å· ç³»ç»Ÿå¤„ç†å¤±è´¥ï¼ˆå¦‚å·ç åœ¨é»‘åå•ã€ä¿¡æ¯ä¸­åŒ…å«æ•æ„Ÿè¯ï¼‰åˆ™å¡«å†™0ï¼ˆ';
 comment on column mc.SMS_SEND_HIS.mobile_com
-  is 'ÔËÓªÉÌ±àºÅ, 1:ÒÆ¶¯,2:ÁªÍ¨, 3:µçĞÅ 0:´íÎóºÅÂë';
+  is 'è¿è¥å•†ç¼–å·, 1:ç§»åŠ¨,2:è”é€š, 3:ç”µä¿¡ 0:é”™è¯¯å·ç ';
 comment on column mc.SMS_SEND_HIS.sequence
-  is '¶ÌĞÅÍø¹ØµÄ¶ÌĞÅ±àºÅ, ¶ÌĞÅÍø¹Ø·µ»Ø×´Ì¬±¨¸æÊ±ÓÃÓÚÆ¥ÅäÔ­Ê¼¶ÌĞÅ';
+  is 'çŸ­ä¿¡ç½‘å…³çš„çŸ­ä¿¡ç¼–å·, çŸ­ä¿¡ç½‘å…³è¿”å›çŠ¶æ€æŠ¥å‘Šæ—¶ç”¨äºåŒ¹é…åŸå§‹çŸ­ä¿¡';
 comment on column mc.SMS_SEND_HIS.mobile_quantities
-  is '±¾Ìõ¶ÌĞÅµÄ¶ÌĞÅÌõÊı';
+  is 'æœ¬æ¡çŸ­ä¿¡çš„çŸ­ä¿¡æ¡æ•°';
 comment on column mc.SMS_SEND_HIS.resend_times
-  is '¶ÌĞÅµÄÖØ·¢´ÎÊı';
+  is 'çŸ­ä¿¡çš„é‡å‘æ¬¡æ•°';
 comment on column mc.SMS_SEND_HIS.signature
-  is '¶ÌĞÅÇ©Ãû';
+  is 'çŸ­ä¿¡ç­¾å';
 comment on column mc.SMS_SEND_HIS.msg_type
-  is 'ĞÅÏ¢ÀàĞÍ,ÓÃÓÚ±êÊ¶¶ÌĞÅµÄÉú³É·½Ê½»òÕßÀ´Ô´';
+  is 'ä¿¡æ¯ç±»å‹,ç”¨äºæ ‡è¯†çŸ­ä¿¡çš„ç”Ÿæˆæ–¹å¼æˆ–è€…æ¥æº';
 comment on column mc.SMS_SEND_HIS.err_id
-  is '´íÎó´úÂë£¬°üº¬¶ÌÏ¢Æ½Ì¨´íÎó´úÂëºÍ¶ÌĞÅÍø¹Ø´íÎó´úÂë ¶ÌĞÅ´íÎó´úÂë 1007£ººÚÃûµ¥ºÅÂë 1008£º¶ÌĞÅ°üº¬Î¥½û´Ê 1009£º´íÎóÊÖ»úºÅ 1010£ºSYS_ID ÌîĞ´´íÎó';
+  is 'é”™è¯¯ä»£ç ï¼ŒåŒ…å«çŸ­æ¯å¹³å°é”™è¯¯ä»£ç å’ŒçŸ­ä¿¡ç½‘å…³é”™è¯¯ä»£ç  çŸ­ä¿¡é”™è¯¯ä»£ç  1007ï¼šé»‘åå•å·ç  1008ï¼šçŸ­ä¿¡åŒ…å«è¿ç¦è¯ 1009ï¼šé”™è¯¯æ‰‹æœºå· 1010ï¼šSYS_ID å¡«å†™é”™è¯¯';
 comment on column mc.SMS_SEND_HIS.err_msg
-  is '´íÎó´úÂëµÄËµÃ÷ĞÅÏ¢';
+  is 'é”™è¯¯ä»£ç çš„è¯´æ˜ä¿¡æ¯';
 comment on column mc.SMS_SEND_HIS.is_longsms
-  is '¸Ã¶ÌĞÅÊÇ·ñÊÇ³¤¶ÌĞÅ,0:²»ÊÇ³¤¶ÌĞÅ,1:ÊÇ³¤¶ÌĞÅ';
+  is 'è¯¥çŸ­ä¿¡æ˜¯å¦æ˜¯é•¿çŸ­ä¿¡,0:ä¸æ˜¯é•¿çŸ­ä¿¡,1:æ˜¯é•¿çŸ­ä¿¡';
 comment on column mc.SMS_SEND_HIS.is_original_sms
-  is '¸Ã¶ÌĞÅÊÇ·ñÊÇÔ­Ê¼¶ÌĞÅ,·ÇÔ­Ê¼¶ÌĞÅÖ¸³¤¶ÌĞÅ·¢ËÍÊ±²ğ·Ö³öµÄ¶ÌĞÅ,0:ÊÇÔ­Ê¼¶ÌĞÅ, 1:²»ÊÇÔ­Ê¼¶ÌĞÅ';
+  is 'è¯¥çŸ­ä¿¡æ˜¯å¦æ˜¯åŸå§‹çŸ­ä¿¡,éåŸå§‹çŸ­ä¿¡æŒ‡é•¿çŸ­ä¿¡å‘é€æ—¶æ‹†åˆ†å‡ºçš„çŸ­ä¿¡,0:æ˜¯åŸå§‹çŸ­ä¿¡, 1:ä¸æ˜¯åŸå§‹çŸ­ä¿¡';
 comment on column mc.SMS_SEND_HIS.originalsms_sendid
-  is 'Ô­Ê¼¶ÌĞÅ±àºÅ£¬µ±±¾¶ÌĞÅÎªÓÉ³¤¶ÌĞÅ²ğ·Ö³ÉµÄ¶Ì¶ÌĞÅÊ±, ¿ÉÒÔÒÀ¾İ´Ë±àºÅ²éÑ¯µ½Ô­Ê¼¶ÌĞÅ';
+  is 'åŸå§‹çŸ­ä¿¡ç¼–å·ï¼Œå½“æœ¬çŸ­ä¿¡ä¸ºç”±é•¿çŸ­ä¿¡æ‹†åˆ†æˆçš„çŸ­çŸ­ä¿¡æ—¶, å¯ä»¥ä¾æ®æ­¤ç¼–å·æŸ¥è¯¢åˆ°åŸå§‹çŸ­ä¿¡';
 comment on column mc.SMS_SEND_HIS.current_pageno
-  is 'µ±Ç°¶ÌĞÅµÄÒ³ºÅ,¼´³¤¶ÌĞÅµÄµÚ¼¸Ìõ¶Ì¶ÌĞÅ';
+  is 'å½“å‰çŸ­ä¿¡çš„é¡µå·,å³é•¿çŸ­ä¿¡çš„ç¬¬å‡ æ¡çŸ­çŸ­ä¿¡';
 comment on column mc.SMS_SEND_HIS.originalsms_totalpages
-  is '±¾Ìõ¶Ì¶ÌĞÅËùÊô³¤¶ÌĞÅ¹²ÓĞ¶ÌĞÅµÄÒ³Êı';
+  is 'æœ¬æ¡çŸ­çŸ­ä¿¡æ‰€å±é•¿çŸ­ä¿¡å…±æœ‰çŸ­ä¿¡çš„é¡µæ•°';
 comment on column mc.SMS_SEND_HIS.longsms_tag
-  is '³¤¶ÌĞÅ¶¼±êÊ¶·û£ºÍ¬Ò»Ìõ³¤¶ÌĞÅµÄ¶Ì¶ÌĞÅ¸Ã±êÊ¶ÏàÍ¬';
+  is 'é•¿çŸ­ä¿¡éƒ½æ ‡è¯†ç¬¦ï¼šåŒä¸€æ¡é•¿çŸ­ä¿¡çš„çŸ­çŸ­ä¿¡è¯¥æ ‡è¯†ç›¸åŒ';
 comment on column mc.SMS_SEND_HIS.longsms_splited
-  is '³¤¶ÌĞÅÊÇ·ñ±»²ğ·Ö£º0Ã»ÓĞ±»²ğ·Ö»òÕßÊÇÆÕÍ¨¶ÌĞÅ£»1ÒÑ¾­±»²ğ·Ö¡£±»²ğ·ÖµÄ¶ÌĞÅ²éÑ¯Í³¼ÆÊ±²»Ó¦¼ÆËãÊıÁ¿¡£Ä¬ÈÏ0';
+  is 'é•¿çŸ­ä¿¡æ˜¯å¦è¢«æ‹†åˆ†ï¼š0æ²¡æœ‰è¢«æ‹†åˆ†æˆ–è€…æ˜¯æ™®é€šçŸ­ä¿¡ï¼›1å·²ç»è¢«æ‹†åˆ†ã€‚è¢«æ‹†åˆ†çš„çŸ­ä¿¡æŸ¥è¯¢ç»Ÿè®¡æ—¶ä¸åº”è®¡ç®—æ•°é‡ã€‚é»˜è®¤0';
 comment on column mc.SMS_SEND_HIS.remark
-  is '±¸×¢ĞÅÏ¢£¬±£Áô×Ö¶Î£¬À©Õ¹Ê±Ê¹ÓÃ';
+  is 'å¤‡æ³¨ä¿¡æ¯ï¼Œä¿ç•™å­—æ®µï¼Œæ‰©å±•æ—¶ä½¿ç”¨';
 comment on column mc.SMS_SEND_HIS.sender_id
-  is '·¢ËÍÕßID£¬Êı¾İ¿â½Ó¿ÚÊ±£¬¾ÍÊÇÊı¾İ¿âÕÊºÅ';
+  is 'å‘é€è€…IDï¼Œæ•°æ®åº“æ¥å£æ—¶ï¼Œå°±æ˜¯æ•°æ®åº“å¸å·';
 alter table mc.SMS_SEND_HIS
   add constraint PK_SMS_SEND_HIS primary key (SEND_ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -13722,66 +13722,66 @@ tablespace MC
   initrans 1
   maxtrans 255;
 comment on table mc.SMS_SEND_PAPER
-  is '¶ÌĞÅÆÕÍ¨·¢ËÍÀúÊ·¼ÇÂ¼±í';
+  is 'çŸ­ä¿¡æ™®é€šå‘é€å†å²è®°å½•è¡¨';
 comment on column mc.SMS_SEND_PAPER.sms_send_paper_id
-  is 'ÏµÍ³±àºÅ';
+  is 'ç³»ç»Ÿç¼–å·';
 comment on column mc.SMS_SEND_PAPER.status
-  is 'ÊÇ·ñÆôÓÃ£¬0¸ÕÌá½»ÉóºË£¨Î´ÉóºË£©,1ÉóºËÍ¨¹ı£¬3ÉóºËÁ÷³ÌÊ§°Ü£¬5¶ÌĞÅ·¢ËÍ³É¹¦£¬6¶ÌĞÅ·¢ËÍÊ§°Ü';
+  is 'æ˜¯å¦å¯ç”¨ï¼Œ0åˆšæäº¤å®¡æ ¸ï¼ˆæœªå®¡æ ¸ï¼‰,1å®¡æ ¸é€šè¿‡ï¼Œ3å®¡æ ¸æµç¨‹å¤±è´¥ï¼Œ5çŸ­ä¿¡å‘é€æˆåŠŸï¼Œ6çŸ­ä¿¡å‘é€å¤±è´¥';
 comment on column mc.SMS_SEND_PAPER.prior_id
-  is 'ÓÅÏÈ¼¶';
+  is 'ä¼˜å…ˆçº§';
 comment on column mc.SMS_SEND_PAPER.is_check
-  is 'ÊÇ·ñĞèÒªÉóºË  0Îª²»ĞèÒª£¬1ÎªĞèÒª';
+  is 'æ˜¯å¦éœ€è¦å®¡æ ¸  0ä¸ºä¸éœ€è¦ï¼Œ1ä¸ºéœ€è¦';
 comment on column mc.SMS_SEND_PAPER.subject
-  is 'Èç¹ûÊÇ²ÊĞÅµÄ»°£¬ÕâÀïÄÚÈİ²»Îª¿Õ';
+  is 'å¦‚æœæ˜¯å½©ä¿¡çš„è¯ï¼Œè¿™é‡Œå†…å®¹ä¸ä¸ºç©º';
 comment on column mc.SMS_SEND_PAPER.content
-  is 'ÄÚÈİ';
+  is 'å†…å®¹';
 comment on column mc.SMS_SEND_PAPER.mobiles
-  is 'ÊÖ»úºÅÂë';
+  is 'æ‰‹æœºå·ç ';
 comment on column mc.SMS_SEND_PAPER.groups
-  is '¿Í»§Èº×é';
+  is 'å®¢æˆ·ç¾¤ç»„';
 comment on column mc.SMS_SEND_PAPER.file_url
-  is 'ÎÄ¼şµØÖ·';
+  is 'æ–‡ä»¶åœ°å€';
 comment on column mc.SMS_SEND_PAPER.file_name
-  is 'ÎÄ¼şÃû³Æ';
+  is 'æ–‡ä»¶åç§°';
 comment on column mc.SMS_SEND_PAPER.sys_time
-  is '´´½¨Ê±¼ä';
+  is 'åˆ›å»ºæ—¶é—´';
 comment on column mc.SMS_SEND_PAPER.pre_send_time
-  is 'Ô¤¼Æ·¢ËÍÊ±¼ä';
+  is 'é¢„è®¡å‘é€æ—¶é—´';
 comment on column mc.SMS_SEND_PAPER.send_time
-  is '·¢ËÍÊ±¼ä';
+  is 'å‘é€æ—¶é—´';
 comment on column mc.SMS_SEND_PAPER.check_time
-  is 'Ìá½»ÉóºËÊ±¼ä';
+  is 'æäº¤å®¡æ ¸æ—¶é—´';
 comment on column mc.SMS_SEND_PAPER.creator
-  is '´´½¨Õß';
+  is 'åˆ›å»ºè€…';
 comment on column mc.SMS_SEND_PAPER.creator_name
-  is '´´½¨Õß';
+  is 'åˆ›å»ºè€…';
 comment on column mc.SMS_SEND_PAPER.creator_org
-  is '´´½¨Õß»ú¹¹';
+  is 'åˆ›å»ºè€…æœºæ„';
 comment on column mc.SMS_SEND_PAPER.creator_org_name
-  is '´´½¨Õß»ú¹¹';
+  is 'åˆ›å»ºè€…æœºæ„';
 comment on column mc.SMS_SEND_PAPER.auditor
-  is 'ÉóºËÕß';
+  is 'å®¡æ ¸è€…';
 comment on column mc.SMS_SEND_PAPER.auditor_name
-  is 'ÉóºËÕß';
+  is 'å®¡æ ¸è€…';
 comment on column mc.SMS_SEND_PAPER.auditor_org
-  is 'ÉóºËÕß»ú¹¹';
+  is 'å®¡æ ¸è€…æœºæ„';
 comment on column mc.SMS_SEND_PAPER.auditor_org_name
-  is 'ÉóºËÕß»ú¹¹';
+  is 'å®¡æ ¸è€…æœºæ„';
 comment on column mc.SMS_SEND_PAPER.batch_id
-  is '¶ÌĞÅµÄÅú´ÎºÅ£¬ÅúÁ¿·¢ËÍµÄÊ±ºòÊ¹ÓÃ';
+  is 'çŸ­ä¿¡çš„æ‰¹æ¬¡å·ï¼Œæ‰¹é‡å‘é€çš„æ—¶å€™ä½¿ç”¨';
 comment on column mc.SMS_SEND_PAPER.send_type
-  is '·¢ËÍÀàĞÍ£¬COMMON£ºÆÕÍ¨·¢ËÍ¡¢BATCH£ºÅúÁ¿·¢ËÍ¡¢TEMPLATE£ºÄ£°å·¢ËÍ¡¢PRODUCT£ºÀ¸Ä¿·¢ËÍ';
+  is 'å‘é€ç±»å‹ï¼ŒCOMMONï¼šæ™®é€šå‘é€ã€BATCHï¼šæ‰¹é‡å‘é€ã€TEMPLATEï¼šæ¨¡æ¿å‘é€ã€PRODUCTï¼šæ ç›®å‘é€';
 comment on column mc.SMS_SEND_PAPER.msg_type
-  is 'ĞÅÏ¢ÀàĞÍ£¬SMS£º¶ÌĞÅ¡¢MMS£º²ÊĞÅ';
+  is 'ä¿¡æ¯ç±»å‹ï¼ŒSMSï¼šçŸ­ä¿¡ã€MMSï¼šå½©ä¿¡';
 comment on column mc.SMS_SEND_PAPER.product_id
-  is 'À¸Ä¿±àºÅ';
+  is 'æ ç›®ç¼–å·';
 comment on column mc.SMS_SEND_PAPER.product_name
-  is 'À¸Ä¿Ãû³Æ';
+  is 'æ ç›®åç§°';
 comment on column mc.SMS_SEND_PAPER.product_item_id
-  is 'À¸Ä¿·¢ËÍÀúÊ·¼ÇÂ¼µÄ±àºÅ';
+  is 'æ ç›®å‘é€å†å²è®°å½•çš„ç¼–å·';
 alter table mc.SMS_SEND_PAPER
   add constraint PK_SMS_SEND_PAPER primary key (SMS_SEND_PAPER_ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -13817,32 +13817,32 @@ tablespace MC
     maxextents unlimited
   );
 comment on table mc.SMS_SPNUMBER
-  is '¶ÌĞÅÌØ·şºÅ±í';
+  is 'çŸ­ä¿¡ç‰¹æœå·è¡¨';
 comment on column mc.SMS_SPNUMBER.sms_spnumber_id
-  is 'ÌØ·şºÅ±àºÅ';
+  is 'ç‰¹æœå·ç¼–å·';
 comment on column mc.SMS_SPNUMBER.spnumber
-  is 'ÌØ·şºÅ';
+  is 'ç‰¹æœå·';
 comment on column mc.SMS_SPNUMBER.status
-  is '×´Ì¬, 0:Ê§Ğ§, 1:ÉúĞ§';
+  is 'çŠ¶æ€, 0:å¤±æ•ˆ, 1:ç”Ÿæ•ˆ';
 comment on column mc.SMS_SPNUMBER.spnumber_type
-  is 'ÀàĞÍ, PREFIX:Ç°×º, REGEXP:ÕıÔò±í´ïÊ½';
+  is 'ç±»å‹, PREFIX:å‰ç¼€, REGEXP:æ­£åˆ™è¡¨è¾¾å¼';
 comment on column mc.SMS_SPNUMBER.description
-  is '±¸×¢';
+  is 'å¤‡æ³¨';
 comment on column mc.SMS_SPNUMBER.sort_index
-  is 'ÅÅĞò±àºÅ';
+  is 'æ’åºç¼–å·';
 comment on column mc.SMS_SPNUMBER.organization_id
-  is '»ú¹¹±àºÅ';
+  is 'æœºæ„ç¼–å·';
 comment on column mc.SMS_SPNUMBER.organization_name
-  is '»ú¹¹Ãû³Æ';
+  is 'æœºæ„åç§°';
 comment on column mc.SMS_SPNUMBER.user_id
-  is 'ÓÃ»§±àºÅ';
+  is 'ç”¨æˆ·ç¼–å·';
 comment on column mc.SMS_SPNUMBER.user_name
-  is 'ÓÃ»§Ãû³Æ';
+  is 'ç”¨æˆ·åç§°';
 comment on column mc.SMS_SPNUMBER.create_time
-  is '´´½¨Ê±¼ä';
+  is 'åˆ›å»ºæ—¶é—´';
 alter table mc.SMS_SPNUMBER
   add constraint PK_SMS_SPNUMBER primary key (SMS_SPNUMBER_ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -13887,7 +13887,7 @@ tablespace MC
   maxtrans 255;
 alter table mc.SMS_STATICS_CHANNEL
   add constraint PK_SMS_STATICS_CHANNEL primary key (SMS_STATICS_CHANNEL_ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -13916,7 +13916,7 @@ tablespace MC
   maxtrans 255;
 alter table mc.SMS_STATICS_DATE
   add constraint PK_SMS_STATICS_DATE primary key (SMS_STATICS_DATE_ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -13946,7 +13946,7 @@ tablespace MC
   maxtrans 255;
 alter table mc.SMS_STATICS_ORG
   add constraint PK_SMS_STATICS_ORG primary key (SMS_STATICS_ORG_ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -13977,7 +13977,7 @@ tablespace MC
   maxtrans 255;
 alter table mc.SMS_STATICS_ORG_CHANNEL
   add constraint PK_SMS_STATICS_ORG_CHANNEL primary key (SMS_STATICS_ORG_CHANNEL_ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -14031,48 +14031,48 @@ tablespace MC
     maxextents unlimited
   );
 comment on table mc.SMS_SURVEY
-  is '¶ÌĞÅµ÷²é';
+  is 'çŸ­ä¿¡è°ƒæŸ¥';
 comment on column mc.SMS_SURVEY.sms_survey_name
-  is 'µ÷²éÃû³Æ';
+  is 'è°ƒæŸ¥åç§°';
 comment on column mc.SMS_SURVEY.survey_type
-  is 'µ÷²éÀàĞÍ';
+  is 'è°ƒæŸ¥ç±»å‹';
 comment on column mc.SMS_SURVEY.option_number
-  is 'Ñ¡ÏîÊıÁ¿';
+  is 'é€‰é¡¹æ•°é‡';
 comment on column mc.SMS_SURVEY.status
-  is '×´Ì¬';
+  is 'çŠ¶æ€';
 comment on column mc.SMS_SURVEY.start_time
-  is '¿ªÊ¼Ê±¼ä';
+  is 'å¼€å§‹æ—¶é—´';
 comment on column mc.SMS_SURVEY.end_time
-  is '½áÊøÊ±¼ä';
+  is 'ç»“æŸæ—¶é—´';
 comment on column mc.SMS_SURVEY.user_id
-  is 'ÓÃ»§id';
+  is 'ç”¨æˆ·id';
 comment on column mc.SMS_SURVEY.user_name
-  is 'ÓÃ»§Ãû';
+  is 'ç”¨æˆ·å';
 comment on column mc.SMS_SURVEY.user_group_id
-  is 'ÓÃ»§Èº×éid';
+  is 'ç”¨æˆ·ç¾¤ç»„id';
 comment on column mc.SMS_SURVEY.user_group_name
-  is 'ÓÃ»§Èº×éÃû';
+  is 'ç”¨æˆ·ç¾¤ç»„å';
 comment on column mc.SMS_SURVEY.sms_directive
-  is '¶ÌĞÅÖ¸Áî';
+  is 'çŸ­ä¿¡æŒ‡ä»¤';
 comment on column mc.SMS_SURVEY.survey_template
-  is 'µ÷²éÄ£°å';
+  is 'è°ƒæŸ¥æ¨¡æ¿';
 comment on column mc.SMS_SURVEY.thank_word
-  is '¸ĞĞ»Óï';
+  is 'æ„Ÿè°¢è¯­';
 comment on column mc.SMS_SURVEY.spec_response
-  is 'ÊÇ·ñÏŞ¶¨µ÷²é¶ÔÏó';
+  is 'æ˜¯å¦é™å®šè°ƒæŸ¥å¯¹è±¡';
 comment on column mc.SMS_SURVEY.contact_groups
-  is 'ÁªÏµÈº×é';
+  is 'è”ç³»ç¾¤ç»„';
 comment on column mc.SMS_SURVEY.black_groups
-  is 'ºÚÃûµ¥';
+  is 'é»‘åå•';
 comment on column mc.SMS_SURVEY.survey_valid_type
-  is 'ÓĞĞ§»Ø¸´';
+  is 'æœ‰æ•ˆå›å¤';
 comment on column mc.SMS_SURVEY.max_vote_number
-  is '´ÎÊıÏŞÖÆ';
+  is 'æ¬¡æ•°é™åˆ¶';
 comment on column mc.SMS_SURVEY.created_stamp
-  is '´´½¨Ê±¼ä';
+  is 'åˆ›å»ºæ—¶é—´';
 alter table mc.SMS_SURVEY
   add constraint PK_SMS_SURVEY primary key (SMS_SURVEY_ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -14139,10 +14139,10 @@ tablespace MC
   initrans 1
   maxtrans 255;
 comment on table mc.SMS_SURVEY_GROUP
-  is '¶ÌĞÅµ÷²é±»·Ã×é';
+  is 'çŸ­ä¿¡è°ƒæŸ¥è¢«è®¿ç»„';
 alter table mc.SMS_SURVEY_GROUP
   add constraint PK_SMS_SURVEY_GROUP primary key (SMS_SURVEY_ID, GROUP_ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -14177,10 +14177,10 @@ tablespace MC
   initrans 1
   maxtrans 255;
 comment on table mc.SMS_SURVEY_ITEM
-  is '¶ÌĞÅµ÷²éÑ¡Ïî';
+  is 'çŸ­ä¿¡è°ƒæŸ¥é€‰é¡¹';
 alter table mc.SMS_SURVEY_ITEM
   add constraint PK_SMS_SURVEY_ITEM primary key (SMS_SURVEY_ID, SURV_ITEM_CODE)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -14218,10 +14218,10 @@ tablespace MC
   initrans 1
   maxtrans 255;
 comment on table mc.SMS_SURVEY_RECORD
-  is 'µ÷²é¼ÇÂ¼';
+  is 'è°ƒæŸ¥è®°å½•';
 alter table mc.SMS_SURVEY_RECORD
   add constraint PK_SMS_SURVEY_RECORD primary key (SMS_SURVEY_RECORD_ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -14256,10 +14256,10 @@ tablespace MC
   initrans 1
   maxtrans 255;
 comment on table mc.SMS_SURVEY_RESPONDENT
-  is '¶ÌĞÅµ÷²é±»·ÃÕß';
+  is 'çŸ­ä¿¡è°ƒæŸ¥è¢«è®¿è€…';
 alter table mc.SMS_SURVEY_RESPONDENT
   add constraint PK_SMS_SURVEY_RESPONDENT primary key (SMS_SURVEY_ID, MOBILE_NUMBER)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -14304,44 +14304,44 @@ tablespace MC
   initrans 1
   maxtrans 255;
 comment on table mc.SMS_TEST_SEND
-  is '²âÊÔ¶ÌĞÅ²ßÂÔ±í';
+  is 'æµ‹è¯•çŸ­ä¿¡ç­–ç•¥è¡¨';
 comment on column mc.SMS_TEST_SEND.id
-  is '±àºÅ';
+  is 'ç¼–å·';
 comment on column mc.SMS_TEST_SEND.content
-  is 'ÄÚÈİ£¬»á×Ô¶¯×·¼ÓÊ±¼ä';
+  is 'å†…å®¹ï¼Œä¼šè‡ªåŠ¨è¿½åŠ æ—¶é—´';
 comment on column mc.SMS_TEST_SEND.submit_time
-  is 'Ìá½»Ê±¼ä';
+  is 'æäº¤æ—¶é—´';
 comment on column mc.SMS_TEST_SEND.mobile_to
-  is 'ÊÖ»úºÅ, ÒÔÓ¢ÎÄ¶ººÅ·Ö¸î';
+  is 'æ‰‹æœºå·, ä»¥è‹±æ–‡é€—å·åˆ†å‰²';
 comment on column mc.SMS_TEST_SEND.msg_id
-  is 'ĞÅÏ¢ĞÔÖÊ±àºÅ';
+  is 'ä¿¡æ¯æ€§è´¨ç¼–å·';
 comment on column mc.SMS_TEST_SEND.user_id
-  is 'Ìá½»Õß±àºÅ';
+  is 'æäº¤è€…ç¼–å·';
 comment on column mc.SMS_TEST_SEND.organization_id
-  is 'Ìá½»ÕßËùÊô»ú¹¹';
+  is 'æäº¤è€…æ‰€å±æœºæ„';
 comment on column mc.SMS_TEST_SEND.wappush_url
-  is 'WAPPUSH¶ÌĞÅµÄÁ´½ÓµØÖ·';
+  is 'WAPPUSHçŸ­ä¿¡çš„é“¾æ¥åœ°å€';
 comment on column mc.SMS_TEST_SEND.date_interval_start
-  is '²âÊÔ¶ÌĞÅÈÕÆÚ¼ä¸ôµÄ¿ªÊ¼Ê±¼ä, 2:ĞÇÆÚÒ», 3:ĞÇÆÚ¶ş, 4:ĞÇÆÚÈı, 5:ĞÇÆÚËÄ, 6:ĞÇÆÚÎå, 7:ĞÇÆÚÁù, 8:ĞÇÆÚÈÕ';
+  is 'æµ‹è¯•çŸ­ä¿¡æ—¥æœŸé—´éš”çš„å¼€å§‹æ—¶é—´, 2:æ˜ŸæœŸä¸€, 3:æ˜ŸæœŸäºŒ, 4:æ˜ŸæœŸä¸‰, 5:æ˜ŸæœŸå››, 6:æ˜ŸæœŸäº”, 7:æ˜ŸæœŸå…­, 8:æ˜ŸæœŸæ—¥';
 comment on column mc.SMS_TEST_SEND.date_interval_end
-  is '²âÊÔ¶ÌĞÅÈÕÆÚ¼ä¸ôµÄ¿ªÊ¼Ê±¼ä, 2:ĞÇÆÚÒ», 3:ĞÇÆÚ¶ş, 4:ĞÇÆÚÈı, 5:ĞÇÆÚËÄ, 6:ĞÇÆÚÎå, 7:ĞÇÆÚÁù, 8:ĞÇÆÚÈÕ';
+  is 'æµ‹è¯•çŸ­ä¿¡æ—¥æœŸé—´éš”çš„å¼€å§‹æ—¶é—´, 2:æ˜ŸæœŸä¸€, 3:æ˜ŸæœŸäºŒ, 4:æ˜ŸæœŸä¸‰, 5:æ˜ŸæœŸå››, 6:æ˜ŸæœŸäº”, 7:æ˜ŸæœŸå…­, 8:æ˜ŸæœŸæ—¥';
 comment on column mc.SMS_TEST_SEND.time_interval_start
-  is '²âÊÔ¶ÌĞÅÊ±¼ä¼ä¸ôµÄ¿ªÊ¼Ê±¼ä';
+  is 'æµ‹è¯•çŸ­ä¿¡æ—¶é—´é—´éš”çš„å¼€å§‹æ—¶é—´';
 comment on column mc.SMS_TEST_SEND.time_interval_end
-  is '²âÊÔ¶ÌĞÅÊ±¼ä¼ä¸ôµÄ½áÊøÊ±¼ä';
+  is 'æµ‹è¯•çŸ­ä¿¡æ—¶é—´é—´éš”çš„ç»“æŸæ—¶é—´';
 comment on column mc.SMS_TEST_SEND.interval
-  is '²âÊÔ¶ÌĞÅµÄ¼ä¸ô·¢ËÍ';
+  is 'æµ‹è¯•çŸ­ä¿¡çš„é—´éš”å‘é€';
 comment on column mc.SMS_TEST_SEND.type
-  is '0:ÆÕÍ¨¶ÌĞÅ, 1:WAPPUSH¶ÌĞÅ';
+  is '0:æ™®é€šçŸ­ä¿¡, 1:WAPPUSHçŸ­ä¿¡';
 comment on column mc.SMS_TEST_SEND.status
-  is '0:³õ¸å, 1:ÉúĞ§, 2:Ê§Ğ§';
+  is '0:åˆç¨¿, 1:ç”Ÿæ•ˆ, 2:å¤±æ•ˆ';
 comment on column mc.SMS_TEST_SEND.hour_minute
-  is '0:Ğ¡Ê±, 1:·ÖÖÓ';
+  is '0:å°æ—¶, 1:åˆ†é’Ÿ';
 comment on column mc.SMS_TEST_SEND.sys_id
-  is 'ĞÅÏ¢À´Ô´';
+  is 'ä¿¡æ¯æ¥æº';
 alter table mc.SMS_TEST_SEND
   add constraint PK_SMS_TEST_SEND primary key (ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -14375,28 +14375,28 @@ tablespace MC
     maxextents unlimited
   );
 comment on table mc.SMS_UNSUBSCRIBE_KEY_WORD
-  is 'ÍË¶©¹Ø¼ü×Ö±í';
+  is 'é€€è®¢å…³é”®å­—è¡¨';
 comment on column mc.SMS_UNSUBSCRIBE_KEY_WORD.key_word_id
-  is '¹Ø¼ü×Ö±àºÅ';
+  is 'å…³é”®å­—ç¼–å·';
 comment on column mc.SMS_UNSUBSCRIBE_KEY_WORD.key_word
-  is '¹Ø¼ü×Ö';
+  is 'å…³é”®å­—';
 comment on column mc.SMS_UNSUBSCRIBE_KEY_WORD.status
-  is '×´Ì¬, 0:Ê§Ğ§, 1:ÉúĞ§';
+  is 'çŠ¶æ€, 0:å¤±æ•ˆ, 1:ç”Ÿæ•ˆ';
 comment on column mc.SMS_UNSUBSCRIBE_KEY_WORD.description
-  is '±¸×¢';
+  is 'å¤‡æ³¨';
 comment on column mc.SMS_UNSUBSCRIBE_KEY_WORD.sort_index
-  is 'ÅÅĞò±àºÅ';
+  is 'æ’åºç¼–å·';
 comment on column mc.SMS_UNSUBSCRIBE_KEY_WORD.organization_id
-  is '»ú¹¹±àºÅ';
+  is 'æœºæ„ç¼–å·';
 comment on column mc.SMS_UNSUBSCRIBE_KEY_WORD.organization_name
-  is '»ú¹¹Ãû³Æ';
+  is 'æœºæ„åç§°';
 comment on column mc.SMS_UNSUBSCRIBE_KEY_WORD.user_id
-  is 'ÓÃ»§±àºÅ';
+  is 'ç”¨æˆ·ç¼–å·';
 comment on column mc.SMS_UNSUBSCRIBE_KEY_WORD.user_name
-  is 'ÓÃ»§Ãû³Æ';
+  is 'ç”¨æˆ·åç§°';
 alter table mc.SMS_UNSUBSCRIBE_KEY_WORD
   add constraint PK_SMS_UNSUBSCRIBE_KEY_WORD primary key (KEY_WORD_ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -14439,7 +14439,7 @@ tablespace MC
   );
 alter table mc.SMS_VIP
   add primary key (SMS_VIP_ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -14499,22 +14499,22 @@ tablespace MC
     maxextents unlimited
   );
 comment on table mc.STYLE_BASE
-  is 'Æ½Ì¨Ö÷Ìâ»ù´¡ĞÅÏ¢±í';
+  is 'å¹³å°ä¸»é¢˜åŸºç¡€ä¿¡æ¯è¡¨';
 comment on column mc.STYLE_BASE.style_id
-  is '±àºÅ';
+  is 'ç¼–å·';
 comment on column mc.STYLE_BASE.subject
-  is 'Ö÷ÌâÃû³Æ';
+  is 'ä¸»é¢˜åç§°';
 comment on column mc.STYLE_BASE.style_key
-  is 'Ö÷Ìâ¶ÔÓ¦µÄÓ¢ÎÄKEY';
+  is 'ä¸»é¢˜å¯¹åº”çš„è‹±æ–‡KEY';
 comment on column mc.STYLE_BASE.thumbnail
-  is 'Ö÷ÌâËõÂÔÍ¼Ãû³Æ';
+  is 'ä¸»é¢˜ç¼©ç•¥å›¾åç§°';
 comment on column mc.STYLE_BASE.status
-  is 'ÊÇ·ñÆôÓÃ, 0:ÎŞĞ§Ö÷Ìâ, 1:ÓĞĞ§Ö÷Ìâ';
+  is 'æ˜¯å¦å¯ç”¨, 0:æ— æ•ˆä¸»é¢˜, 1:æœ‰æ•ˆä¸»é¢˜';
 comment on column mc.STYLE_BASE.creat_time
-  is '´´½¨Ê±¼ä';
+  is 'åˆ›å»ºæ—¶é—´';
 alter table mc.STYLE_BASE
   add constraint PK_STYLE_BASE primary key (STYLE_ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -14544,20 +14544,20 @@ tablespace MC
   initrans 1
   maxtrans 255;
 comment on table mc.STYLE_USER_CONFIG
-  is 'ÓÃ»§¶ÔÓ¦Ö÷ÌâÅäÖÃ±í';
+  is 'ç”¨æˆ·å¯¹åº”ä¸»é¢˜é…ç½®è¡¨';
 comment on column mc.STYLE_USER_CONFIG.style_config_id
-  is '±àºÅ';
+  is 'ç¼–å·';
 comment on column mc.STYLE_USER_CONFIG.user_id
-  is 'ÓÃ»§±àºÅ, Õâ¸ö×Ö¶ÎĞèÒªÉèÖÃÎ¨Ò»ĞÔ';
+  is 'ç”¨æˆ·ç¼–å·, è¿™ä¸ªå­—æ®µéœ€è¦è®¾ç½®å”¯ä¸€æ€§';
 comment on column mc.STYLE_USER_CONFIG.user_name
-  is 'ÓÃ»§Ãû³Æ';
+  is 'ç”¨æˆ·åç§°';
 comment on column mc.STYLE_USER_CONFIG.f_id
-  is 'ÅäÖÃµÄÖ÷Ìâ±àºÅ';
+  is 'é…ç½®çš„ä¸»é¢˜ç¼–å·';
 comment on column mc.STYLE_USER_CONFIG.creat_time
-  is '´´½¨Ê±¼ä';
+  is 'åˆ›å»ºæ—¶é—´';
 alter table mc.STYLE_USER_CONFIG
   add constraint PK_STYLE_USER_CONFIG primary key (STYLE_CONFIG_ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -14580,20 +14580,20 @@ tablespace MC
   initrans 1
   maxtrans 255;
 comment on table mc.SUBSYS_CODE
-  is 'ĞÅÏ¢À´Ô´Êı¾İ×Öµä';
+  is 'ä¿¡æ¯æ¥æºæ•°æ®å­—å…¸';
 comment on column mc.SUBSYS_CODE.id
-  is '±íÖ÷¼ü';
+  is 'è¡¨ä¸»é”®';
 comment on column mc.SUBSYS_CODE.subsys_code_id
-  is 'ĞÅÏ¢À´Ô´±àºÅ';
+  is 'ä¿¡æ¯æ¥æºç¼–å·';
 comment on column mc.SUBSYS_CODE.subsys_code_name
-  is 'ĞÅÏ¢À´Ô´Ãû³Æ';
+  is 'ä¿¡æ¯æ¥æºåç§°';
 comment on column mc.SUBSYS_CODE.extend_number
-  is 'À©Õ¹ºÅ';
+  is 'æ‰©å±•å·';
 comment on column mc.SUBSYS_CODE.description
-  is '±¸×¢';
+  is 'å¤‡æ³¨';
 alter table mc.SUBSYS_CODE
   add constraint PK_SUBSYS_CODE primary key (ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -14625,14 +14625,14 @@ tablespace MC
     maxextents unlimited
   );
 comment on table mc.SYS_CONFIG
-  is 'ÏµÍ³Ê¹ÓÃµÄÅäÖÃÊı¾İ';
+  is 'ç³»ç»Ÿä½¿ç”¨çš„é…ç½®æ•°æ®';
 comment on column mc.SYS_CONFIG.config_key
-  is 'ÅäÖÃÏî, InitedData(ÊÇ·ñÒÑ¾­³õÊ¼»¯Êı¾İ),0:Î´³õÊ¼»¯,1:ÒÑ¾­³õÊ¼»¯£¬ÒÑ¾­³õÊ¼»¯Ôò²»ÔÙ³õÊ¼»¯, PROHIBITEDWORD_POWER, 0:¹Ø±ÕÎ¥½û´Ê, 1:¿ªÆôÎ¥½û´Ê';
+  is 'é…ç½®é¡¹, InitedData(æ˜¯å¦å·²ç»åˆå§‹åŒ–æ•°æ®),0:æœªåˆå§‹åŒ–,1:å·²ç»åˆå§‹åŒ–ï¼Œå·²ç»åˆå§‹åŒ–åˆ™ä¸å†åˆå§‹åŒ–, PROHIBITEDWORD_POWER, 0:å…³é—­è¿ç¦è¯, 1:å¼€å¯è¿ç¦è¯';
 comment on column mc.SYS_CONFIG.config_value
-  is 'ÅäÖÃÖµ';
+  is 'é…ç½®å€¼';
 alter table mc.SYS_CONFIG
   add constraint PK_SYS_CONFIG primary key (CONFIG_KEY)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -14703,68 +14703,68 @@ tablespace MC
     maxextents unlimited
   );
 comment on column mc.TASK_INFO.id
-  is 'Ö÷¼ü';
+  is 'ä¸»é”®';
 comment on column mc.TASK_INFO.org_id
-  is '»ú¹¹id';
+  is 'æœºæ„id';
 comment on column mc.TASK_INFO.name
-  is 'ÈÎÎñÃû';
+  is 'ä»»åŠ¡å';
 comment on column mc.TASK_INFO.file_url
-  is '±£´æÄ£°å·¢ËÍµÄÎÄ¼şÎ»ÖÃ';
+  is 'ä¿å­˜æ¨¡æ¿å‘é€çš„æ–‡ä»¶ä½ç½®';
 comment on column mc.TASK_INFO.content
-  is '¶ÌĞÅÄÚÈİ';
+  is 'çŸ­ä¿¡å†…å®¹';
 comment on column mc.TASK_INFO.type
-  is '·¢ËÍÀàĞÍ 0:¶ÌĞÅ 1:²ÊĞÅ';
+  is 'å‘é€ç±»å‹ 0:çŸ­ä¿¡ 1:å½©ä¿¡';
 comment on column mc.TASK_INFO.send_status
-  is '·¢ËÍ×´Ì¬';
+  is 'å‘é€çŠ¶æ€';
 comment on column mc.TASK_INFO.signature
-  is 'ÓÃ»§Ç©Ãû';
+  is 'ç”¨æˆ·ç­¾å';
 comment on column mc.TASK_INFO.prior_id
-  is 'ÓÅÏÈ¼¶';
+  is 'ä¼˜å…ˆçº§';
 comment on column mc.TASK_INFO.time_task
-  is 'ÊÇ·ñÊÇ¶¨Ê±ÈÎÎñ 0:²»ÊÇ 1:ÊÇ';
+  is 'æ˜¯å¦æ˜¯å®šæ—¶ä»»åŠ¡ 0:ä¸æ˜¯ 1:æ˜¯';
 comment on column mc.TASK_INFO.extend_code
-  is 'ÓÃ»§À©Õ¹ºÅ';
+  is 'ç”¨æˆ·æ‰©å±•å·';
 comment on column mc.TASK_INFO.valid_mobile_count
-  is 'ÓĞĞ§µÄµç»°ºÅÂë×ÜÌõÊı';
+  is 'æœ‰æ•ˆçš„ç”µè¯å·ç æ€»æ¡æ•°';
 comment on column mc.TASK_INFO.run_time
-  is 'ÈÎÎñÆô¶¯Ê±¼ä';
+  is 'ä»»åŠ¡å¯åŠ¨æ—¶é—´';
 comment on column mc.TASK_INFO.create_time
-  is 'ÈÎÎñ´´½¨Ê±¼ä';
+  is 'ä»»åŠ¡åˆ›å»ºæ—¶é—´';
 comment on column mc.TASK_INFO.invalid_mobile_count
-  is 'ÎŞĞ§µÄµç»°ºÅÂë×ÜÌõÊı';
+  is 'æ— æ•ˆçš„ç”µè¯å·ç æ€»æ¡æ•°';
 comment on column mc.TASK_INFO.user_id
-  is '¼ÇÂ¼·¢ËÍµÄÓÃ»§id';
+  is 'è®°å½•å‘é€çš„ç”¨æˆ·id';
 comment on column mc.TASK_INFO.status
-  is '·¢ËÍ×´Ì¬ 0:Î´Æô¶¯ 1:·¢ËÍÖĞ 2:ÔİÍ£ 3:Í£Ö¹ 4:·¢ËÍ½áÊø';
+  is 'å‘é€çŠ¶æ€ 0:æœªå¯åŠ¨ 1:å‘é€ä¸­ 2:æš‚åœ 3:åœæ­¢ 4:å‘é€ç»“æŸ';
 comment on column mc.TASK_INFO.sms_user_type
-  is 'ÓÃ»§ÀàĞÍ';
+  is 'ç”¨æˆ·ç±»å‹';
 comment on column mc.TASK_INFO.send_count
-  is '·¢ËÍ×ÜÌõÊı';
+  is 'å‘é€æ€»æ¡æ•°';
 comment on column mc.TASK_INFO.end_time
-  is 'ÈÎÎñ½áÊøÊ±¼ä';
+  is 'ä»»åŠ¡ç»“æŸæ—¶é—´';
 comment on column mc.TASK_INFO.client_group
-  is 'Èº×éµÄid';
+  is 'ç¾¤ç»„çš„id';
 comment on column mc.TASK_INFO.batch_id
-  is 'ÅúÁ¿·¢ËÍ¶ÌĞÅµÄÅú´ÎºÅ';
+  is 'æ‰¹é‡å‘é€çŸ­ä¿¡çš„æ‰¹æ¬¡å·';
 comment on column mc.TASK_INFO.untreated_mobile
-  is 'Î´´¦ÀíµÄºÅÂë,ÓÃÓÚ±£´æÆÕÍ¨·¢ËÍµÄºÅÂë';
+  is 'æœªå¤„ç†çš„å·ç ,ç”¨äºä¿å­˜æ™®é€šå‘é€çš„å·ç ';
 comment on column mc.TASK_INFO.excel_name
-  is '±£´æÅúÁ¿·¢ËÍµÄexcel_name';
+  is 'ä¿å­˜æ‰¹é‡å‘é€çš„excel_name';
 comment on column mc.TASK_INFO.lose_reason
-  is '·¢ËÍÊ§°ÜÔ­Òò';
+  is 'å‘é€å¤±è´¥åŸå› ';
 comment on column mc.TASK_INFO.report_all_count
-  is '·µ»Ø×´Ì¬±¨¸æ×ÜÌõÊı';
+  is 'è¿”å›çŠ¶æ€æŠ¥å‘Šæ€»æ¡æ•°';
 comment on column mc.TASK_INFO.report_success_count
-  is '·µ»Ø×´Ì¬±¨¸æ³É¹¦ÌõÊı';
+  is 'è¿”å›çŠ¶æ€æŠ¥å‘ŠæˆåŠŸæ¡æ•°';
 comment on column mc.TASK_INFO.report_failure_count
-  is '·µ»Ø×´Ì¬±¨¸æÊ§°ÜÌõÊı';
+  is 'è¿”å›çŠ¶æ€æŠ¥å‘Šå¤±è´¥æ¡æ•°';
 comment on column mc.TASK_INFO.report_unknown_count
-  is 'Ã»ÓĞ·µ»Ø×´Ì¬±¨¸æÌõÊı';
+  is 'æ²¡æœ‰è¿”å›çŠ¶æ€æŠ¥å‘Šæ¡æ•°';
 comment on column mc.TASK_INFO.granter_id
-  is '¶ÌĞÅÎ¯ÍĞÈË';
+  is 'çŸ­ä¿¡å§”æ‰˜äºº';
 alter table mc.TASK_INFO
   add primary key (ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -14866,7 +14866,7 @@ tablespace MC
   maxtrans 255;
 alter table mc.TEST_STRM
   add primary key (ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -14938,34 +14938,34 @@ tablespace MC
     maxextents unlimited
   );
 comment on table mc.UNIT_PRICE_INFO
-  is '»ú¹¹¼Û¸ñĞÅÏ¢±í';
+  is 'æœºæ„ä»·æ ¼ä¿¡æ¯è¡¨';
 comment on column mc.UNIT_PRICE_INFO.price_id
   is 'ID';
 comment on column mc.UNIT_PRICE_INFO.organization_id
-  is '»ú¹¹×éid';
+  is 'æœºæ„ç»„id';
 comment on column mc.UNIT_PRICE_INFO.unit_price
-  is '×éµ¥¼Û';
+  is 'ç»„å•ä»·';
 comment on column mc.UNIT_PRICE_INFO.start_date
-  is 'ÆğÊ¼ÈÕÆÚ';
+  is 'èµ·å§‹æ—¥æœŸ';
 comment on column mc.UNIT_PRICE_INFO.end_date
-  is 'ÖÕÖ¹ÈÕÆÚ';
+  is 'ç»ˆæ­¢æ—¥æœŸ';
 comment on column mc.UNIT_PRICE_INFO.create_date
-  is '´´½¨Ê±¼ä';
+  is 'åˆ›å»ºæ—¶é—´';
 comment on column mc.UNIT_PRICE_INFO.effective
-  is 'ÊÇ·ñÀúÊ·µ¥¼Û   0£º·ÇÀúÊ·µ¥¼Û£»1£ºÀúÊ·µ¥¼Û';
+  is 'æ˜¯å¦å†å²å•ä»·   0ï¼šéå†å²å•ä»·ï¼›1ï¼šå†å²å•ä»·';
 comment on column mc.UNIT_PRICE_INFO.remark
-  is '±¸×¢';
+  is 'å¤‡æ³¨';
 comment on column mc.UNIT_PRICE_INFO.organization_name
-  is '»ú¹¹×éÃû³Æ';
+  is 'æœºæ„ç»„åç§°';
 comment on column mc.UNIT_PRICE_INFO.gw_type
-  is 'ºÅ¶ÎÀàĞÍ¡£0-È«ÍøÂ·£¬1-ÒÆ¶¯ºÅ¶Î£¬2-ÁªÍ¨ºÅ¶Î£¬3-Ğ¡ÁéÍ¨ºÅ¶Î';
+  is 'å·æ®µç±»å‹ã€‚0-å…¨ç½‘è·¯ï¼Œ1-ç§»åŠ¨å·æ®µï¼Œ2-è”é€šå·æ®µï¼Œ3-å°çµé€šå·æ®µ';
 comment on column mc.UNIT_PRICE_INFO.biz_type
-  is 'ÒµÎñÀàĞÍ¡£0-ÆÕÍ¨¶ÌĞÅÒµÎñ£¬1-²ÊĞÅÒµÎñ£¬2-emailÒµÎñ';
+  is 'ä¸šåŠ¡ç±»å‹ã€‚0-æ™®é€šçŸ­ä¿¡ä¸šåŠ¡ï¼Œ1-å½©ä¿¡ä¸šåŠ¡ï¼Œ2-emailä¸šåŠ¡';
 comment on column mc.UNIT_PRICE_INFO.channel_id
-  is '·¢ËÍÍ¨µÀ¡£0-ËùÓĞÍ¨µÀ';
+  is 'å‘é€é€šé“ã€‚0-æ‰€æœ‰é€šé“';
 alter table mc.UNIT_PRICE_INFO
   add constraint UNIT_PRICE_INFO_PK primary key (PRICE_ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -15001,18 +15001,18 @@ tablespace MC
     maxextents unlimited
   );
 comment on table mc.USER_COMMON_CONFIG
-  is 'ÓÃ»§¹«¹²ÊôĞÔÅäÖÃ±í';
+  is 'ç”¨æˆ·å…¬å…±å±æ€§é…ç½®è¡¨';
 comment on column mc.USER_COMMON_CONFIG.id
-  is 'Ö÷¼ü';
+  is 'ä¸»é”®';
 comment on column mc.USER_COMMON_CONFIG.user_id
-  is 'ÓÃ»§UUID';
+  is 'ç”¨æˆ·UUID';
 comment on column mc.USER_COMMON_CONFIG.black_level
-  is 'ºÚÃûµ¥¼¶±ğ±í£º0£ºÖ»¼ì²âBLACKºÚÃûµ¥£»1£º¼ì²âBLACKºÍBLACK_CSMDºÚÃûµ¥£»2£º¼ì²âBLACKºÍBLACK_CSMD¡¢BLACK_ZHUOYUEºÚÃûµ¥';
+  is 'é»‘åå•çº§åˆ«è¡¨ï¼š0ï¼šåªæ£€æµ‹BLACKé»‘åå•ï¼›1ï¼šæ£€æµ‹BLACKå’ŒBLACK_CSMDé»‘åå•ï¼›2ï¼šæ£€æµ‹BLACKå’ŒBLACK_CSMDã€BLACK_ZHUOYUEé»‘åå•';
 comment on column mc.USER_COMMON_CONFIG.is_sensitive_time_delay
-  is 'ÊÇ·ñ¶ÔÃô¸ĞÊ±¼äÑÓ³Ù£º1£º¶ÔÃô¸ĞÊ±¼äÑÓ³Ù£»0£º¶ÔÃô¸ĞÊ±¼ä²»ÑÓ³Ù';
+  is 'æ˜¯å¦å¯¹æ•æ„Ÿæ—¶é—´å»¶è¿Ÿï¼š1ï¼šå¯¹æ•æ„Ÿæ—¶é—´å»¶è¿Ÿï¼›0ï¼šå¯¹æ•æ„Ÿæ—¶é—´ä¸å»¶è¿Ÿ';
 alter table mc.USER_COMMON_CONFIG
   add constraint PK_USER_COMMON_CONFIG primary key (ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -15052,20 +15052,20 @@ tablespace MC
     maxextents unlimited
   );
 comment on table mc.USER_CONFIG_INFO
-  is 'ÓÃ»§ÅäÖÃ';
+  is 'ç”¨æˆ·é…ç½®';
 comment on column mc.USER_CONFIG_INFO.config_id
-  is 'ÅäÖÃ±àºÅ';
+  is 'é…ç½®ç¼–å·';
 comment on column mc.USER_CONFIG_INFO.channel_id
-  is 'Í¨µÀ±àºÅ';
+  is 'é€šé“ç¼–å·';
 comment on column mc.USER_CONFIG_INFO.key
-  is '¹Ø¼ü×Ö';
+  is 'å…³é”®å­—';
 comment on column mc.USER_CONFIG_INFO.value
-  is 'Öµ';
+  is 'å€¼';
 comment on column mc.USER_CONFIG_INFO.remark
-  is '±¸×¢';
+  is 'å¤‡æ³¨';
 alter table mc.USER_CONFIG_INFO
   add constraint PK_USER_CONFIG_INFO primary key (CONFIG_ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -15094,18 +15094,18 @@ tablespace MC
   initrans 1
   maxtrans 255;
 comment on table mc.USER_CONFIG_KEY_INFO
-  is 'ÓÃ»§ÅäÖÃ¹Ø¼ü×Ö×Öµä±í';
+  is 'ç”¨æˆ·é…ç½®å…³é”®å­—å­—å…¸è¡¨';
 comment on column mc.USER_CONFIG_KEY_INFO.config_key_id
-  is 'ÅäÖÃ¹Ø¼ü×Ö±àºÅ';
+  is 'é…ç½®å…³é”®å­—ç¼–å·';
 comment on column mc.USER_CONFIG_KEY_INFO.config_key_name
-  is '¹Ø¼ü×Ö';
+  is 'å…³é”®å­—';
 comment on column mc.USER_CONFIG_KEY_INFO.remark
-  is '±¸×¢';
+  is 'å¤‡æ³¨';
 comment on column mc.USER_CONFIG_KEY_INFO.config_key_type
-  is '¹Ø¼ü×ÖÀàĞÍ, -1:È«Í¨µÀÅäÖÃ, 1:µ¥Í¨µÀÅäÖÃ';
+  is 'å…³é”®å­—ç±»å‹, -1:å…¨é€šé“é…ç½®, 1:å•é€šé“é…ç½®';
 alter table mc.USER_CONFIG_KEY_INFO
   add constraint PK_USER_CONFIG_KEY_INFO primary key (CONFIG_KEY_ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -15136,19 +15136,19 @@ tablespace MC
     maxextents unlimited
   );
 comment on table mc.USER_SEND_GRANT
-  is 'ÓÃ»§´ú·¢ÊÚÈ¨±í';
+  is 'ç”¨æˆ·ä»£å‘æˆæƒè¡¨';
 comment on column mc.USER_SEND_GRANT.id
   is 'id';
 comment on column mc.USER_SEND_GRANT.grantee_id
-  is '±»ÊÚÈ¨ÈËid ¼´¶ÌĞÅÊµ¼Ê·¢ËÍÈË';
+  is 'è¢«æˆæƒäººid å³çŸ­ä¿¡å®é™…å‘é€äºº';
 comment on column mc.USER_SEND_GRANT.granter_id
-  is 'ÊÚÈ¨ÈËid ¼´¶ÌĞÅÊµ¼ÊËùÊôÕß';
+  is 'æˆæƒäººid å³çŸ­ä¿¡å®é™…æ‰€å±è€…';
 comment on column mc.USER_SEND_GRANT.grant_type
-  is '²Ù×÷ÀàĞÍ¡£·ÖÎªÎª»ú¹¹´ú·¢ºÍÎª¸öÈË´ú·¢¡£ÊÚÈ¨ÈËidÊÜ¸Ã×Ö¶ÎÓ°Ïì·Ö±ğ¿ÉÒÔÊÇ»ú¹¹idºÍÓÃ»§id¡£ »ú¹¹ÓÃ1±íÊ¾£¬ÓÃ»§ÓÃ0±íÊ¾';
+  is 'æ“ä½œç±»å‹ã€‚åˆ†ä¸ºä¸ºæœºæ„ä»£å‘å’Œä¸ºä¸ªäººä»£å‘ã€‚æˆæƒäººidå—è¯¥å­—æ®µå½±å“åˆ†åˆ«å¯ä»¥æ˜¯æœºæ„idå’Œç”¨æˆ·idã€‚ æœºæ„ç”¨1è¡¨ç¤ºï¼Œç”¨æˆ·ç”¨0è¡¨ç¤º';
 comment on column mc.USER_SEND_GRANT.grant_remark
-  is '±¸×¢ĞÅÏ¢';
+  is 'å¤‡æ³¨ä¿¡æ¯';
 comment on column mc.USER_SEND_GRANT.system_time
-  is 'ÊÚÈ¨¹ØÏµµÄÈÕÆÚ';
+  is 'æˆæƒå…³ç³»çš„æ—¥æœŸ';
 alter table mc.USER_SEND_GRANT
   add constraint PK_USER_SEND_GRANT primary key (ID)
   disable;
@@ -15187,7 +15187,7 @@ tablespace MC
   maxtrans 255;
 alter table mc.VIEW_CHANNEL_SWITCH_LOG
   add primary key (PID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -15218,7 +15218,7 @@ tablespace MC
   maxtrans 255;
 alter table mc.VIP_SPECIAL_INFO
   add constraint PK_VIP_SPECIAL_INFO primary key (VIP_SPECIAL_INFO_ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -15245,7 +15245,7 @@ tablespace MC
   maxtrans 255;
 alter table mc.WHITE_INFO
   add primary key (ORG_ID, USER_ID, MOBILE)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -15270,7 +15270,7 @@ tablespace MC
   maxtrans 255;
 alter table mc.WHITE_JOB_CONFIG
   add primary key (ORG_ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -15298,7 +15298,7 @@ tablespace MC
   );
 alter table mc.WHITE_ORG_CONFIG
   add primary key (ORG_ID)
-  using index 
+  using index
   tablespace MC
   pctfree 10
   initrans 2
@@ -15810,26 +15810,26 @@ prompt ===============================
 prompt
 create or replace view mc.view_cmpp_account as
 select
-      u.user_id                     user_id,      --ÓÃ»§±àºÅ
-      u.user_name                   user_name,    --ÕË»§µÇÂ¼Ãû
-      u.user_kind                   user_kind,    --ÕË»§Àà±ğ£º1£ºWebÆ½Ì¨ÓÃ»§£»2£ºWebService½Ó¿ÚÓÃ»§£»3£ºCMPP½Ó¿ÚÓÃ»§£»4£ºHTTP½Ó¿ÚÓÃ»§
-      ucc.black_level               black_level,  --ºÚÃûµ¥¼¶±ğ
-      ucc.is_sensitive_time_delay   is_sensitive_time_delay,--ÊÇ·ñ¶ÔÃô¸ĞÊ±¼äÑÓ³Ù£º1£º¶ÔÃô¸ĞÊ±¼äÑÓ³Ù£»0£º¶ÔÃô¸ĞÊ±¼ä²»ÑÓ³Ù
-      org.user_id                   org_id,       --»ú¹¹ID
-      org.eng_signature             eng_signature,  --Ó¢ÎÄÍø¹ØÇ©Ãû
-      org.chn_signature             chn_signature,  --ÖĞÎÄÍø¹ØÇ©Ãû
-      org.extend_number             extend_number,  --À©Õ¹ºÅ
-      sc.sgw_id                     sgw_id,       --Íø¹Ø±àºÅ£¨CMPPÕË»§µÄÆäËûĞÅÏ¢)
-      sc.account_pass               account_pass, --Íø¹ÜÕË»§ÃÜÂë
-      sc.registed_ip                registed_ip,  --¿Í»§¶Ë×¢²áIP
-      sc.prior_id                   prior_id,     --ÓÅÏÈ¼¶
-      sc.flux_limit                 flux_limit,   --Á÷¿Ø
-      sc.mt_worker_num              mt_worker_num,--ÏÂĞĞ´¦ÀíÏß³ÌÊıÁ¿
-      sc.mt_cache_num               mt_cache_num, --ÏÂĞĞ»º´æ¶ÓÁĞ³¤¶È
-      sc.server_active_test         server_active_test,--·şÎñ¶Ë·¢ËÍÁ´Â·¼ì²â 0:²»·¢ËÍ, 1:·¢ËÍ
-      sc.is_channel_account         is_channel_account,--ÊÇ·ñÇşµÀÕËºÅ£¬ 0:·ñ, 1:ÊÇ
-      sc.signature_type             signature_type,--Ç©ÃûÀàĞÍ£º1£ºÆÕÍ¨Íø¹ØÇ©Ãû£»2£º×Ó¶Ë¿ÚÍø¹ØÇ©Ãû£»3£º×ÔÖ÷Ç©Ãû£¨ĞèÒªÍ¨¹ıÇ©Ãû³Ø¹ıÂË¼ì²é£©
-      sc.check_prohibitedword       check_prohibitedword,--ÊÇ·ñ¼ì²éÎ¥½û´Ê£¬ 0:·ñ, 1:ÊÇ
+      u.user_id                     user_id,      --ç”¨æˆ·ç¼–å·
+      u.user_name                   user_name,    --è´¦æˆ·ç™»å½•å
+      u.user_kind                   user_kind,    --è´¦æˆ·ç±»åˆ«ï¼š1ï¼šWebå¹³å°ç”¨æˆ·ï¼›2ï¼šWebServiceæ¥å£ç”¨æˆ·ï¼›3ï¼šCMPPæ¥å£ç”¨æˆ·ï¼›4ï¼šHTTPæ¥å£ç”¨æˆ·
+      ucc.black_level               black_level,  --é»‘åå•çº§åˆ«
+      ucc.is_sensitive_time_delay   is_sensitive_time_delay,--æ˜¯å¦å¯¹æ•æ„Ÿæ—¶é—´å»¶è¿Ÿï¼š1ï¼šå¯¹æ•æ„Ÿæ—¶é—´å»¶è¿Ÿï¼›0ï¼šå¯¹æ•æ„Ÿæ—¶é—´ä¸å»¶è¿Ÿ
+      org.user_id                   org_id,       --æœºæ„ID
+      org.eng_signature             eng_signature,  --è‹±æ–‡ç½‘å…³ç­¾å
+      org.chn_signature             chn_signature,  --ä¸­æ–‡ç½‘å…³ç­¾å
+      org.extend_number             extend_number,  --æ‰©å±•å·
+      sc.sgw_id                     sgw_id,       --ç½‘å…³ç¼–å·ï¼ˆCMPPè´¦æˆ·çš„å…¶ä»–ä¿¡æ¯)
+      sc.account_pass               account_pass, --ç½‘ç®¡è´¦æˆ·å¯†ç 
+      sc.registed_ip                registed_ip,  --å®¢æˆ·ç«¯æ³¨å†ŒIP
+      sc.prior_id                   prior_id,     --ä¼˜å…ˆçº§
+      sc.flux_limit                 flux_limit,   --æµæ§
+      sc.mt_worker_num              mt_worker_num,--ä¸‹è¡Œå¤„ç†çº¿ç¨‹æ•°é‡
+      sc.mt_cache_num               mt_cache_num, --ä¸‹è¡Œç¼“å­˜é˜Ÿåˆ—é•¿åº¦
+      sc.server_active_test         server_active_test,--æœåŠ¡ç«¯å‘é€é“¾è·¯æ£€æµ‹ 0:ä¸å‘é€, 1:å‘é€
+      sc.is_channel_account         is_channel_account,--æ˜¯å¦æ¸ é“è´¦å·ï¼Œ 0:å¦, 1:æ˜¯
+      sc.signature_type             signature_type,--ç­¾åç±»å‹ï¼š1ï¼šæ™®é€šç½‘å…³ç­¾åï¼›2ï¼šå­ç«¯å£ç½‘å…³ç­¾åï¼›3ï¼šè‡ªä¸»ç­¾åï¼ˆéœ€è¦é€šè¿‡ç­¾åæ± è¿‡æ»¤æ£€æŸ¥ï¼‰
+      sc.check_prohibitedword       check_prohibitedword,--æ˜¯å¦æ£€æŸ¥è¿ç¦è¯ï¼Œ 0:å¦, 1:æ˜¯
       sc.comments                   comments,
       sc.sys_time                   sys_time,
       sc.trustedaccount             trustedAccount
@@ -15837,7 +15837,7 @@ FROM user_info u
 left join sgw_account_info sc on sc.user_id = u.user_id
 left join user_common_config ucc on ucc.user_id = u.user_id
 LEFT JOIN ORGANIZATION org ON org.user_id = u.organization_id
---where u.USER_STAT = 1 --ÓĞĞ§
+--where u.USER_STAT = 1 --æœ‰æ•ˆ
 with read only;
 
 prompt
@@ -15856,11 +15856,11 @@ prompt Creating view VIEW_ORANIZATION
 prompt ==============================
 prompt
 CREATE OR REPLACE VIEW mc.VIEW_ORANIZATION AS
-SELECT org.user_id              org_id,     --»ú¹¹±àºÅ
-       org.user_name            org_name,    --»ú¹¹Ãû³Æ
-       org.parentid             org_parentid --»ú¹¹¸¸½Úµã
+SELECT org.user_id              org_id,     --æœºæ„ç¼–å·
+       org.user_name            org_name,    --æœºæ„åç§°
+       org.parentid             org_parentid --æœºæ„çˆ¶èŠ‚ç‚¹
  FROM ORGANIZATION org
- where org.user_stat = 1    --ÓĞĞ§£¨ÇşµÀ£º1ÓĞĞ§£»ÆäËû£º0£ºÓĞĞ§£©
+ where org.user_stat = 1    --æœ‰æ•ˆï¼ˆæ¸ é“ï¼š1æœ‰æ•ˆï¼›å…¶ä»–ï¼š0ï¼šæœ‰æ•ˆï¼‰
 with read only;
 
 prompt
@@ -15878,13 +15878,13 @@ prompt ====================================
 prompt
 CREATE OR REPLACE VIEW mc.VIEW_USER_CUSTOMER_ORG AS
 SELECT customer."CUSTOMER_ID",customer."CUSTOMER_NAME",customer."P_CUSTOMER_ID",customer."USER_ID",customer."ORG_ID",customer."SUB_EXTEND_NUMBER",customer."COMMENTS",customer."CUSTOMER_STATUS",customer."SYS_TIME",
-       userinfo.user_name           user_name,      --ÓÃ»§ÕËºÅ
-       org.user_name                org_name,       --»ú¹¹Ãû³Æ
-       org.eng_signature            eng_signature,  --Ó¢ÎÄÇ©Ãû
-       org.chn_signature            chn_signature   --ÖĞÎÄÇ©Ãû
+       userinfo.user_name           user_name,      --ç”¨æˆ·è´¦å·
+       org.user_name                org_name,       --æœºæ„åç§°
+       org.eng_signature            eng_signature,  --è‹±æ–‡ç­¾å
+       org.chn_signature            chn_signature   --ä¸­æ–‡ç­¾å
 FROM sgw_customer customer
-LEFT JOIN ORGANIZATION org ON org.user_id = customer.org_id   --»ú¹¹±í
-LEFT JOIN User_Info userinfo ON userinfo.user_id = customer.user_id --ÓÃ»§±í
+LEFT JOIN ORGANIZATION org ON org.user_id = customer.org_id   --æœºæ„è¡¨
+LEFT JOIN User_Info userinfo ON userinfo.user_id = customer.user_id --ç”¨æˆ·è¡¨
 with read only;
 
 prompt
@@ -15893,16 +15893,16 @@ prompt ==========================================
 prompt
 CREATE OR REPLACE VIEW mc.VIEW_USER_SGW_SIGNATURE_POOL AS
 SELECT signaturepool."SIGNATURE_ID",signaturepool."CUSTOMER_ID",signaturepool."SIGNATURE",signaturepool."DESCRIPTION",signaturepool."SORT_INDEX",signaturepool."DO_APPEND_MSG",signaturepool."APPEND_MSG",signaturepool."BLACK_LEVEL",signaturepool."COMMENTS",signaturepool."SIGNATURE_STATUS",signaturepool."SYS_TIME",
-       customer.org_id,               --»ú¹¹±àºÅ
-       customer.p_customer_id,        --¿Í»§¸¸ID
-       customer.customer_name,        --¿Í»§Ãû³Æ
-       userinfo.user_id,              --ÓÃ»§ID
-       userinfo.user_name   user_name,--ÓÃ»§ÕËºÅ
-       org.user_name        org_name --»ú¹¹Ãû³Æ
-FROM sgw_signature_pool  signaturepool            --Ç©Ãû³Ø±í
-LEFT JOIN sgw_customer customer ON customer.customer_id = signaturepool.customer_id --Ç©Ãû³Ø±í
-LEFT JOIN ORGANIZATION org ON org.user_id = customer.org_id   --»ú¹¹±í
-LEFT JOIN User_Info userinfo ON userinfo.user_id = customer.user_id --ÓÃ»§±í
+       customer.org_id,               --æœºæ„ç¼–å·
+       customer.p_customer_id,        --å®¢æˆ·çˆ¶ID
+       customer.customer_name,        --å®¢æˆ·åç§°
+       userinfo.user_id,              --ç”¨æˆ·ID
+       userinfo.user_name   user_name,--ç”¨æˆ·è´¦å·
+       org.user_name        org_name --æœºæ„åç§°
+FROM sgw_signature_pool  signaturepool            --ç­¾åæ± è¡¨
+LEFT JOIN sgw_customer customer ON customer.customer_id = signaturepool.customer_id --ç­¾åæ± è¡¨
+LEFT JOIN ORGANIZATION org ON org.user_id = customer.org_id   --æœºæ„è¡¨
+LEFT JOIN User_Info userinfo ON userinfo.user_id = customer.user_id --ç”¨æˆ·è¡¨
 with read only;
 
 prompt
@@ -16068,12 +16068,12 @@ prompt =========================================
 prompt
 create or replace package mc.REPORT_RECKONING_PACKAGE is
    -- Author  : zhanhh
-   --±¨±í´æ´¢¹ı³Ì°ü
+   --æŠ¥è¡¨å­˜å‚¨è¿‡ç¨‹åŒ…
    -- Created : 2013/6/11 11:04:24
 
 /**
-  * ÈÕ½áµ¥¶¨Ê±²åÈëÊı¾İ
-  * ²éÑ¯Êı¾İ,È»ºó²åÈëÈÕ½áµ¥±ídaily_reckoning_infoµÄ´æ´¢¹ı³Ì
+  * æ—¥ç»“å•å®šæ—¶æ’å…¥æ•°æ®
+  * æŸ¥è¯¢æ•°æ®,ç„¶åæ’å…¥æ—¥ç»“å•è¡¨daily_reckoning_infoçš„å­˜å‚¨è¿‡ç¨‹
   * Author  : zhanhh
   * Created : 2013-06-28 16:56:32
   *
@@ -16082,8 +16082,8 @@ create or replace package mc.REPORT_RECKONING_PACKAGE is
 
 
 /**
-  * ÔÂÕËµ¥¶¨Ê±²åÈëÊı¾İ
-  * ²éÑ¯Êı¾İ,È»ºó²åÈëÔÂÕËµ¥±íinsert_month_reckoning_reportµÄ´æ´¢¹ı³Ì
+  * æœˆè´¦å•å®šæ—¶æ’å…¥æ•°æ®
+  * æŸ¥è¯¢æ•°æ®,ç„¶åæ’å…¥æœˆè´¦å•è¡¨insert_month_reckoning_reportçš„å­˜å‚¨è¿‡ç¨‹
   * Author  : zhanhh
   * Created : 2013-07-03 18:49:32
   *
@@ -16091,7 +16091,7 @@ create or replace package mc.REPORT_RECKONING_PACKAGE is
   procedure INSERT_MONTH_RECKONING_REPORT;
 
   /**
-  * ÈÕ½áµ¥²éÑ¯
+  * æ—¥ç»“å•æŸ¥è¯¢
   * Author  : zhanhh
   * Created : 2013-07-04 16:01:32
   *
@@ -16099,19 +16099,19 @@ create or replace package mc.REPORT_RECKONING_PACKAGE is
   procedure QUERY_RECKONING_INFO_REPORT;
 
 /**
-  * ÔÂÕËµ¥²éÑ¯
+  * æœˆè´¦å•æŸ¥è¯¢
   * Author  : zhanhh
   * Created : 2013-07-04 16:01:32
   *
 */
   procedure QUERY_MONTH_INFO_REPORT;
 
-/* ÈÕÖÕ·µ»¹·¢ËÍÊ§°ÜµÄ¶ÌĞÅ·ÑÓÃ¸øÓÃ»§
+/* æ—¥ç»ˆè¿”è¿˜å‘é€å¤±è´¥çš„çŸ­ä¿¡è´¹ç”¨ç»™ç”¨æˆ·
 *  Author  : zhanhh
 *  Created : 2013-07-04 16:01:32
-*  ÒµÎñËµÃ÷£º
-*  µÚÈı·½Í¨µÀ: ²»ÓÃ²ğ·Ö,Ö»ËãÔ­Ê¼¶ÌĞÅÌõÊı
-*  Ö±Á¬Í¨µÀ: ¶Ì¶ÌĞÅ--²»ÓÃ²ğ·Ö,Ö»ËãÔ­Ê¼¶ÌĞÅÌõÊı;³¤¶ÌĞÅ--Ö»¼ÆËã²ğ·ÖºóµÄ¶ÌĞÅÌõÊı
+*  ä¸šåŠ¡è¯´æ˜ï¼š
+*  ç¬¬ä¸‰æ–¹é€šé“: ä¸ç”¨æ‹†åˆ†,åªç®—åŸå§‹çŸ­ä¿¡æ¡æ•°
+*  ç›´è¿é€šé“: çŸ­çŸ­ä¿¡--ä¸ç”¨æ‹†åˆ†,åªç®—åŸå§‹çŸ­ä¿¡æ¡æ•°;é•¿çŸ­ä¿¡--åªè®¡ç®—æ‹†åˆ†åçš„çŸ­ä¿¡æ¡æ•°
 */
    procedure P_SMS_RETURN_FEE;
 
@@ -16139,16 +16139,16 @@ prompt
 CREATE OR REPLACE FUNCTION mc.FNC_CON_STR_TO_TAB(P_STR IN VARCHAR2) RETURN TYP_TABEL AS
 
 /*
-ÃèÊö£º
-    ÒÔÍ¨µÀ-ºÅ¶Î-×ÜÁ¿Îª×Ö·û´®½øĞĞ²ğ·Ö
-²éÑ¯Ìõ¼ş£º
-    ÎŞ¡£
-¸ñÊ½£º
-    ÎŞ¡£
-Ëã·¨£º
-    ÎŞ¡£
-±¸×¢£º
-   Èç£º
+æè¿°ï¼š
+    ä»¥é€šé“-å·æ®µ-æ€»é‡ä¸ºå­—ç¬¦ä¸²è¿›è¡Œæ‹†åˆ†
+æŸ¥è¯¢æ¡ä»¶ï¼š
+    æ— ã€‚
+æ ¼å¼ï¼š
+    æ— ã€‚
+ç®—æ³•ï¼š
+    æ— ã€‚
+å¤‡æ³¨ï¼š
+   å¦‚ï¼š
 select *  from table(FNC_CON_STR_TO_TAB('122:1-400;123:2-500;124:3-200;'));
 --------------------------------------------------------------------------------
 channel_id|gw_type|send_quantity
@@ -16239,14 +16239,14 @@ create or replace function mc.isnumeric    ( p_string in varchar2)
       l_number number;
   begin
      if p_string is null then
-      return '×Ü²¿';
+      return 'æ€»éƒ¨';
      Elsif p_string = '' then
-      return '×Ü²¿';
+      return 'æ€»éƒ¨';
      Else
        return p_string;
      end if;
   exception    when others then
-          return '×Ü²¿';
+          return 'æ€»éƒ¨';
   end;
 /
 
@@ -16279,86 +16279,86 @@ CREATE OR REPLACE PROCEDURE mc.FEE_CALCULATE_ABLE(P_USER_ID                 IN V
                                                RUN_UNIT_PRICE            OUT VARCHAR,
                                                UPDATE_UNIT_PRICE_QUOTA   OUT VARCHAR) IS
   /**
-    *·¢ËÍ¼Æ·Ñ
+    *å‘é€è®¡è´¹
     * Author  : zxd
     * Created : 2013-6-10 16:24:35
     *
-   **²ÎÊıËµÃ÷£º
-   **ÊäÈë£º
-    *     p_user_id             ÓÃ»§Ö÷¼ü
-    *     p_biz_type            ĞÅÏ¢ÀàĞÍ  0:¶ÌĞÅ 1:²ÊĞÅ
-    *     batch_id              Åú´ÎºÅ
-    *     send_type             ·¢ËÍÀàĞÍ  0:ÆÕÍ¨·¢ËÍ,1:ÅúÁ¿·¢ËÍ,2:»Ø¸´¶ÌĞÅ,3:Èº×é·¢ËÍ,4:socket·¢ËÍ,5:webservice·¢ËÍ,6:ÊÖ¹¤·¢ËÍ,7:Ô¤¾¯¶ÌĞÅ,8:µ÷²éÎÊ¾í,9:ÉúÈÕ×£¸£,10:ÆÕÍ¨²ÊĞÅ,11:ÕËµ¥²ÊĞÅ,20:ÆÕÍ¨email
-    *     send_msg              ÏûÏ¢ÄÚÈİ
-    *     channe_gw_quantiy_list ·¢ËÍ×ÜÁ¿ ¸ñÊ½: Í¨µÀ:ºÅ¶Î-·¢ËÍ×ÜÁ¿; Èç: 12:1-200;  13:2-200; 12:3-200;
+   **å‚æ•°è¯´æ˜ï¼š
+   **è¾“å…¥ï¼š
+    *     p_user_id             ç”¨æˆ·ä¸»é”®
+    *     p_biz_type            ä¿¡æ¯ç±»å‹  0:çŸ­ä¿¡ 1:å½©ä¿¡
+    *     batch_id              æ‰¹æ¬¡å·
+    *     send_type             å‘é€ç±»å‹  0:æ™®é€šå‘é€,1:æ‰¹é‡å‘é€,2:å›å¤çŸ­ä¿¡,3:ç¾¤ç»„å‘é€,4:socketå‘é€,5:webserviceå‘é€,6:æ‰‹å·¥å‘é€,7:é¢„è­¦çŸ­ä¿¡,8:è°ƒæŸ¥é—®å·,9:ç”Ÿæ—¥ç¥ç¦,10:æ™®é€šå½©ä¿¡,11:è´¦å•å½©ä¿¡,20:æ™®é€šemail
+    *     send_msg              æ¶ˆæ¯å†…å®¹
+    *     channe_gw_quantiy_list å‘é€æ€»é‡ æ ¼å¼: é€šé“:å·æ®µ-å‘é€æ€»é‡; å¦‚: 12:1-200;  13:2-200; 12:3-200;
     *
-   **Êä³ö£º
-    *     run_result               ·µ»Ø×´Ì¬£º0£º¼Æ·Ñ³É¹¦£»1:»ú¹¹²ÊĞÅÓà¶î²»×ã 2:»ú¹¹µÄ¶ÌĞÅÓà¶î²»×ã 3:ÓÃ»§¶ÌĞÅÓà¶î²»×ã 4:ÓÃ»§²ÊĞÅÓà¶î²»×ã
-    *                                        5:·Ç·¨µÄ¶ÌĞÅÀàĞÍ 6:ÓÃ»§½ğ¶î²»×ã 7:»ú¹¹½ğ¶î²»×ã 8:ÓÃ»§²»´æÔÚ 9:»ú¹¹²»´æÔÚ 10:ÓÃ»§ËùÊô»ú¹¹Î´¶¨ÒåĞ­Òé¼Û
-                                             11:ÆäËûÎ´ÖªÒì³£
-    *     run_exception            ·µ»Ø´íÎóĞÅÏ¢
-    *     RUN_UNIT_PRICE           µ¥¼ÛĞÅÏ¢, ÀıÈç 1:0.05;2:0.06;3:0.06
-    *     UPDATE_UNIT_PRICE_QUOTA   ¸÷¸öĞ­Òé¼ÛµÄÌõÊı,¸ñÊ½: ºÅ¶Î:Ğ­Òé¼Û-·¢ËÍ×ÜÁ¿  ÀıÈç  1:0.3-200; 1:0.4-200;  2:0.3-200; 3:0.3-200;
+   **è¾“å‡ºï¼š
+    *     run_result               è¿”å›çŠ¶æ€ï¼š0ï¼šè®¡è´¹æˆåŠŸï¼›1:æœºæ„å½©ä¿¡ä½™é¢ä¸è¶³ 2:æœºæ„çš„çŸ­ä¿¡ä½™é¢ä¸è¶³ 3:ç”¨æˆ·çŸ­ä¿¡ä½™é¢ä¸è¶³ 4:ç”¨æˆ·å½©ä¿¡ä½™é¢ä¸è¶³
+    *                                        5:éæ³•çš„çŸ­ä¿¡ç±»å‹ 6:ç”¨æˆ·é‡‘é¢ä¸è¶³ 7:æœºæ„é‡‘é¢ä¸è¶³ 8:ç”¨æˆ·ä¸å­˜åœ¨ 9:æœºæ„ä¸å­˜åœ¨ 10:ç”¨æˆ·æ‰€å±æœºæ„æœªå®šä¹‰åè®®ä»·
+                                             11:å…¶ä»–æœªçŸ¥å¼‚å¸¸
+    *     run_exception            è¿”å›é”™è¯¯ä¿¡æ¯
+    *     RUN_UNIT_PRICE           å•ä»·ä¿¡æ¯, ä¾‹å¦‚ 1:0.05;2:0.06;3:0.06
+    *     UPDATE_UNIT_PRICE_QUOTA   å„ä¸ªåè®®ä»·çš„æ¡æ•°,æ ¼å¼: å·æ®µ:åè®®ä»·-å‘é€æ€»é‡  ä¾‹å¦‚  1:0.3-200; 1:0.4-200;  2:0.3-200; 3:0.3-200;
     *
-   ** Ëã·¨£º
+   ** ç®—æ³•ï¼š
     *
   */
-  QUANTIY_LIST_NO_FOUNDS EXCEPTION; --²ğ·ÖÍ¨µÀ-ºÅ¶Î-·¢ËÍÁ¿Òì³£
+  QUANTIY_LIST_NO_FOUNDS EXCEPTION; --æ‹†åˆ†é€šé“-å·æ®µ-å‘é€é‡å¼‚å¸¸
 
-  ILLEGALITY_BIZ_TYPE EXCEPTION; --·Ç·¨µÄÀàĞÍ ×¢:½öÖ§³Ö¶ÌĞÅºÍ²ÊĞÅÁ½ÖÖÀàĞÍ
+  ILLEGALITY_BIZ_TYPE EXCEPTION; --éæ³•çš„ç±»å‹ æ³¨:ä»…æ”¯æŒçŸ­ä¿¡å’Œå½©ä¿¡ä¸¤ç§ç±»å‹
 
-  NO_ORG_RECORD EXCEPTION; --»ú¹¹²»´æÔÚ
+  NO_ORG_RECORD EXCEPTION; --æœºæ„ä¸å­˜åœ¨
 
-  NO_USER_RECORD EXCEPTION; --ÓÃ»§²»´æÔÚ
+  NO_USER_RECORD EXCEPTION; --ç”¨æˆ·ä¸å­˜åœ¨
 
-  NO_UNIT_PRICE EXCEPTION; --Ğ­Òé¼Û²»´æÔÚ
+  NO_UNIT_PRICE EXCEPTION; --åè®®ä»·ä¸å­˜åœ¨
 
-  NO_START_UNIT_PRICE EXCEPTION; --Ğ­Òé¼Û»¹Ã»ÓĞ¿ªÊ¼ÆôÓÃ
+  NO_START_UNIT_PRICE EXCEPTION; --åè®®ä»·è¿˜æ²¡æœ‰å¼€å§‹å¯ç”¨
 
-  ORG_NOT_SUFFICIENT_FUNDS EXCEPTION; --»ú¹¹Óà¶î²»×ã
+  ORG_NOT_SUFFICIENT_FUNDS EXCEPTION; --æœºæ„ä½™é¢ä¸è¶³
 
-  USER_NOT_SUFFICIENT_FUNDS EXCEPTION; --ÓÃ»§Óà¶î²»×ã
+  USER_NOT_SUFFICIENT_FUNDS EXCEPTION; --ç”¨æˆ·ä½™é¢ä¸è¶³
 
-  ORG_SMSQUOTA_NOT_ENOUGH EXCEPTION; --»ú¹¹¶ÌĞÅÌõÊı²»¹»
+  ORG_SMSQUOTA_NOT_ENOUGH EXCEPTION; --æœºæ„çŸ­ä¿¡æ¡æ•°ä¸å¤Ÿ
 
-  ORG_MMSQUOTA_NOT_ENOUGH EXCEPTION; --»ú¹¹²ÊĞÅÌõÊı²»¹»
+  ORG_MMSQUOTA_NOT_ENOUGH EXCEPTION; --æœºæ„å½©ä¿¡æ¡æ•°ä¸å¤Ÿ
 
-  USER_SMSQUOTA_NOT_ENOUGH EXCEPTION; --ÓÃ»§¶ÌĞÅÌõÊı²»¹»
+  USER_SMSQUOTA_NOT_ENOUGH EXCEPTION; --ç”¨æˆ·çŸ­ä¿¡æ¡æ•°ä¸å¤Ÿ
 
-  USER_MMSQUOTA_NOT_ENOUGH EXCEPTION; --ÓÃ»§²ÊĞÅÌõÊı²»¹»
+  USER_MMSQUOTA_NOT_ENOUGH EXCEPTION; --ç”¨æˆ·å½©ä¿¡æ¡æ•°ä¸å¤Ÿ
 
-  P_GW_TYPE VARCHAR2(200); --ºÅ¶ÎÀàĞÍ
+  P_GW_TYPE VARCHAR2(200); --å·æ®µç±»å‹
 
-  P_CHANNEL_ID VARCHAR2(200); --Í¨µÀID
+  P_CHANNEL_ID VARCHAR2(200); --é€šé“ID
 
-  P_SEND_QUANTITY NUMBER(10); --·¢ËÍ×ÜÁ¿
+  P_SEND_QUANTITY NUMBER(10); --å‘é€æ€»é‡
 
   /*
-  *CURSOR_CHANNEL_GW_QUANTITY ÓÎ±ê Í¨¹ıFNC_CON_STR_TO_TAB·½·¨»ñµÃ
+  *CURSOR_CHANNEL_GW_QUANTITY æ¸¸æ ‡ é€šè¿‡FNC_CON_STR_TO_TABæ–¹æ³•è·å¾—
   */
   CURSOR CURSOR_CHANNEL_GW_QUANTITY IS
     SELECT * FROM TABLE(FNC_CON_STR_TO_TAB(CHANNE_GW_QUANTIY_LIST));
 
-  ORG_DATA ORGANIZATION%ROWTYPE; --»ú¹¹ĞÅÏ¢
+  ORG_DATA ORGANIZATION%ROWTYPE; --æœºæ„ä¿¡æ¯
 
-  USER_DATA USER_INFO%ROWTYPE; --ÓÃ»§ĞÅÏ¢
+  USER_DATA USER_INFO%ROWTYPE; --ç”¨æˆ·ä¿¡æ¯
 
-  P_UNIT_PRICE UNIT_PRICE_INFO.UNIT_PRICE%TYPE; --»ú¹¹Ğ­Òé¼Û
+  P_UNIT_PRICE UNIT_PRICE_INFO.UNIT_PRICE%TYPE; --æœºæ„åè®®ä»·
 
-  P_PRICE_START UNIT_PRICE_INFO.START_DATE%TYPE; --»ú¹¹Ğ­Òé¼Û¿ªÊ¼Ê±¼ä
+  P_PRICE_START UNIT_PRICE_INFO.START_DATE%TYPE; --æœºæ„åè®®ä»·å¼€å§‹æ—¶é—´
 
-  COST_FEE NUMBER(10, 3); --±¾´Î¶ÌĞÅ·ÑÓÃ
+  COST_FEE NUMBER(10, 3); --æœ¬æ¬¡çŸ­ä¿¡è´¹ç”¨
 
-  REMAIN_BALANCE NUMBER(10, 3); --Ê£Óà½ğ¶î
+  REMAIN_BALANCE NUMBER(10, 3); --å‰©ä½™é‡‘é¢
 
-  REMAIN_QUOTA CONSUME_RECORD_INFO.REMAIN_QUOTA%TYPE; --Ê£ÓàÅä¶î
+  REMAIN_QUOTA CONSUME_RECORD_INFO.REMAIN_QUOTA%TYPE; --å‰©ä½™é…é¢
 
-  QUANTITY_RESULT NUMBER(10); --²ğ·Öºó¼ÇÂ¼Êı
+  QUANTITY_RESULT NUMBER(10); --æ‹†åˆ†åè®°å½•æ•°
 
   v_payMode organization.pay_mode%type;
   v_unitprice org_remain_balance.unit_price%type;
-  v_extraQuota organization.user_quota%type; --×Ó»ú¹¹¸øÓÃ»§³äÖµ£¬³äÖµÌõÊı-µ±Ç°Ğ­Òé¼ÛÓà¶î µÄÓà¶î
-  v_lastQuota organization.user_quota%type;  --Ê±¼ä×îÔçµÄÒ»¸öÓà¶î
+  v_extraQuota organization.user_quota%type; --å­æœºæ„ç»™ç”¨æˆ·å……å€¼ï¼Œå……å€¼æ¡æ•°-å½“å‰åè®®ä»·ä½™é¢ çš„ä½™é¢
+  v_lastQuota organization.user_quota%type;  --æ—¶é—´æœ€æ—©çš„ä¸€ä¸ªä½™é¢
 
 BEGIN
 
@@ -16367,28 +16367,28 @@ BEGIN
 
   SELECT COUNT(*)
     INTO QUANTITY_RESULT
-    FROM TABLE(FNC_CON_STR_TO_TAB(CHANNE_GW_QUANTIY_LIST)); --¼ì²éÊÇ·ñ²ğ·Ö³É¹¦
+    FROM TABLE(FNC_CON_STR_TO_TAB(CHANNE_GW_QUANTIY_LIST)); --æ£€æŸ¥æ˜¯å¦æ‹†åˆ†æˆåŠŸ
   IF QUANTITY_RESULT = 0 THEN
     RAISE QUANTIY_LIST_NO_FOUNDS;
   END IF;
 
   IF CURSOR_CHANNEL_GW_QUANTITY%ISOPEN THEN
-    --·ÀÖ¹ÉÏ´ÎÓÎ±ê´ò¿ªÃ»¹Ø±Õ
+    --é˜²æ­¢ä¸Šæ¬¡æ¸¸æ ‡æ‰“å¼€æ²¡å…³é—­
     CLOSE CURSOR_CHANNEL_GW_QUANTITY;
   END IF;
-  DBMS_OUTPUT.PUT_LINE('============¿ªÊ¼¼Æ·Ñ==========');
+  DBMS_OUTPUT.PUT_LINE('============å¼€å§‹è®¡è´¹==========');
   OPEN CURSOR_CHANNEL_GW_QUANTITY;
   LOOP
    SELECT U.* INTO USER_DATA FROM USER_INFO U WHERE U.USER_ID = P_USER_ID;
     IF USER_DATA.USER_ID IS NULL THEN
-      RAISE NO_USER_RECORD; --ÓÃ»§²»´æÔÚÊ±Å×³öÒì³£
+      RAISE NO_USER_RECORD; --ç”¨æˆ·ä¸å­˜åœ¨æ—¶æŠ›å‡ºå¼‚å¸¸
     ELSE
       SELECT O.*
         INTO ORG_DATA
         FROM ORGANIZATION O
        WHERE O.USER_ID = USER_DATA.ORGANIZATION_ID;
       IF ORG_DATA.USER_ID IS NULL THEN
-        RAISE NO_ORG_RECORD; --»ú¹¹²»´æÔÚÊ±Å×³öÒì³£
+        RAISE NO_ORG_RECORD; --æœºæ„ä¸å­˜åœ¨æ—¶æŠ›å‡ºå¼‚å¸¸
       END IF;
     END IF;
     FETCH CURSOR_CHANNEL_GW_QUANTITY
@@ -16398,35 +16398,35 @@ BEGIN
  --   UPDATE_UNIT_PRICE_QUOTA := P_GW_TYPE||':';
 
     IF ORG_DATA.PAY_TYPE = 1 THEN
-      DBMS_OUTPUT.PUT_LINE('ÓÃ»§ËùÔÚ»ú¹¹ÊôÓÚºó¸¶·Ñ,²»Ö´ĞĞ¼Æ·Ñ²Ù×÷'); --»ú¹¹ÊÇºó¸¶·ÑÊ±²»Ö´ĞĞ¼Æ·Ñ²Ù×÷Ö»¼ÇÂ¼Á÷Ë®
-      --¼ÇÂ¼Á÷Ë®
+      DBMS_OUTPUT.PUT_LINE('ç”¨æˆ·æ‰€åœ¨æœºæ„å±äºåä»˜è´¹,ä¸æ‰§è¡Œè®¡è´¹æ“ä½œ'); --æœºæ„æ˜¯åä»˜è´¹æ—¶ä¸æ‰§è¡Œè®¡è´¹æ“ä½œåªè®°å½•æµæ°´
+      --è®°å½•æµæ°´
       BEGIN
-      --Èç¹û»ú¹¹ÊôÓÚÇşµÀ¿Í»§Ôò²éÑ¯ÇşµÀ»ú¹¹µÄĞ­Òé¼Û
+      --å¦‚æœæœºæ„å±äºæ¸ é“å®¢æˆ·åˆ™æŸ¥è¯¢æ¸ é“æœºæ„çš„åè®®ä»·
       IF ORG_DATA.PARENTID != '0' and ORG_DATA.PARENTID != '1' THEN
       SELECT UI.UNIT_PRICE,UI.START_DATE
           INTO P_UNIT_PRICE,P_PRICE_START
           FROM UNIT_PRICE_INFO UI
          WHERE (UI.ORGANIZATION_ID = ORG_DATA.PARENTID
-           AND UI.EFFECTIVE=0  --ÓĞĞ§Ğ­Òé¼Û
+           AND UI.EFFECTIVE=0  --æœ‰æ•ˆåè®®ä»·
            AND UI.BIZ_TYPE = P_BIZ_TYPE
            AND UI.GW_TYPE = P_GW_TYPE)
             OR (UI.ORGANIZATION_ID = ORG_DATA.PARENTID
-           AND UI.EFFECTIVE=0  --ÓĞĞ§Ğ­Òé¼Û
+           AND UI.EFFECTIVE=0  --æœ‰æ•ˆåè®®ä»·
            AND UI.BIZ_TYPE = P_BIZ_TYPE
-           AND UI.GW_TYPE = 0); --¸ù¾İ·¢ËÍÀàĞÍ²éÕÒ¶ÔÓ¦µÄ»ú¹¹Ğ­Òé¼Û
+           AND UI.GW_TYPE = 0); --æ ¹æ®å‘é€ç±»å‹æŸ¥æ‰¾å¯¹åº”çš„æœºæ„åè®®ä»·
       ELSE
-      --Èç¹û»ú¹¹ÊôÓÚ·ÇÇşµÀ¿Í»§Ôò²éÑ¯µ±Ç°»ú¹¹µÄĞ­Òé¼Û
+      --å¦‚æœæœºæ„å±äºéæ¸ é“å®¢æˆ·åˆ™æŸ¥è¯¢å½“å‰æœºæ„çš„åè®®ä»·
       SELECT UI.UNIT_PRICE,UI.START_DATE
           INTO P_UNIT_PRICE,P_PRICE_START
           FROM UNIT_PRICE_INFO UI
          WHERE (UI.ORGANIZATION_ID = ORG_DATA.USER_ID
-           AND UI.EFFECTIVE=0  --ÓĞĞ§Ğ­Òé¼Û
+           AND UI.EFFECTIVE=0  --æœ‰æ•ˆåè®®ä»·
            AND UI.BIZ_TYPE = P_BIZ_TYPE
            AND UI.GW_TYPE = P_GW_TYPE)
             OR (UI.ORGANIZATION_ID = ORG_DATA.USER_ID
-           AND UI.EFFECTIVE=0  --ÓĞĞ§Ğ­Òé¼Û
+           AND UI.EFFECTIVE=0  --æœ‰æ•ˆåè®®ä»·
            AND UI.BIZ_TYPE = P_BIZ_TYPE
-           AND UI.GW_TYPE = 0); --¸ù¾İ·¢ËÍÀàĞÍ²éÕÒ¶ÔÓ¦µÄ»ú¹¹Ğ­Òé¼Û
+           AND UI.GW_TYPE = 0); --æ ¹æ®å‘é€ç±»å‹æŸ¥æ‰¾å¯¹åº”çš„æœºæ„åè®®ä»·
       END IF;
       EXCEPTION
         WHEN OTHERS THEN
@@ -16434,10 +16434,10 @@ BEGIN
       END;
 
       IF P_PRICE_START > SYSDATE THEN
-          RAISE NO_START_UNIT_PRICE;  --Ğ­Òé¼Û»¹Ã»ÓĞ¿ªÊ¼ÆôÓÃ
+          RAISE NO_START_UNIT_PRICE;  --åè®®ä»·è¿˜æ²¡æœ‰å¼€å§‹å¯ç”¨
       END IF;
 
-      --¹¹Ôìµ¥¼ÛµÄ×Ö·û´®
+      --æ„é€ å•ä»·çš„å­—ç¬¦ä¸²
       IF RUN_UNIT_PRICE IS NULL OR LENGTH(RUN_UNIT_PRICE) = 0 THEN
         RUN_UNIT_PRICE := P_GW_TYPE || ':' || P_UNIT_PRICE;
       ELSE
@@ -16445,7 +16445,7 @@ BEGIN
                           P_UNIT_PRICE;
       END IF;
 
-      COST_FEE := P_SEND_QUANTITY * P_UNIT_PRICE; --·¢ËÍ×ÜÁ¿³Ë(¶ÌĞÅ/²ÊĞÅ)µ¥¼Û
+      COST_FEE := P_SEND_QUANTITY * P_UNIT_PRICE; --å‘é€æ€»é‡ä¹˜(çŸ­ä¿¡/å½©ä¿¡)å•ä»·
       INSERT INTO CONSUME_RECORD_INFO
         (RECORD_ID,
          CONSUMER_ID,
@@ -16479,34 +16479,34 @@ BEGIN
          ORG_DATA.USER_ID,
          ORG_DATA.PAY_TYPE);
     ELSE
-      --¸Ã»ú¹¹ÊÇÔ¤¸¶·Ñ
+      --è¯¥æœºæ„æ˜¯é¢„ä»˜è´¹
      BEGIN
-      --Èç¹û»ú¹¹ÊôÓÚÇşµÀ¿Í»§Ôò²éÑ¯ÇşµÀ»ú¹¹µÄĞ­Òé¼Û
+      --å¦‚æœæœºæ„å±äºæ¸ é“å®¢æˆ·åˆ™æŸ¥è¯¢æ¸ é“æœºæ„çš„åè®®ä»·
       IF ORG_DATA.PARENTID != '0' and ORG_DATA.PARENTID != '1' THEN
        SELECT UI.UNIT_PRICE,UI.START_DATE
           INTO P_UNIT_PRICE,P_PRICE_START
           FROM UNIT_PRICE_INFO UI
          WHERE (UI.ORGANIZATION_ID = ORG_DATA.PARENTID
-           AND UI.EFFECTIVE=0  --ÓĞĞ§Ğ­Òé¼Û
+           AND UI.EFFECTIVE=0  --æœ‰æ•ˆåè®®ä»·
            AND UI.BIZ_TYPE = P_BIZ_TYPE
            AND UI.GW_TYPE = P_GW_TYPE)
             OR (UI.ORGANIZATION_ID = ORG_DATA.PARENTID
-           AND UI.EFFECTIVE=0  --ÓĞĞ§Ğ­Òé¼Û
+           AND UI.EFFECTIVE=0  --æœ‰æ•ˆåè®®ä»·
            AND UI.BIZ_TYPE = P_BIZ_TYPE
-           AND UI.GW_TYPE = 0); --¸ù¾İ·¢ËÍÀàĞÍ²éÕÒ¶ÔÓ¦µÄ»ú¹¹Ğ­Òé¼Û
+           AND UI.GW_TYPE = 0); --æ ¹æ®å‘é€ç±»å‹æŸ¥æ‰¾å¯¹åº”çš„æœºæ„åè®®ä»·
       ELSE
-      --Èç¹û»ú¹¹ÊôÓÚ·ÇÇşµÀ¿Í»§Ôò²éÑ¯µ±Ç°»ú¹¹µÄĞ­Òé¼Û
+      --å¦‚æœæœºæ„å±äºéæ¸ é“å®¢æˆ·åˆ™æŸ¥è¯¢å½“å‰æœºæ„çš„åè®®ä»·
       SELECT UI.UNIT_PRICE,UI.START_DATE
           INTO P_UNIT_PRICE,P_PRICE_START
           FROM UNIT_PRICE_INFO UI
          WHERE (UI.ORGANIZATION_ID = ORG_DATA.USER_ID
-           AND UI.EFFECTIVE=0  --ÓĞĞ§Ğ­Òé¼Û
+           AND UI.EFFECTIVE=0  --æœ‰æ•ˆåè®®ä»·
            AND UI.BIZ_TYPE = P_BIZ_TYPE
            AND UI.GW_TYPE = P_GW_TYPE)
             OR (UI.ORGANIZATION_ID = ORG_DATA.USER_ID
-           AND UI.EFFECTIVE=0  --ÓĞĞ§Ğ­Òé¼Û
+           AND UI.EFFECTIVE=0  --æœ‰æ•ˆåè®®ä»·
            AND UI.BIZ_TYPE = P_BIZ_TYPE
-           AND UI.GW_TYPE = 0); --¸ù¾İ·¢ËÍÀàĞÍ²éÕÒ¶ÔÓ¦µÄ»ú¹¹Ğ­Òé¼Û
+           AND UI.GW_TYPE = 0); --æ ¹æ®å‘é€ç±»å‹æŸ¥æ‰¾å¯¹åº”çš„æœºæ„åè®®ä»·
       END IF;
       EXCEPTION
         WHEN OTHERS THEN
@@ -16514,10 +16514,10 @@ BEGIN
       END;
 
       IF P_PRICE_START> SYSDATE THEN
-          RAISE NO_START_UNIT_PRICE;  --Ğ­Òé¼Û»¹Ã»ÓĞ¿ªÊ¼ÆôÓÃ
+          RAISE NO_START_UNIT_PRICE;  --åè®®ä»·è¿˜æ²¡æœ‰å¼€å§‹å¯ç”¨
       END IF;
 
-      --¹¹Ôìµ¥¼ÛµÄ×Ö·û´®
+      --æ„é€ å•ä»·çš„å­—ç¬¦ä¸²
       IF RUN_UNIT_PRICE IS NULL OR LENGTH(RUN_UNIT_PRICE) = 0 THEN
         RUN_UNIT_PRICE := P_GW_TYPE || ':' || P_UNIT_PRICE;
       ELSE
@@ -16526,20 +16526,20 @@ BEGIN
       END IF;
 
       IF ORG_DATA.PAY_MODE = 1 THEN
-        -- Èç¹û»ú¹¹ÊÇ½ğ¶î¸¶·Ñ
-        COST_FEE := P_SEND_QUANTITY * P_UNIT_PRICE; --·¢ËÍ×ÜÁ¿³Ë(¶ÌĞÅ/²ÊĞÅ)µ¥¼Û
+        -- å¦‚æœæœºæ„æ˜¯é‡‘é¢ä»˜è´¹
+        COST_FEE := P_SEND_QUANTITY * P_UNIT_PRICE; --å‘é€æ€»é‡ä¹˜(çŸ­ä¿¡/å½©ä¿¡)å•ä»·
         IF ORG_DATA.FEE_MODE = 1 THEN
-          --¸Ã»ú¹¹ÊÇ×é¸¶·Ñ
+          --è¯¥æœºæ„æ˜¯ç»„ä»˜è´¹
           IF ORG_DATA.USER_BALANCE < COST_FEE THEN
-            --»ú¹¹Óà¶î²»×ã
+            --æœºæ„ä½™é¢ä¸è¶³
             RAISE ORG_NOT_SUFFICIENT_FUNDS;
           END IF;
-          REMAIN_BALANCE := ORG_DATA.USER_BALANCE - COST_FEE; --¿Û·Ñºó»ú¹¹Óà¶î
+          REMAIN_BALANCE := ORG_DATA.USER_BALANCE - COST_FEE; --æ‰£è´¹åæœºæ„ä½™é¢
           UPDATE ORGANIZATION O
              SET O.USER_BALANCE = REMAIN_BALANCE
-           WHERE O.USER_ID = ORG_DATA.USER_ID; --¸üĞÂ»ú¹¹Óà¶î
+           WHERE O.USER_ID = ORG_DATA.USER_ID; --æ›´æ–°æœºæ„ä½™é¢
 
-          --¼ÇÂ¼Á÷Ë®
+          --è®°å½•æµæ°´
           INSERT INTO CONSUME_RECORD_INFO
             (RECORD_ID,
              CONSUMER_ID,
@@ -16575,19 +16575,19 @@ BEGIN
              ORG_DATA.PAY_TYPE,
              REMAIN_BALANCE);
         ELSE
-        --»ú¹¹×Ô¸¶·Ñ
+        --æœºæ„è‡ªä»˜è´¹
           IF P_BIZ_TYPE = 0 THEN
-            --ÀàĞÍÎª¶ÌĞÅ
+            --ç±»å‹ä¸ºçŸ­ä¿¡
             IF USER_DATA.USER_QUOTA < P_SEND_QUANTITY THEN
-              RAISE USER_SMSQUOTA_NOT_ENOUGH; --ÓÃ»§¶ÌĞÅÌõÊı²»×ã
+              RAISE USER_SMSQUOTA_NOT_ENOUGH; --ç”¨æˆ·çŸ­ä¿¡æ¡æ•°ä¸è¶³
             END IF;
             REMAIN_QUOTA := USER_DATA.USER_QUOTA - P_SEND_QUANTITY;
             UPDATE USER_INFO U
                SET U.USER_QUOTA = REMAIN_QUOTA
-             WHERE U.USER_ID = P_USER_ID; --¸üĞÂÓÃ»§¶ÌĞÅÌõÊı
-           --½ğ¶î×Ô¸¶·ÑÓÃ»§¿Û³ıÓà¶î±í
+             WHERE U.USER_ID = P_USER_ID; --æ›´æ–°ç”¨æˆ·çŸ­ä¿¡æ¡æ•°
+           --é‡‘é¢è‡ªä»˜è´¹ç”¨æˆ·æ‰£é™¤ä½™é¢è¡¨
             begin
-              --²éÑ¯ÓÃ»§Óà¶î´óÓÚÁãÇÒĞ­Òé¼Û×îÔçµÄ×Ó»ú¹¹Óà¶î
+              --æŸ¥è¯¢ç”¨æˆ·ä½™é¢å¤§äºé›¶ä¸”åè®®ä»·æœ€æ—©çš„å­æœºæ„ä½™é¢
               select orb.sms_quota, orb.unit_price
                 into v_lastQuota, v_unitprice
                 from org_remain_balance orb
@@ -16600,16 +16600,16 @@ BEGIN
                          and orb2.sms_quota > 0);
               v_extraQuota := P_SEND_QUANTITY;
               if P_SEND_QUANTITY <= v_lastQuota then
-                  /* ¿Û·Ñ¶î±È×îÔçµÄĞ­Òé¼ÛÓà¶îĞ¡£¬¿Û³ıÏàÓ¦µÄÓÃ»§Óà¶î */
+                  /* æ‰£è´¹é¢æ¯”æœ€æ—©çš„åè®®ä»·ä½™é¢å°ï¼Œæ‰£é™¤ç›¸åº”çš„ç”¨æˆ·ä½™é¢ */
                   update org_remain_balance orb
                   set orb.sms_quota = orb.sms_quota - P_SEND_QUANTITY, orb.last_update_quota_date =sysdate
                   where orb.user_id = P_USER_ID
                   and orb.status=1
                   and orb.unit_price=v_unitprice;
-                  --·µ»ØĞ­Òé¼ÛºÍÌõÊı  ÀıÈç 0.3:5
+                  --è¿”å›åè®®ä»·å’Œæ¡æ•°  ä¾‹å¦‚ 0.3:5
                   UPDATE_UNIT_PRICE_QUOTA := UPDATE_UNIT_PRICE_QUOTA||P_GW_TYPE||':'||v_unitprice||'-'||P_SEND_QUANTITY||';';
                   DBMS_OUTPUT.PUT_LINE('UPDATE_UNIT_PRICE_QUOTA='||UPDATE_UNIT_PRICE_QUOTA);
-                  --¼ÇÂ¼Á÷Ë®
+                  --è®°å½•æµæ°´
                   INSERT INTO CONSUME_RECORD_INFO
                     (RECORD_ID,
                      CONSUMER_ID,
@@ -16646,7 +16646,7 @@ BEGIN
                      REMAIN_BALANCE);
               elsif P_SEND_QUANTITY > v_lastQuota then
                   loop
-                      --²éÑ¯ÓÃ»§Óà¶î´óÓÚÁãÇÒĞ­Òé¼Û×îÔçµÄ×Ó»ú¹¹Óà¶î
+                      --æŸ¥è¯¢ç”¨æˆ·ä½™é¢å¤§äºé›¶ä¸”åè®®ä»·æœ€æ—©çš„å­æœºæ„ä½™é¢
                       select orb.sms_quota, orb.unit_price
                         into v_lastQuota, v_unitprice
                         from org_remain_balance orb
@@ -16658,19 +16658,19 @@ BEGIN
                                where orb2.user_id = P_USER_ID
                                  and orb2.status = 1
                                  and orb2.sms_quota > 0);
-                      --´ÓÊ±¼ä×îÔçµÄÒ»¸öĞ­Òé¼ÛÓà¶î¿ªÊ¼¼õ
+                      --ä»æ—¶é—´æœ€æ—©çš„ä¸€ä¸ªåè®®ä»·ä½™é¢å¼€å§‹å‡
                       v_extraQuota := v_extraQuota - v_lastQuota;
-                      --Èç¹û¿Û·Ñ¶î±ÈÉÏÒ»¸öĞ­Òé¼Û»¹´ó
+                      --å¦‚æœæ‰£è´¹é¢æ¯”ä¸Šä¸€ä¸ªåè®®ä»·è¿˜å¤§
                       if v_extraQuota >=0 then
-                       /* ÉÏÒ»¸öĞ­Òé¼ÛµÄÓà¶î±È¿Û·Ñ¶îĞ¡£¬ÓÃ»§µÄÓà¶îÇåÁã */
+                       /* ä¸Šä¸€ä¸ªåè®®ä»·çš„ä½™é¢æ¯”æ‰£è´¹é¢å°ï¼Œç”¨æˆ·çš„ä½™é¢æ¸…é›¶ */
                             update org_remain_balance orb
                             set orb.sms_quota = 0, orb.last_update_quota_date =sysdate
                             where orb.user_id = P_USER_ID
                             and orb.status=1
                             and orb.unit_price=v_unitprice;
-                            --·µ»ØĞ­Òé¼ÛºÍÌõÊı  ÀıÈç 0.3:5
+                            --è¿”å›åè®®ä»·å’Œæ¡æ•°  ä¾‹å¦‚ 0.3:5
                             UPDATE_UNIT_PRICE_QUOTA := UPDATE_UNIT_PRICE_QUOTA||P_GW_TYPE||':'||v_unitprice||'-'||v_lastQuota||';';
-                            --¼ÇÂ¼Á÷Ë®
+                            --è®°å½•æµæ°´
                             INSERT INTO CONSUME_RECORD_INFO
                               (RECORD_ID,
                                CONSUMER_ID,
@@ -16706,18 +16706,18 @@ BEGIN
                                ORG_DATA.PAY_TYPE,
                                REMAIN_BALANCE);
 
-                       --¿Û·Ñ¶î±ÈÉÏÒ»¸ö×îÔçµÄĞ­Òé¼ÛÓà¶îĞ¡
+                       --æ‰£è´¹é¢æ¯”ä¸Šä¸€ä¸ªæœ€æ—©çš„åè®®ä»·ä½™é¢å°
                       elsif v_extraQuota <0 then
-                          /* ¿Û·Ñ¶î±È×îÔçµÄĞ­Òé¼ÛÓà¶îĞ¡£¬¿Û³ıÏàÓ¦µÄÓÃ»§Óà¶î */
+                          /* æ‰£è´¹é¢æ¯”æœ€æ—©çš„åè®®ä»·ä½™é¢å°ï¼Œæ‰£é™¤ç›¸åº”çš„ç”¨æˆ·ä½™é¢ */
                           update org_remain_balance orb
                           set orb.sms_quota = orb.sms_quota - (v_lastQuota+v_extraQuota), orb.last_update_quota_date =sysdate
                           where orb.user_id = P_USER_ID
                           and orb.status=1
                           and orb.unit_price=v_unitprice;
 
-                          --·µ»ØĞ­Òé¼ÛºÍÌõÊı  ÀıÈç 0.3:5
+                          --è¿”å›åè®®ä»·å’Œæ¡æ•°  ä¾‹å¦‚ 0.3:5
                             UPDATE_UNIT_PRICE_QUOTA := UPDATE_UNIT_PRICE_QUOTA||P_GW_TYPE||':'|| v_unitprice||'-'||(v_lastQuota+v_extraQuota)||';';
-                            --¼ÇÂ¼Á÷Ë®
+                            --è®°å½•æµæ°´
                             INSERT INTO CONSUME_RECORD_INFO
                               (RECORD_ID,
                                CONSUMER_ID,
@@ -16759,47 +16759,47 @@ BEGIN
               end if;
             end;
           ELSIF P_BIZ_TYPE = 1 THEN
-            --ÀàĞÍÎª²ÊĞÅ
+            --ç±»å‹ä¸ºå½©ä¿¡
             IF USER_DATA.MMS_QUOTA < P_SEND_QUANTITY THEN
-              RAISE USER_MMSQUOTA_NOT_ENOUGH; --ÓÃ»§²ÊĞÅÌõÊı²»×ã
+              RAISE USER_MMSQUOTA_NOT_ENOUGH; --ç”¨æˆ·å½©ä¿¡æ¡æ•°ä¸è¶³
             END IF;
             REMAIN_QUOTA := USER_DATA.MMS_QUOTA - P_SEND_QUANTITY;
             UPDATE USER_INFO U
                SET U.MMS_QUOTA = REMAIN_QUOTA
-             WHERE U.USER_ID = P_USER_ID; --¸üĞÂÓÃ»§²ÊĞÅÌõÊı
+             WHERE U.USER_ID = P_USER_ID; --æ›´æ–°ç”¨æˆ·å½©ä¿¡æ¡æ•°
           END IF;
         END IF;
 
       ELSE
-        --»ú¹¹ÊÇÅä¶î¸¶·Ñ
+        --æœºæ„æ˜¯é…é¢ä»˜è´¹
         IF ORG_DATA.FEE_MODE = 1 THEN
-          --¸Ã»ú¹¹ÊÇ×é¸¶·Ñ
+          --è¯¥æœºæ„æ˜¯ç»„ä»˜è´¹
           IF P_BIZ_TYPE = 0 THEN
-            --ÀàĞÍÎª¶ÌĞÅ
+            --ç±»å‹ä¸ºçŸ­ä¿¡
             IF ORG_DATA.USER_QUOTA < P_SEND_QUANTITY THEN
-              RAISE ORG_SMSQUOTA_NOT_ENOUGH; --»ú¹¹¶ÌĞÅÌõÊı²»×ã
+              RAISE ORG_SMSQUOTA_NOT_ENOUGH; --æœºæ„çŸ­ä¿¡æ¡æ•°ä¸è¶³
             END IF;
             REMAIN_QUOTA := ORG_DATA.USER_QUOTA - P_SEND_QUANTITY;
             UPDATE ORGANIZATION O
                SET O.USER_QUOTA = REMAIN_QUOTA
-             WHERE O.USER_ID = ORG_DATA.USER_ID; --¸üĞÂ»ú¹¹¶ÌĞÅÌõÊı
+             WHERE O.USER_ID = ORG_DATA.USER_ID; --æ›´æ–°æœºæ„çŸ­ä¿¡æ¡æ•°
           ELSIF P_BIZ_TYPE = 1 THEN
-            --ÀàĞÍÎª²ÊĞÅ
+            --ç±»å‹ä¸ºå½©ä¿¡
             IF ORG_DATA.MMS_QUOTA < P_SEND_QUANTITY THEN
-              RAISE ORG_MMSQUOTA_NOT_ENOUGH; --»ú¹¹²ÊĞÅÌõÊı²»×ã
+              RAISE ORG_MMSQUOTA_NOT_ENOUGH; --æœºæ„å½©ä¿¡æ¡æ•°ä¸è¶³
             END IF;
             REMAIN_QUOTA := ORG_DATA.MMS_QUOTA - P_SEND_QUANTITY;
             UPDATE ORGANIZATION O
                SET O.MMS_QUOTA = REMAIN_QUOTA
-             WHERE O.USER_ID = ORG_DATA.USER_ID; --¸üĞÂ»ú¹¹²ÊĞÅÌõÊı
+             WHERE O.USER_ID = ORG_DATA.USER_ID; --æ›´æ–°æœºæ„å½©ä¿¡æ¡æ•°
           END IF;
-          /*ÈôÊÇ½ğ¶îÇşµÀµÄ×Ó»ú¹¹£¬ĞŞ¸ÄÓà¶î±í*/
+          /*è‹¥æ˜¯é‡‘é¢æ¸ é“çš„å­æœºæ„ï¼Œä¿®æ”¹ä½™é¢è¡¨*/
           IF ORG_DATA.PARENTID !='0' AND ORG_DATA.PARENTID !='1' THEN
-             --²éÑ¯ÇşµÀÊÇ½ğ¶î/Åä¶î¸¶·Ñ
+             --æŸ¥è¯¢æ¸ é“æ˜¯é‡‘é¢/é…é¢ä»˜è´¹
              SELECT O.PAY_MODE INTO v_payMode FROM ORGANIZATION O WHERE O.USER_ID=ORG_DATA.PARENTID;
              if v_payMode=1 then
                  begin
-                    --²éÑ¯ÓÃ»§Óà¶î´óÓÚÁãÇÒĞ­Òé¼Û×îÔçµÄ×Ó»ú¹¹Óà¶î
+                    --æŸ¥è¯¢ç”¨æˆ·ä½™é¢å¤§äºé›¶ä¸”åè®®ä»·æœ€æ—©çš„å­æœºæ„ä½™é¢
                     select orb.sms_quota, orb.unit_price
                       into v_lastQuota, v_unitprice
                       from org_remain_balance orb
@@ -16812,13 +16812,13 @@ BEGIN
                                and orb2.sms_quota > 0);
                     v_extraQuota := P_SEND_QUANTITY;
                     if P_SEND_QUANTITY <= v_lastQuota then
-                        /* ³äÖµ¶î±È×îÔçµÄĞ­Òé¼ÛÓà¶îĞ¡£¬¿Û³ıÏàÓ¦µÄÓÃ»§Óà¶î */
+                        /* å……å€¼é¢æ¯”æœ€æ—©çš„åè®®ä»·ä½™é¢å°ï¼Œæ‰£é™¤ç›¸åº”çš„ç”¨æˆ·ä½™é¢ */
                         update org_remain_balance orb
                         set orb.sms_quota = orb.sms_quota - P_SEND_QUANTITY, orb.last_update_quota_date =sysdate
                         where orb.user_id = ORG_DATA.USER_ID
                         and orb.status=1
                         and orb.unit_price=v_unitprice;
-                        --·µ»ØĞ­Òé¼ÛºÍÌõÊı  ÀıÈç 0.3:5
+                        --è¿”å›åè®®ä»·å’Œæ¡æ•°  ä¾‹å¦‚ 0.3:5
                         UPDATE_UNIT_PRICE_QUOTA := UPDATE_UNIT_PRICE_QUOTA||P_GW_TYPE||':'||v_unitprice||'-'||P_SEND_QUANTITY||';';
                         INSERT INTO CONSUME_RECORD_INFO
                           (RECORD_ID,
@@ -16856,7 +16856,7 @@ BEGIN
                            REMAIN_BALANCE);
                     elsif P_SEND_QUANTITY > v_lastQuota then
                         loop
-                            --²éÑ¯ÓÃ»§Óà¶î´óÓÚÁãÇÒĞ­Òé¼Û×îÔçµÄ×Ó»ú¹¹Óà¶î
+                            --æŸ¥è¯¢ç”¨æˆ·ä½™é¢å¤§äºé›¶ä¸”åè®®ä»·æœ€æ—©çš„å­æœºæ„ä½™é¢
                             select orb.sms_quota, orb.unit_price
                               into v_lastQuota, v_unitprice
                               from org_remain_balance orb
@@ -16868,17 +16868,17 @@ BEGIN
                                      where orb2.user_id = ORG_DATA.USER_ID
                                        and orb2.status = 1
                                        and orb2.sms_quota > 0);
-                            --´ÓÊ±¼ä×îÔçµÄÒ»¸öĞ­Òé¼ÛÓà¶î¿ªÊ¼¼õ
+                            --ä»æ—¶é—´æœ€æ—©çš„ä¸€ä¸ªåè®®ä»·ä½™é¢å¼€å§‹å‡
                             v_extraQuota := v_extraQuota - v_lastQuota;
-                            --Èç¹û³äÖµ¶î±ÈÉÏÒ»¸öĞ­Òé¼Û»¹´ó
+                            --å¦‚æœå……å€¼é¢æ¯”ä¸Šä¸€ä¸ªåè®®ä»·è¿˜å¤§
                             if v_extraQuota >=0 then
-                             /* ÉÏÒ»¸öĞ­Òé¼ÛµÄÓà¶î±È³äÖµ¶îĞ¡£¬ÓÃ»§µÄÓà¶îÇåÁã */
+                             /* ä¸Šä¸€ä¸ªåè®®ä»·çš„ä½™é¢æ¯”å……å€¼é¢å°ï¼Œç”¨æˆ·çš„ä½™é¢æ¸…é›¶ */
                                   update org_remain_balance orb
                                   set orb.sms_quota = 0, orb.last_update_quota_date =sysdate
                                   where orb.user_id = ORG_DATA.USER_ID
                                   and orb.status=1
                                   and orb.unit_price=v_unitprice;
-                                  --·µ»ØĞ­Òé¼ÛºÍÌõÊı  ÀıÈç 0.3:5
+                                  --è¿”å›åè®®ä»·å’Œæ¡æ•°  ä¾‹å¦‚ 0.3:5
                                   UPDATE_UNIT_PRICE_QUOTA := UPDATE_UNIT_PRICE_QUOTA||P_GW_TYPE||':'||v_unitprice||'-'||v_lastQuota||';';
                                   INSERT INTO CONSUME_RECORD_INFO
                                   (RECORD_ID,
@@ -16914,18 +16914,18 @@ BEGIN
                                    ORG_DATA.USER_ID,
                                    ORG_DATA.PAY_TYPE,
                                    REMAIN_BALANCE);
-                             --³äÖµ¶î±ÈÉÏÒ»¸ö×îÔçµÄĞ­Òé¼ÛÓà¶îĞ¡
+                             --å……å€¼é¢æ¯”ä¸Šä¸€ä¸ªæœ€æ—©çš„åè®®ä»·ä½™é¢å°
                             elsif v_extraQuota <0 then
-                                /* ³äÖµ¶î±È×îÔçµÄĞ­Òé¼ÛÓà¶îĞ¡£¬¿Û³ıÏàÓ¦µÄÓÃ»§Óà¶î */
+                                /* å……å€¼é¢æ¯”æœ€æ—©çš„åè®®ä»·ä½™é¢å°ï¼Œæ‰£é™¤ç›¸åº”çš„ç”¨æˆ·ä½™é¢ */
                                 update org_remain_balance orb
                                 set orb.sms_quota = orb.sms_quota - (v_lastQuota+v_extraQuota), orb.last_update_quota_date =sysdate
                                 where orb.user_id = ORG_DATA.USER_ID
                                 and orb.status=1
                                 and orb.unit_price=v_unitprice;
 
-                                --·µ»ØĞ­Òé¼ÛºÍÌõÊı  ÀıÈç 0.3:5
+                                --è¿”å›åè®®ä»·å’Œæ¡æ•°  ä¾‹å¦‚ 0.3:5
                                 UPDATE_UNIT_PRICE_QUOTA := UPDATE_UNIT_PRICE_QUOTA||P_GW_TYPE||':'|| v_unitprice||'-'||(v_lastQuota+v_extraQuota)||';';
-                                --¼ÇÂ¼Á÷Ë®
+                                --è®°å½•æµæ°´
                                 INSERT INTO CONSUME_RECORD_INFO
                                   (RECORD_ID,
                                    CONSUMER_ID,
@@ -16969,27 +16969,27 @@ BEGIN
              end if;
           END IF;
         ELSE
-          --»ú¹¹ÊÇ×Ô¸¶·Ñ
+          --æœºæ„æ˜¯è‡ªä»˜è´¹
           IF P_BIZ_TYPE = 0 THEN
-            --ÀàĞÍÎª¶ÌĞÅ
+            --ç±»å‹ä¸ºçŸ­ä¿¡
             IF USER_DATA.USER_QUOTA < P_SEND_QUANTITY THEN
-              RAISE USER_SMSQUOTA_NOT_ENOUGH; --ÓÃ»§¶ÌĞÅÌõÊı²»×ã
+              RAISE USER_SMSQUOTA_NOT_ENOUGH; --ç”¨æˆ·çŸ­ä¿¡æ¡æ•°ä¸è¶³
             END IF;
             REMAIN_QUOTA := USER_DATA.USER_QUOTA - P_SEND_QUANTITY;
             UPDATE USER_INFO U
                SET U.USER_QUOTA = REMAIN_QUOTA
-             WHERE U.USER_ID = P_USER_ID; --¸üĞÂÓÃ»§¶ÌĞÅÌõÊı
+             WHERE U.USER_ID = P_USER_ID; --æ›´æ–°ç”¨æˆ·çŸ­ä¿¡æ¡æ•°
           ELSIF P_BIZ_TYPE = 1 THEN
-            --ÀàĞÍÎª²ÊĞÅ
+            --ç±»å‹ä¸ºå½©ä¿¡
             IF USER_DATA.MMS_QUOTA < P_SEND_QUANTITY THEN
-              RAISE USER_MMSQUOTA_NOT_ENOUGH; --ÓÃ»§²ÊĞÅÌõÊı²»×ã
+              RAISE USER_MMSQUOTA_NOT_ENOUGH; --ç”¨æˆ·å½©ä¿¡æ¡æ•°ä¸è¶³
             END IF;
             REMAIN_QUOTA := USER_DATA.MMS_QUOTA - P_SEND_QUANTITY;
             UPDATE USER_INFO U
                SET U.MMS_QUOTA = REMAIN_QUOTA
-             WHERE U.USER_ID = P_USER_ID; --¸üĞÂÓÃ»§²ÊĞÅÌõÊı
+             WHERE U.USER_ID = P_USER_ID; --æ›´æ–°ç”¨æˆ·å½©ä¿¡æ¡æ•°
           END IF;
-          --½ğ¶îÇşµÀ×Ó»ú¹¹µÄ×Ô¸¶·ÑÓÃ»§£¬ĞŞ¸ÄÓà¶î±í
+          --é‡‘é¢æ¸ é“å­æœºæ„çš„è‡ªä»˜è´¹ç”¨æˆ·ï¼Œä¿®æ”¹ä½™é¢è¡¨
           SELECT o.pay_mode into v_payMode
           FROM organization o
           where o.parentid='1'
@@ -16997,7 +16997,7 @@ BEGIN
           CONNECT BY PRIOR o.parentid=o.user_id;
           if v_payMode=1 then
              begin
-                    --²éÑ¯ÓÃ»§Óà¶î´óÓÚÁãÇÒĞ­Òé¼Û×îÔçµÄ×Ó»ú¹¹Óà¶î
+                    --æŸ¥è¯¢ç”¨æˆ·ä½™é¢å¤§äºé›¶ä¸”åè®®ä»·æœ€æ—©çš„å­æœºæ„ä½™é¢
                     select orb.sms_quota, orb.unit_price
                       into v_lastQuota, v_unitprice
                       from org_remain_balance orb
@@ -17010,13 +17010,13 @@ BEGIN
                                and orb2.sms_quota > 0);
                     v_extraQuota := P_SEND_QUANTITY;
                     if P_SEND_QUANTITY <= v_lastQuota then
-                        /* ³äÖµ¶î±È×îÔçµÄĞ­Òé¼ÛÓà¶îĞ¡£¬¿Û³ıÏàÓ¦µÄÓÃ»§Óà¶î */
+                        /* å……å€¼é¢æ¯”æœ€æ—©çš„åè®®ä»·ä½™é¢å°ï¼Œæ‰£é™¤ç›¸åº”çš„ç”¨æˆ·ä½™é¢ */
                         update org_remain_balance orb
                         set orb.sms_quota = orb.sms_quota - P_SEND_QUANTITY, orb.last_update_quota_date =sysdate
                         where orb.user_id = P_USER_ID
                         and orb.status=1
                         and orb.unit_price=v_unitprice;
-                        --·µ»ØĞ­Òé¼ÛºÍÌõÊı  ÀıÈç 0.3:5
+                        --è¿”å›åè®®ä»·å’Œæ¡æ•°  ä¾‹å¦‚ 0.3:5
                         UPDATE_UNIT_PRICE_QUOTA := UPDATE_UNIT_PRICE_QUOTA||P_GW_TYPE||':'||v_unitprice||'-'||P_SEND_QUANTITY||';';
                         INSERT INTO CONSUME_RECORD_INFO
                             (RECORD_ID,
@@ -17054,7 +17054,7 @@ BEGIN
                              REMAIN_BALANCE);
                     elsif P_SEND_QUANTITY > v_lastQuota then
                         loop
-                            --²éÑ¯ÓÃ»§Óà¶î´óÓÚÁãÇÒĞ­Òé¼Û×îÔçµÄ×Ó»ú¹¹Óà¶î
+                            --æŸ¥è¯¢ç”¨æˆ·ä½™é¢å¤§äºé›¶ä¸”åè®®ä»·æœ€æ—©çš„å­æœºæ„ä½™é¢
                             select orb.sms_quota, orb.unit_price
                               into v_lastQuota, v_unitprice
                               from org_remain_balance orb
@@ -17066,17 +17066,17 @@ BEGIN
                                      where orb2.user_id = P_USER_ID
                                        and orb2.status = 1
                                        and orb2.sms_quota > 0);
-                            --´ÓÊ±¼ä×îÔçµÄÒ»¸öĞ­Òé¼ÛÓà¶î¿ªÊ¼¼õ
+                            --ä»æ—¶é—´æœ€æ—©çš„ä¸€ä¸ªåè®®ä»·ä½™é¢å¼€å§‹å‡
                             v_extraQuota := v_extraQuota - v_lastQuota;
-                            --Èç¹û³äÖµ¶î±ÈÉÏÒ»¸öĞ­Òé¼Û»¹´ó
+                            --å¦‚æœå……å€¼é¢æ¯”ä¸Šä¸€ä¸ªåè®®ä»·è¿˜å¤§
                             if v_extraQuota >=0 then
-                             /* ÉÏÒ»¸öĞ­Òé¼ÛµÄÓà¶î±È³äÖµ¶îĞ¡£¬ÓÃ»§µÄÓà¶îÇåÁã */
+                             /* ä¸Šä¸€ä¸ªåè®®ä»·çš„ä½™é¢æ¯”å……å€¼é¢å°ï¼Œç”¨æˆ·çš„ä½™é¢æ¸…é›¶ */
                                   update org_remain_balance orb
                                   set orb.sms_quota = 0, orb.last_update_quota_date =sysdate
                                   where orb.user_id = P_USER_ID
                                   and orb.status=1
                                   and orb.unit_price=v_unitprice;
-                                  --·µ»ØĞ­Òé¼ÛºÍÌõÊı  ÀıÈç 0.3:5
+                                  --è¿”å›åè®®ä»·å’Œæ¡æ•°  ä¾‹å¦‚ 0.3:5
                                   UPDATE_UNIT_PRICE_QUOTA := UPDATE_UNIT_PRICE_QUOTA||P_GW_TYPE||':'||v_unitprice||'-'||v_lastQuota||';';
                                   INSERT INTO CONSUME_RECORD_INFO
                                   (RECORD_ID,
@@ -17112,15 +17112,15 @@ BEGIN
                                    ORG_DATA.USER_ID,
                                    ORG_DATA.PAY_TYPE,
                                    REMAIN_BALANCE);
-                             --³äÖµ¶î±ÈÉÏÒ»¸ö×îÔçµÄĞ­Òé¼ÛÓà¶îĞ¡
+                             --å……å€¼é¢æ¯”ä¸Šä¸€ä¸ªæœ€æ—©çš„åè®®ä»·ä½™é¢å°
                             elsif v_extraQuota <0 then
-                                /* ³äÖµ¶î±È×îÔçµÄĞ­Òé¼ÛÓà¶îĞ¡£¬¿Û³ıÏàÓ¦µÄÓÃ»§Óà¶î */
+                                /* å……å€¼é¢æ¯”æœ€æ—©çš„åè®®ä»·ä½™é¢å°ï¼Œæ‰£é™¤ç›¸åº”çš„ç”¨æˆ·ä½™é¢ */
                                 update org_remain_balance orb
                                 set orb.sms_quota = orb.sms_quota - (v_lastQuota+v_extraQuota), orb.last_update_quota_date =sysdate
                                 where orb.user_id = P_USER_ID
                                 and orb.status=1
                                 and orb.unit_price=v_unitprice;
-                                --·µ»ØĞ­Òé¼ÛºÍÌõÊı  ÀıÈç 0.3:5
+                                --è¿”å›åè®®ä»·å’Œæ¡æ•°  ä¾‹å¦‚ 0.3:5
                                 UPDATE_UNIT_PRICE_QUOTA := UPDATE_UNIT_PRICE_QUOTA||P_GW_TYPE||':'||v_unitprice||'-'||(v_lastQuota+v_extraQuota)||';';
                                 INSERT INTO CONSUME_RECORD_INFO
                                 (RECORD_ID,
@@ -17247,69 +17247,69 @@ BEGIN
   END LOOP;
   COMMIT;
   RUN_RESULT    := 0;
-  RUN_EXCEPTION := '¼Æ·Ñ³É¹¦';
+  RUN_EXCEPTION := 'è®¡è´¹æˆåŠŸ';
 
-  DBMS_OUTPUT.PUT_LINE('============¼Æ·Ñ³É¹¦==========');
+  DBMS_OUTPUT.PUT_LINE('============è®¡è´¹æˆåŠŸ==========');
 EXCEPTION
   WHEN ORG_MMSQUOTA_NOT_ENOUGH THEN
-    DBMS_OUTPUT.PUT_LINE('»ú¹¹²ÊĞÅÓà¶î²»×ã');
+    DBMS_OUTPUT.PUT_LINE('æœºæ„å½©ä¿¡ä½™é¢ä¸è¶³');
     RUN_RESULT    := 1;
-    RUN_EXCEPTION := '»ú¹¹²ÊĞÅÓà¶î²»×ã';
+    RUN_EXCEPTION := 'æœºæ„å½©ä¿¡ä½™é¢ä¸è¶³';
     ROLLBACK;
   WHEN ORG_SMSQUOTA_NOT_ENOUGH THEN
-    DBMS_OUTPUT.PUT_LINE('»ú¹¹µÄ¶ÌĞÅÓà¶î²»×ã');
+    DBMS_OUTPUT.PUT_LINE('æœºæ„çš„çŸ­ä¿¡ä½™é¢ä¸è¶³');
     RUN_RESULT    := 2;
-    RUN_EXCEPTION := '»ú¹¹µÄ¶ÌĞÅÓà¶î²»×ã';
+    RUN_EXCEPTION := 'æœºæ„çš„çŸ­ä¿¡ä½™é¢ä¸è¶³';
     ROLLBACK;
   WHEN USER_SMSQUOTA_NOT_ENOUGH THEN
-    DBMS_OUTPUT.PUT_LINE('ÓÃ»§¶ÌĞÅÓà¶î²»×ã');
+    DBMS_OUTPUT.PUT_LINE('ç”¨æˆ·çŸ­ä¿¡ä½™é¢ä¸è¶³');
     RUN_RESULT    := 3;
-    RUN_EXCEPTION := 'ÓÃ»§¶ÌĞÅÓà¶î²»×ã';
+    RUN_EXCEPTION := 'ç”¨æˆ·çŸ­ä¿¡ä½™é¢ä¸è¶³';
     ROLLBACK;
   WHEN USER_MMSQUOTA_NOT_ENOUGH THEN
-    DBMS_OUTPUT.PUT_LINE('ÓÃ»§²ÊĞÅÓà¶î²»×ã');
+    DBMS_OUTPUT.PUT_LINE('ç”¨æˆ·å½©ä¿¡ä½™é¢ä¸è¶³');
     RUN_RESULT    := 4;
-    RUN_EXCEPTION := 'ÓÃ»§²ÊĞÅÓà¶î²»×ã';
+    RUN_EXCEPTION := 'ç”¨æˆ·å½©ä¿¡ä½™é¢ä¸è¶³';
     ROLLBACK;
   WHEN ILLEGALITY_BIZ_TYPE THEN
-    DBMS_OUTPUT.PUT_LINE('·Ç·¨µÄ¶ÌĞÅÀàĞÍ');
+    DBMS_OUTPUT.PUT_LINE('éæ³•çš„çŸ­ä¿¡ç±»å‹');
     RUN_RESULT    := 5;
-    RUN_EXCEPTION := '·Ç·¨µÄ¶ÌĞÅÀàĞÍ';
+    RUN_EXCEPTION := 'éæ³•çš„çŸ­ä¿¡ç±»å‹';
     ROLLBACK;
   WHEN USER_NOT_SUFFICIENT_FUNDS THEN
-    DBMS_OUTPUT.PUT_LINE('ÓÃ»§Óà¶î²»×ã');
+    DBMS_OUTPUT.PUT_LINE('ç”¨æˆ·ä½™é¢ä¸è¶³');
     RUN_RESULT    := 6;
-    RUN_EXCEPTION := 'ÓÃ»§Óà¶î²»×ã';
+    RUN_EXCEPTION := 'ç”¨æˆ·ä½™é¢ä¸è¶³';
     ROLLBACK;
   WHEN ORG_NOT_SUFFICIENT_FUNDS THEN
-    DBMS_OUTPUT.PUT_LINE('»ú¹¹Óà¶î²»×ã');
+    DBMS_OUTPUT.PUT_LINE('æœºæ„ä½™é¢ä¸è¶³');
     RUN_RESULT    := 7;
-    RUN_EXCEPTION := '»ú¹¹Óà¶î²»×ã';
+    RUN_EXCEPTION := 'æœºæ„ä½™é¢ä¸è¶³';
     ROLLBACK;
   WHEN NO_USER_RECORD THEN
-    DBMS_OUTPUT.PUT_LINE('¼Æ·Ñ´íÎóÌáÊ¾:ÓÃ»§²»´æÔÚ!');
+    DBMS_OUTPUT.PUT_LINE('è®¡è´¹é”™è¯¯æç¤º:ç”¨æˆ·ä¸å­˜åœ¨!');
     RUN_RESULT    := 8;
-    RUN_EXCEPTION := '¼Æ·Ñ´íÎóÌáÊ¾:ÓÃ»§²»´æÔÚ!';
+    RUN_EXCEPTION := 'è®¡è´¹é”™è¯¯æç¤º:ç”¨æˆ·ä¸å­˜åœ¨!';
     ROLLBACK;
   WHEN NO_ORG_RECORD THEN
-    DBMS_OUTPUT.PUT_LINE('¼Æ·Ñ´íÎóÌáÊ¾:ÓÃ»§ËùÊôµÄ»ú¹¹²»´æÔÚ!');
+    DBMS_OUTPUT.PUT_LINE('è®¡è´¹é”™è¯¯æç¤º:ç”¨æˆ·æ‰€å±çš„æœºæ„ä¸å­˜åœ¨!');
     RUN_RESULT    := 9;
-    RUN_EXCEPTION := '¼Æ·Ñ´íÎóÌáÊ¾:ÓÃ»§ËùÊôµÄ»ú¹¹²»´æÔÚ!';
+    RUN_EXCEPTION := 'è®¡è´¹é”™è¯¯æç¤º:ç”¨æˆ·æ‰€å±çš„æœºæ„ä¸å­˜åœ¨!';
     ROLLBACK;
   WHEN NO_UNIT_PRICE THEN
-    DBMS_OUTPUT.PUT_LINE('ÓÃ»§ËùÊô»ú¹¹Î´¶¨ÒåĞ­Òé¼Û');
+    DBMS_OUTPUT.PUT_LINE('ç”¨æˆ·æ‰€å±æœºæ„æœªå®šä¹‰åè®®ä»·');
     RUN_RESULT    := 10;
-    RUN_EXCEPTION := 'ÓÃ»§ËùÊô»ú¹¹Î´¶¨ÒåĞ­Òé¼Û';
+    RUN_EXCEPTION := 'ç”¨æˆ·æ‰€å±æœºæ„æœªå®šä¹‰åè®®ä»·';
     ROLLBACK;
   WHEN QUANTIY_LIST_NO_FOUNDS THEN
-    DBMS_OUTPUT.PUT_LINE('Í¨µÀ-ºÅ¶Î-·¢ËÍÁ¿²ğ·ÖÊ§°Ü,Çë¼ì²é¸ñÊ½');
+    DBMS_OUTPUT.PUT_LINE('é€šé“-å·æ®µ-å‘é€é‡æ‹†åˆ†å¤±è´¥,è¯·æ£€æŸ¥æ ¼å¼');
     RUN_RESULT    := 12;
-    RUN_EXCEPTION := 'Í¨µÀ-ºÅ¶Î-·¢ËÍÁ¿²ğ·ÖÊ§°Ü,Çë¼ì²é¸ñÊ½';
+    RUN_EXCEPTION := 'é€šé“-å·æ®µ-å‘é€é‡æ‹†åˆ†å¤±è´¥,è¯·æ£€æŸ¥æ ¼å¼';
     ROLLBACK;
   WHEN NO_START_UNIT_PRICE THEN
-    DBMS_OUTPUT.PUT_LINE('ÓÃ»§ËùÊô»ú¹¹µÄĞ­Òé¼Û»¹Ã»µ½ÆôÓÃÊ±¼ä');
+    DBMS_OUTPUT.PUT_LINE('ç”¨æˆ·æ‰€å±æœºæ„çš„åè®®ä»·è¿˜æ²¡åˆ°å¯ç”¨æ—¶é—´');
     RUN_RESULT    := 13;
-    RUN_EXCEPTION := 'ÓÃ»§ËùÊô»ú¹¹µÄĞ­Òé¼Û»¹Ã»µ½ÆôÓÃÊ±¼ä';
+    RUN_EXCEPTION := 'ç”¨æˆ·æ‰€å±æœºæ„çš„åè®®ä»·è¿˜æ²¡åˆ°å¯ç”¨æ—¶é—´';
     ROLLBACK;
   WHEN OTHERS THEN
     DBMS_OUTPUT.PUT_LINE(SQLCODE || '----' || SQLERRM);
@@ -17325,8 +17325,8 @@ prompt =======================================
 prompt
 create or replace procedure mc.insert_all_org_quota
  is
- /*³õÊ¼»¯Óà¶î±í£¬°ÑËùÓĞ·ûºÏÌõ¼şµÄÓÃ»§£¬»ú¹¹²åÈëÓà¶î±í*/
-  --ÓÎ±ê£º²éÑ¯ÓÃ»§Óà¶î
+ /*åˆå§‹åŒ–ä½™é¢è¡¨ï¼ŒæŠŠæ‰€æœ‰ç¬¦åˆæ¡ä»¶çš„ç”¨æˆ·ï¼Œæœºæ„æ’å…¥ä½™é¢è¡¨*/
+  --æ¸¸æ ‡ï¼šæŸ¥è¯¢ç”¨æˆ·ä½™é¢
     cursor c_user is
         select u.user_id, u.user_quota,u.mms_quota,
         (SELECT up.unit_price
@@ -17344,7 +17344,7 @@ create or replace procedure mc.insert_all_org_quota
                 where o.parentid='1' and o.pay_type=0
                 START WITH o.user_id=u.organization_id
                 CONNECT BY PRIOR o.parentid=o.user_id);
-    --ÓÎ±ê£º²éÑ¯½ğ¶îÇşµÀ×Ó»ú¹¹Óà¶î
+    --æ¸¸æ ‡ï¼šæŸ¥è¯¢é‡‘é¢æ¸ é“å­æœºæ„ä½™é¢
     cursor c_org is
       select o.user_id,o.user_quota,o.mms_quota,
       (select up.unit_price from unit_price_info up where up.organization_id=o.parentid and up.effective=0 and up.biz_type=0) unit_price
@@ -17415,7 +17415,7 @@ prompt ================================================
 prompt
 create or replace procedure mc.insert_daily_reckoning_report is
     cursor c_consume is
-     --·Ö×é²éÑ¯send±íµÄÊı¾İ,°´ÈË·Ö×é,Í³¼ÆÒ»ÈËÒ»Ìì·¢ËÍ¶àÉÙ¶ÌĞÅ
+     --åˆ†ç»„æŸ¥è¯¢sendè¡¨çš„æ•°æ®,æŒ‰äººåˆ†ç»„,ç»Ÿè®¡ä¸€äººä¸€å¤©å‘é€å¤šå°‘çŸ­ä¿¡
         select
              t.user_id,
              trunc(t.send_time) send_time,
@@ -17435,12 +17435,12 @@ create or replace procedure mc.insert_daily_reckoning_report is
         from send t
         left join user_info u on t.user_id = u.user_id
         left join organization org on org.user_id = t.user_organization
-        left join channel_info c on c.channel_id=t.channel_id                 --·ÖÖ±Á¬Í¨µÀºÍµÚÈı·½Í¨µÀ
+        left join channel_info c on c.channel_id=t.channel_id                 --åˆ†ç›´è¿é€šé“å’Œç¬¬ä¸‰æ–¹é€šé“
        where  1=1
               and t.send_time is not null
               and t.send_time <=CAST(trunc(sysdate)-2 AS TIMESTAMP)
               and t.send_time >=CAST(trunc(sysdate)-3 AS TIMESTAMP)
-              and (org.deduct_mode=1 and t.send_status = any(1,5) or org.deduct_mode=0 and t.send_status=any(1,5,6))   --·¢ËÍ×´Ì¬ £º 1ÒÑÌá½» , 5·¢ËÍ³É¹¦ ,6·¢ËÍÊ§°Ü
+              and (org.deduct_mode=1 and t.send_status = any(1,5) or org.deduct_mode=0 and t.send_status=any(1,5,6))   --å‘é€çŠ¶æ€ ï¼š 1å·²æäº¤ , 5å‘é€æˆåŠŸ ,6å‘é€å¤±è´¥
               and ((t.is_original_sms=0 and c.link_mode != all('CMPP2','SGIP','SMGP3')) or (t.mobile_quantities=1 and c.link_mode = any('CMPP2','SGIP','SMGP3')))
        group by t.user_id,
                 trunc(t.send_time),
@@ -17456,32 +17456,32 @@ create or replace procedure mc.insert_daily_reckoning_report is
                 org.user_quota,
                 org.mms_quota;
 
-    one_record c_consume%rowtype;                                                --ÓÎ±êĞĞ
-    remainMessageQuota daily_reckoning_info.remain_message_quota%type;           --Ê£Óà¶ÌĞÅÅä¶î
-     remainBalance     daily_reckoning_info.remain_balance%type;                 --Ê£Óà½ğ¶î
+    one_record c_consume%rowtype;                                                --æ¸¸æ ‡è¡Œ
+    remainMessageQuota daily_reckoning_info.remain_message_quota%type;           --å‰©ä½™çŸ­ä¿¡é…é¢
+     remainBalance     daily_reckoning_info.remain_balance%type;                 --å‰©ä½™é‡‘é¢
 
 begin
-    remainMessageQuota :=0;  --³õÊ¼ÖµÉèÎª0
+    remainMessageQuota :=0;  --åˆå§‹å€¼è®¾ä¸º0
     remainBalance :=0;
 
-    if c_consume%isopen then --·ÀÖ¹ÉÏ´ÎÓÎ±êÎ´¹Ø±Õ
+    if c_consume%isopen then --é˜²æ­¢ä¸Šæ¬¡æ¸¸æ ‡æœªå…³é—­
       close c_consume;
     end if;
 
-    --´ò¿ªÓÎ±ê
+    --æ‰“å¼€æ¸¸æ ‡
     open c_consume;
-    --Ñ­»·ÓÎ±ê
+    --å¾ªç¯æ¸¸æ ‡
       loop
-        fetch c_consume into one_record; --ÌáÈ¡ÓÎ±ê
+        fetch c_consume into one_record; --æå–æ¸¸æ ‡
           exit when c_consume%notfound;
 
-           --Ê£ÓàÌõÊı
+           --å‰©ä½™æ¡æ•°
            select u.user_quota into remainMessageQuota from user_info u where u.user_id=one_record.user_id;
 
-           --Ê£Óà½ğ¶î
+           --å‰©ä½™é‡‘é¢
            select u.user_balance into remainBalance from user_info u where u.user_id=one_record.user_id;
 
-             --²åÈë±íÊı¾İ
+             --æ’å…¥è¡¨æ•°æ®
            insert into daily_reckoning_info
            (DAILY_RECKONING_ID, USER_ID, USER_NAME, SEND_STATUS, SEND_QUANTITY, SUB_TOTAL_FEE, REMAIN_MESSAGE_QUOTA, REMAIN_MMS_QUOTA, RECKONING_DATE, RECORD_DATE, PAY_MODE, REMAIN_BALANCE, USER_MOME, MOBILE_COM,CHANNEL_ID,UNIT_PRICE)
            values
@@ -17525,47 +17525,47 @@ is
     v_channelSub_userId payment_record.operator_id%type;*/
 begin
 
-       --·ÇÔÚÏß³äÖµ
+       --éåœ¨çº¿å……å€¼
        if isOnline=0 then
 
-           --ºÍ¼ÑAdmin¸øÇşµÀÏÂµÄ×Ó»ú¹¹»ò¸öÈË³äÖµ
+           --å’Œä½³Adminç»™æ¸ é“ä¸‹çš„å­æœºæ„æˆ–ä¸ªäººå……å€¼
            if operatorId='1' then
-               --»ú¹¹
+               --æœºæ„
                if userType=1 then
 
                   SELECT o.user_id,o.parentid into v_orgId,v_parentId
                   FROM ORGANIZATION o where o.user_id=userId and userType=1;
 
-                  --ÇşµÀÏÂµÄ×Ó»ú¹¹
+                  --æ¸ é“ä¸‹çš„å­æœºæ„
                   IF v_parentId !='1' AND v_parentId !='0' and v_orgId !='1' then
-                      --²éÑ¯ÇşµÀµÄµ¥¼Û
+                      --æŸ¥è¯¢æ¸ é“çš„å•ä»·
                       SELECT o.pay_mode,up.unit_price into v_payMode,v_unitPrice
                       FROM organization o
                       left join unit_price_info up on up.organization_id=o.user_id and up.effective=0 and up.biz_type=0
                       where o.user_id=v_parentId;
 
-                        --ºÍ¼Ñadmin×ö³äÖµ²Ù×÷
+                        --å’Œä½³adminåšå……å€¼æ“ä½œ
                         if paymentType in(0,1) then
 
-                           --ÇşµÀ³äÖµ
+                           --æ¸ é“å……å€¼
                            insert into payment_record (PAYMENT_ID, USER_ID, PAYMENT_TIME, PAYMENT_MONEY, PAYMENT_QUOTA, OPERATOR_ID, PAYMENT_TYPE, IS_ONLINE, USER_TYPE, RECHARGE_EXPLAIN, QUOTA_TYPE, IS_SUCCESS)
                            values (sys_guid(), v_parentId, sysdate, v_unitPrice*nvl(paymentQuota,0), nvl(paymentQuota,0), operatorId, decode(v_payMode,1,1,0,0,null), 0, 1, rechargeExplain, quotaType, 1);
                         end if;
-                        --ºÍ¼Ñadmin×ö³åÕÊ²Ù×÷
+                        --å’Œä½³adminåšå†²å¸æ“ä½œ
                         if paymentType in(2,4) then
-                           --ÇşµÀ³åÕË
+                           --æ¸ é“å†²è´¦
                            insert into payment_record (PAYMENT_ID, USER_ID, PAYMENT_TIME, PAYMENT_MONEY, PAYMENT_QUOTA, OPERATOR_ID, PAYMENT_TYPE, IS_ONLINE, USER_TYPE, RECHARGE_EXPLAIN, QUOTA_TYPE, IS_SUCCESS)
                            values (sys_guid(), v_parentId, sysdate, v_unitPrice*nvl(paymentQuota,0), nvl(paymentQuota,0), operatorId, decode(v_payMode,1,2,0,4,null), 0, 1, rechargeExplain, quotaType, 1);
                         end if;
-                         --ºÍ¼Ñadmin×ö²¹ÕÊ²Ù×÷
+                         --å’Œä½³adminåšè¡¥å¸æ“ä½œ
                         if paymentType in(3,5) then
-                           --ÇşµÀ²¹ÕÊ
+                           --æ¸ é“è¡¥å¸
                            insert into payment_record (PAYMENT_ID, USER_ID, PAYMENT_TIME, PAYMENT_MONEY, PAYMENT_QUOTA, OPERATOR_ID, PAYMENT_TYPE, IS_ONLINE, USER_TYPE, RECHARGE_EXPLAIN, QUOTA_TYPE, IS_SUCCESS)
                            values (sys_guid(), v_parentId, sysdate, v_unitPrice*nvl(paymentQuota,0), nvl(paymentQuota,0), operatorId, decode(v_payMode,1,3,0,5,null), 0, 1, rechargeExplain, quotaType, 1);
                         end if;
                   end if;
                end if;
-               --ºÍ¼Ñadmin¸ø¸öÈË³äÖµ
+               --å’Œä½³adminç»™ä¸ªäººå……å€¼
                if userType=0 then
 
                   SELECT o.user_id,o.parentid into v_orgId,v_parentId
@@ -17573,7 +17573,7 @@ begin
                   left join organization o on o.user_id=u.organization_id
                   where u.user_id=userId and userType=0;
 
-                   --ÇşµÀ
+                   --æ¸ é“
                   IF v_parentId ='1' then
 
                       SELECT o.user_id,o.parentid,o.pay_mode,up.unit_price into v_orgId,v_parentId,v_payMode,v_unitPrice
@@ -17581,57 +17581,57 @@ begin
                       left join organization o on o.user_id=u.organization_id
                       left join unit_price_info up on up.organization_id=u.organization_id and up.effective=0 and up.biz_type=0
                       where u.user_id=userId and userType=0;
-                      --ºÍ¼Ñadmin×ö³äÖµ²Ù×÷
+                      --å’Œä½³adminåšå……å€¼æ“ä½œ
                       if paymentType in(0,1) then
-                           --ÇşµÀ³äÖµ
+                           --æ¸ é“å……å€¼
                            insert into payment_record (PAYMENT_ID, USER_ID, PAYMENT_TIME, PAYMENT_MONEY, PAYMENT_QUOTA, OPERATOR_ID, PAYMENT_TYPE, IS_ONLINE, USER_TYPE, RECHARGE_EXPLAIN, QUOTA_TYPE, IS_SUCCESS)
                            values (sys_guid(), v_orgId, sysdate, paymentQuota*v_unitPrice, paymentQuota, operatorId, decode(v_payMode,1,1,0,0,null), 0, 1, rechargeExplain, quotaType, 1);
                       end if;
-                      --ºÍ¼Ñadmin×ö³åÕÊ²Ù×÷
+                      --å’Œä½³adminåšå†²å¸æ“ä½œ
                       if paymentType in(2,4) then
-                           --ÇşµÀ³åÕË
+                           --æ¸ é“å†²è´¦
                            insert into payment_record (PAYMENT_ID, USER_ID, PAYMENT_TIME, PAYMENT_MONEY, PAYMENT_QUOTA, OPERATOR_ID, PAYMENT_TYPE, IS_ONLINE, USER_TYPE, RECHARGE_EXPLAIN, QUOTA_TYPE, IS_SUCCESS)
                            values (sys_guid(), v_orgId, sysdate, paymentQuota*v_unitPrice, paymentQuota, operatorId, decode(v_payMode,1,2,0,4,null), 0, 1, rechargeExplain, quotaType, 1);
                       end if;
-                      --ºÍ¼Ñadmin×ö²¹ÕÊ²Ù×÷
+                      --å’Œä½³adminåšè¡¥å¸æ“ä½œ
                       if paymentType in(3,5) then
-                           --ÇşµÀ²¹ÕË
+                           --æ¸ é“è¡¥è´¦
                            insert into payment_record (PAYMENT_ID, USER_ID, PAYMENT_TIME, PAYMENT_MONEY, PAYMENT_QUOTA, OPERATOR_ID, PAYMENT_TYPE, IS_ONLINE, USER_TYPE, RECHARGE_EXPLAIN, QUOTA_TYPE, IS_SUCCESS)
                            values (sys_guid(), v_orgId, sysdate, paymentQuota*v_unitPrice, paymentQuota, operatorId, decode(v_payMode,1,3,0,5,null), 0, 1, rechargeExplain, quotaType, 1);
                       end if;
 
                   end if;
-                  --ÇşµÀ×Ó»ú¹¹
+                  --æ¸ é“å­æœºæ„
                   IF v_parentId !='1' AND v_parentId !='0' and v_orgId !='1' then
 
                      SELECT o.pay_mode,up.unit_price into v_payMode,v_unitPrice
                       FROM organization o
                       left join unit_price_info up on up.organization_id=o.user_id and up.effective=0 and up.biz_type=0
                       where o.user_id=v_parentId;
-                      --ºÍ¼Ñadmin×ö³äÖµ²Ù×÷
+                      --å’Œä½³adminåšå……å€¼æ“ä½œ
                       if paymentType in(0,1) then
-                           --ÇşµÀ³äÖµ
+                           --æ¸ é“å……å€¼
                            insert into payment_record (PAYMENT_ID, USER_ID, PAYMENT_TIME, PAYMENT_MONEY, PAYMENT_QUOTA, OPERATOR_ID, PAYMENT_TYPE, IS_ONLINE, USER_TYPE, RECHARGE_EXPLAIN, QUOTA_TYPE, IS_SUCCESS)
                            values (sys_guid(), v_parentId, sysdate, decode(v_payMode,1,paymentQuota*v_unitPrice,0,0,null), decode(v_payMode,1,0,0,paymentQuota,null), operatorId, decode(v_payMode,1,1,0,0,null), 0, 1, rechargeExplain, quotaType, 1);
-                           --ÇşµÀ×Ó»ú¹¹³äÖµ
+                           --æ¸ é“å­æœºæ„å……å€¼
                            insert into payment_record (PAYMENT_ID, USER_ID, PAYMENT_TIME, PAYMENT_MONEY, PAYMENT_QUOTA, OPERATOR_ID, PAYMENT_TYPE, IS_ONLINE, USER_TYPE, RECHARGE_EXPLAIN, QUOTA_TYPE, IS_SUCCESS)
                            values (sys_guid(), v_orgId, sysdate,decode(v_payMode,1,paymentQuota*v_unitPrice,0,0,null), paymentQuota, operatorId, 0, 0, 1, rechargeExplain, quotaType, 1);
                       end if;
-                      --ºÍ¼Ñadmin×ö³åÕÊ²Ù×÷
+                      --å’Œä½³adminåšå†²å¸æ“ä½œ
                       if paymentType in(2,4) then
-                           --ÇşµÀ³åÕÊ
+                           --æ¸ é“å†²å¸
                            insert into payment_record (PAYMENT_ID, USER_ID, PAYMENT_TIME, PAYMENT_MONEY, PAYMENT_QUOTA, OPERATOR_ID, PAYMENT_TYPE, IS_ONLINE, USER_TYPE, RECHARGE_EXPLAIN, QUOTA_TYPE, IS_SUCCESS)
                            values (sys_guid(), v_parentId, sysdate, decode(v_payMode,1,paymentQuota*v_unitPrice,0,0,null), decode(v_payMode,1,0,0,paymentQuota,null), operatorId, decode(v_payMode,1,2,0,4,null), 0, 1, rechargeExplain, quotaType, 1);
-                           --ÇşµÀ×Ó»ú¹¹³åÕÊ
+                           --æ¸ é“å­æœºæ„å†²å¸
                            insert into payment_record (PAYMENT_ID, USER_ID, PAYMENT_TIME, PAYMENT_MONEY, PAYMENT_QUOTA, OPERATOR_ID, PAYMENT_TYPE, IS_ONLINE, USER_TYPE, RECHARGE_EXPLAIN, QUOTA_TYPE, IS_SUCCESS)
                            values (sys_guid(), v_orgId, sysdate,0, paymentQuota, operatorId, 4, 0, 1, rechargeExplain, quotaType, 1);
                       end if;
-                      --ºÍ¼Ñadmin×ö²¹ÕÊ²Ù×÷
+                      --å’Œä½³adminåšè¡¥å¸æ“ä½œ
                       if paymentType in(3,5) then
-                           --ÇşµÀ²¹ÕÊ
+                           --æ¸ é“è¡¥å¸
                            insert into payment_record (PAYMENT_ID, USER_ID, PAYMENT_TIME, PAYMENT_MONEY, PAYMENT_QUOTA, OPERATOR_ID, PAYMENT_TYPE, IS_ONLINE, USER_TYPE, RECHARGE_EXPLAIN, QUOTA_TYPE, IS_SUCCESS)
                            values (sys_guid(), v_parentId, sysdate, decode(v_payMode,1,paymentQuota*v_unitPrice,0,0,null), decode(v_payMode,1,0,0,paymentQuota,null), operatorId, decode(v_payMode,1,3,0,5,null), 0, 1, rechargeExplain, quotaType, 1);
-                           --ÇşµÀ×Ó»ú¹¹²¹ÕÊ
+                           --æ¸ é“å­æœºæ„è¡¥å¸
                            insert into payment_record (PAYMENT_ID, USER_ID, PAYMENT_TIME, PAYMENT_MONEY, PAYMENT_QUOTA, OPERATOR_ID, PAYMENT_TYPE, IS_ONLINE, USER_TYPE, RECHARGE_EXPLAIN, QUOTA_TYPE, IS_SUCCESS)
                            values (sys_guid(), v_orgId, sysdate,0, paymentQuota, operatorId, 5, 0, 1, rechargeExplain, quotaType, 1);
                       end if;
@@ -17639,36 +17639,36 @@ begin
                end if;
            end if;
 
-           --ÇşµÀadmin¸ø×Ó»ú¹¹³ÉÔ±³äÖµ
+           --æ¸ é“adminç»™å­æœºæ„æˆå‘˜å……å€¼
             if operatorId !='1' then
-                  --²éÑ¯ÇşµÀ
+                  --æŸ¥è¯¢æ¸ é“
                   SELECT o.parentid,o.pay_mode,up.unit_price into v_parentId,v_payMode,v_unitPrice
                   FROM user_info u
                   left join organization o on o.user_id=u.organization_id
                    left join unit_price_info up on up.organization_id=o.user_id and up.effective=0 and up.biz_type=0
                   where u.user_id=operatorId and userType=0;
-                  --²éÑ¯×Ó»ú¹¹
+                  --æŸ¥è¯¢å­æœºæ„
                   SELECT o.user_id into v_orgId
                   FROM user_info u
                   left join organization o on o.user_id=u.organization_id
                   where u.user_id=userId and userType=0;
 
                   if v_parentId ='1' then
-                        --³äÖµ
+                        --å……å€¼
                         if paymentType in(0,1) then
-                             --ÇşµÀ×Ó»ú¹¹³äÖµ
+                             --æ¸ é“å­æœºæ„å……å€¼
                              insert into payment_record (PAYMENT_ID, USER_ID, PAYMENT_TIME, PAYMENT_MONEY, PAYMENT_QUOTA, OPERATOR_ID, PAYMENT_TYPE, IS_ONLINE, USER_TYPE, RECHARGE_EXPLAIN, QUOTA_TYPE, IS_SUCCESS)
                              values (sys_guid(), v_orgId, sysdate, 0, nvl(paymentQuota,0), operatorId, 0, 0, 1, rechargeExplain, quotaType, 1);
                         end if;
-                        --³åÕË
+                        --å†²è´¦
                         if paymentType in(2,4) then
-                             --ÇşµÀ×Ó»ú¹¹³åÕË
+                             --æ¸ é“å­æœºæ„å†²è´¦
                              insert into payment_record (PAYMENT_ID, USER_ID, PAYMENT_TIME, PAYMENT_MONEY, PAYMENT_QUOTA, OPERATOR_ID, PAYMENT_TYPE, IS_ONLINE, USER_TYPE, RECHARGE_EXPLAIN, QUOTA_TYPE, IS_SUCCESS)
                              values (sys_guid(), v_orgId, sysdate, 0, nvl(paymentQuota,0), operatorId, 4, 0, 1, rechargeExplain, quotaType, 1);
                         end if;
-                        --²¹ÕÊ
+                        --è¡¥å¸
                         if paymentType in(3,5) then
-                             --ÇşµÀ×Ó»ú¹¹²¹ÕÊ
+                             --æ¸ é“å­æœºæ„è¡¥å¸
                              insert into payment_record (PAYMENT_ID, USER_ID, PAYMENT_TIME, PAYMENT_MONEY, PAYMENT_QUOTA, OPERATOR_ID, PAYMENT_TYPE, IS_ONLINE, USER_TYPE, RECHARGE_EXPLAIN, QUOTA_TYPE, IS_SUCCESS)
                              values (sys_guid(), v_orgId, sysdate, 0, nvl(paymentQuota,0), operatorId, 5, 0, 1, rechargeExplain, quotaType, 1);
                         end if;
@@ -17698,7 +17698,7 @@ CREATE OR REPLACE PROCEDURE mc.INSERT_HANDLE_DAILY_REPORT
 IS
 
     CURSOR C_CONSUME IS
-     --·Ö×é²éÑ¯SEND±íµÄÊı¾İ,°´ÈË·Ö×é,Í³¼ÆÒ»ÈËÒ»Ìì·¢ËÍ¶àÉÙ¶ÌĞÅ
+     --åˆ†ç»„æŸ¥è¯¢SENDè¡¨çš„æ•°æ®,æŒ‰äººåˆ†ç»„,ç»Ÿè®¡ä¸€äººä¸€å¤©å‘é€å¤šå°‘çŸ­ä¿¡
         SELECT
              T.USER_ID,
              TRUNC(T.SEND_TIME) SEND_TIME,
@@ -17718,12 +17718,12 @@ IS
         FROM SEND T
         LEFT JOIN USER_INFO U ON T.USER_ID = U.USER_ID
         LEFT JOIN ORGANIZATION ORG ON ORG.USER_ID = T.USER_ORGANIZATION
-        LEFT JOIN CHANNEL_INFO C ON C.CHANNEL_ID=T.CHANNEL_ID                 --·ÖÖ±Á¬Í¨µÀºÍµÚÈı·½Í¨µÀ
+        LEFT JOIN CHANNEL_INFO C ON C.CHANNEL_ID=T.CHANNEL_ID                 --åˆ†ç›´è¿é€šé“å’Œç¬¬ä¸‰æ–¹é€šé“
        WHERE  1=1
               AND T.SEND_TIME IS NOT NULL
               AND T.SEND_TIME >=NVL(TO_TIMESTAMP(RUN_TIME||' 00:00:00.000','YYYY-MM-DD HH24:MI:SS.FF'),CAST(TRUNC(SYSDATE)-3 AS TIMESTAMP))
               AND T.SEND_TIME <=NVL(TO_TIMESTAMP(RUN_TIME||' 23:59:59.999','YYYY-MM-DD HH24:MI:SS.FF'),CAST(TRUNC(SYSDATE)-2 AS TIMESTAMP))
-              AND (ORG.DEDUCT_MODE=1 AND T.SEND_STATUS = ANY(1,5) OR ORG.DEDUCT_MODE=0 AND T.SEND_STATUS=ANY(1,5,6))   --·¢ËÍ×´Ì¬ £º 1ÒÑÌá½» , 5·¢ËÍ³É¹¦ ,6·¢ËÍÊ§°Ü
+              AND (ORG.DEDUCT_MODE=1 AND T.SEND_STATUS = ANY(1,5) OR ORG.DEDUCT_MODE=0 AND T.SEND_STATUS=ANY(1,5,6))   --å‘é€çŠ¶æ€ ï¼š 1å·²æäº¤ , 5å‘é€æˆåŠŸ ,6å‘é€å¤±è´¥
               AND ((T.IS_ORIGINAL_SMS=0 AND C.LINK_MODE != ALL('CMPP2','SGIP','SMGP3')) OR (T.MOBILE_QUANTITIES=1 AND C.LINK_MODE = ANY('CMPP2','SGIP','SMGP3')))
        GROUP BY T.USER_ID,
                 TRUNC(T.SEND_TIME),
@@ -17739,38 +17739,38 @@ IS
                 ORG.USER_QUOTA,
                 ORG.MMS_QUOTA;
 
-    ONE_RECORD C_CONSUME%ROWTYPE;                                                --ÓÎ±êĞĞ
-    REMAINMESSAGEQUOTA DAILY_RECKONING_INFO.REMAIN_MESSAGE_QUOTA%TYPE;           --Ê£Óà¶ÌĞÅÅä¶î
-    REMAINBALANCE     DAILY_RECKONING_INFO.REMAIN_BALANCE%TYPE;                 --Ê£Óà½ğ¶î
+    ONE_RECORD C_CONSUME%ROWTYPE;                                                --æ¸¸æ ‡è¡Œ
+    REMAINMESSAGEQUOTA DAILY_RECKONING_INFO.REMAIN_MESSAGE_QUOTA%TYPE;           --å‰©ä½™çŸ­ä¿¡é…é¢
+    REMAINBALANCE     DAILY_RECKONING_INFO.REMAIN_BALANCE%TYPE;                 --å‰©ä½™é‡‘é¢
     COUNT_MESSAGE  NUMBER;
 
 BEGIN
-    REMAINMESSAGEQUOTA :=0;  --³õÊ¼ÖµÉèÎª0
+    REMAINMESSAGEQUOTA :=0;  --åˆå§‹å€¼è®¾ä¸º0
     REMAINBALANCE :=0;
     COUNT_MESSAGE :=0;
 
-    --²éÑ¯ÕâÒ»ÌìµÄÈÕ½áµ¥£¬¼ì²âÊÇ·ñÒÑ¾­Éú³É¹ıÁËÈÕ½áµ¥
+    --æŸ¥è¯¢è¿™ä¸€å¤©çš„æ—¥ç»“å•ï¼Œæ£€æµ‹æ˜¯å¦å·²ç»ç”Ÿæˆè¿‡äº†æ—¥ç»“å•
     SELECT COUNT(1) INTO COUNT_MESSAGE FROM DAILY_RECKONING_INFO D WHERE TO_CHAR(D.RECKONING_DATE,'YYYY-MM-DD')=RUN_TIME;
-    --Èç¹ûÈÕ½áµ¥±íÃ»ÓĞÕâÒ»ÌìµÄ¼ÇÂ¼£¬ÔòÖØĞÂÉú³ÉÕâÒ»ÌìµÄÊı¾İ
+    --å¦‚æœæ—¥ç»“å•è¡¨æ²¡æœ‰è¿™ä¸€å¤©çš„è®°å½•ï¼Œåˆ™é‡æ–°ç”Ÿæˆè¿™ä¸€å¤©çš„æ•°æ®
     if COUNT_MESSAGE=0 then
-          IF C_CONSUME%ISOPEN THEN --·ÀÖ¹ÉÏ´ÎÓÎ±êÎ´¹Ø±Õ
+          IF C_CONSUME%ISOPEN THEN --é˜²æ­¢ä¸Šæ¬¡æ¸¸æ ‡æœªå…³é—­
             CLOSE C_CONSUME;
           END IF;
 
-          --´ò¿ªÓÎ±ê
+          --æ‰“å¼€æ¸¸æ ‡
           OPEN C_CONSUME;
-          --Ñ­»·ÓÎ±ê
+          --å¾ªç¯æ¸¸æ ‡
             LOOP
-              FETCH C_CONSUME INTO ONE_RECORD; --ÌáÈ¡ÓÎ±ê
+              FETCH C_CONSUME INTO ONE_RECORD; --æå–æ¸¸æ ‡
                 EXIT WHEN C_CONSUME%NOTFOUND;
 
-                 --Ê£ÓàÌõÊı
+                 --å‰©ä½™æ¡æ•°
                  SELECT U.USER_QUOTA INTO REMAINMESSAGEQUOTA FROM USER_INFO U WHERE U.USER_ID=ONE_RECORD.USER_ID;
 
-                 --Ê£Óà½ğ¶î
+                 --å‰©ä½™é‡‘é¢
                  SELECT U.USER_BALANCE INTO REMAINBALANCE FROM USER_INFO U WHERE U.USER_ID=ONE_RECORD.USER_ID;
 
-                   --²åÈë±íÊı¾İ
+                   --æ’å…¥è¡¨æ•°æ®
                  INSERT INTO DAILY_RECKONING_INFO
                  (DAILY_RECKONING_ID, USER_ID, USER_NAME, SEND_STATUS, SEND_QUANTITY, SUB_TOTAL_FEE, REMAIN_MESSAGE_QUOTA, REMAIN_MMS_QUOTA, RECKONING_DATE, RECORD_DATE, PAY_MODE, REMAIN_BALANCE, USER_MOME, MOBILE_COM,CHANNEL_ID,UNIT_PRICE)
                  VALUES
@@ -17798,7 +17798,7 @@ prompt ================================================
 prompt
 CREATE OR REPLACE PROCEDURE mc.INSERT_MONTH_RECKONING_REPORT IS
     CURSOR C_CONSUME IS
-    --·Ö×é²éÑ¯ÈÕ½áµ¥±íµÄÊı¾İ,°´ÈË·Ö×é,Í³¼ÆÃ¿ÈËÃ¿ÔÂ·¢ËÍ¶àÉÙ¶ÌĞÅ
+    --åˆ†ç»„æŸ¥è¯¢æ—¥ç»“å•è¡¨çš„æ•°æ®,æŒ‰äººåˆ†ç»„,ç»Ÿè®¡æ¯äººæ¯æœˆå‘é€å¤šå°‘çŸ­ä¿¡
        SELECT D.USER_ID,
         D.USER_NAME,
         U.USER_MOME,
@@ -17825,7 +17825,7 @@ CREATE OR REPLACE PROCEDURE mc.INSERT_MONTH_RECKONING_REPORT IS
            D.CHANNEL_ID,
            D.UNIT_PRICE;
 
-     --·¢ËÍÊ§°ÜµÄ¶ÌĞÅ
+     --å‘é€å¤±è´¥çš„çŸ­ä¿¡
      CURSOR C_MONTH_MAIN IS
          SELECT SUM(S1.UNIT_PRICE*S1.MOBILE_QUANTITIES) FAIL_FEE,
                SUM(S1.MOBILE_QUANTITIES) FAIL_QUATA,
@@ -17838,30 +17838,30 @@ CREATE OR REPLACE PROCEDURE mc.INSERT_MONTH_RECKONING_REPORT IS
           LEFT JOIN ORGANIZATION O ON S1.USER_ORGANIZATION = O.USER_ID
           LEFT JOIN CHANNEL_INFO C ON S1.CHANNEL_ID = C.CHANNEL_ID
          WHERE 1=1
-           AND S1.REPORT_TIME <=CAST(TRUNC(SYSDATE,'MONTH')+3 AS TIMESTAMP)                   --±¾ÔÂµÚ4ÌìÁè³¿
-           AND S1.REPORT_TIME >=CAST(TRUNC(SYSDATE,'MONTH') AS TIMESTAMP)                     --±¾ÔÂµÚ1ÌìÁè³¿
-           AND S1.SEND_TIME >=CAST(TRUNC(LAST_DAY(ADD_MONTHS(SYSDATE,-1)))-2 AS TIMESTAMP)    --ÔÂµ×µ¹ÊıµÚ3Ìì
-           AND S1.SEND_TIME <= CAST(TRUNC(SYSDATE,'MONTH') AS TIMESTAMP)                       --ÔÂµ××îºó1Ìì
-           AND S1.RETURN_FEE =1                                                              --·µ»Ø·ÑÓÃ:ÒÑ·µ»Ø·ÑÓÃ
+           AND S1.REPORT_TIME <=CAST(TRUNC(SYSDATE,'MONTH')+3 AS TIMESTAMP)                   --æœ¬æœˆç¬¬4å¤©å‡Œæ™¨
+           AND S1.REPORT_TIME >=CAST(TRUNC(SYSDATE,'MONTH') AS TIMESTAMP)                     --æœ¬æœˆç¬¬1å¤©å‡Œæ™¨
+           AND S1.SEND_TIME >=CAST(TRUNC(LAST_DAY(ADD_MONTHS(SYSDATE,-1)))-2 AS TIMESTAMP)    --æœˆåº•å€’æ•°ç¬¬3å¤©
+           AND S1.SEND_TIME <= CAST(TRUNC(SYSDATE,'MONTH') AS TIMESTAMP)                       --æœˆåº•æœ€å1å¤©
+           AND S1.RETURN_FEE =1                                                              --è¿”å›è´¹ç”¨:å·²è¿”å›è´¹ç”¨
          GROUP BY S1.USER_ID, U.PAY_MODE, O.FEE_MODE,S1.USER_ORGANIZATION,O.PAY_MODE;
 
-     ONE_RECORD C_CONSUME%ROWTYPE;           --ÓÎ±êĞĞ
-     ONE_MAIN C_MONTH_MAIN%ROWTYPE;          --ÓÎ±êĞĞ
+     ONE_RECORD C_CONSUME%ROWTYPE;           --æ¸¸æ ‡è¡Œ
+     ONE_MAIN C_MONTH_MAIN%ROWTYPE;          --æ¸¸æ ‡è¡Œ
 
 BEGIN
-       IF C_MONTH_MAIN%ISOPEN THEN --·ÀÖ¹ÉÏ´ÎÓÎ±êÎ´¹Ø±Õ
+       IF C_MONTH_MAIN%ISOPEN THEN --é˜²æ­¢ä¸Šæ¬¡æ¸¸æ ‡æœªå…³é—­
           CLOSE C_MONTH_MAIN;
        END IF;
-       IF C_CONSUME%ISOPEN THEN --·ÀÖ¹ÉÏ´ÎÓÎ±êÎ´¹Ø±Õ
+       IF C_CONSUME%ISOPEN THEN --é˜²æ­¢ä¸Šæ¬¡æ¸¸æ ‡æœªå…³é—­
           CLOSE C_CONSUME;
        END IF;
-       --°ÑÊ§°Ü·µ»¹µÄ¶ÌĞÅ¼Óµ½ÉÏ¸öÔÂµ×µÄÓÃ»§/»ú¹¹Óà¶îÀï
+       --æŠŠå¤±è´¥è¿”è¿˜çš„çŸ­ä¿¡åŠ åˆ°ä¸Šä¸ªæœˆåº•çš„ç”¨æˆ·/æœºæ„ä½™é¢é‡Œ
        BEGIN
            OPEN C_MONTH_MAIN;
                 LOOP
                     FETCH C_MONTH_MAIN INTO ONE_MAIN;
                     EXIT WHEN C_MONTH_MAIN%NOTFOUND;
-                    --×Ô¸¶·Ñ
+                    --è‡ªä»˜è´¹
                     IF ONE_MAIN.FEE_MODE = 0 THEN
                        UPDATE MONTH_MAIN_INFO MM
                        SET MM.REMAIN_QUOTA = MM.REMAIN_QUOTA + nvl(ONE_MAIN.FAIL_QUATA,0)
@@ -17869,9 +17869,9 @@ BEGIN
                        AND MM.USER_TYPE=0
                        AND MM.TIME=TO_CHAR(ADD_MONTHS(SYSDATE,-1),'YYYYMM');
                     END IF;
-                    --×é¸¶·Ñ
+                    --ç»„ä»˜è´¹
                     IF ONE_MAIN.FEE_MODE=1 THEN
-                       --½ğ¶î¸¶·Ñ
+                       --é‡‘é¢ä»˜è´¹
                        IF ONE_MAIN.ORGPAYMODE=1 THEN
                           UPDATE MONTH_MAIN_INFO MM
                           SET MM.REMAIN_FEE = MM.REMAIN_FEE + nvl(ONE_MAIN.FAIL_FEE,0)
@@ -17879,7 +17879,7 @@ BEGIN
                           AND MM.USER_TYPE=1
                           AND MM.TIME=TO_CHAR(ADD_MONTHS(SYSDATE,-1),'YYYYMM');
                        END IF;
-                       --Åä¶î¸¶·Ñ
+                       --é…é¢ä»˜è´¹
                        IF ONE_MAIN.ORGPAYMODE=0 THEN
 
                         --DBMS_OUTPUT.PUT_LINE('ONE_MAIN.FAIL_QUATA = '|| ONE_MAIN.FAIL_QUATA || '  ONE_MAIN.ORGANIZATION_ID=' ||ONE_MAIN.ORGANIZATION_ID ||' time='|| TO_CHAR(ADD_MONTHS(SYSDATE,-1),'YYYYMM'));
@@ -17900,11 +17900,11 @@ BEGIN
        END;
 
        BEGIN
-        --´ò¿ªÓÎ±ê
+        --æ‰“å¼€æ¸¸æ ‡
         OPEN C_CONSUME;
-        --Ñ­»·ÓÎ±ê
+        --å¾ªç¯æ¸¸æ ‡
           LOOP
-            FETCH C_CONSUME INTO ONE_RECORD; --ÌáÈ¡ÓÎ±ê
+            FETCH C_CONSUME INTO ONE_RECORD; --æå–æ¸¸æ ‡
               EXIT WHEN C_CONSUME%NOTFOUND;
 
                 INSERT INTO MONTH_RECKONING_INFO
@@ -17956,13 +17956,13 @@ prompt Creating procedure INSERT_MONTH_REMAIN_FEE
 prompt ==========================================
 prompt
 CREATE OR REPLACE PROCEDURE mc.INSERT_MONTH_REMAIN_FEE IS
-    --ÓÎ±ê£º²éÑ¯ÓÃ»§Óà¶î
+    --æ¸¸æ ‡ï¼šæŸ¥è¯¢ç”¨æˆ·ä½™é¢
     cursor c_user is
         select u.user_id, u.user_quota
         from user_info u
         left join organization o on o.user_id = u.organization_id
         group by u.user_id,u.user_quota;
-    --ÓÎ±ê£º²éÑ¯»ú¹¹Óà¶î
+    --æ¸¸æ ‡ï¼šæŸ¥è¯¢æœºæ„ä½™é¢
     cursor c_org is
       select o.user_id,o.parentid,o.pay_mode,o.user_quota,o.user_balance
       from organization o
@@ -17972,13 +17972,13 @@ CREATE OR REPLACE PROCEDURE mc.INSERT_MONTH_REMAIN_FEE IS
     c_user_each c_user%rowtype;
     c_org_each c_org%rowtype;
 
-    v_moneyAdd organization.user_balance%type;         --½ğ¶î³äÖµ
-    v_moneySub organization.user_balance%type;         --½ğ¶î³åÕË
-    v_quotaAdd organization.user_quota%type;           --Åä¶î³äÖµ
-    v_quotaSub organization.user_quota%type;           --Åä¶î³åÕË
-    v_checkNum number;                                 --¼ÇÂ¼Óà¶î±íÖĞÉÏÔÂµÄÊı¾İÊı£¨Èç¹ûÎª0£¬Ôò²åÈëÓà¶î±í£©
-    v_blanceRemain organization.user_balance%type;     --ÖĞ¼äÖµ£º¼ÇÂ¼½ğ¶îÇşµÀµÄ×Ü½ğ¶î£¨ËùÓĞ×Ó»ú¹¹£¬ÓÃ»§µÄ×ÜºÍ£©
-    v_quotaRemain  organization.user_quota%type;       --ÖĞ¼äÖµ£º¼ÇÂ¼Åä¶îÇşµÀµÄ×Ü½ğ¶î£¨ËùÓĞ×Ó»ú¹¹£¬ÓÃ»§µÄ×ÜºÍ£©
+    v_moneyAdd organization.user_balance%type;         --é‡‘é¢å……å€¼
+    v_moneySub organization.user_balance%type;         --é‡‘é¢å†²è´¦
+    v_quotaAdd organization.user_quota%type;           --é…é¢å……å€¼
+    v_quotaSub organization.user_quota%type;           --é…é¢å†²è´¦
+    v_checkNum number;                                 --è®°å½•ä½™é¢è¡¨ä¸­ä¸Šæœˆçš„æ•°æ®æ•°ï¼ˆå¦‚æœä¸º0ï¼Œåˆ™æ’å…¥ä½™é¢è¡¨ï¼‰
+    v_blanceRemain organization.user_balance%type;     --ä¸­é—´å€¼ï¼šè®°å½•é‡‘é¢æ¸ é“çš„æ€»é‡‘é¢ï¼ˆæ‰€æœ‰å­æœºæ„ï¼Œç”¨æˆ·çš„æ€»å’Œï¼‰
+    v_quotaRemain  organization.user_quota%type;       --ä¸­é—´å€¼ï¼šè®°å½•é…é¢æ¸ é“çš„æ€»é‡‘é¢ï¼ˆæ‰€æœ‰å­æœºæ„ï¼Œç”¨æˆ·çš„æ€»å’Œï¼‰
 
 BEGIN
     v_moneyAdd :=0;
@@ -18003,18 +18003,18 @@ BEGIN
               loop
                    fetch c_user into c_user_each;
                    exit when c_user%notfound;
-                   --ÓÃ»§³äÖµ£¬²¹ÕÊ
+                   --ç”¨æˆ·å……å€¼ï¼Œè¡¥å¸
                    select sum(p.payment_quota) into v_quotaAdd  from payment_record p
                    where p.user_id = c_user_each.user_id
                    and p.payment_type = any(0,5)
                    and to_char(p.payment_time,'yyyymm')=TO_CHAR(ADD_MONTHS(SYSDATE,-1),'YYYYMM');
-                   --ÓÃ»§³åÕË
+                   --ç”¨æˆ·å†²è´¦
                    select sum(p.payment_quota) into v_quotaSub  from payment_record p
                    where p.user_id = c_user_each.user_id
                    and p.payment_type = 4
                    and to_char(p.payment_time,'yyyymm')=TO_CHAR(ADD_MONTHS(SYSDATE,-1),'YYYYMM');
 
-                   --²åÈë×Ô¸¶·ÑÓÃ»§Óà¶î,³äÖµÌõÊı
+                   --æ’å…¥è‡ªä»˜è´¹ç”¨æˆ·ä½™é¢,å……å€¼æ¡æ•°
                    insert into month_main_info (MONTH_MAIN_INFO_ID, USER_ID, USER_TYPE, REMAIN_QUOTA, REMAIN_FEE, MONTH_PAYMENT, TIME)
                    values (sys_guid(),c_user_each.user_id,0, nvl(c_user_each.user_quota,0), 0, nvl(v_quotaAdd,0)-nvl(v_quotaSub,0), TO_CHAR(ADD_MONTHS(SYSDATE,-1),'YYYYMM'));
 
@@ -18029,9 +18029,9 @@ BEGIN
                    fetch c_org into c_org_each;
                    exit when c_org%notfound;
 
-                   --ÇşµÀ×Ó»ú¹¹(È«²¿ÎªÅä¶î³äÖµ)
+                   --æ¸ é“å­æœºæ„(å…¨éƒ¨ä¸ºé…é¢å……å€¼)
                    if c_org_each.parentid !='1' and c_org_each.parentid !='0' and c_org_each.user_id !='1' then
-                       --³äÖµ£¬²¹ÕÊ
+                       --å……å€¼ï¼Œè¡¥å¸
                        select sum(nvl(p.payment_quota,0)) into v_quotaAdd
                        from payment_record p
                        left join organization o on o.user_id=p.user_id
@@ -18039,7 +18039,7 @@ BEGIN
                        and p.user_id = c_org_each.user_id
                        and (p.payment_type=any(0,5) and p.is_online=0 or p.is_online=1)
                        and to_char(p.payment_time,'yyyymm')=TO_CHAR(ADD_MONTHS(SYSDATE,-1),'YYYYMM');
-                       --³åÕË
+                       --å†²è´¦
                        select sum(nvl(p.payment_quota,0)) into v_quotaSub
                        from payment_record p
                        left join organization o on o.user_id=p.user_id
@@ -18052,17 +18052,17 @@ BEGIN
                         select sum(o.user_quota) user_quota from organization o where o.user_id=c_org_each.user_id
                         union all
                         select sum(u.user_quota) user_quota from user_info u where u.organization_id=c_org_each.user_id);
-                        --²åÈë»ú¹¹Óà¶î
+                        --æ’å…¥æœºæ„ä½™é¢
                        insert into month_main_info (MONTH_MAIN_INFO_ID, USER_ID, USER_TYPE, REMAIN_QUOTA, REMAIN_FEE, MONTH_PAYMENT, TIME)
                        values (sys_guid(),c_org_each.user_id,1, nvl(v_quotaRemain,0), 0, nvl(v_quotaAdd,0)-nvl(v_quotaSub,0), TO_CHAR(ADD_MONTHS(SYSDATE,-1),'YYYYMM'));
 
                    end if;
 
-                   --ÇşµÀ(¿ÉÒÔÎª½ğ¶î»òÅä¶î)
+                   --æ¸ é“(å¯ä»¥ä¸ºé‡‘é¢æˆ–é…é¢)
                    if c_org_each.parentid ='1' then
-                         --Åä¶îÇşµÀ
+                         --é…é¢æ¸ é“
                          if c_org_each.pay_mode=0 then
-                             --³äÖµ£¬²¹ÕÊ
+                             --å……å€¼ï¼Œè¡¥å¸
                              select sum(nvl(p.payment_quota,0)) into v_quotaAdd
                              from payment_record p
                              left join organization o on o.user_id=p.user_id
@@ -18070,7 +18070,7 @@ BEGIN
                              and p.user_id = c_org_each.user_id
                              and (p.payment_type=any(0,5) and p.is_online=0 or p.is_online=1)
                              and to_char(p.payment_time,'yyyymm')=TO_CHAR(ADD_MONTHS(SYSDATE,-1),'YYYYMM');
-                             --³åÕË
+                             --å†²è´¦
                              select sum(nvl(p.payment_quota,0)) into v_quotaSub
                              from payment_record p
                              left join organization o on o.user_id=p.user_id
@@ -18086,14 +18086,14 @@ BEGIN
                               select sum(u.user_quota) user_quota from user_info u
                               left join organization o on o.user_id=u.organization_id
                               where o.user_id=c_org_each.user_id or o.parentid=c_org_each.user_id);
-                              --²åÈë»ú¹¹Óà¶î,³äÖµ¶î
+                              --æ’å…¥æœºæ„ä½™é¢,å……å€¼é¢
                              insert into month_main_info (MONTH_MAIN_INFO_ID, USER_ID, USER_TYPE, REMAIN_QUOTA, REMAIN_FEE, MONTH_PAYMENT, TIME)
                              values (sys_guid(),c_org_each.user_id,1, nvl(v_quotaRemain,0), 0, nvl(v_quotaAdd,0)-nvl(v_quotaSub,0), TO_CHAR(ADD_MONTHS(SYSDATE,-1),'YYYYMM'));
                          end if;
 
-                         --½ğ¶îÇşµÀ
+                         --é‡‘é¢æ¸ é“
                          if c_org_each.pay_mode=1 then
-                             --³äÖµ£¬²¹ÕÊ
+                             --å……å€¼ï¼Œè¡¥å¸
                              select sum(nvl(p.payment_money,0)) into v_moneyAdd
                              from payment_record p
                              left join organization o on o.user_id=p.user_id
@@ -18101,7 +18101,7 @@ BEGIN
                              and p.user_id = c_org_each.user_id
                              and (p.payment_type=any(1,3) and p.is_online=0 or p.is_online=1)
                              and to_char(p.payment_time,'yyyymm')=TO_CHAR(ADD_MONTHS(SYSDATE,-1),'YYYYMM');
-                             --³åÕË
+                             --å†²è´¦
                              select sum(nvl(p.payment_money,0)) into v_moneySub
                              from payment_record p
                              left join organization o on o.user_id=p.user_id
@@ -18109,7 +18109,7 @@ BEGIN
                              and p.user_id = c_org_each.user_id
                              and p.payment_type=2
                              and to_char(p.payment_time,'yyyymm')=TO_CHAR(ADD_MONTHS(SYSDATE,-1),'YYYYMM');
-                             --²éÑ¯×Ó»ú¹¹ºÍÓÃ»§×ÜÓà¶î(»»Ëã³É½ğ¶î)
+                             --æŸ¥è¯¢å­æœºæ„å’Œç”¨æˆ·æ€»ä½™é¢(æ¢ç®—æˆé‡‘é¢)
                              select sum(orb.sms_quota*orb.unit_price) into v_blanceRemain from
                               org_remain_balance orb
                               where orb.user_id in (select o.user_id from organization o where o.parentid=c_org_each.user_id)
@@ -18117,16 +18117,16 @@ BEGIN
                                                    left join organization o on o.user_id=u.organization_id
                                                    where o.user_id=c_org_each.user_id or o.parentid=c_org_each.user_id);
                              v_blanceRemain := c_org_each.user_balance + v_blanceRemain;
-                              --²åÈë»ú¹¹Óà¶î,³äÖµ¶î
+                              --æ’å…¥æœºæ„ä½™é¢,å……å€¼é¢
                              insert into month_main_info (MONTH_MAIN_INFO_ID, USER_ID, USER_TYPE, REMAIN_QUOTA, REMAIN_FEE, MONTH_PAYMENT, TIME)
                              values (sys_guid(),c_org_each.user_id,1, nvl(c_org_each.user_quota,0), nvl(v_blanceRemain,0), nvl(v_moneyAdd,0)-nvl(v_moneySub,0), TO_CHAR(ADD_MONTHS(SYSDATE,-1),'YYYYMM'));
                          end if;
 
                    end if;
 
-                   --ºÍ¼Ñ(Ã»ÓĞÄÄ¸ö»ú¹¹¿ÉÒÔÎªºÍ¼Ñ³äÖµ)
+                   --å’Œä½³(æ²¡æœ‰å“ªä¸ªæœºæ„å¯ä»¥ä¸ºå’Œä½³å……å€¼)
                    if c_org_each.parentid ='0' then
-                         --²åÈë»ú¹¹Óà¶î,³äÖµ¶î
+                         --æ’å…¥æœºæ„ä½™é¢,å……å€¼é¢
                          insert into month_main_info (MONTH_MAIN_INFO_ID, USER_ID, USER_TYPE, REMAIN_QUOTA, REMAIN_FEE, MONTH_PAYMENT, TIME)
                          values (sys_guid(),c_org_each.user_id,1, nvl(c_org_each.user_quota,0), nvl(c_org_each.user_balance,0),'0', TO_CHAR(ADD_MONTHS(SYSDATE,-1),'YYYYMM'));
                    end if;
@@ -18158,15 +18158,15 @@ create or replace procedure mc.insert_org_quota
        )
 is
 
-    orgCount number;   --²éÑ¯»ú¹¹Óà¶îÊÇ·ñÒÑ¾­´æÔÚÓà¶î±í
+    orgCount number;   --æŸ¥è¯¢æœºæ„ä½™é¢æ˜¯å¦å·²ç»å­˜åœ¨ä½™é¢è¡¨
     v_unitprice org_remain_balance.unit_price%type;
     v_payMode organization.pay_mode%type;
     v_parentid organization.parentid%type;
     v_operatorId user_info.user_id%type;
-    v_extraQuota organization.user_quota%type; --×Ó»ú¹¹¸øÓÃ»§³äÖµ£¬³äÖµÌõÊı-µ±Ç°Ğ­Òé¼ÛÓà¶î µÄÓà¶î
-    v_lastQuota organization.user_quota%type;  --Ê±¼ä×îÔçµÄÒ»¸öÓà¶î
-    v_userQuota organization.user_quota%type;  --³äÖµÌõÊı£¬¸ù¾İ³äÖµÀàĞÍ£¬Ñ¡ÔñÕıÊı»ò¸ºÊı£¬³äÖµÎªÕı£¬³åÕËÎª¸º
-    v_subOrgId  organization.user_id%type;     --ÖĞ¼äÖµ£¬´æ×Ó»ú¹¹id
+    v_extraQuota organization.user_quota%type; --å­æœºæ„ç»™ç”¨æˆ·å……å€¼ï¼Œå……å€¼æ¡æ•°-å½“å‰åè®®ä»·ä½™é¢ çš„ä½™é¢
+    v_lastQuota organization.user_quota%type;  --æ—¶é—´æœ€æ—©çš„ä¸€ä¸ªä½™é¢
+    v_userQuota organization.user_quota%type;  --å……å€¼æ¡æ•°ï¼Œæ ¹æ®å……å€¼ç±»å‹ï¼Œé€‰æ‹©æ­£æ•°æˆ–è´Ÿæ•°ï¼Œå……å€¼ä¸ºæ­£ï¼Œå†²è´¦ä¸ºè´Ÿ
+    v_subOrgId  organization.user_id%type;     --ä¸­é—´å€¼ï¼Œå­˜å­æœºæ„id
 begin
     orgCount :=0;
     v_unitprice :=0;
@@ -18178,7 +18178,7 @@ begin
        v_userQuota := userQuota;
     end if;
 
-    --½ğ¶îÇşµÀ×Ó»ú¹¹³äÖµ
+    --é‡‘é¢æ¸ é“å­æœºæ„å……å€¼
     if userType=1 then
         select count(1) into orgCount from org_remain_balance orb where orb.user_id =userId
         and orb.status=1
@@ -18202,10 +18202,10 @@ begin
              (sys_guid(), userId,1, v_userQuota, v_unitprice,0, sysdate, nvl(operatorId,''), nvl(rechargeExplain,''), sysdate, 1,0);
         end if;
     end if;
-    --ÓÃ»§³äÖµ
+    --ç”¨æˆ·å……å€¼
     if userType=0 then
         select o.parentid into v_parentid  from organization o where o.user_id=(select u.organization_id from user_info u where u.user_id=userId);
-        --ÇşµÀÓÃ»§
+        --æ¸ é“ç”¨æˆ·
         if v_parentid='1' then
               SELECT up.unit_price,o.pay_mode into v_unitprice,v_payMode
               FROM organization o
@@ -18214,24 +18214,24 @@ begin
               where u.user_id=userId
               and up.biz_type =0
               and up.effective=0;
-               --½ğ¶îÇşµÀÏÂµÄ£¬×Ó»ú¹¹µÄÓÃ»§
+               --é‡‘é¢æ¸ é“ä¸‹çš„ï¼Œå­æœºæ„çš„ç”¨æˆ·
               if v_payMode=1 then
-                    /* ²åÈëÓÃ»§µÄÓà¶î
-                    *  ½ğ¶îÇşµÀÈÔÈ»Ê¹ÓÃ»ú¹¹±íµÄ½ğ¶î
+                    /* æ’å…¥ç”¨æˆ·çš„ä½™é¢
+                    *  é‡‘é¢æ¸ é“ä»ç„¶ä½¿ç”¨æœºæ„è¡¨çš„é‡‘é¢
                     */
                     select count(1) into orgCount
                     from org_remain_balance orb
                     where orb.user_id = userId
                     and orb.unit_price =v_unitprice
                     and orb.status=1;
-                    --Óà¶î±íÖĞÒÑ´æÔÚ´ËÓÃ»§×îĞÂĞ­Òé¼ÛÓà¶î£¬ĞŞ¸ÄÓà¶î
+                    --ä½™é¢è¡¨ä¸­å·²å­˜åœ¨æ­¤ç”¨æˆ·æœ€æ–°åè®®ä»·ä½™é¢ï¼Œä¿®æ”¹ä½™é¢
                     if orgCount>0 then
                         update org_remain_balance orb
                         set orb.sms_quota = orb.sms_quota+ v_userQuota, orb.last_update_quota_date =sysdate
                         where orb.user_id = userId
                         and orb.status=1
                         and orb.unit_price=v_unitprice;
-                     --Óà¶î±íÖĞ²»´æÔÚ´ËÓÃ»§×îĞÂĞ­Òé¼ÛÓà¶î£¬²åÈëÓà¶î
+                     --ä½™é¢è¡¨ä¸­ä¸å­˜åœ¨æ­¤ç”¨æˆ·æœ€æ–°åè®®ä»·ä½™é¢ï¼Œæ’å…¥ä½™é¢
                     elsif orgCount=0 then
                          insert into org_remain_balance
                          (ROW_ID, USER_ID, STATUS, SMS_QUOTA, UNIT_PRICE, GW_TYPE, UPDATE_UNITPRICE_DATE, UPDATE_USER, REMARK, LAST_UPDATE_QUOTA_DATE, USER_TYPE,MMS_QUOTA)
@@ -18241,7 +18241,7 @@ begin
               end if;
 
         end if;
-        --ÏÂÊô»ú¹¹ÓÃ»§
+        --ä¸‹å±æœºæ„ç”¨æˆ·
         if v_parentid !='1' and v_parentid !='0' then
               SELECT up.unit_price,o.pay_mode into v_unitprice,v_payMode
               FROM organization o
@@ -18251,47 +18251,47 @@ begin
               and up.biz_type =0
               START WITH o.user_id=(select u.organization_id from user_info u where u.user_id=userId)
               CONNECT BY PRIOR o.parentid=o.user_id;
-              --½ğ¶îÇşµÀÏÂµÄ£¬×Ó»ú¹¹µÄÓÃ»§
+              --é‡‘é¢æ¸ é“ä¸‹çš„ï¼Œå­æœºæ„çš„ç”¨æˆ·
               if v_payMode=1 then
-                    --Èç¹ûÊÇºÍ¼ÑAdmin¸ø×Ó»ú¹¹ÓÃ»§Ô½¼¶³äÖµ£¬Ö±½Ó¼Óµ½ÓÃ»§µÄ×îĞÂÓà¶îÀï
+                    --å¦‚æœæ˜¯å’Œä½³Adminç»™å­æœºæ„ç”¨æˆ·è¶Šçº§å……å€¼ï¼Œç›´æ¥åŠ åˆ°ç”¨æˆ·çš„æœ€æ–°ä½™é¢é‡Œ
                     if operatorId = '1' then
-                          --²éÑ¯ÓÃ»§ÊÇ·ñÓĞ×îĞÂµÄĞ­Òé¼ÛÓà¶î
+                          --æŸ¥è¯¢ç”¨æˆ·æ˜¯å¦æœ‰æœ€æ–°çš„åè®®ä»·ä½™é¢
                           select count(1) into orgCount
                           from org_remain_balance orb
                           where orb.user_id = userId
                           and orb.status=1
                           and orb.unit_price =v_unitprice;
-                          --Óà¶î±íÖĞÒÑ´æÔÚ´ËÓÃ»§×îĞÂĞ­Òé¼ÛÓà¶î£¬ĞŞ¸ÄÓà¶î
+                          --ä½™é¢è¡¨ä¸­å·²å­˜åœ¨æ­¤ç”¨æˆ·æœ€æ–°åè®®ä»·ä½™é¢ï¼Œä¿®æ”¹ä½™é¢
                            if orgCount>0 then
                               update org_remain_balance orb
                               set orb.sms_quota = orb.sms_quota+ v_userQuota, orb.last_update_quota_date =sysdate
                               where orb.user_id = userId
                               and orb.status=1
                               and orb.unit_price=v_unitprice;
-                           --Óà¶î±íÖĞ²»´æÔÚ´ËÓÃ»§×îĞÂĞ­Òé¼ÛÓà¶î£¬²åÈëÓà¶î
+                           --ä½™é¢è¡¨ä¸­ä¸å­˜åœ¨æ­¤ç”¨æˆ·æœ€æ–°åè®®ä»·ä½™é¢ï¼Œæ’å…¥ä½™é¢
                            elsif orgCount=0 then
                                insert into org_remain_balance
                                (ROW_ID, USER_ID, STATUS, SMS_QUOTA, UNIT_PRICE, GW_TYPE, UPDATE_UNITPRICE_DATE, UPDATE_USER, REMARK, LAST_UPDATE_QUOTA_DATE, USER_TYPE,MMS_QUOTA)
                                values
                                (sys_guid(), userId,1, v_userQuota, v_unitprice,0, sysdate, nvl(operatorId,''), nvl(rechargeExplain,''), sysdate, 0,0);
                            end if;
-                     /*×Ó»ú¹¹¹ÜÀíÔ±¸ø±¾»ú¹¹ÓÃ»§³äÖµ */
+                     /*å­æœºæ„ç®¡ç†å‘˜ç»™æœ¬æœºæ„ç”¨æˆ·å……å€¼ */
                     elsif  operatorId != '1' then
-                             -- ²éÑ¯³äÖµ²Ù×÷ÈË(Èç¹ûÊÇ×Ó»ú¹¹µÄ¹ÜÀíÔ±£¬ÔòÖ´ĞĞ³äÖµËã·¨)
+                             -- æŸ¥è¯¢å……å€¼æ“ä½œäºº(å¦‚æœæ˜¯å­æœºæ„çš„ç®¡ç†å‘˜ï¼Œåˆ™æ‰§è¡Œå……å€¼ç®—æ³•)
                              select u.user_id into v_operatorId
                              from user_info u
                              where u.user_type=1
                              and u.user_stat=1
                              and u.organization_id=(select ui.organization_id from user_info ui where ui.user_id=userId and ui.user_stat=1);
-                             --Èç¹û×Ó»ú¹¹¹ÜÀíÔ±¸ø×Ô¼ºÓÃ»§³äÖµ£¬×Ó»ú¹¹¿Û³ıÏàÓ¦µÄÌõÊı
+                             --å¦‚æœå­æœºæ„ç®¡ç†å‘˜ç»™è‡ªå·±ç”¨æˆ·å……å€¼ï¼Œå­æœºæ„æ‰£é™¤ç›¸åº”çš„æ¡æ•°
                              if v_operatorId =operatorId then
-                                  --²éÑ¯×Ó»ú¹¹µÄid
+                                  --æŸ¥è¯¢å­æœºæ„çš„id
                                   select u.organization_id into v_subOrgId from user_info u where u.user_stat = 1 and u.user_id = userId;
 
                                   if v_userQuota >0 then
 
                                       begin
-                                          --²éÑ¯×Ó»ú¹¹Óà¶î´óÓÚÁãÇÒĞ­Òé¼Û×îÔçµÄ×Ó»ú¹¹Óà¶î
+                                          --æŸ¥è¯¢å­æœºæ„ä½™é¢å¤§äºé›¶ä¸”åè®®ä»·æœ€æ—©çš„å­æœºæ„ä½™é¢
                                               select orb.sms_quota, orb.unit_price
                                                 into v_lastQuota, v_unitprice
                                                 from org_remain_balance orb
@@ -18302,38 +18302,38 @@ begin
                                                        where orb2.user_id = v_subOrgId and orb2.status = 1 and orb2.sms_quota > 0);
                                           v_extraQuota := userQuota;
                                           if (userQuota - v_lastQuota) <=0 then
-                                               /* ²åÈëÓÃ»§µÄÓà¶î */
+                                               /* æ’å…¥ç”¨æˆ·çš„ä½™é¢ */
                                                select count(1) into orgCount
                                                from org_remain_balance orb
                                                where orb.user_id = userId
                                                and orb.status =1
                                                and orb.unit_price =v_unitprice;
-                                                --Óà¶î±íÖĞÒÑ´æÔÚ´ËÓÃ»§×îĞÂĞ­Òé¼ÛÓà¶î£¬ĞŞ¸ÄÓà¶î
+                                                --ä½™é¢è¡¨ä¸­å·²å­˜åœ¨æ­¤ç”¨æˆ·æœ€æ–°åè®®ä»·ä½™é¢ï¼Œä¿®æ”¹ä½™é¢
                                                if orgCount>0 then
                                                   update org_remain_balance orb
                                                   set orb.sms_quota = orb.sms_quota+ userQuota, orb.last_update_quota_date =sysdate
                                                   where orb.user_id = userId
                                                   and orb.status=1
                                                   and orb.unit_price=v_unitprice;
-                                               --Óà¶î±íÖĞ²»´æÔÚ´ËÓÃ»§×îĞÂĞ­Òé¼ÛÓà¶î£¬²åÈëÓà¶î
+                                               --ä½™é¢è¡¨ä¸­ä¸å­˜åœ¨æ­¤ç”¨æˆ·æœ€æ–°åè®®ä»·ä½™é¢ï¼Œæ’å…¥ä½™é¢
                                                elsif orgCount=0 then
                                                    insert into org_remain_balance
                                                    (ROW_ID, USER_ID, STATUS, SMS_QUOTA, UNIT_PRICE, GW_TYPE, UPDATE_UNITPRICE_DATE, UPDATE_USER, REMARK, LAST_UPDATE_QUOTA_DATE, USER_TYPE,MMS_QUOTA)
                                                    values
                                                    (sys_guid(), userId,1, userQuota, v_unitprice,0, sysdate, nvl(operatorId,''), nvl(rechargeExplain,''), sysdate, 0,0);
                                                end if;
-                                              /* ³äÖµ¶î±È×îÔçµÄĞ­Òé¼ÛÓà¶îĞ¡£¬¿Û³ıÏàÓ¦µÄ×Ó»ú¹¹Óà¶î */
+                                              /* å……å€¼é¢æ¯”æœ€æ—©çš„åè®®ä»·ä½™é¢å°ï¼Œæ‰£é™¤ç›¸åº”çš„å­æœºæ„ä½™é¢ */
                                               update org_remain_balance orb
                                               set orb.sms_quota = orb.sms_quota - userQuota, orb.last_update_quota_date =sysdate
                                               where orb.user_id = v_subOrgId
                                               and orb.status=1
                                               and orb.unit_price=v_unitprice;
                                          /* end if;
-                                         --Ëã·¨£º×Ó»ú¹¹¸ø×Ô¼ºÓÃ»§³äÖµ,Ê¹ÓÃÑ­»·
+                                         --ç®—æ³•ï¼šå­æœºæ„ç»™è‡ªå·±ç”¨æˆ·å……å€¼,ä½¿ç”¨å¾ªç¯
                                          if v_extraQuota >0 then*/
                                          else
                                             loop
-                                              --²éÑ¯×Ó»ú¹¹Óà¶î´óÓÚÁãÇÒĞ­Òé¼Û×îÔçµÄ×Ó»ú¹¹Óà¶î
+                                              --æŸ¥è¯¢å­æœºæ„ä½™é¢å¤§äºé›¶ä¸”åè®®ä»·æœ€æ—©çš„å­æœºæ„ä½™é¢
                                               select orb.sms_quota, orb.unit_price
                                                 into v_lastQuota, v_unitprice
                                                 from org_remain_balance orb
@@ -18345,78 +18345,78 @@ begin
                                                        where orb2.user_id = v_subOrgId
                                                          and orb2.status = 1
                                                          and orb2.sms_quota > 0);
-                                              DBMS_OUTPUT.PUT_LINE('Ëã·¨£º×Ó»ú¹¹¸ø×Ô¼ºÓÃ»§³äÖµ,¿ªÊ¼Ñ­»· v_lastQuota' ||v_lastQuota||' v_unitprice'||v_unitprice  );
-                                              --´ÓÊ±¼ä×îÔçµÄÒ»¸öĞ­Òé¼ÛÓà¶î¿ªÊ¼¼õ
+                                              DBMS_OUTPUT.PUT_LINE('ç®—æ³•ï¼šå­æœºæ„ç»™è‡ªå·±ç”¨æˆ·å……å€¼,å¼€å§‹å¾ªç¯ v_lastQuota' ||v_lastQuota||' v_unitprice'||v_unitprice  );
+                                              --ä»æ—¶é—´æœ€æ—©çš„ä¸€ä¸ªåè®®ä»·ä½™é¢å¼€å§‹å‡
                                               v_extraQuota := v_extraQuota - v_lastQuota;
                                               DBMS_OUTPUT.PUT_LINE('v_extraQuota '||v_extraQuota);
-                                               --Èç¹û³äÖµ¶î±ÈÉÏÒ»¸öĞ­Òé¼Û»¹´ó
+                                               --å¦‚æœå……å€¼é¢æ¯”ä¸Šä¸€ä¸ªåè®®ä»·è¿˜å¤§
                                               if v_extraQuota >=0 then
-                                              /* ²åÈëÓÃ»§µÄÓà¶î */
+                                              /* æ’å…¥ç”¨æˆ·çš„ä½™é¢ */
                                                   select count(1) into orgCount
                                                   from org_remain_balance orb
                                                   where orb.user_id = userId
                                                   and orb.status =1
                                                   and orb.unit_price =v_unitprice;
-                                                  DBMS_OUTPUT.PUT_LINE('¿ªÊ¼²åÈëÓÃ»§Óà¶î orgCount '||orgCount);
-                                                  --Óà¶î±íÖĞÒÑ´æÔÚ´ËÓÃ»§×îĞÂĞ­Òé¼ÛÓà¶î£¬ĞŞ¸ÄÓà¶î
+                                                  DBMS_OUTPUT.PUT_LINE('å¼€å§‹æ’å…¥ç”¨æˆ·ä½™é¢ orgCount '||orgCount);
+                                                  --ä½™é¢è¡¨ä¸­å·²å­˜åœ¨æ­¤ç”¨æˆ·æœ€æ–°åè®®ä»·ä½™é¢ï¼Œä¿®æ”¹ä½™é¢
                                                    if orgCount>0 then
                                                       update org_remain_balance orb
                                                       set orb.sms_quota = orb.sms_quota+ v_lastQuota, orb.last_update_quota_date =sysdate
                                                       where orb.user_id = userId
                                                       and orb.status=1
                                                       and orb.unit_price=v_unitprice;
-                                                   --Óà¶î±íÖĞ²»´æÔÚ´ËÓÃ»§×îĞÂĞ­Òé¼ÛÓà¶î£¬²åÈëÓà¶î
+                                                   --ä½™é¢è¡¨ä¸­ä¸å­˜åœ¨æ­¤ç”¨æˆ·æœ€æ–°åè®®ä»·ä½™é¢ï¼Œæ’å…¥ä½™é¢
                                                    elsif orgCount=0 then
                                                        insert into org_remain_balance
                                                        (ROW_ID, USER_ID, STATUS, SMS_QUOTA, UNIT_PRICE, GW_TYPE, UPDATE_UNITPRICE_DATE, UPDATE_USER, REMARK, LAST_UPDATE_QUOTA_DATE, USER_TYPE,MMS_QUOTA)
                                                        values
                                                        (sys_guid(), userId,1, v_lastQuota, v_unitprice,0, sysdate, nvl(operatorId,''), nvl(rechargeExplain,''), sysdate, 0,0);
                                                    end if;
-                                               /* ÉÏÒ»¸öĞ­Òé¼ÛµÄÓà¶î±È³äÖµ¶îĞ¡£¬×Ó»ú¹¹µÄÓà¶îÇåÁã */
+                                               /* ä¸Šä¸€ä¸ªåè®®ä»·çš„ä½™é¢æ¯”å……å€¼é¢å°ï¼Œå­æœºæ„çš„ä½™é¢æ¸…é›¶ */
                                                     update org_remain_balance orb
                                                     set orb.sms_quota = 0, orb.last_update_quota_date =sysdate
                                                     where orb.user_id = v_subOrgId
                                                     and orb.status=1
                                                     and orb.unit_price=v_unitprice;
-                                              --³äÖµ¶î±ÈÉÏÒ»¸ö×îÔçµÄĞ­Òé¼ÛÓà¶îĞ¡
+                                              --å……å€¼é¢æ¯”ä¸Šä¸€ä¸ªæœ€æ—©çš„åè®®ä»·ä½™é¢å°
                                               elsif v_extraQuota <0 then
-                                                   /* ²åÈëÓÃ»§µÄÓà¶î */
+                                                   /* æ’å…¥ç”¨æˆ·çš„ä½™é¢ */
                                                    select count(1) into orgCount
                                                    from org_remain_balance orb
                                                    where orb.user_id = userId
                                                    and orb.status =1
                                                    and orb.unit_price =v_unitprice;
-                                                    --Óà¶î±íÖĞÒÑ´æÔÚ´ËÓÃ»§×îĞÂĞ­Òé¼ÛÓà¶î£¬ĞŞ¸ÄÓà¶î
+                                                    --ä½™é¢è¡¨ä¸­å·²å­˜åœ¨æ­¤ç”¨æˆ·æœ€æ–°åè®®ä»·ä½™é¢ï¼Œä¿®æ”¹ä½™é¢
                                                    if orgCount>0 then
                                                       update org_remain_balance orb
                                                       set orb.sms_quota = orb.sms_quota+ v_lastQuota+v_extraQuota, orb.last_update_quota_date =sysdate
                                                       where orb.user_id = userId
                                                       and orb.status=1
                                                       and orb.unit_price=v_unitprice;
-                                                   --Óà¶î±íÖĞ²»´æÔÚ´ËÓÃ»§×îĞÂĞ­Òé¼ÛÓà¶î£¬²åÈëÓà¶î
+                                                   --ä½™é¢è¡¨ä¸­ä¸å­˜åœ¨æ­¤ç”¨æˆ·æœ€æ–°åè®®ä»·ä½™é¢ï¼Œæ’å…¥ä½™é¢
                                                    elsif orgCount=0 then
                                                        insert into org_remain_balance
                                                        (ROW_ID, USER_ID, STATUS, SMS_QUOTA, UNIT_PRICE, GW_TYPE, UPDATE_UNITPRICE_DATE, UPDATE_USER, REMARK, LAST_UPDATE_QUOTA_DATE, USER_TYPE,MMS_QUOTA)
                                                        values
                                                        (sys_guid(), userId,1, v_lastQuota+v_extraQuota, v_unitprice,0, sysdate, nvl(operatorId,''), nvl(rechargeExplain,''), sysdate, 0,0);
                                                    end if;
-                                                  /* ³äÖµ¶î±È×îÔçµÄĞ­Òé¼ÛÓà¶îĞ¡£¬¿Û³ıÏàÓ¦µÄ×Ó»ú¹¹Óà¶î */
+                                                  /* å……å€¼é¢æ¯”æœ€æ—©çš„åè®®ä»·ä½™é¢å°ï¼Œæ‰£é™¤ç›¸åº”çš„å­æœºæ„ä½™é¢ */
                                                   update org_remain_balance orb
                                                   set orb.sms_quota = orb.sms_quota - (v_lastQuota+v_extraQuota), orb.last_update_quota_date =sysdate
                                                   where orb.user_id = v_subOrgId
                                                   and orb.status=1
                                                   and orb.unit_price=v_unitprice;
                                               end if;
-                                              --³äÖµ¶î¼õ×îÔçµÄĞ­Òé¼ÛÓà¶î£¬Ğ¡ÓÚ0ÔòÍË³öÑ­»·
+                                              --å……å€¼é¢å‡æœ€æ—©çš„åè®®ä»·ä½™é¢ï¼Œå°äº0åˆ™é€€å‡ºå¾ªç¯
                                               exit when v_extraQuota <=0;
                                           end loop;
                                          end if;
 
                                       end;
-                                  --ÓÃ»§³åÕË
+                                  --ç”¨æˆ·å†²è´¦
                                   elsif v_userQuota <0  then
                                         begin
-                                          --²éÑ¯ÓÃ»§Óà¶î´óÓÚÁãÇÒĞ­Òé¼Û×îÔçµÄ×Ó»ú¹¹Óà¶î
+                                          --æŸ¥è¯¢ç”¨æˆ·ä½™é¢å¤§äºé›¶ä¸”åè®®ä»·æœ€æ—©çš„å­æœºæ„ä½™é¢
                                           select orb.sms_quota, orb.unit_price
                                             into v_lastQuota, v_unitprice
                                             from org_remain_balance orb
@@ -18430,27 +18430,27 @@ begin
                                                      and orb2.sms_quota > 0);
                                           v_extraQuota := userQuota;
                                           if (userQuota - v_lastQuota) <=0 then
-                                              /* ²åÈë×Ó»ú¹¹µÄÓà¶î */
+                                              /* æ’å…¥å­æœºæ„çš„ä½™é¢ */
                                                select count(1) into orgCount
                                                from org_remain_balance orb
                                                where orb.user_id = v_subOrgId
                                                and orb.status =1
                                                and orb.unit_price =v_unitprice;
-                                                --Óà¶î±íÖĞÒÑ´æÔÚ´ËÓÃ»§×îĞÂĞ­Òé¼ÛÓà¶î£¬ĞŞ¸ÄÓà¶î
+                                                --ä½™é¢è¡¨ä¸­å·²å­˜åœ¨æ­¤ç”¨æˆ·æœ€æ–°åè®®ä»·ä½™é¢ï¼Œä¿®æ”¹ä½™é¢
                                                if orgCount>0 then
                                                   update org_remain_balance orb
                                                   set orb.sms_quota = orb.sms_quota+ userQuota, orb.last_update_quota_date =sysdate
                                                   where orb.user_id = v_subOrgId
                                                   and orb.status=1
                                                   and orb.unit_price=v_unitprice;
-                                               --Óà¶î±íÖĞ²»´æÔÚ´ËÓÃ»§×îĞÂĞ­Òé¼ÛÓà¶î£¬²åÈëÓà¶î
+                                               --ä½™é¢è¡¨ä¸­ä¸å­˜åœ¨æ­¤ç”¨æˆ·æœ€æ–°åè®®ä»·ä½™é¢ï¼Œæ’å…¥ä½™é¢
                                                elsif orgCount=0 then
                                                    insert into org_remain_balance
                                                    (ROW_ID, USER_ID, STATUS, SMS_QUOTA, UNIT_PRICE, GW_TYPE, UPDATE_UNITPRICE_DATE, UPDATE_USER, REMARK, LAST_UPDATE_QUOTA_DATE, USER_TYPE,MMS_QUOTA)
                                                    values
                                                    (sys_guid(), v_subOrgId,1, userQuota, v_unitprice,0, sysdate, nvl(operatorId,''), nvl(rechargeExplain,''), sysdate, 1,0);
                                                end if;
-                                              /* ³äÖµ¶î±È×îÔçµÄĞ­Òé¼ÛÓà¶îĞ¡£¬¿Û³ıÏàÓ¦µÄÓÃ»§Óà¶î */
+                                              /* å……å€¼é¢æ¯”æœ€æ—©çš„åè®®ä»·ä½™é¢å°ï¼Œæ‰£é™¤ç›¸åº”çš„ç”¨æˆ·ä½™é¢ */
                                               update org_remain_balance orb
                                               set orb.sms_quota = orb.sms_quota - userQuota, orb.last_update_quota_date =sysdate
                                               where orb.user_id = userId
@@ -18459,7 +18459,7 @@ begin
                                           /*end if;*/
                                           else
                                             loop
-                                                --²éÑ¯ÓÃ»§Óà¶î´óÓÚÁãÇÒĞ­Òé¼Û×îÔçµÄ×Ó»ú¹¹Óà¶î
+                                                --æŸ¥è¯¢ç”¨æˆ·ä½™é¢å¤§äºé›¶ä¸”åè®®ä»·æœ€æ—©çš„å­æœºæ„ä½™é¢
                                                 select orb.sms_quota, orb.unit_price
                                                   into v_lastQuota, v_unitprice
                                                   from org_remain_balance orb
@@ -18471,60 +18471,60 @@ begin
                                                          where orb2.user_id = userId
                                                            and orb2.status = 1
                                                            and orb2.sms_quota > 0);
-                                                --´ÓÊ±¼ä×îÔçµÄÒ»¸öĞ­Òé¼ÛÓà¶î¿ªÊ¼¼õ
+                                                --ä»æ—¶é—´æœ€æ—©çš„ä¸€ä¸ªåè®®ä»·ä½™é¢å¼€å§‹å‡
                                                 v_extraQuota := v_extraQuota - v_lastQuota;
-                                                --Èç¹û³äÖµ¶î±ÈÉÏÒ»¸öĞ­Òé¼Û»¹´ó
+                                                --å¦‚æœå……å€¼é¢æ¯”ä¸Šä¸€ä¸ªåè®®ä»·è¿˜å¤§
                                                 if v_extraQuota >=0 then
-                                                    /* ²åÈë×Ó»ú¹¹µÄÓà¶î */
+                                                    /* æ’å…¥å­æœºæ„çš„ä½™é¢ */
                                                     select count(1) into orgCount
                                                     from org_remain_balance orb
                                                     where orb.user_id = v_subOrgId
                                                     and orb.status =1
                                                     and orb.unit_price =v_unitprice;
-                                                    --Óà¶î±íÖĞÒÑ´æÔÚ´Ë×Ó»ú¹¹×îĞÂĞ­Òé¼ÛÓà¶î£¬ĞŞ¸ÄÓà¶î
+                                                    --ä½™é¢è¡¨ä¸­å·²å­˜åœ¨æ­¤å­æœºæ„æœ€æ–°åè®®ä»·ä½™é¢ï¼Œä¿®æ”¹ä½™é¢
                                                      if orgCount>0 then
                                                         update org_remain_balance orb
                                                         set orb.sms_quota = orb.sms_quota+ v_lastQuota, orb.last_update_quota_date =sysdate
                                                         where orb.user_id = v_subOrgId
                                                         and orb.status=1
                                                         and orb.unit_price=v_unitprice;
-                                                     --Óà¶î±íÖĞ²»´æÔÚ´ËÓÃ»§×îĞÂĞ­Òé¼ÛÓà¶î£¬²åÈëÓà¶î
+                                                     --ä½™é¢è¡¨ä¸­ä¸å­˜åœ¨æ­¤ç”¨æˆ·æœ€æ–°åè®®ä»·ä½™é¢ï¼Œæ’å…¥ä½™é¢
                                                      elsif orgCount=0 then
                                                          insert into org_remain_balance
                                                          (ROW_ID, USER_ID, STATUS, SMS_QUOTA, UNIT_PRICE, GW_TYPE, UPDATE_UNITPRICE_DATE, UPDATE_USER, REMARK, LAST_UPDATE_QUOTA_DATE, USER_TYPE,MMS_QUOTA)
                                                          values
                                                          (sys_guid(), v_subOrgId,1, v_lastQuota, v_unitprice,0, sysdate, nvl(operatorId,''), nvl(rechargeExplain,''), sysdate, 1,0);
                                                      end if;
-                                                 /* ÉÏÒ»¸öĞ­Òé¼ÛµÄÓà¶î±È³äÖµ¶îĞ¡£¬ÓÃ»§µÄÓà¶îÇåÁã */
+                                                 /* ä¸Šä¸€ä¸ªåè®®ä»·çš„ä½™é¢æ¯”å……å€¼é¢å°ï¼Œç”¨æˆ·çš„ä½™é¢æ¸…é›¶ */
                                                       update org_remain_balance orb
                                                       set orb.sms_quota = 0, orb.last_update_quota_date =sysdate
                                                       where orb.user_id = userId
                                                       and orb.status=1
                                                       and orb.unit_price=v_unitprice;
 
-                                                 --³äÖµ¶î±ÈÉÏÒ»¸ö×îÔçµÄĞ­Òé¼ÛÓà¶îĞ¡
+                                                 --å……å€¼é¢æ¯”ä¸Šä¸€ä¸ªæœ€æ—©çš„åè®®ä»·ä½™é¢å°
                                                 elsif v_extraQuota <0 then
-                                                     /* ²åÈë×Ó»ú¹¹µÄÓà¶î */
+                                                     /* æ’å…¥å­æœºæ„çš„ä½™é¢ */
                                                      select count(1) into orgCount
                                                      from org_remain_balance orb
                                                      where orb.user_id = v_subOrgId
                                                      and orb.status =1
                                                      and orb.unit_price =v_unitprice;
-                                                      --Óà¶î±íÖĞÒÑ´æÔÚ´ËÓÃ»§×îĞÂĞ­Òé¼ÛÓà¶î£¬ĞŞ¸ÄÓà¶î
+                                                      --ä½™é¢è¡¨ä¸­å·²å­˜åœ¨æ­¤ç”¨æˆ·æœ€æ–°åè®®ä»·ä½™é¢ï¼Œä¿®æ”¹ä½™é¢
                                                      if orgCount>0 then
                                                         update org_remain_balance orb
                                                         set orb.sms_quota = orb.sms_quota+ v_lastQuota+v_extraQuota, orb.last_update_quota_date =sysdate
                                                         where orb.user_id = v_subOrgId
                                                         and orb.status=1
                                                         and orb.unit_price=v_unitprice;
-                                                     --Óà¶î±íÖĞ²»´æÔÚ´ËÓÃ»§×îĞÂĞ­Òé¼ÛÓà¶î£¬²åÈëÓà¶î
+                                                     --ä½™é¢è¡¨ä¸­ä¸å­˜åœ¨æ­¤ç”¨æˆ·æœ€æ–°åè®®ä»·ä½™é¢ï¼Œæ’å…¥ä½™é¢
                                                      elsif orgCount=0 then
                                                          insert into org_remain_balance
                                                          (ROW_ID, USER_ID, STATUS, SMS_QUOTA, UNIT_PRICE, GW_TYPE, UPDATE_UNITPRICE_DATE, UPDATE_USER, REMARK, LAST_UPDATE_QUOTA_DATE, USER_TYPE,MMS_QUOTA)
                                                          values
                                                          (sys_guid(), v_subOrgId,1, userQuota, v_unitprice,0, sysdate, nvl(operatorId,''), nvl(rechargeExplain,''), sysdate, 1,0);
                                                      end if;
-                                                    /* ³äÖµ¶î±È×îÔçµÄĞ­Òé¼ÛÓà¶îĞ¡£¬¿Û³ıÏàÓ¦µÄÓÃ»§Óà¶î */
+                                                    /* å……å€¼é¢æ¯”æœ€æ—©çš„åè®®ä»·ä½™é¢å°ï¼Œæ‰£é™¤ç›¸åº”çš„ç”¨æˆ·ä½™é¢ */
                                                     update org_remain_balance orb
                                                     set orb.sms_quota = orb.sms_quota - (v_lastQuota+v_extraQuota), orb.last_update_quota_date =sysdate
                                                     where orb.user_id = userId
@@ -18537,11 +18537,11 @@ begin
                                           end if;
                                         end;
                                   end if;
-                             /*ÇşµÀ¹ÜÀíÔ±¸ø×Ó»ú¹¹ÓÃ»§³äÖµ*/
+                             /*æ¸ é“ç®¡ç†å‘˜ç»™å­æœºæ„ç”¨æˆ·å……å€¼*/
                              else
-                                    --ÓÃ»§³äÖµ£¬²¹ÕÊ
+                                    --ç”¨æˆ·å……å€¼ï¼Œè¡¥å¸
                                   if v_userQuota >0 then
-                                       --²éÑ¯×Ó»ú¹¹Óà¶î´óÓÚÁãÇÒĞ­Òé¼Û×îÔçµÄ×Ó»ú¹¹Óà¶î
+                                       --æŸ¥è¯¢å­æœºæ„ä½™é¢å¤§äºé›¶ä¸”åè®®ä»·æœ€æ—©çš„å­æœºæ„ä½™é¢
                                         select up.unit_price,
                                         (select orb.sms_quota from org_remain_balance orb
                                         where orb.status=1 and orb.user_id = userId
@@ -18565,10 +18565,10 @@ begin
                                            and orb.unit_price = v_unitprice;
                                       end if;
 
-                                  --ÓÃ»§³åÕË
+                                  --ç”¨æˆ·å†²è´¦
                                   elsif v_userQuota <0  then
                                         begin
-                                          --²éÑ¯ÓÃ»§Óà¶î´óÓÚÁãÇÒĞ­Òé¼Û×îÔçµÄ×Ó»ú¹¹Óà¶î
+                                          --æŸ¥è¯¢ç”¨æˆ·ä½™é¢å¤§äºé›¶ä¸”åè®®ä»·æœ€æ—©çš„å­æœºæ„ä½™é¢
                                           select orb.sms_quota, orb.unit_price
                                             into v_lastQuota, v_unitprice
                                             from org_remain_balance orb
@@ -18581,19 +18581,19 @@ begin
                                                      and orb2.status = 1
                                                      and orb2.sms_quota > 0);
                                           v_extraQuota := userQuota;
-                                          --³äÖµ¶î±È×îÔçµÄÒ»¸öĞ­Òé¼ÛÓà¶îÉÙ
+                                          --å……å€¼é¢æ¯”æœ€æ—©çš„ä¸€ä¸ªåè®®ä»·ä½™é¢å°‘
                                           if (userQuota - v_lastQuota) <=0 then
-                                               /*ÔÚjava´úÂëÖĞÒÑ¾­¼õ¹ıÇşµÀµÄ½ğ¶î£¬´Ë´¦ÎŞĞëÔÙ¼õ
-                                               ³äÖµ¶î±È×îÔçµÄĞ­Òé¼ÛÓà¶îĞ¡£¬¿Û³ıÏàÓ¦µÄÓÃ»§Óà¶î*/
+                                               /*åœ¨javaä»£ç ä¸­å·²ç»å‡è¿‡æ¸ é“çš„é‡‘é¢ï¼Œæ­¤å¤„æ— é¡»å†å‡
+                                               å……å€¼é¢æ¯”æœ€æ—©çš„åè®®ä»·ä½™é¢å°ï¼Œæ‰£é™¤ç›¸åº”çš„ç”¨æˆ·ä½™é¢*/
                                               update org_remain_balance orb
                                               set orb.sms_quota = orb.sms_quota - userQuota, orb.last_update_quota_date =sysdate
                                               where orb.user_id = userId
                                               and orb.status=1
                                               and orb.unit_price=v_unitprice;
-                                          --³äÖµ¶î±È×îÔçµÄÒ»¸öĞ­Òé¼ÛÓà¶î¶à
+                                          --å……å€¼é¢æ¯”æœ€æ—©çš„ä¸€ä¸ªåè®®ä»·ä½™é¢å¤š
                                           else
                                             loop
-                                                --²éÑ¯ÓÃ»§Óà¶î´óÓÚÁãÇÒĞ­Òé¼Û×îÔçµÄ×Ó»ú¹¹Óà¶î
+                                                --æŸ¥è¯¢ç”¨æˆ·ä½™é¢å¤§äºé›¶ä¸”åè®®ä»·æœ€æ—©çš„å­æœºæ„ä½™é¢
                                                 select orb.sms_quota, orb.unit_price
                                                   into v_lastQuota, v_unitprice
                                                   from org_remain_balance orb
@@ -18605,19 +18605,19 @@ begin
                                                          where orb2.user_id = userId
                                                            and orb2.status = 1
                                                            and orb2.sms_quota > 0);
-                                                --´ÓÊ±¼ä×îÔçµÄÒ»¸öĞ­Òé¼ÛÓà¶î¿ªÊ¼¼õ
+                                                --ä»æ—¶é—´æœ€æ—©çš„ä¸€ä¸ªåè®®ä»·ä½™é¢å¼€å§‹å‡
                                                 v_extraQuota := v_extraQuota - v_lastQuota;
-                                                --Èç¹û³äÖµ¶î±ÈÉÏÒ»¸öĞ­Òé¼Û»¹´ó
+                                                --å¦‚æœå……å€¼é¢æ¯”ä¸Šä¸€ä¸ªåè®®ä»·è¿˜å¤§
                                                 if v_extraQuota >=0 then
-                                                 /* ÉÏÒ»¸öĞ­Òé¼ÛµÄÓà¶î±È³äÖµ¶îĞ¡£¬ÓÃ»§µÄÓà¶îÇåÁã */
+                                                 /* ä¸Šä¸€ä¸ªåè®®ä»·çš„ä½™é¢æ¯”å……å€¼é¢å°ï¼Œç”¨æˆ·çš„ä½™é¢æ¸…é›¶ */
                                                       update org_remain_balance orb
                                                       set orb.sms_quota = 0, orb.last_update_quota_date =sysdate
                                                       where orb.user_id = userId
                                                       and orb.status=1
                                                       and orb.unit_price=v_unitprice;
-                                                 --³äÖµ¶î±ÈÉÏÒ»¸ö×îÔçµÄĞ­Òé¼ÛÓà¶îĞ¡
+                                                 --å……å€¼é¢æ¯”ä¸Šä¸€ä¸ªæœ€æ—©çš„åè®®ä»·ä½™é¢å°
                                                 elsif v_extraQuota <0 then
-                                                    /* ³äÖµ¶î±È×îÔçµÄĞ­Òé¼ÛÓà¶îĞ¡£¬¿Û³ıÏàÓ¦µÄÓÃ»§Óà¶î */
+                                                    /* å……å€¼é¢æ¯”æœ€æ—©çš„åè®®ä»·ä½™é¢å°ï¼Œæ‰£é™¤ç›¸åº”çš„ç”¨æˆ·ä½™é¢ */
                                                     update org_remain_balance orb
                                                     set orb.sms_quota = orb.sms_quota - (v_lastQuota+v_extraQuota), orb.last_update_quota_date =sysdate
                                                     where orb.user_id = userId
@@ -18636,7 +18636,7 @@ begin
               end if;
         end if;
 
-        --×îºóÌá½»
+        --æœ€åæäº¤
         commit;
     end if;
 
@@ -18655,7 +18655,7 @@ prompt Creating procedure P_CHECK_LONGSMS_SIGANATURE
 prompt =============================================
 prompt
 create or replace procedure mc.p_check_longsms_siganature is
-  --²éÑ¯³¤¶ÌĞÅ×îºóÒ»Ìõ¶ÌĞÅ
+  --æŸ¥è¯¢é•¿çŸ­ä¿¡æœ€åä¸€æ¡çŸ­ä¿¡
   CURSOR send_cur IS
   SELECT *
          from send t
@@ -18667,27 +18667,27 @@ create or replace procedure mc.p_check_longsms_siganature is
 
 
   r_send            send%rowtype;
-  
+
   TYPE              cur_rs IS REF CURSOR;
-  c_sinature_pool   cur_rs;--´æ·ÅÇ©ÃûµÄÓÎ±ê
+  c_sinature_pool   cur_rs;--å­˜æ”¾ç­¾åçš„æ¸¸æ ‡
   r_signature_pool  sgw_signature_pool%rowtype;
 
-  v_msg_total             varchar2(2000);--Æ´½ÓµÄĞÅÏ¢
+  v_msg_total             varchar2(2000);--æ‹¼æ¥çš„ä¿¡æ¯
   v_msg_count       number :=0;
   v_signature_ok    number :=0;
-  v_has_total       number :=1; --ÊÇ·ñÍêÕûµÄ¶ÌĞÅ
+  v_has_total       number :=1; --æ˜¯å¦å®Œæ•´çš„çŸ­ä¿¡
   v_send_id         varchar2(2000);
 
   errormessage      exception;
 begin
 
-  --¸üĞÂ²»ĞèÒª½øĞĞÇ©Ãû³ØĞ£ÑéµÄÊı¾İ
+  --æ›´æ–°ä¸éœ€è¦è¿›è¡Œç­¾åæ± æ ¡éªŒçš„æ•°æ®
   --update send t set t.send_status = 0 where t.send_status = -1 and t.charge = 1;
   --commit;
 
   open send_cur;
 
-      --¼ì²é¶ÌĞÅ
+      --æ£€æŸ¥çŸ­ä¿¡
       loop
           fetch send_cur into r_send;
 
@@ -18697,8 +18697,8 @@ begin
           v_has_total    := 1;
           v_send_id      := '';
 
-          --²éÑ¯ÆäÓà¶ÌĞÅ
-          --Ñ­»·ºÍÆ´½Ó¶ÌĞÅ
+          --æŸ¥è¯¢å…¶ä½™çŸ­ä¿¡
+          --å¾ªç¯å’Œæ‹¼æ¥çŸ­ä¿¡
           FOR a_send IN (
                          select *
                                 from send t
@@ -18709,13 +18709,13 @@ begin
           LOOP
               v_msg_count := v_msg_count + 1;
 
-              --¼ì²é¶ÌĞÅĞòºÅÇé¿ö
+              --æ£€æŸ¥çŸ­ä¿¡åºå·æƒ…å†µ
               if v_msg_count != to_number(a_send.current_pageno) THEN
-                 --ĞòºÅ²»Ò»ÖÂ£¬ÔòÍÆ³öÑ­»·ºÍtrigger
+                 --åºå·ä¸ä¸€è‡´ï¼Œåˆ™æ¨å‡ºå¾ªç¯å’Œtrigger
                  v_has_total := 0;
                  exit;
               end if;
-              --Æ´½Ó³¤¶ÌĞÅ
+              --æ‹¼æ¥é•¿çŸ­ä¿¡
               v_msg_total := v_msg_total||a_send.send_msg;
               if length(v_send_id) > 0 then
                    v_send_id := v_send_id||','||''''||a_send.send_id||'''';
@@ -18724,9 +18724,9 @@ begin
               end if;
           END LOOP;
 
-          --¿ÉÒÔÆ´½Ó³É³¤¶ÌĞÅ
+          --å¯ä»¥æ‹¼æ¥æˆé•¿çŸ­ä¿¡
           if v_has_total = 1 and v_msg_count = r_send.originalsms_totalpages then
-            --¼ì²éÊÇ·ñÔÚÇ©ÃûÖĞ
+            --æ£€æŸ¥æ˜¯å¦åœ¨ç­¾åä¸­
             open c_sinature_pool for
                  select pool.*
                         from sgw_signature_pool pool
@@ -18735,9 +18735,9 @@ begin
                 loop
                     fetch c_sinature_pool into r_signature_pool;
                     exit when c_sinature_pool%notfound;
-                          --ÔÚÇ©Ãû³ØÖĞ
+                          --åœ¨ç­¾åæ± ä¸­
                           if instr(v_msg_total,r_signature_pool.signature,1,1) > 0 then
-                             --¸üĞÂ¶ÌĞÅ×´Ì¬
+                             --æ›´æ–°çŸ­ä¿¡çŠ¶æ€
                              --insert into SQL_LOG values(systimestamp, 'p_check_longsms_siganature sql', 'update send set send_status = 0 where send_id in (' || v_send_id || ')');
                              --commit;
                              if r_signature_pool.do_append_msg = 1 and length(r_send.send_msg||r_signature_pool.append_msg) <= 67 then
@@ -18751,15 +18751,15 @@ begin
                              end if;
 
                              v_signature_ok := 1;
-                             --ÍË³öÑ­»·
+                             --é€€å‡ºå¾ªç¯
                              exit;
                           end if;
                 end loop;
             close c_sinature_pool;
 
-            --²»ÔÚÇ©Ãû³ØÖĞ£¬ÔòĞŞ¸Ä¶ÌĞÅ×´Ì¬
+            --ä¸åœ¨ç­¾åæ± ä¸­ï¼Œåˆ™ä¿®æ”¹çŸ­ä¿¡çŠ¶æ€
             if v_signature_ok = 0 then
-               execute immediate ('update send set send_status = 6, report = ''UD:0000'',err_msg = ''×ÔÖ÷Ç©Ãû²»ÔÚÇ©Ãû³Ø'' , report_time = sysdate where send_id in (' || v_send_id || ')');
+               execute immediate ('update send set send_status = 6, report = ''UD:0000'',err_msg = ''è‡ªä¸»ç­¾åä¸åœ¨ç­¾åæ± '' , report_time = sysdate where send_id in (' || v_send_id || ')');
                commit;
             end if;
           end if;
@@ -18767,8 +18767,8 @@ begin
       end loop;
   close send_cur;
 
-  --¸üĞÂ³¬Ê±µÄ¶ÌĞÅ,60·ÖÖÓÖ®Ç°µÄ
-  update send t set t.send_status = 6, t.err_msg = '¼ìÑéÇ©Ãû³¬Ê±' where t.send_status = -1 and t.sys_time < (sysdate - 60/60/24);
+  --æ›´æ–°è¶…æ—¶çš„çŸ­ä¿¡,60åˆ†é’Ÿä¹‹å‰çš„
+  update send t set t.send_status = 6, t.err_msg = 'æ£€éªŒç­¾åè¶…æ—¶' where t.send_status = -1 and t.sys_time < (sysdate - 60/60/24);
   commit;
 end p_check_longsms_siganature;
 /
@@ -18779,17 +18779,17 @@ prompt ========================================
 prompt
 create or replace procedure mc.P_MMS_CHANNEL_ANALYZE(p_date varchar2)
 is
-       v_sendTime date;--´æ¿ªÊ¼ÈÕÆÚ
+       v_sendTime date;--å­˜å¼€å§‹æ—¥æœŸ
        v_tempTime date;
        v_sendEndTime date;
        v_isHasTable varchar2(50);
        v_curTableName varchar2(50);
        v_count number(2);
-       v_debug number(1); --ÊÇ·ñ´òµ÷ÊÔĞÅÏ¢, 0:²»´ò £»1£º´ò
+       v_debug number(1); --æ˜¯å¦æ‰“è°ƒè¯•ä¿¡æ¯, 0:ä¸æ‰“ ï¼›1ï¼šæ‰“
        v_del_SQL varchar2(8000);
        v_child_SQL varchar2(8000);
        v_SQL_TMP varchar2(8000);
-       v_SQL varchar2(8000); -- Æ´½ÓµÄ»ù´¡SQL
+       v_SQL varchar2(8000); -- æ‹¼æ¥çš„åŸºç¡€SQL
 begin
      v_isHasTable := '';
      v_SQL_TMP := '';
@@ -18800,7 +18800,7 @@ begin
      v_count := 0;
 
           if p_date is null  then
-            --É¾³ıÈıÌìÇ°·¢ËÍ¶ÌĞÅµÄÍ³¼ÆµÄÊı¾İ ¿ªÊ¼
+            --åˆ é™¤ä¸‰å¤©å‰å‘é€çŸ­ä¿¡çš„ç»Ÿè®¡çš„æ•°æ® å¼€å§‹
             v_sendTime := trunc(sysdate -3);
             v_tempTime := v_sendTime;
             v_del_SQL :=  'delete from mms_channel_analyze mca where mca.stat_time >= to_number ( to_char(to_date(''' || v_sendTime ||'''),''YYYYMMDD''))';
@@ -18810,9 +18810,9 @@ begin
            end if;
 
         --  execute immediate v_del_SQL;
-           --É¾³ıÈıÌìÇ°·¢ËÍ¶ÌĞÅµÄÍ³¼ÆµÄÊı¾İ ½áÊø
+           --åˆ é™¤ä¸‰å¤©å‰å‘é€çŸ­ä¿¡çš„ç»Ÿè®¡çš„æ•°æ® ç»“æŸ
           -- commit;
-           --Ô¤Í³¼ÆÈıÌìÇ°·¢ËÍ¶ÌĞÅÊıÁ¿
+           --é¢„ç»Ÿè®¡ä¸‰å¤©å‰å‘é€çŸ­ä¿¡æ•°é‡
 
            v_child_SQL := ' select to_number(to_char(ms.send_time,''YYYYMMDD''))  as sysdat, ms.channel_id, o.parentid as parent_org_id,ms.org_id,ms.send_status,ms.mobile_quantities from mms_send ms left join organization o on ms.org_id = o.user_id where ms.send_status in (1,5,6) and ms.send_time >=''' || v_sendTime || ''' and o.parentid not in (''0'',''1'')
                   union all select to_number(to_char(ms.send_time,''YYYYMMDD''))  as sysdat, ms.channel_id, ms.org_id as parent_org_id,ms.org_id,ms.send_status,ms.mobile_quantities from mms_send ms left join organization o on ms.org_id = o.user_id where ms.send_status in (1,5,6) and ms.send_time >=''' || v_sendTime || ''' and o.parentid in (''0'',''1'')';
@@ -18848,11 +18848,11 @@ begin
          execute immediate v_SQL;
          commit;
       else
-             --É¾³ıµ±Ìì·¢ËÍ¶ÌĞÅµÄÍ³¼ÆµÄÊı¾İ ¿ªÊ¼
+             --åˆ é™¤å½“å¤©å‘é€çŸ­ä¿¡çš„ç»Ÿè®¡çš„æ•°æ® å¼€å§‹
             v_sendTime := trunc(to_date(p_date,'yyyy-MM-dd hh24:mi:ss'));
             v_sendEndTime := v_sendTime+1-1/24/60/60;
             v_tempTime := v_sendTime;
-            v_curTableName := FUN_JXMDATE(p_date); -- p_date ¸ñÊ½ £º2012-11-08 14:00:00
+            v_curTableName := FUN_JXMDATE(p_date); -- p_date æ ¼å¼ ï¼š2012-11-08 14:00:00
             v_del_SQL :=  'delete from mms_channel_analyze mca where mca.stat_time = to_number( to_char(to_date(''' || v_sendTime ||'''),''YYYYMMDD''))';
 
            if v_debug = 1 then
@@ -18908,17 +18908,17 @@ prompt =====================================
 prompt
 create or replace procedure mc.P_MMS_SEND_ANALYZE(p_date varchar2)
 is
-       v_sendTime date;--´æ¿ªÊ¼ÈÕÆÚ
+       v_sendTime date;--å­˜å¼€å§‹æ—¥æœŸ
        v_tempTime date;
        v_sendEndTime date;
        v_isHasTable varchar2(50);
        v_curTableName varchar2(50);
        v_count number(2);
-       v_debug number(1); --ÊÇ·ñ´òµ÷ÊÔĞÅÏ¢, 0:²»´ò £»1£º´ò
+       v_debug number(1); --æ˜¯å¦æ‰“è°ƒè¯•ä¿¡æ¯, 0:ä¸æ‰“ ï¼›1ï¼šæ‰“
        v_del_SQL varchar2(8000);
        v_child_SQL varchar2(8000);
        v_SQL_TMP varchar2(8000);
-       v_SQL varchar2(8000); -- Æ´½ÓµÄ»ù´¡SQL
+       v_SQL varchar2(8000); -- æ‹¼æ¥çš„åŸºç¡€SQL
 begin
      v_isHasTable := '';
      v_SQL_TMP := '';
@@ -18929,7 +18929,7 @@ begin
      v_count := 0;
 
           if p_date is null  then
-            --É¾³ıÈıÌìÇ°·¢ËÍ¶ÌĞÅµÄÍ³¼ÆµÄÊı¾İ ¿ªÊ¼
+            --åˆ é™¤ä¸‰å¤©å‰å‘é€çŸ­ä¿¡çš„ç»Ÿè®¡çš„æ•°æ® å¼€å§‹
             v_sendTime := trunc(sysdate -3);
             v_tempTime := v_sendTime;
             v_del_SQL :=  'delete from mms_send_analyze msa where msa.stat_time = to_number( to_char(to_date(''' || v_sendTime ||'''),''YYYYMMDD''))';
@@ -18939,9 +18939,9 @@ begin
            end if;
 
           execute immediate v_del_SQL;
-           --É¾³ıÈıÌìÇ°·¢ËÍ¶ÌĞÅµÄÍ³¼ÆµÄÊı¾İ ½áÊø
+           --åˆ é™¤ä¸‰å¤©å‰å‘é€çŸ­ä¿¡çš„ç»Ÿè®¡çš„æ•°æ® ç»“æŸ
           -- commit;
-           --Ô¤Í³¼ÆÈıÌìÇ°·¢ËÍ¶ÌĞÅÊıÁ¿
+           --é¢„ç»Ÿè®¡ä¸‰å¤©å‰å‘é€çŸ­ä¿¡æ•°é‡
            v_child_SQL := ' select to_number(to_char(send_time,''YYYYMMDD''))  as sysdat,o.parentid as parent_org_id,ms.org_id,ms.user_id,ms.send_status,ms.mobile_quantities from mms_send ms left join organization o on ms.org_id = o.user_id  where ms.send_status in (1,5,6) and ms.send_time >=''' || v_sendTime || ''' and o.parentid not in (''0'',''1'')
                   union all select to_number(to_char(send_time,''YYYYMMDD''))  as sysdat,o.parentid as parent_org_id,ms.org_id,ms.user_id,ms.send_status,ms.mobile_quantities from mms_send ms left join organization o on ms.org_id = o.user_id  where ms.send_status in (1,5,6) and ms.send_time >=''' || v_sendTime || ''' and o.parentid in (''0'',''1'')';
 
@@ -18976,11 +18976,11 @@ begin
          execute immediate v_SQL;
          commit;
       else
-             --É¾³ıµ±Ìì·¢ËÍ¶ÌĞÅµÄÍ³¼ÆµÄÊı¾İ ¿ªÊ¼
+             --åˆ é™¤å½“å¤©å‘é€çŸ­ä¿¡çš„ç»Ÿè®¡çš„æ•°æ® å¼€å§‹
             v_sendTime := trunc(to_date(p_date,'yyyy-MM-dd hh24:mi:ss'));
             v_sendEndTime := v_sendTime+1-1/24/60/60;
             v_tempTime := v_sendTime;
-            v_curTableName := FUN_JXMDATE(p_date); -- p_date ¸ñÊ½ £º2012-11-08 14:00:00
+            v_curTableName := FUN_JXMDATE(p_date); -- p_date æ ¼å¼ ï¼š2012-11-08 14:00:00
             v_del_SQL :=  'delete from mms_send_analyze msa where msa.stat_time = to_number( to_char(to_date(''' || v_sendTime ||'''),''YYYYMMDD''))';
 
            if v_debug = 1 then
@@ -19035,18 +19035,18 @@ prompt =================================
 prompt
 create or replace procedure mc.P_SEND_SMS_SUM
 is
-user_id sms_send_analyze.user_id%type;--·¢ËÍµÄÓÃ»§id
-stat_time sms_send_analyze.stat_time%type;--·¢ËÍÈÕÆÚ
-quantity sms_send_analyze.quantity%type;--¶ÌĞÅ·¢ËÍ×ÜÁ¿
-org_id sms_send_analyze.org_id%type;--ÓÃ»§ËùÊô»ú¹¹
+user_id sms_send_analyze.user_id%type;--å‘é€çš„ç”¨æˆ·id
+stat_time sms_send_analyze.stat_time%type;--å‘é€æ—¥æœŸ
+quantity sms_send_analyze.quantity%type;--çŸ­ä¿¡å‘é€æ€»é‡
+org_id sms_send_analyze.org_id%type;--ç”¨æˆ·æ‰€å±æœºæ„
 cursor sms_cursor_result is select
  sum(MOBILE_QUANTITIES) quantity,
 user_id,USER_ORGANIZATION as
  org_id,max(to_number(to_char(sysdate,'yyyymmdd')))
  as stat_time from send where sys_time<=sysdate
- and sys_time>trunc(sysdate,'dd') group by user_id,USER_ORGANIZATION;--Í³¼Æ»ú¹¹µ±ÌìµÄ·¢ËÍÁ¿
+ and sys_time>trunc(sysdate,'dd') group by user_id,USER_ORGANIZATION;--ç»Ÿè®¡æœºæ„å½“å¤©çš„å‘é€é‡
 begin
-if sms_cursor_result%isopen then--·ÀÖ¹ÓÎ±êÉÏ´ÎÎ´¹Ø±Õ
+if sms_cursor_result%isopen then--é˜²æ­¢æ¸¸æ ‡ä¸Šæ¬¡æœªå…³é—­
 close sms_cursor_result;
 end if;
 open sms_cursor_result;
@@ -19073,17 +19073,17 @@ prompt ========================================
 prompt
 create or replace procedure mc.P_SMS_CHANNEL_ANALYZE(p_date varchar2)
 is
-       v_sendTime date;--´æ¿ªÊ¼ÈÕÆÚ
+       v_sendTime date;--å­˜å¼€å§‹æ—¥æœŸ
        v_tempTime date;
        v_sendEndTime date;
        v_isHasTable varchar2(50);
        v_curTableName varchar2(50);
        v_count number(2);
-       v_debug number(1); --ÊÇ·ñ´òµ÷ÊÔĞÅÏ¢, 0:²»´ò £»1£º´ò
+       v_debug number(1); --æ˜¯å¦æ‰“è°ƒè¯•ä¿¡æ¯, 0:ä¸æ‰“ ï¼›1ï¼šæ‰“
        v_del_SQL varchar2(8000);
        v_child_SQL varchar2(8000);
        v_SQL_TMP varchar2(8000);
-       v_SQL varchar2(8000); -- Æ´½ÓµÄ»ù´¡SQL
+       v_SQL varchar2(8000); -- æ‹¼æ¥çš„åŸºç¡€SQL
 begin
      v_isHasTable := '';
      v_SQL_TMP := '';
@@ -19094,7 +19094,7 @@ begin
      v_count := 0;
 
           if p_date is null  then
-            --É¾³ıÈıÌìÇ°·¢ËÍ¶ÌĞÅµÄÍ³¼ÆµÄÊı¾İ ¿ªÊ¼
+            --åˆ é™¤ä¸‰å¤©å‰å‘é€çŸ­ä¿¡çš„ç»Ÿè®¡çš„æ•°æ® å¼€å§‹
             v_sendTime := trunc(sysdate -3);
             v_tempTime := v_sendTime;
             v_del_SQL :=  'delete from sms_channel_analyze sca where sca.stat_time >= to_number ( to_char(to_date(''' || v_sendTime ||'''),''YYYYMMDD''))';
@@ -19104,9 +19104,9 @@ begin
            end if;
 
           execute immediate v_del_SQL;
-           --É¾³ıÈıÌìÇ°·¢ËÍ¶ÌĞÅµÄÍ³¼ÆµÄÊı¾İ ½áÊø
+           --åˆ é™¤ä¸‰å¤©å‰å‘é€çŸ­ä¿¡çš„ç»Ÿè®¡çš„æ•°æ® ç»“æŸ
           -- commit;
-           --Ô¤Í³¼ÆÈıÌìÇ°·¢ËÍ¶ÌĞÅÊıÁ¿
+           --é¢„ç»Ÿè®¡ä¸‰å¤©å‰å‘é€çŸ­ä¿¡æ•°é‡
 
            v_child_SQL := ' select to_number(to_char(sys_time,''YYYYMMDD''))  as sysdat, ss.channel_id, o.parentid as parent_org_id,ss.user_organization as org_id,ss.send_status,ss.mobile_quantities from send ss left join organization o on ss.user_organization = o.user_id where ss.longsms_splited = 0 and ss.send_status in (1,5,6) and ss.sys_time >= to_date(''' || to_char(v_sendTime, 'YYYYMMDD') || ''', ''YYYYMMDD'') and o.parentid not in (''0'',''1'')
                   union all select to_number(to_char(sys_time,''YYYYMMDD''))  as sysdat, ss.channel_id, ss.user_organization as parent_org_id,ss.user_organization as org_id,ss.send_status,ss.mobile_quantities from send ss left join organization o on ss.user_organization = o.user_id where ss.longsms_splited = 0 and ss.send_status in (1,5,6) and ss.sys_time >= to_date(''' || to_char(v_sendTime, 'YYYYMMDD') || ''', ''YYYYMMDD'' and o.parentid in (''0'',''1'')';
@@ -19142,11 +19142,11 @@ begin
          execute immediate v_SQL;
          commit;
       else
-             --É¾³ıµ±Ìì·¢ËÍ¶ÌĞÅµÄÍ³¼ÆµÄÊı¾İ ¿ªÊ¼
+             --åˆ é™¤å½“å¤©å‘é€çŸ­ä¿¡çš„ç»Ÿè®¡çš„æ•°æ® å¼€å§‹
             v_sendTime := trunc(to_date(p_date,'yyyy-MM-dd hh24:mi:ss'));
             v_sendEndTime := v_sendTime+1;
             v_tempTime := v_sendTime;
-            v_curTableName := FUN_JXDATE(p_date); -- p_date ¸ñÊ½ £º2012-11-08 14:00:00
+            v_curTableName := FUN_JXDATE(p_date); -- p_date æ ¼å¼ ï¼š2012-11-08 14:00:00
             v_del_SQL :=  'delete from sms_channel_analyze sca where sca.stat_time = to_number( to_char(to_date(''' || v_sendTime ||'''),''YYYYMMDD''))';
 
            if v_debug = 1 then
@@ -19202,33 +19202,33 @@ prompt ===========================================
 prompt
 create or replace procedure mc.P_SMS_RETURN_CONSUME_FEE
        (
-         p_batchId in varchar2,           --Åú´ÎºÅ
+         p_batchId in varchar2,           --æ‰¹æ¬¡å·
          RUN_RESULT      OUT NUMBER,
          RUN_EXCEPTION   OUT VARCHAR
        )
 is
-       query_SQL varchar2(1000);    --²éÑ¯¼Æ·Ñ±ísql
-       update_SQL varchar2(1000);   --ĞŞ¸ÄÓÃ»§Óà¶îsql
+       query_SQL varchar2(1000);    --æŸ¥è¯¢è®¡è´¹è¡¨sql
+       update_SQL varchar2(1000);   --ä¿®æ”¹ç”¨æˆ·ä½™é¢sql
 
-       NO_BATCHID_RECORD exception;   --Åú´ÎºÅ²»´æÔÚÒì³£
+       NO_BATCHID_RECORD exception;   --æ‰¹æ¬¡å·ä¸å­˜åœ¨å¼‚å¸¸
 
-       NO_ORG_RECORD EXCEPTION; --»ú¹¹²»´æÔÚ
+       NO_ORG_RECORD EXCEPTION; --æœºæ„ä¸å­˜åœ¨
 
-       NO_USER_RECORD EXCEPTION; --ÓÃ»§²»´æÔÚ
+       NO_USER_RECORD EXCEPTION; --ç”¨æˆ·ä¸å­˜åœ¨
 
-       NO_PAY_MODE_RECORD EXCEPTION;  --¼Æ·Ñµ¥Î»²»´æÔÚ
+       NO_PAY_MODE_RECORD EXCEPTION;  --è®¡è´¹å•ä½ä¸å­˜åœ¨
 
-       NO_FEE_MODE_RECORD EXCEPTION;  --¿Û·Ñ·½Ê½²»´æÔÚ
+       NO_FEE_MODE_RECORD EXCEPTION;  --æ‰£è´¹æ–¹å¼ä¸å­˜åœ¨
 
-       TYPE My_CurType IS REF CURSOR;                              --¶¨ÒåÓÎ±êÀàĞÍ
-       c_consume My_CurType;                                       --Ö¸Ê¾c_consumeµÄÀàĞÍÎªMy_CurType£¬¶øMy_CurTypeÊÇÓÎ±êÀàĞÍ
-       v_batchId consume_record_info.batch_id%type;                --Åú´ÎºÅid
-       v_organizationId consume_record_info.organization_id%type;  --»ú¹¹id
-       v_userId consume_record_info.consumer_id%type;              --ÓÃ»§userId
-       v_payMode organization.pay_mode%type;                       --¼Æ·Ñµ¥Î», 0:Åä¶î¸¶·Ñ, 1:½ğ¶î¸¶·Ñ
-       v_feeMode consume_record_info.fee_mode%type;                --¿Û·Ñ·½Ê½, 0:×Ô¸¶·Ñ, 1:×é¸¶·Ñ
-       v_costFee consume_record_info.cost_fee%type;                --¿Û·Ñ½ğ¶î
-       v_sendQuantity consume_record_info.send_quantity%type;       --·¢ËÍÌõÊı
+       TYPE My_CurType IS REF CURSOR;                              --å®šä¹‰æ¸¸æ ‡ç±»å‹
+       c_consume My_CurType;                                       --æŒ‡ç¤ºc_consumeçš„ç±»å‹ä¸ºMy_CurTypeï¼Œè€ŒMy_CurTypeæ˜¯æ¸¸æ ‡ç±»å‹
+       v_batchId consume_record_info.batch_id%type;                --æ‰¹æ¬¡å·id
+       v_organizationId consume_record_info.organization_id%type;  --æœºæ„id
+       v_userId consume_record_info.consumer_id%type;              --ç”¨æˆ·userId
+       v_payMode organization.pay_mode%type;                       --è®¡è´¹å•ä½, 0:é…é¢ä»˜è´¹, 1:é‡‘é¢ä»˜è´¹
+       v_feeMode consume_record_info.fee_mode%type;                --æ‰£è´¹æ–¹å¼, 0:è‡ªä»˜è´¹, 1:ç»„ä»˜è´¹
+       v_costFee consume_record_info.cost_fee%type;                --æ‰£è´¹é‡‘é¢
+       v_sendQuantity consume_record_info.send_quantity%type;       --å‘é€æ¡æ•°
 begin
         update_SQL :='';
 
@@ -19243,7 +19243,7 @@ begin
                     left join user_info u on u.user_id = cr.consumer_id
                     left join organization o on o.user_id = cr.organization_id';
         if p_batchId is null then
-             RAISE NO_BATCHID_RECORD; --Åú´ÎºÅ²»´æÔÚÊ±Å×³öÒì³£
+             RAISE NO_BATCHID_RECORD; --æ‰¹æ¬¡å·ä¸å­˜åœ¨æ—¶æŠ›å‡ºå¼‚å¸¸
         ELSE
              query_SQL := ' and cr.batch_id='''||p_batchId||'''';
         end if;
@@ -19257,21 +19257,21 @@ begin
                           ';
 
         DBMS_OUTPUT.PUT_LINE(query_SQL);
-     /*  --µ÷ÊÔ´úÂë:²åÈëÁÙÊ±±í£¬²é¿´sql
-       insert into temp_table_test (CREATE_SQL, CREATE_TIME)values ('²éÑ¯¼Æ·ÑÓÃµÄsql'||query_SQL,sysdate);
+     /*  --è°ƒè¯•ä»£ç :æ’å…¥ä¸´æ—¶è¡¨ï¼ŒæŸ¥çœ‹sql
+       insert into temp_table_test (CREATE_SQL, CREATE_TIME)values ('æŸ¥è¯¢è®¡è´¹ç”¨çš„sql'||query_SQL,sysdate);
      */
 
-        if c_consume%isopen then --·ÀÖ¹ÉÏ´ÎÓÎ±êÎ´¹Ø±Õ
+        if c_consume%isopen then --é˜²æ­¢ä¸Šæ¬¡æ¸¸æ ‡æœªå…³é—­
           close c_consume;
         end if;
 
         open c_consume for query_SQL;
 
         loop
-          fetch c_consume into v_batchId,v_sendQuantity,v_costFee,v_userId,v_organizationId,v_payMode,v_feeMode; --ÌáÈ¡ÓÎ±ê
+          fetch c_consume into v_batchId,v_sendQuantity,v_costFee,v_userId,v_organizationId,v_payMode,v_feeMode; --æå–æ¸¸æ ‡
             exit when c_consume%notfound;
 
-             --Òì³£´¦Àí
+             --å¼‚å¸¸å¤„ç†
              if v_feeMode is null then
                 RAISE NO_FEE_MODE_RECORD;
              end if;
@@ -19285,15 +19285,15 @@ begin
                 RAISE NO_USER_RECORD;
              end if;
 
-             --Èç¹ûÊÇ×é¸¶·Ñ
+             --å¦‚æœæ˜¯ç»„ä»˜è´¹
              if v_feeMode is not null and v_payMode is not null and v_organizationId is not null then
                 if v_feeMode=1 then
-                   --Èç¹ûÊÇÅä¶î»ú¹¹,·µ»¹¶ÌĞÅÌõÊı
+                   --å¦‚æœæ˜¯é…é¢æœºæ„,è¿”è¿˜çŸ­ä¿¡æ¡æ•°
                    if v_payMode=0 then
                        update_SQL :='update organization o
                           set o.user_quota = o.user_quota + '||v_sendQuantity||' where o.user_id = '''||v_organizationId||'''';
                    end if;
-                   --Èç¹ûÊÇ½ğ¶î»ú¹¹,·µ»¹½ğ¶îÊı
+                   --å¦‚æœæ˜¯é‡‘é¢æœºæ„,è¿”è¿˜é‡‘é¢æ•°
                    if v_payMode=1 then
                        update_SQL :='update organization o
                           set o.user_balance = o.user_balance + '||v_costFee||' where o.user_id = '''||v_organizationId||'''';
@@ -19301,15 +19301,15 @@ begin
                 end if;
             end if;
 
-           --Èç¹ûÊÇ×Ô¸¶·Ñ
+           --å¦‚æœæ˜¯è‡ªä»˜è´¹
              if v_feeMode is not null and v_payMode is not null and v_userId is not null then
                 if v_feeMode=0 then
-                   --Èç¹ûÊÇÅä¶îÓÃ»§,·µ»¹¶ÌĞÅÌõÊı
+                   --å¦‚æœæ˜¯é…é¢ç”¨æˆ·,è¿”è¿˜çŸ­ä¿¡æ¡æ•°
                    if v_payMode=0 then
                        update_SQL :='update user_info u
                           set u.user_quota = u.user_quota + '||v_sendQuantity||' where u.user_id = single_cursor.user_id';
                    end if;
-                   --Èç¹ûÊÇ½ğ¶îÓÃ»§,·µ»¹½ğ¶îÊı
+                   --å¦‚æœæ˜¯é‡‘é¢ç”¨æˆ·,è¿”è¿˜é‡‘é¢æ•°
                    if v_payMode=1 then
                       update_SQL :='update user_info u
                          set u.user_balance = u.user_balance + '||v_costFee||' where u.user_id = single_cursor.user_id';
@@ -19318,42 +19318,42 @@ begin
              end if;
 
             DBMS_OUTPUT.PUT_LINE(update_SQL);
-         /*   --µ÷ÊÔ´úÂë:²åÈëÁÙÊ±±í£¬²é¿´sql
-           insert into temp_table_test (CREATE_SQL, CREATE_TIME)values ('ĞŞ¸Ä¼Æ·ÑÓÃµÄsql'||update_SQL,sysdate);
+         /*   --è°ƒè¯•ä»£ç :æ’å…¥ä¸´æ—¶è¡¨ï¼ŒæŸ¥çœ‹sql
+           insert into temp_table_test (CREATE_SQL, CREATE_TIME)values ('ä¿®æ”¹è®¡è´¹ç”¨çš„sql'||update_SQL,sysdate);
          */
 
             execute immediate update_SQL;
        end loop;
 
            commit;
-           DBMS_OUTPUT.PUT_LINE('============·µ»Ø·ÑÓÃ³É¹¦==========');
+           DBMS_OUTPUT.PUT_LINE('============è¿”å›è´¹ç”¨æˆåŠŸ==========');
        close c_consume;
 
        exception
              when NO_BATCHID_RECORD then
-                   DBMS_OUTPUT.PUT_LINE('Åú´ÎºÅÎª¿Õ');
+                   DBMS_OUTPUT.PUT_LINE('æ‰¹æ¬¡å·ä¸ºç©º');
                    RUN_RESULT    := 1;
-                   RUN_EXCEPTION := 'Åú´ÎºÅÎª¿Õ';
+                   RUN_EXCEPTION := 'æ‰¹æ¬¡å·ä¸ºç©º';
                    ROLLBACK;
              when NO_ORG_RECORD then
-                   DBMS_OUTPUT.PUT_LINE('»ú¹¹²»´æÔÚ');
+                   DBMS_OUTPUT.PUT_LINE('æœºæ„ä¸å­˜åœ¨');
                    RUN_RESULT    := 2;
-                   RUN_EXCEPTION := '»ú¹¹²»´æÔÚ';
+                   RUN_EXCEPTION := 'æœºæ„ä¸å­˜åœ¨';
                    ROLLBACK;
              when NO_USER_RECORD then
-                   DBMS_OUTPUT.PUT_LINE('ÓÃ»§²»´æÔÚ');
+                   DBMS_OUTPUT.PUT_LINE('ç”¨æˆ·ä¸å­˜åœ¨');
                    RUN_RESULT    := 3;
-                   RUN_EXCEPTION := 'ÓÃ»§²»´æÔÚ';
+                   RUN_EXCEPTION := 'ç”¨æˆ·ä¸å­˜åœ¨';
                    ROLLBACK;
              when NO_PAY_MODE_RECORD then
-                   DBMS_OUTPUT.PUT_LINE('¼Æ·Ñµ¥Î»²»´æÔÚ');
+                   DBMS_OUTPUT.PUT_LINE('è®¡è´¹å•ä½ä¸å­˜åœ¨');
                    RUN_RESULT    := 4;
-                   RUN_EXCEPTION := '¼Æ·Ñµ¥Î»²»´æÔÚ';
+                   RUN_EXCEPTION := 'è®¡è´¹å•ä½ä¸å­˜åœ¨';
                    ROLLBACK;
              when NO_FEE_MODE_RECORD then
-                   DBMS_OUTPUT.PUT_LINE('¿Û·Ñ·½Ê½²»´æÔÚ');
+                   DBMS_OUTPUT.PUT_LINE('æ‰£è´¹æ–¹å¼ä¸å­˜åœ¨');
                    RUN_RESULT    := 5;
-                   RUN_EXCEPTION := '¿Û·Ñ·½Ê½²»´æÔÚ';
+                   RUN_EXCEPTION := 'æ‰£è´¹æ–¹å¼ä¸å­˜åœ¨';
                    ROLLBACK;
             WHEN OTHERS THEN
                    DBMS_OUTPUT.PUT_LINE(SQLCODE || '----' || SQLERRM);
@@ -19386,12 +19386,12 @@ create or replace procedure mc.P_SMS_RETURN_FEE is
              where 1=1
                and s1.sys_time <=CAST(sysdate AS TIMESTAMP)
                and s1.sys_time >=CAST(trunc(sysdate)-3 AS TIMESTAMP)
-               --and s1.receive_id is null                        -- ·ÇCMPP½Ó¿Ú¹ıÀ´µÄ¶ÌĞÅ
-               and s1.send_status = 6                           --·¢ËÍÀàĞÍ:·¢ËÍÊ§°Ü
-               and (s1.return_fee=0 or s1.return_fee is null)   --·µ»Ø·ÑÓÃ:Î´·µ»Ø·ÑÓÃ
-               and o.deduct_mode=1                              --¼Æ·ÑÀàĞÍ:³É¹¦¼Æ·Ñ
-               and o.pay_type=0                                 --³äÖµÀàĞÍ:Ô¤¸¶·Ñ
-               and (s1.msg_type =any('common','batch','template','vercode') and  ti.time_task=0 or s1.msg_type =any('http','webservice'))     --ÊÇ·ñ¶¨Ê±ÈÎÎñ£º0²»ÊÇ 1ÊÇ
+               --and s1.receive_id is null                        -- éCMPPæ¥å£è¿‡æ¥çš„çŸ­ä¿¡
+               and s1.send_status = 6                           --å‘é€ç±»å‹:å‘é€å¤±è´¥
+               and (s1.return_fee=0 or s1.return_fee is null)   --è¿”å›è´¹ç”¨:æœªè¿”å›è´¹ç”¨
+               and o.deduct_mode=1                              --è®¡è´¹ç±»å‹:æˆåŠŸè®¡è´¹
+               and o.pay_type=0                                 --å……å€¼ç±»å‹:é¢„ä»˜è´¹
+               and (s1.msg_type =any('common','batch','template','vercode') and  ti.time_task=0 or s1.msg_type =any('http','webservice'))     --æ˜¯å¦å®šæ—¶ä»»åŠ¡ï¼š0ä¸æ˜¯ 1æ˜¯
                and ((s1.is_original_sms=0 and c.link_mode != all('CMPP2','SGIP','SMGP3')) or (s1.mobile_quantities=1 and c.link_mode = any('CMPP2','SGIP','SMGP3')))
              group by s1.user_id,s1.unit_price,to_char(s1.send_time, 'yyyymmdd'), o.fee_mode,o.parentid, u.organization_id
          union all
@@ -19411,18 +19411,18 @@ create or replace procedure mc.P_SMS_RETURN_FEE is
              where 1=1
                and s1.send_time <=CAST(sysdate AS TIMESTAMP)
                and s1.send_time >=CAST(trunc(sysdate)-3 AS TIMESTAMP)
-               --and s1.receive_id is null                        -- ·ÇCMPP½Ó¿Ú¹ıÀ´µÄ¶ÌĞÅ
-               and s1.send_status = 6                           --·¢ËÍÀàĞÍ:·¢ËÍÊ§°Ü
-               and (s1.return_fee=0 or s1.return_fee is null)   --·µ»Ø·ÑÓÃ:Î´·µ»Ø·ÑÓÃ
-               and o.deduct_mode=1                              --¼Æ·ÑÀàĞÍ:³É¹¦¼Æ·Ñ
-               and o.pay_type=0                                 --³äÖµÀàĞÍ:Ô¤¸¶·Ñ
-               and ti.time_task=1                               --ÊÇ·ñ¶¨Ê±ÈÎÎñ£º0²»ÊÇ 1ÊÇ
+               --and s1.receive_id is null                        -- éCMPPæ¥å£è¿‡æ¥çš„çŸ­ä¿¡
+               and s1.send_status = 6                           --å‘é€ç±»å‹:å‘é€å¤±è´¥
+               and (s1.return_fee=0 or s1.return_fee is null)   --è¿”å›è´¹ç”¨:æœªè¿”å›è´¹ç”¨
+               and o.deduct_mode=1                              --è®¡è´¹ç±»å‹:æˆåŠŸè®¡è´¹
+               and o.pay_type=0                                 --å……å€¼ç±»å‹:é¢„ä»˜è´¹
+               and ti.time_task=1                               --æ˜¯å¦å®šæ—¶ä»»åŠ¡ï¼š0ä¸æ˜¯ 1æ˜¯
                and ((s1.is_original_sms=0 and c.link_mode != all('CMPP2','SGIP','SMGP3')) or (s1.mobile_quantities=1 and c.link_mode = any('CMPP2','SGIP','SMGP3')))
              group by s1.user_id,s1.unit_price,to_char(s1.send_time, 'yyyymmdd'), o.fee_mode,o.parentid, u.organization_id;
 
       single_cursor c_consume%rowtype;
-      v_payMode organization.pay_mode%type;                     --ÓÃ»§ËùÊôµÄÇşµÀ¼Æ·Ñµ¥Î», 0:Åä¶î¸¶·Ñ, 1:½ğ¶î¸¶·Ñ
-      orgCount number;                                          --²éÑ¯»ú¹¹Óà¶îÊÇ·ñÒÑ¾­´æÔÚÓà¶î±í
+      v_payMode organization.pay_mode%type;                     --ç”¨æˆ·æ‰€å±çš„æ¸ é“è®¡è´¹å•ä½, 0:é…é¢ä»˜è´¹, 1:é‡‘é¢ä»˜è´¹
+      orgCount number;                                          --æŸ¥è¯¢æœºæ„ä½™é¢æ˜¯å¦å·²ç»å­˜åœ¨ä½™é¢è¡¨
 
 begin
       if c_consume%isopen then
@@ -19434,7 +19434,7 @@ begin
              fetch c_consume into single_cursor;
                exit when c_consume%notfound;
                --DBMS_OUTPUT.PUT_LINE(single_cursor.user_id||'--'||nvl(single_cursor.failTotalFee,0)||'---'||single_cursor.fee_mode);
-                --²éÑ¯´ËÓÃ»§µÄÇşµÀµÄ¼Æ·Ñµ¥Î», 0:Åä¶î¸¶·Ñ, 1:½ğ¶î¸¶·Ñ
+                --æŸ¥è¯¢æ­¤ç”¨æˆ·çš„æ¸ é“çš„è®¡è´¹å•ä½, 0:é…é¢ä»˜è´¹, 1:é‡‘é¢ä»˜è´¹
                 if single_cursor.organization_id != '1' then
                     SELECT o.pay_mode into v_payMode
                     FROM organization o
@@ -19447,87 +19447,87 @@ begin
                 end if;
 
                --DBMS_OUTPUT.PUT_LINE(single_cursor.user_id||'--'||nvl(single_cursor.failTotalFee,0)||'---'||single_cursor.fee_mode);
-               --Èç¹ûÊÇ×Ô¸¶·Ñ
+               --å¦‚æœæ˜¯è‡ªä»˜è´¹
                if single_cursor.fee_mode is not null and single_cursor.user_id is not null then
                  if single_cursor.fee_mode=0 then
-                   --ÎŞÂÛÊÇÅä¶îÓÃ»§»¹ÊÇ½ğ¶îÓÃ»§,¶¼·µ»¹¶ÌĞÅÌõÊı
+                   --æ— è®ºæ˜¯é…é¢ç”¨æˆ·è¿˜æ˜¯é‡‘é¢ç”¨æˆ·,éƒ½è¿”è¿˜çŸ­ä¿¡æ¡æ•°
                        update user_info u
                           set u.user_quota = u.user_quota + nvl(single_cursor.failTotalQuata,0)
                         where u.user_id = single_cursor.user_id;
-                      /* ĞŞ¸ÄÓà¶î±í,½ğ¶îÇşµÀÈôÊÇ×Ô¸¶·Ñ£¬ÇşµÀ×ÔÉíÓÃ»§²åÈëÓà¶î±í
-                       * ½ğ¶îÇşµÀÏÂµÄ×Ó»ú¹¹£¬ÈôÊÇ×Ô¸¶·Ñ£¬Ò²Òª²åÈëÓà¶î±í
+                      /* ä¿®æ”¹ä½™é¢è¡¨,é‡‘é¢æ¸ é“è‹¥æ˜¯è‡ªä»˜è´¹ï¼Œæ¸ é“è‡ªèº«ç”¨æˆ·æ’å…¥ä½™é¢è¡¨
+                       * é‡‘é¢æ¸ é“ä¸‹çš„å­æœºæ„ï¼Œè‹¥æ˜¯è‡ªä»˜è´¹ï¼Œä¹Ÿè¦æ’å…¥ä½™é¢è¡¨
                        */
                       if v_payMode = 1 then
-                          --²éÑ¯ÓÃ»§ÊÇ·ñÓĞÕâ¸öĞ­Òé¼ÛµÄÓà¶î
+                          --æŸ¥è¯¢ç”¨æˆ·æ˜¯å¦æœ‰è¿™ä¸ªåè®®ä»·çš„ä½™é¢
                           select count(1) into orgCount
                           from org_remain_balance orb
                           where orb.user_id = single_cursor.user_id
                           and orb.unit_price =single_cursor.unit_price
                           and orb.status=1;
-                          --ÓĞ´ËĞ­Òé¼ÛÓà¶î£¬Ôö¼ÓÓà¶î
+                          --æœ‰æ­¤åè®®ä»·ä½™é¢ï¼Œå¢åŠ ä½™é¢
                           if orgCount>0 then
                             update org_remain_balance orb
                             set orb.sms_quota = orb.sms_quota + nvl(single_cursor.failTotalQuata,0),
                             orb.last_update_quota_date = sysdate,orb.update_user='SYS_JOB_RETURN_FEE'
                             where orb.user_id = single_cursor.user_id
                             and orb.unit_price =single_cursor.unit_price;
-                          --Ã»ÓĞ´ËĞ­Òé¼ÛÓà¶î£¬²åÈëÓà¶î
+                          --æ²¡æœ‰æ­¤åè®®ä»·ä½™é¢ï¼Œæ’å…¥ä½™é¢
                           elsif orgCount=0 then
                              insert into org_remain_balance
                              (ROW_ID, USER_ID, STATUS, SMS_QUOTA, UNIT_PRICE, GW_TYPE, UPDATE_UNITPRICE_DATE, UPDATE_USER, REMARK, LAST_UPDATE_QUOTA_DATE, USER_TYPE,MMS_QUOTA)
                              values
-                             (sys_guid(), single_cursor.user_id,1, nvl(single_cursor.failTotalQuata,0), single_cursor.unit_price,0, sysdate, 'SYS_JOB_RETURN_FEE', '·µ»ØÓÃ»§·ÑÓÃ²åÈëÓà¶î±í', sysdate, 0,0);
+                             (sys_guid(), single_cursor.user_id,1, nvl(single_cursor.failTotalQuata,0), single_cursor.unit_price,0, sysdate, 'SYS_JOB_RETURN_FEE', 'è¿”å›ç”¨æˆ·è´¹ç”¨æ’å…¥ä½™é¢è¡¨', sysdate, 0,0);
                           end if;
                       end if;
                  end if;
                end if;
 
-               --Èç¹ûÊÇ×é¸¶·Ñ
+               --å¦‚æœæ˜¯ç»„ä»˜è´¹
                if single_cursor.fee_mode is not null and v_payMode is not null then
                   if single_cursor.fee_mode=1 then
-                     --ÇşµÀ(·Ö½ğ¶îÇşµÀ£¬Åä¶îÇşµÀ)
+                     --æ¸ é“(åˆ†é‡‘é¢æ¸ é“ï¼Œé…é¢æ¸ é“)
                      if single_cursor.parentid = '1' or single_cursor.parentid = '0' then
-                          --Èç¹ûÊÇÅä¶î»ú¹¹,·µ»¹¶ÌĞÅÌõÊı
+                          --å¦‚æœæ˜¯é…é¢æœºæ„,è¿”è¿˜çŸ­ä¿¡æ¡æ•°
                          if v_payMode=0 then
                              update organization o
                                 set o.user_quota = o.user_quota + nvl(single_cursor.failTotalQuata,0)
                               where o.user_id = single_cursor.organization_id;
                          end if;
-                         --Èç¹ûÊÇ½ğ¶î»ú¹¹,·µ»¹½ğ¶îÊı
+                         --å¦‚æœæ˜¯é‡‘é¢æœºæ„,è¿”è¿˜é‡‘é¢æ•°
                          if v_payMode=1 then
                              update organization o
                                 set o.user_balance = o.user_balance + nvl(single_cursor.failTotalFee,0)
                               where o.user_id = single_cursor.organization_id;
                          end if;
-                     --ÇşµÀÏÂÊôµÄ×Ó»ú¹¹£¨È«ÊÇÅä¶î£¬Ö±½Ó·µ»ØÌõÊı£©
+                     --æ¸ é“ä¸‹å±çš„å­æœºæ„ï¼ˆå…¨æ˜¯é…é¢ï¼Œç›´æ¥è¿”å›æ¡æ•°ï¼‰
                      elsif single_cursor.parentid != '1' and single_cursor.parentid != '0' then
-                         --ÒÔºó¿Û·ÑÊ±£¬½ğ¶îÏÂÊô»ú¹¹µÄÓà¶î²»ÔÙÆğ×÷ÓÃ£¬ËüµÄ×÷ÓÃÖ»ÊÇ²é¿´×ÜÌõÊı
+                         --ä»¥åæ‰£è´¹æ—¶ï¼Œé‡‘é¢ä¸‹å±æœºæ„çš„ä½™é¢ä¸å†èµ·ä½œç”¨ï¼Œå®ƒçš„ä½œç”¨åªæ˜¯æŸ¥çœ‹æ€»æ¡æ•°
                          update organization o
                          set o.user_quota = o.user_quota + nvl(single_cursor.failTotalQuata,0)
                          where o.user_id = single_cursor.organization_id;
 
-                         /*½ğ¶îÇşµÀ£¬ÏÂÊô×Ó»ú¹¹£¬²åÈëÓà¶îµ½Óà¶î±í*/
+                         /*é‡‘é¢æ¸ é“ï¼Œä¸‹å±å­æœºæ„ï¼Œæ’å…¥ä½™é¢åˆ°ä½™é¢è¡¨*/
 
                          if v_payMode=1 then
-                            --²éÑ¯ÓÃ»§ÊÇ·ñÓĞÕâ¸öĞ­Òé¼ÛµÄÓà¶î
+                            --æŸ¥è¯¢ç”¨æˆ·æ˜¯å¦æœ‰è¿™ä¸ªåè®®ä»·çš„ä½™é¢
                             select count(1) into orgCount
                             from org_remain_balance orb
                             where orb.user_id = single_cursor.organization_id
                             and orb.unit_price =single_cursor.unit_price
                             and orb.status=1;
-                            --ÓĞ´ËĞ­Òé¼ÛÓà¶î£¬Ôö¼ÓÓà¶î
+                            --æœ‰æ­¤åè®®ä»·ä½™é¢ï¼Œå¢åŠ ä½™é¢
                             if orgCount>0 then
                               update org_remain_balance orb
                               set orb.sms_quota = orb.sms_quota + nvl(single_cursor.failTotalQuata,0),
                               orb.last_update_quota_date = sysdate,orb.update_user='SYS_JOB_RETURN_FEE'
                               where orb.user_id = single_cursor.organization_id
                               and orb.unit_price =single_cursor.unit_price;
-                            --Ã»ÓĞ´ËĞ­Òé¼ÛÓà¶î£¬²åÈëÓà¶î
+                            --æ²¡æœ‰æ­¤åè®®ä»·ä½™é¢ï¼Œæ’å…¥ä½™é¢
                             elsif orgCount=0 then
                                insert into org_remain_balance
                                (ROW_ID, USER_ID, STATUS, SMS_QUOTA, UNIT_PRICE, GW_TYPE, UPDATE_UNITPRICE_DATE, UPDATE_USER, REMARK, LAST_UPDATE_QUOTA_DATE, USER_TYPE,MMS_QUOTA)
                                values
-                               (sys_guid(), single_cursor.organization_id,1, nvl(single_cursor.failTotalQuata,0), single_cursor.unit_price,0, sysdate, 'SYS_JOB_RETURN_FEE', '·µ»Ø»ú¹¹·ÑÓÃ²åÈëÓà¶î±í', sysdate, 1,0);
+                               (sys_guid(), single_cursor.organization_id,1, nvl(single_cursor.failTotalQuata,0), single_cursor.unit_price,0, sysdate, 'SYS_JOB_RETURN_FEE', 'è¿”å›æœºæ„è´¹ç”¨æ’å…¥ä½™é¢è¡¨', sysdate, 1,0);
                             end if;
                          end if;
                      end if;
@@ -19536,7 +19536,7 @@ begin
                   end if;
               end if;
 
-              --ĞŞ¸Ä¶ÌĞÅ×´Ì¬Îª:ÒÑ·µ·ÑÓÃ
+              --ä¿®æ”¹çŸ­ä¿¡çŠ¶æ€ä¸º:å·²è¿”è´¹ç”¨
                update send s set s.return_fee=1 where s.send_id in
                  (select s1.send_id
                       from send s1
@@ -19545,43 +19545,43 @@ begin
                       left join channel_info c on s1.channel_id = c.channel_id
                      where to_char(s1.send_time, 'yyyymmdd') =single_cursor.send_time
                        and s1.user_id=single_cursor.user_id
-                       and s1.receive_id is null                        -- ·ÇCMPP½Ó¿Ú¹ıÀ´µÄ¶ÌĞÅ
-                       and s1.send_status = 6                           --·¢ËÍÀàĞÍ:·¢ËÍÊ§°Ü
-                       and o.deduct_mode=1                              --¼Æ·ÑÀàĞÍ:³É¹¦¼Æ·Ñ
-                       and o.pay_type=0                                 --³äÖµÀàĞÍ:Ô¤¸¶·Ñ
-                       --and s1.deduct_fee_status !=0                      --¿Û·Ñ×´Ì¬:³É¹¦
+                       and s1.receive_id is null                        -- éCMPPæ¥å£è¿‡æ¥çš„çŸ­ä¿¡
+                       and s1.send_status = 6                           --å‘é€ç±»å‹:å‘é€å¤±è´¥
+                       and o.deduct_mode=1                              --è®¡è´¹ç±»å‹:æˆåŠŸè®¡è´¹
+                       and o.pay_type=0                                 --å……å€¼ç±»å‹:é¢„ä»˜è´¹
+                       --and s1.deduct_fee_status !=0                      --æ‰£è´¹çŠ¶æ€:æˆåŠŸ
                        and ((s1.is_original_sms=0 and c.link_mode != all('CMPP2','SGIP','SMGP3'))
                        or (s1.mobile_quantities=1 and c.link_mode = any('CMPP2','SGIP','SMGP3'))));
 
-                --²åÈë³äÖµ¼ÇÂ¼±í
-                 --Èç¹ûÊÇ×é¸¶·Ñ
+                --æ’å…¥å……å€¼è®°å½•è¡¨
+                 --å¦‚æœæ˜¯ç»„ä»˜è´¹
                  if single_cursor.fee_mode=1 then
-                     --ÇşµÀ
+                     --æ¸ é“
                      if single_cursor.parentid = '1' or single_cursor.parentid = '0' then
-                          --Èç¹ûÊÇÅä¶î»ú¹¹,·µ»¹¶ÌĞÅÌõÊı
+                          --å¦‚æœæ˜¯é…é¢æœºæ„,è¿”è¿˜çŸ­ä¿¡æ¡æ•°
                          if v_payMode=0 then
                               insert into payment_record
                               (PAYMENT_ID, USER_ID, PAYMENT_TIME, PAYMENT_MONEY, PAYMENT_QUOTA,OPERATOR_ID, PAYMENT_TYPE,IS_ONLINE, USER_TYPE,RECHARGE_EXPLAIN,QUOTA_TYPE,IS_SUCCESS)
                               values
-                              (sys_guid(), single_cursor.organization_id,sysdate,0, nvl(single_cursor.failTotalQuata,0), 'SYS_JOB_RETURN_FEE', 6, 0,1, '·µ»¹·¢ËÍÊ§°Ü¶ÌĞÅÅä¶î',1, 1);
+                              (sys_guid(), single_cursor.organization_id,sysdate,0, nvl(single_cursor.failTotalQuata,0), 'SYS_JOB_RETURN_FEE', 6, 0,1, 'è¿”è¿˜å‘é€å¤±è´¥çŸ­ä¿¡é…é¢',1, 1);
                          end if;
-                         --Èç¹ûÊÇ½ğ¶î»ú¹¹,·µ»¹½ğ¶îÊı
+                         --å¦‚æœæ˜¯é‡‘é¢æœºæ„,è¿”è¿˜é‡‘é¢æ•°
                          if v_payMode=1 then
                               insert into payment_record
                               (PAYMENT_ID, USER_ID, PAYMENT_TIME, PAYMENT_MONEY, PAYMENT_QUOTA,OPERATOR_ID, PAYMENT_TYPE, IS_ONLINE, USER_TYPE, RECHARGE_EXPLAIN, QUOTA_TYPE,IS_SUCCESS)
                               values
-                              (sys_guid(),single_cursor.organization_id,sysdate, nvl(single_cursor.failTotalFee,0), 0, 'SYS_JOB_RETURN_FEE', 7, 0, 1, '·µ»¹·¢ËÍÊ§°Ü¶ÌĞÅ½ğ¶î',1, 1);
+                              (sys_guid(),single_cursor.organization_id,sysdate, nvl(single_cursor.failTotalFee,0), 0, 'SYS_JOB_RETURN_FEE', 7, 0, 1, 'è¿”è¿˜å‘é€å¤±è´¥çŸ­ä¿¡é‡‘é¢',1, 1);
                          end if;
-                     --ÇşµÀÏÂÊôµÄ×Ó»ú¹¹£¨È«ÊÇÅä¶î£¬Ö±½Ó·µ»ØÌõÊı£©
+                     --æ¸ é“ä¸‹å±çš„å­æœºæ„ï¼ˆå…¨æ˜¯é…é¢ï¼Œç›´æ¥è¿”å›æ¡æ•°ï¼‰
                      elsif single_cursor.parentid != '1' and single_cursor.parentid != '0' then
                              insert into payment_record
                              (PAYMENT_ID, USER_ID, PAYMENT_TIME, PAYMENT_MONEY, PAYMENT_QUOTA,OPERATOR_ID, PAYMENT_TYPE,IS_ONLINE, USER_TYPE,RECHARGE_EXPLAIN,QUOTA_TYPE,IS_SUCCESS)
                              values
-                             (sys_guid(), single_cursor.organization_id,sysdate,0, nvl(single_cursor.failTotalQuata,0), 'SYS_JOB_RETURN_FEE', 6, 0,1, '·µ»¹·¢ËÍÊ§°Ü¶ÌĞÅÅä¶î',1, 1);
+                             (sys_guid(), single_cursor.organization_id,sysdate,0, nvl(single_cursor.failTotalQuata,0), 'SYS_JOB_RETURN_FEE', 6, 0,1, 'è¿”è¿˜å‘é€å¤±è´¥çŸ­ä¿¡é…é¢',1, 1);
                      end if;
                end if;
 
-               --Èç¹ûÊÇ×Ô¸¶·Ñ
+               --å¦‚æœæ˜¯è‡ªä»˜è´¹
                if single_cursor.fee_mode=0 then
                   insert into payment_record
                           (PAYMENT_ID,
@@ -19606,7 +19606,7 @@ begin
                            6,
                            0,
                            0,
-                           '·µ»¹·¢ËÍÊ§°Ü¶ÌĞÅÅä¶î',
+                           'è¿”è¿˜å‘é€å¤±è´¥çŸ­ä¿¡é…é¢',
                            1,
                            1);
                end if;
@@ -19629,17 +19629,17 @@ prompt =====================================
 prompt
 create or replace procedure mc.P_SMS_SEND_ANALYZE(p_date varchar2)
 is
-       v_sendTime date;--´æ¿ªÊ¼ÈÕÆÚ
+       v_sendTime date;--å­˜å¼€å§‹æ—¥æœŸ
        v_tempTime date;
        v_sendEndTime date;
        v_isHasTable varchar2(50);
        v_curTableName varchar2(50);
        v_count number(2);
-       v_debug number(1); --ÊÇ·ñ´òµ÷ÊÔĞÅÏ¢, 0:²»´ò £»1£º´ò
+       v_debug number(1); --æ˜¯å¦æ‰“è°ƒè¯•ä¿¡æ¯, 0:ä¸æ‰“ ï¼›1ï¼šæ‰“
        v_del_SQL varchar2(8000);
        v_child_SQL varchar2(8000);
        v_SQL_TMP varchar2(8000);
-       v_SQL varchar2(8000); -- Æ´½ÓµÄ»ù´¡SQL
+       v_SQL varchar2(8000); -- æ‹¼æ¥çš„åŸºç¡€SQL
 begin
      v_isHasTable := '';
      v_SQL_TMP := '';
@@ -19650,7 +19650,7 @@ begin
      v_count := 0;
 
           if p_date is null  then
-            --É¾³ıÈıÌìÇ°·¢ËÍ¶ÌĞÅµÄÍ³¼ÆµÄÊı¾İ ¿ªÊ¼
+            --åˆ é™¤ä¸‰å¤©å‰å‘é€çŸ­ä¿¡çš„ç»Ÿè®¡çš„æ•°æ® å¼€å§‹
             v_sendTime := trunc(sysdate -3);
             v_tempTime := v_sendTime;
             v_del_SQL :=  'delete from sms_send_analyze ssa where ssa.stat_time >= to_number( to_char(to_date(''' || v_sendTime ||'''),''YYYYMMDD''))';
@@ -19660,9 +19660,9 @@ begin
            end if;
 
           execute immediate v_del_SQL;
-           --É¾³ıÈıÌìÇ°·¢ËÍ¶ÌĞÅµÄÍ³¼ÆµÄÊı¾İ ½áÊø
+           --åˆ é™¤ä¸‰å¤©å‰å‘é€çŸ­ä¿¡çš„ç»Ÿè®¡çš„æ•°æ® ç»“æŸ
           -- commit;
-           --Ô¤Í³¼ÆÈıÌìÇ°·¢ËÍ¶ÌĞÅÊıÁ¿
+           --é¢„ç»Ÿè®¡ä¸‰å¤©å‰å‘é€çŸ­ä¿¡æ•°é‡
 
            v_child_SQL := ' select to_number(to_char(ss.sys_time,''YYYYMMDD''))  as sysdat,o.parentid as parent_org_id,ss.user_organization as org_id,ss.user_id,ss.send_status,ss.mobile_quantities from send ss left join organization o on ss.user_organization = o.user_id  where  ss.MOBILE_QUANTITIES = 1  and ss.send_status in (0,1,5,6,7) and ss.sys_time >= to_date(''' || to_char(v_sendTime, 'YYYYMMDD') || ''', ''YYYYMMDD'') and o.parentid not in (''0'',''1'')
                   union all select to_number(to_char(ss.sys_time,''YYYYMMDD''))  as sysdat,ss.user_organization as parent_org_id,ss.user_organization as org_id,ss.user_id,ss.send_status,ss.mobile_quantities from send ss left join organization o on ss.user_organization = o.user_id  where  ss.MOBILE_QUANTITIES = 1 and ss.send_status in (0,1,5,6,7) and ss.sys_time >= to_date(''' || to_char(v_sendTime, 'YYYYMMDD') || ''', ''YYYYMMDD'') and o.parentid in (''0'',''1'')';
@@ -19698,11 +19698,11 @@ begin
          execute immediate v_SQL;
          commit;
       else
-             --É¾³ıµ±Ìì·¢ËÍ¶ÌĞÅµÄÍ³¼ÆµÄÊı¾İ ¿ªÊ¼
+             --åˆ é™¤å½“å¤©å‘é€çŸ­ä¿¡çš„ç»Ÿè®¡çš„æ•°æ® å¼€å§‹
             v_sendTime := trunc(to_date(p_date,'yyyy-MM-dd hh24:mi:ss'));
             v_sendEndTime := v_sendTime+1;
             v_tempTime := v_sendTime;
-            v_curTableName := FUN_JXDATE(p_date); -- p_date ¸ñÊ½ £º2012-11-08 14:00:00
+            v_curTableName := FUN_JXDATE(p_date); -- p_date æ ¼å¼ ï¼š2012-11-08 14:00:00
             v_del_SQL :=  'delete from sms_send_analyze ssa where ssa.stat_time = to_number( to_char(to_date(''' || v_sendTime ||'''),''YYYYMMDD''))';
 
            if v_debug = 1 then
@@ -19770,13 +19770,13 @@ create or replace procedure mc.P_SMS_UPDATE_TASKINFO is
                                end) unkownQuota
                              from send s
                              left join task_info t on t.batch_id = s.batch_id
-                             left join channel_info c on s.channel_id = c.channel_id 
+                             left join channel_info c on s.channel_id = c.channel_id
                             where s.sys_time >= CAST(trunc(sysdate)-2 AS TIMESTAMP)
                               and s.sys_time <= CAST(sysdate AS TIMESTAMP)
-                              and ((c.link_mode != all('CMPP2','SGIP','SMGP3') and s.is_original_sms=0)  
+                              and ((c.link_mode != all('CMPP2','SGIP','SMGP3') and s.is_original_sms=0)
                                      or (c.link_mode = any('CMPP2','SGIP','SMGP3') and s.mobile_quantities=1))
                 group by s.batch_id,s.send_status) aa
-                group by aa.batch_id;      
+                group by aa.batch_id;
 
    single_cursor c_consume%rowtype;
    allCount task_info.report_all_count%type;
@@ -19793,10 +19793,10 @@ begin
              fetch c_consume into single_cursor;
                exit when c_consume%notfound;
 
-               --¼ÆËã·µ»Ø×´Ì¬±¨¸æ¶ÌĞÅ×ÜÁ¿
+               --è®¡ç®—è¿”å›çŠ¶æ€æŠ¥å‘ŠçŸ­ä¿¡æ€»é‡
                allCount := nvl(single_cursor.successQuota,0)+nvl(single_cursor.failurequota,0)+nvl(single_cursor.unkownquota,0);
 
-               --ĞŞ¸Ätask_info±í·µ»Ø×´Ì¬±¨¸æµÄÊıÁ¿
+               --ä¿®æ”¹task_infoè¡¨è¿”å›çŠ¶æ€æŠ¥å‘Šçš„æ•°é‡
                update task_info t set
                  t.report_all_count=allCount,
                  t.report_success_count=nvl(single_cursor.successQuota,0),
@@ -19824,10 +19824,10 @@ prompt
 create or replace procedure mc.p_statics_smsquantity
  is
 begin
-  --É¾³ıÔ­ÓĞÊı¾İ
+  --åˆ é™¤åŸæœ‰æ•°æ®
   delete from send_statics_quantity_temp;
   commit;
-  --Í³¼Æ¸÷¸öÍ¨µÀ¶ÌĞÅ·¢ËÍÊıÁ¿
+  --ç»Ÿè®¡å„ä¸ªé€šé“çŸ­ä¿¡å‘é€æ•°é‡
   insert into send_statics_quantity_temp
           select channel_id,
                  SUM(mobile_quantities) as total_quantity,
@@ -19847,7 +19847,7 @@ begin
           order by channel_id
   ;
 
-  --Í³¼Æ¶ÌĞÅ½ÓÊÕÊıÁ¿
+  --ç»Ÿè®¡çŸ­ä¿¡æ¥æ”¶æ•°é‡
   update send_statics_quantity_temp q set q.receive_quantity =
   (
   select count(*) receive_quantity from sms_receive t
@@ -19859,7 +19859,7 @@ begin
   )
   ;
 
-  --²åÈëÃ»ÓĞ·¢ËÍÁ¿µÄÍ¨µÀµÄÊı¾İ
+  --æ’å…¥æ²¡æœ‰å‘é€é‡çš„é€šé“çš„æ•°æ®
   insert into send_statics_quantity_temp t
   select channel_id,
          0 total_quantity,
@@ -19882,7 +19882,7 @@ begin
          )
   group by channel_id
   ;
-  --¼ÆËã·¢ËÍ×ÜºÍ
+  --è®¡ç®—å‘é€æ€»å’Œ
   insert into send_statics_quantity_temp
           select -1 channel_id,
                  sum(total_quantity) total_quantity,
@@ -19897,14 +19897,14 @@ begin
                  sysdate as create_time
           from send_statics_quantity_temp t
   ;
-  --¼ÆËã½ÓÊÕ×ÜºÍ
+  --è®¡ç®—æ¥æ”¶æ€»å’Œ
   update send_statics_quantity_temp set receive_quantity =
   (
          select sum(receive_quantity) from send_statics_quantity_temp where channel_id != -1
   )
   where channel_id = -1;
 
-  --²åÈë½ñÌìµÄ×îĞÂ¼ÇÂ¼
+  --æ’å…¥ä»Šå¤©çš„æœ€æ–°è®°å½•
   insert into send_statics_quantity select * from send_statics_quantity_temp;
   commit;
 end p_statics_smsquantity;
@@ -19915,43 +19915,43 @@ prompt Creating procedure QUERY_MMS_CHANNEL
 prompt ====================================
 prompt
 create or replace procedure mc.QUERY_MMS_CHANNEL(
-                  p_startTime in varchar2,--¿ªÊ¼Ê±¼ä£¨ÄêÔÂÈÕ) 2012-12-13
-                  p_endTime in varchar2,--½áÊøÊ±¼ä £¨ÄêÔÂÈÕ) 2012-12-13
-                  p_statType in number, -- Í³¼ÆÀàĞÍ 0   ³¬¼¶¹ÜÀíÔ±Í¨µÀÍ³¼Æ£¬1  ÆÕÍ¨¹ÜÀíÔ±Í¨µÀÍ³¼Æ
-                  p_channelID in varchar2,--Í¨µÀID   1,2,3,....n ÕâÖÖĞÎÊ½
-                  p_orgID in varchar2,--»ú¹¹ID ¾ßÌå»ú¹¹
-                  p_status in varchar2,--×´Ì¬
-                  mycursor out sys_refcursor--·µ»Ø½á¹û¼¯ÓÎ±ê
+                  p_startTime in varchar2,--å¼€å§‹æ—¶é—´ï¼ˆå¹´æœˆæ—¥) 2012-12-13
+                  p_endTime in varchar2,--ç»“æŸæ—¶é—´ ï¼ˆå¹´æœˆæ—¥) 2012-12-13
+                  p_statType in number, -- ç»Ÿè®¡ç±»å‹ 0   è¶…çº§ç®¡ç†å‘˜é€šé“ç»Ÿè®¡ï¼Œ1  æ™®é€šç®¡ç†å‘˜é€šé“ç»Ÿè®¡
+                  p_channelID in varchar2,--é€šé“ID   1,2,3,....n è¿™ç§å½¢å¼
+                  p_orgID in varchar2,--æœºæ„ID å…·ä½“æœºæ„
+                  p_status in varchar2,--çŠ¶æ€
+                  mycursor out sys_refcursor--è¿”å›ç»“æœé›†æ¸¸æ ‡
                  )
 is
-       v_startTime number(8);--´æ¿ªÊ¼ÈÕÆÚ
-       v_endTime number(8);--´æ½áÊøÈÕÆÚ
-       v_debug number(1); --ÊÇ·ñ´òµ÷ÊÔĞÅÏ¢, 0:²»´ò £»1£º´ò
-       v_SQL varchar2(8000); -- Æ´½ÓµÄ»ù´¡SQL
+       v_startTime number(8);--å­˜å¼€å§‹æ—¥æœŸ
+       v_endTime number(8);--å­˜ç»“æŸæ—¥æœŸ
+       v_debug number(1); --æ˜¯å¦æ‰“è°ƒè¯•ä¿¡æ¯, 0:ä¸æ‰“ ï¼›1ï¼šæ‰“
+       v_SQL varchar2(8000); -- æ‹¼æ¥çš„åŸºç¡€SQL
 begin
    v_SQL := '';
    v_debug := 0;
    v_startTime := 0;
    v_endTime := 0;
 
-     --´¦Àí²éÑ¯¿ªÊ¼ÈÕÆÚ
-     if p_startTime is not null  then 
+     --å¤„ç†æŸ¥è¯¢å¼€å§‹æ—¥æœŸ
+     if p_startTime is not null  then
              v_startTime := to_number( to_char(to_date(p_startTime,'yyyy-MM-dd hh24:mi:ss'),'YYYYMMDD'));
      end if;
      if p_endTime is not null then
              v_endTime :=to_number( to_char(to_date(p_endTime,'yyyy-MM-dd hh24:mi:ss'),'YYYYMMDD'));
      end if;
-     
+
      if v_startTime != 0 and v_endTime != 0 and v_startTime > v_endTime then
         v_startTime := v_endTime;
         v_endTime := to_number( to_char(to_date(p_startTime,'yyyy-MM-dd hh24:mi:ss'),'YYYYMMDD'));
      end if;
-     
+
      if v_debug = 1 then
        DBMS_OUTPUT.PUT_LINE('v_startTime > ' || v_startTime );
        DBMS_OUTPUT.PUT_LINE('v_endTime > ' || v_endTime );
      end if;
-     if p_statType = 0 then --³¬¼¶¹ÜÀíÍ¨µÀÍ³¼Æ
+     if p_statType = 0 then --è¶…çº§ç®¡ç†é€šé“ç»Ÿè®¡
            v_SQL := 'select c.channel_name,o.user_name,mca.status,sum(mca.quantity) from mms_channel_analyze mca
                      left join channel_info c on mca.channel_id = c.channel_id
                           left join organization o on mca.parent_org_id = o.user_id
@@ -19998,7 +19998,7 @@ begin
            v_SQL := v_SQL || ' group by c.channel_name,o.user_name,mca.status';
       end if;
 
-     --Æ´Ö´ĞĞSQL¿ªÊ¼
+     --æ‹¼æ‰§è¡ŒSQLå¼€å§‹
 
       DBMS_OUTPUT.PUT_LINE('v_SQL = ' || v_SQL);
 
@@ -20012,34 +20012,34 @@ prompt Creating procedure QUERY_MMS_SEND
 prompt =================================
 prompt
 create or replace procedure mc.QUERY_MMS_SEND(
-               p_startTime in varchar2,--¿ªÊ¼Ê±¼ä£¨ÄêÔÂÈÕ)
-                  p_endTime in varchar2,--½áÊøÊ±¼ä £¨ÄêÔÂÈÕ)
-                  p_statType in number, -- Í³¼ÆÀàĞÍ 0 Ò»°ã»ú¹¹Í³¼Æ£¬1 ÇşµÀ»ú¹¹·¢ËÍÍ³¼Æ 2 ³¬¼¶¹ÜÀíÔ±·¢ËÍÍ³¼Æ
-                  p_userID in varchar2,--»ú¹¹ID Admin ²éËùÓĞ
-                  p_parentOrgID in varchar2,--»ú¹¹ID ¸¸»ú¹¹
-                  p_orgID in varchar2,--»ú¹¹ID ¾ßÌå»ú¹¹
-                  p_status in varchar2, --×´Ì¬
-                  mycursor out sys_refcursor--·µ»Ø½á¹û¼¯ÓÎ±ê
+               p_startTime in varchar2,--å¼€å§‹æ—¶é—´ï¼ˆå¹´æœˆæ—¥)
+                  p_endTime in varchar2,--ç»“æŸæ—¶é—´ ï¼ˆå¹´æœˆæ—¥)
+                  p_statType in number, -- ç»Ÿè®¡ç±»å‹ 0 ä¸€èˆ¬æœºæ„ç»Ÿè®¡ï¼Œ1 æ¸ é“æœºæ„å‘é€ç»Ÿè®¡ 2 è¶…çº§ç®¡ç†å‘˜å‘é€ç»Ÿè®¡
+                  p_userID in varchar2,--æœºæ„ID Admin æŸ¥æ‰€æœ‰
+                  p_parentOrgID in varchar2,--æœºæ„ID çˆ¶æœºæ„
+                  p_orgID in varchar2,--æœºæ„ID å…·ä½“æœºæ„
+                  p_status in varchar2, --çŠ¶æ€
+                  mycursor out sys_refcursor--è¿”å›ç»“æœé›†æ¸¸æ ‡
                  )
 is
-       v_startTime number(8);--´æ¿ªÊ¼ÈÕÆÚ
-       v_endTime number(8);--´æ½áÊøÈÕÆÚ
-       v_debug number(1); --ÊÇ·ñ´òµ÷ÊÔĞÅÏ¢, 0:²»´ò £»1£º´ò
-       v_SQL varchar2(8000); -- Æ´½ÓµÄ»ù´¡SQL
+       v_startTime number(8);--å­˜å¼€å§‹æ—¥æœŸ
+       v_endTime number(8);--å­˜ç»“æŸæ—¥æœŸ
+       v_debug number(1); --æ˜¯å¦æ‰“è°ƒè¯•ä¿¡æ¯, 0:ä¸æ‰“ ï¼›1ï¼šæ‰“
+       v_SQL varchar2(8000); -- æ‹¼æ¥çš„åŸºç¡€SQL
 begin
    v_SQL := '';
    v_debug := 0;
    v_startTime := 0;
    v_endTime := 0;
 
-     --´¦Àí²éÑ¯¿ªÊ¼ÈÕÆÚ
-     if p_startTime is not null  then 
+     --å¤„ç†æŸ¥è¯¢å¼€å§‹æ—¥æœŸ
+     if p_startTime is not null  then
              v_startTime := to_number( to_char(to_date(p_startTime,'yyyy-MM-dd hh24:mi:ss'),'YYYYMMDD'));
      end if;
      if p_endTime is not null then
              v_endTime :=to_number( to_char(to_date(p_endTime,'yyyy-MM-dd hh24:mi:ss'),'YYYYMMDD'));
      end if;
-     
+
      if v_startTime != 0 and v_endTime != 0 and v_startTime > v_endTime then
         v_startTime := v_endTime;
         v_endTime := to_number( to_char(to_date(p_startTime,'yyyy-MM-dd hh24:mi:ss'),'YYYYMMDD'));
@@ -20049,8 +20049,8 @@ begin
        DBMS_OUTPUT.PUT_LINE('v_startTime > ' || v_startTime );
        DBMS_OUTPUT.PUT_LINE('v_endTime > ' || v_endTime );
      end if;
-     --Æ´Ö´ĞĞSQL¿ªÊ¼
-     if p_statType = 0  then --Ò»°ã»ú¹¹Í³¼Æ
+     --æ‹¼æ‰§è¡ŒSQLå¼€å§‹
+     if p_statType = 0  then --ä¸€èˆ¬æœºæ„ç»Ÿè®¡
           v_SQL := 'select u.user_name,msa.status,sum(msa.quantity) from mms_send_analyze msa
                      left join user_info u on msa.user_id = u.user_id
                    where msa.org_id  = ''' || p_orgID || '''' ;
@@ -20073,7 +20073,7 @@ begin
            v_SQL := v_SQL || ' group by u.user_name,msa.status';
       end if;
 
-      if p_statType = 1  then --ÇşµÀ»ú¹¹Í³¼Æ
+      if p_statType = 1  then --æ¸ é“æœºæ„ç»Ÿè®¡
           v_SQL := 'select o.user_name,msa.status,sum(msa.quantity) from mms_send_analyze msa
                           left join organization o on msa.org_id = o.user_id
                    where msa.parent_org_id  = ''' || p_parentOrgID || '''' ;
@@ -20097,7 +20097,7 @@ begin
            v_SQL := v_SQL || ' group by o.user_name,msa.status';
       end if;
 
-      if p_statType = 2  then --³¬¼¶¹ÜÀíÔ±»ú¹¹Í³¼Æ
+      if p_statType = 2  then --è¶…çº§ç®¡ç†å‘˜æœºæ„ç»Ÿè®¡
           v_SQL := 'select o.user_name,msa.status,sum(msa.quantity) from mms_send_analyze msa
                           left join organization o on msa.parent_org_id = o.user_id
                    where 1= 1 ' ;
@@ -20132,16 +20132,16 @@ prompt ==========================================
 prompt
 create or replace procedure mc.QUERY_MONTH_INFO_REPORT
      (
-       p_queryTime in varchar2,          --²éÑ¯ÔÂ·İ£¨ÄêÔÂ)
-       p_statType in number,             -- ²éÑ¯ÀàĞÍ 2 Ò»°ã»ú¹¹²éÑ¯£¬1 ÇşµÀ»ú¹¹²éÑ¯ 0 ³¬¼¶¹ÜÀíÔ±²éÑ¯
-       p_orgID in varchar2,              --»ú¹¹ID ¾ßÌå»ú¹¹
-       p_userID in varchar2,             --ÓÃ»§ID Admin ²éËùÓĞ
-       p_userOrgId in varchar2,          --ÓÃ»§»ú¹¹(´Óuser¶ÔÏóµÄÀ´)
-       mycursor out sys_refcursor       --·µ»Ø½á¹û¼¯ÓÎ±ê
+       p_queryTime in varchar2,          --æŸ¥è¯¢æœˆä»½ï¼ˆå¹´æœˆ)
+       p_statType in number,             -- æŸ¥è¯¢ç±»å‹ 2 ä¸€èˆ¬æœºæ„æŸ¥è¯¢ï¼Œ1 æ¸ é“æœºæ„æŸ¥è¯¢ 0 è¶…çº§ç®¡ç†å‘˜æŸ¥è¯¢
+       p_orgID in varchar2,              --æœºæ„ID å…·ä½“æœºæ„
+       p_userID in varchar2,             --ç”¨æˆ·ID Admin æŸ¥æ‰€æœ‰
+       p_userOrgId in varchar2,          --ç”¨æˆ·æœºæ„(ä»userå¯¹è±¡çš„æ¥)
+       mycursor out sys_refcursor       --è¿”å›ç»“æœé›†æ¸¸æ ‡
       )
  is
-       v_debug number(1);                          --ÊÇ·ñ´òµ÷ÊÔĞÅÏ¢, 0:²»´ò £»1£º´ò
-       v_SQL varchar2(8000);                       -- Æ´½ÓµÄ»ù´¡SQL
+       v_debug number(1);                          --æ˜¯å¦æ‰“è°ƒè¯•ä¿¡æ¯, 0:ä¸æ‰“ ï¼›1ï¼šæ‰“
+       v_SQL varchar2(8000);                       -- æ‹¼æ¥çš„åŸºç¡€SQL
 begin
        v_SQL := '';
        v_debug := 0;
@@ -20158,8 +20158,8 @@ begin
                   where 1=1
                   ';
 
-       if p_statType = 1  then   --ÇşµÀ»ú¹¹Í³¼Æ
-           --Èç¹û»ú¹¹²éÑ¯Ìõ¼şÎª¿Õ£¬Ä¬ÈÏÏÔÊ¾±¾»ú¹¹ËùÓĞÈËÔ±
+       if p_statType = 1  then   --æ¸ é“æœºæ„ç»Ÿè®¡
+           --å¦‚æœæœºæ„æŸ¥è¯¢æ¡ä»¶ä¸ºç©ºï¼Œé»˜è®¤æ˜¾ç¤ºæœ¬æœºæ„æ‰€æœ‰äººå‘˜
            if p_orgID is null then
                  v_SQL := v_SQL || ' and (o.parentid='''||p_userOrgId||''' or o.user_id='''|| p_userOrgId || ''')';
            end if;
@@ -20167,7 +20167,7 @@ begin
            if p_userID is not null then
                v_SQL := v_SQL || ' and mri.user_id= '''|| p_userID || '''';
            end if;
-           --²éÑ¯Ìõ¼ş²»¿Õ£¬ÏÔÊ¾²éÑ¯Ìõ¼şµÄÈËÔ±
+           --æŸ¥è¯¢æ¡ä»¶ä¸ç©ºï¼Œæ˜¾ç¤ºæŸ¥è¯¢æ¡ä»¶çš„äººå‘˜
            if p_orgID is not null then
                  v_SQL := v_SQL || ' and ui.organization_id='''|| p_orgID || '''';
            end if;
@@ -20178,7 +20178,7 @@ begin
 
       end if;
 
-         if p_statType = 0  then --³¬¼¶¹ÜÀíÔ±»ú¹¹Í³¼Æ
+         if p_statType = 0  then --è¶…çº§ç®¡ç†å‘˜æœºæ„ç»Ÿè®¡
 
            if p_userID is not null then
                v_SQL := v_SQL || ' and mri.user_id= '''|| p_userID || '''';
@@ -20195,7 +20195,7 @@ begin
       end if;
 
       v_SQL := v_SQL||' group by mri.user_id,ui.user_name,o.user_name,mri.account_time order by mri.ACCOUNT_TIME desc';
-     --µ÷ÊÔ´úÂë:²åÈëÁÙÊ±±í£¬²é¿´sql
+     --è°ƒè¯•ä»£ç :æ’å…¥ä¸´æ—¶è¡¨ï¼ŒæŸ¥çœ‹sql
 
      dbms_output.put_line('v_SQL = ' || v_SQL);
      open mycursor for v_SQL ;
@@ -20240,23 +20240,23 @@ prompt Creating procedure QUERY_PRICIPAL_SMS_SEND
 prompt ==========================================
 prompt
 create or replace procedure mc.QUERY_PRICIPAL_SMS_SEND(
-                  p_startTime in varchar2,--¿ªÊ¼Ê±¼ä£¨ÄêÔÂÈÕ)
-                  p_endTime in varchar2,--½áÊøÊ±¼ä £¨ÄêÔÂÈÕ)
-                  p_statType in number, -- Í³¼ÆÀàĞÍ 2 Ò»°ã»ú¹¹Í³¼Æ£¬1 ÇşµÀ»ú¹¹·¢ËÍÍ³¼Æ 0 ³¬¼¶¹ÜÀíÔ±·¢ËÍÍ³¼Æ 3 Î¯ÍĞÈËÍ³¼Æ
-                  p_userID in varchar2,--Î¯ÍĞÈË
+                  p_startTime in varchar2,--å¼€å§‹æ—¶é—´ï¼ˆå¹´æœˆæ—¥)
+                  p_endTime in varchar2,--ç»“æŸæ—¶é—´ ï¼ˆå¹´æœˆæ—¥)
+                  p_statType in number, -- ç»Ÿè®¡ç±»å‹ 2 ä¸€èˆ¬æœºæ„ç»Ÿè®¡ï¼Œ1 æ¸ é“æœºæ„å‘é€ç»Ÿè®¡ 0 è¶…çº§ç®¡ç†å‘˜å‘é€ç»Ÿè®¡ 3 å§”æ‰˜äººç»Ÿè®¡
+                  p_userID in varchar2,--å§”æ‰˜äºº
 
-                  p_status in varchar2,-- ×´Ì¬
-                  p_operatorID in varchar2, --Êµ¼Ê²Ù×÷ÈË
-                  mycursor out sys_refcursor--·µ»Ø½á¹û¼¯ÓÎ±ê
+                  p_status in varchar2,-- çŠ¶æ€
+                  p_operatorID in varchar2, --å®é™…æ“ä½œäºº
+                  mycursor out sys_refcursor--è¿”å›ç»“æœé›†æ¸¸æ ‡
                  )
 is
-       v_startTime number(8);--´æ¿ªÊ¼ÈÕÆÚ
-       v_endTime number(8);--´æ½áÊøÈÕÆÚ
-       v_char_startTime number(8);--´æ¿ªÊ¼ÈÕÆÚ
-       v_char_endTime number(8);--´æ½áÊøÈÕÆÚ
+       v_startTime number(8);--å­˜å¼€å§‹æ—¥æœŸ
+       v_endTime number(8);--å­˜ç»“æŸæ—¥æœŸ
+       v_char_startTime number(8);--å­˜å¼€å§‹æ—¥æœŸ
+       v_char_endTime number(8);--å­˜ç»“æŸæ—¥æœŸ
 
-       v_debug number(1); --ÊÇ·ñ´òµ÷ÊÔĞÅÏ¢, 0:²»´ò £»1£º´ò
-       v_SQL varchar2(8000); -- Æ´½ÓµÄ»ù´¡SQL
+       v_debug number(1); --æ˜¯å¦æ‰“è°ƒè¯•ä¿¡æ¯, 0:ä¸æ‰“ ï¼›1ï¼šæ‰“
+       v_SQL varchar2(8000); -- æ‹¼æ¥çš„åŸºç¡€SQL
        v_subSQL varchar2(8000);
 begin
    v_SQL := '';
@@ -20264,7 +20264,7 @@ begin
    v_startTime := 0;
    v_endTime := 0;
 
-     --´¦Àí²éÑ¯¿ªÊ¼ÈÕÆÚ
+     --å¤„ç†æŸ¥è¯¢å¼€å§‹æ—¥æœŸ
     if p_startTime is not null  then
              v_startTime := to_number( to_char(to_date(p_startTime,'yyyy-MM-dd hh24:mi:ss'),'YYYYMMDD'));
              v_char_startTime := to_char(to_date(p_startTime,'yyyy-MM-dd hh24:mi:ss'),'YYYYMMDD');
@@ -20285,7 +20285,7 @@ begin
        DBMS_OUTPUT.PUT_LINE('v_endTime > ' || v_endTime );
      end if;
 
-      if p_statType = 3  then --Î¯ÍĞÈËÍ³¼Æ
+      if p_statType = 3  then --å§”æ‰˜äººç»Ÿè®¡
           v_subSQL := '
           SELECT T.PARENT_ORG_ID,
                  T.ORG_ID,
@@ -20296,7 +20296,7 @@ begin
                  T.GRANTER_ID,
                  SUM(MOBILE_QUANTITIES) AS QUANTITY
             FROM (
-                   --°´Í¨µÀ²éÑ¯
+                   --æŒ‰é€šé“æŸ¥è¯¢
                    SELECT  SYS_TIME AS SYSDAT,
                            O.PARENTID AS PARENT_ORG_ID,
                            SS.USER_ORGANIZATION AS ORG_ID,
@@ -20314,9 +20314,9 @@ begin
                            AND TI.GRANTER_ID IS NOT NULL
                            AND SS.SYS_TIME >= TO_DATE(''' || v_char_startTime || ''', ''yyyy-MM-dd hh24:mi:ss'')
                            AND SS.SYS_TIME <  TO_DATE(''' || v_char_endTime   || ''', ''yyyy-MM-dd hh24:mi:ss'')
-                           --µÚÈı·½Í¨µÀ(²»²ğ·Ö)
+                           --ç¬¬ä¸‰æ–¹é€šé“(ä¸æ‹†åˆ†)
                            AND (((SS.IS_ORIGINAL_SMS = 0 and C.LINK_MODE != all(''CMPP2'',''SGIP'',''SMGP3''))
-                           --Ö±Á¬Í¨µÀ(ĞèÒª²ğ·Ö)
+                           --ç›´è¿é€šé“(éœ€è¦æ‹†åˆ†)
                             OR (SS.MOBILE_QUANTITIES=1 AND C.LINK_MODE = any(''CMPP2'',''SGIP'',''SMGP3'') and SS.SEND_STATUS =any(1,5,6)))
                             OR SS.SEND_STATUS=any(7,8))
                  ) T
@@ -20324,12 +20324,12 @@ begin
            AND T.SEND_STATUS =any(1,5,6,7,8)
            GROUP BY T.PARENT_ORG_ID, T.ORG_ID, T.OPERATOR_ID, T.USER_ID,T.SEND_STATUS,T.SYSDAT,T.GRANTER_ID';
 
-           --Î¯ÍĞÈË
+           --å§”æ‰˜äºº
 
                v_SQL := 'select u.user_name,ssa.status,sum(ssa.quantity) from ' || '(' || v_subSQL || ') ssa
                      left join user_info u on ssa.user_id = u.user_id
                    where 1=1' ;
-                  --µ±Ç°µÇÂ¼ÓÃ»§
+                  --å½“å‰ç™»å½•ç”¨æˆ·
                  if p_operatorID is not null then
                     v_SQL := v_SQL || ' and ssa.operator_id = ''' || p_operatorID || '''';
                  end if;
@@ -20355,27 +20355,27 @@ prompt ==============================================
 prompt
 create or replace procedure mc.QUERY_RECKONING_INFO_REPORT
                 (
-                 p_startTime in varchar2,          --¿ªÊ¼Ê±¼ä£¨ÄêÔÂÈÕ)
-                 p_endTime in varchar2,            --½áÊøÊ±¼ä £¨ÄêÔÂÈÕ)
-                 p_statType in number,             --²éÑ¯ÀàĞÍ 0 Ò»°ã»ú¹¹²éÑ¯£¬1 ÇşµÀ»ú¹¹²éÑ¯ 2 ³¬¼¶¹ÜÀíÔ±²éÑ¯
-                 p_orgID in varchar2,              --»ú¹¹ID ¾ßÌå»ú¹¹
-                 p_userID in varchar2,             --ÓÃ»§ID Admin ²éËùÓĞ
-                 p_userOrgId in varchar2,          --ÓÃ»§»ú¹¹
-                 p_pageSize number,                --Ã¿Ò»Ò³ÓĞ¶àÉÙĞĞÊı¾İ
-                 p_page number,                    --µ±Ç°ÊÇµÚ¼¸Ò³
-                 p_count out number,               --×ÜÊıÁ¿
-                 mycursor out sys_refcursor        --·µ»Ø½á¹û¼¯ÓÎ±ê
+                 p_startTime in varchar2,          --å¼€å§‹æ—¶é—´ï¼ˆå¹´æœˆæ—¥)
+                 p_endTime in varchar2,            --ç»“æŸæ—¶é—´ ï¼ˆå¹´æœˆæ—¥)
+                 p_statType in number,             --æŸ¥è¯¢ç±»å‹ 0 ä¸€èˆ¬æœºæ„æŸ¥è¯¢ï¼Œ1 æ¸ é“æœºæ„æŸ¥è¯¢ 2 è¶…çº§ç®¡ç†å‘˜æŸ¥è¯¢
+                 p_orgID in varchar2,              --æœºæ„ID å…·ä½“æœºæ„
+                 p_userID in varchar2,             --ç”¨æˆ·ID Admin æŸ¥æ‰€æœ‰
+                 p_userOrgId in varchar2,          --ç”¨æˆ·æœºæ„
+                 p_pageSize number,                --æ¯ä¸€é¡µæœ‰å¤šå°‘è¡Œæ•°æ®
+                 p_page number,                    --å½“å‰æ˜¯ç¬¬å‡ é¡µ
+                 p_count out number,               --æ€»æ•°é‡
+                 mycursor out sys_refcursor        --è¿”å›ç»“æœé›†æ¸¸æ ‡
                  )
  is
-       v_startTime number(8);                      --´æ¿ªÊ¼ÈÕÆÚ
-       v_endTime number(8);                        --´æ½áÊøÈÕÆÚ
-       v_debug number(1);                          --ÊÇ·ñ´òµ÷ÊÔĞÅÏ¢, 0:²»´ò £»1£º´ò
-       v_SQL varchar2(8000);                       -- Æ´½ÓµÄ»ù´¡SQL
+       v_startTime number(8);                      --å­˜å¼€å§‹æ—¥æœŸ
+       v_endTime number(8);                        --å­˜ç»“æŸæ—¥æœŸ
+       v_debug number(1);                          --æ˜¯å¦æ‰“è°ƒè¯•ä¿¡æ¯, 0:ä¸æ‰“ ï¼›1ï¼šæ‰“
+       v_SQL varchar2(8000);                       -- æ‹¼æ¥çš„åŸºç¡€SQL
 begin
        v_SQL := '';
        v_debug := 0;
-       --------Í³¼Æ²éÑ¯µÄÊı¾İ×ÜÊı
-        if p_statType = 1  then   --ÇşµÀ»ú¹¹Í³¼Æ
+       --------ç»Ÿè®¡æŸ¥è¯¢çš„æ•°æ®æ€»æ•°
+        if p_statType = 1  then   --æ¸ é“æœºæ„ç»Ÿè®¡
             if p_startTime is null and p_endTime is null then
                if p_userID is not null then
                  select count(a.user_id) into p_count from
@@ -20436,7 +20436,7 @@ begin
 
         end if;
 
-        if p_statType = 2  then   --³¬¼¶¹ÜÀíÔ±»ú¹¹Í³¼Æ
+        if p_statType = 2  then   --è¶…çº§ç®¡ç†å‘˜æœºæ„ç»Ÿè®¡
            if p_startTime is null and p_endTime is null then
               if p_userID is not null then
                  select count(a.user_id) into p_count from
@@ -20486,7 +20486,7 @@ begin
         end if;
 
 
-        --´¦Àí²éÑ¯¿ªÊ¼ÈÕÆÚ
+        --å¤„ç†æŸ¥è¯¢å¼€å§‹æ—¥æœŸ
        if p_startTime is not null  then
              v_startTime := to_number(to_char(to_date(p_startTime,'yyyy-mm-dd'),'yyyymmdd'));
        end if;
@@ -20499,7 +20499,7 @@ begin
          DBMS_OUTPUT.PUT_LINE('v_endTime > ' || v_endTime);
        end if;
 
-       if p_statType = 1  then   --ÇşµÀ»ú¹¹Í³¼Æ
+       if p_statType = 1  then   --æ¸ é“æœºæ„ç»Ÿè®¡
           v_SQL := 'select t2.user_id,t2.user_name,t2.reckoning_date,t2.SEND_QUANTITY,t2.SUB_TOTAL_FEE from (';
           v_SQL := v_SQL|| ' select rownum r,t1.* from (';
           v_SQL := v_SQL|| ' select dri.user_id,dri.user_name,dri.reckoning_date,SUM(dri.SEND_QUANTITY) SEND_QUANTITY,SUM(dri.SUB_TOTAL_FEE) SUB_TOTAL_FEE
@@ -20526,7 +20526,7 @@ begin
       end if;
 
 
-         if p_statType = 2  then --³¬¼¶¹ÜÀíÔ±»ú¹¹Í³¼Æ
+         if p_statType = 2  then --è¶…çº§ç®¡ç†å‘˜æœºæ„ç»Ÿè®¡
           v_SQL := 'select t2.user_id,t2.user_name,t2.reckoning_date,t2.SEND_QUANTITY,t2.SUB_TOTAL_FEE from ( ';
           v_SQL := v_SQL|| ' select rownum r,t1.* from ( ';
           v_SQL := v_SQL|| 'select dri.user_id,dri.user_name,dri.reckoning_date,SUM(dri.SEND_QUANTITY) SEND_QUANTITY,SUM(dri.SUB_TOTAL_FEE) SUB_TOTAL_FEE
@@ -20572,23 +20572,23 @@ prompt Creating procedure QUERY_SMS_CHANNEL
 prompt ====================================
 prompt
 create or replace procedure mc.QUERY_SMS_CHANNEL(
-                  p_startTime in varchar2,--¿ªÊ¼Ê±¼ä£¨ÄêÔÂÈÕ) 2012-12-13
-                  p_endTime in varchar2,--½áÊøÊ±¼ä £¨ÄêÔÂÈÕ) 2012-12-13
-                  p_statType in number, -- Í³¼ÆÀàĞÍ 0   ³¬¼¶¹ÜÀíÔ±Í¨µÀÍ³¼Æ£¬1  ÆÕÍ¨¹ÜÀíÔ±Í¨µÀÍ³¼Æ
-                  p_channelID in varchar2,--Í¨µÀID   1,2,3,....n ÕâÖÖĞÎÊ½
-                  p_orgID in varchar2,--»ú¹¹ID ¾ßÌå»ú¹¹
-                  p_status in varchar2,--×´Ì¬
-                  mycursor out sys_refcursor--·µ»Ø½á¹û¼¯ÓÎ±ê
+                  p_startTime in varchar2,--å¼€å§‹æ—¶é—´ï¼ˆå¹´æœˆæ—¥) 2012-12-13
+                  p_endTime in varchar2,--ç»“æŸæ—¶é—´ ï¼ˆå¹´æœˆæ—¥) 2012-12-13
+                  p_statType in number, -- ç»Ÿè®¡ç±»å‹ 0   è¶…çº§ç®¡ç†å‘˜é€šé“ç»Ÿè®¡ï¼Œ1  æ™®é€šç®¡ç†å‘˜é€šé“ç»Ÿè®¡
+                  p_channelID in varchar2,--é€šé“ID   1,2,3,....n è¿™ç§å½¢å¼
+                  p_orgID in varchar2,--æœºæ„ID å…·ä½“æœºæ„
+                  p_status in varchar2,--çŠ¶æ€
+                  mycursor out sys_refcursor--è¿”å›ç»“æœé›†æ¸¸æ ‡
                  )
 is
-       v_startTime number(8);--´æ¿ªÊ¼ÈÕÆÚ
-       v_endTime number(8);--´æ½áÊøÈÕÆÚ
-       v_char_startTime number(8);--´æ¿ªÊ¼ÈÕÆÚ
-       v_char_endTime number(8);--´æ½áÊøÈÕÆÚ
+       v_startTime number(8);--å­˜å¼€å§‹æ—¥æœŸ
+       v_endTime number(8);--å­˜ç»“æŸæ—¥æœŸ
+       v_char_startTime number(8);--å­˜å¼€å§‹æ—¥æœŸ
+       v_char_endTime number(8);--å­˜ç»“æŸæ—¥æœŸ
 
-       v_debug number(1); --ÊÇ·ñ´òµ÷ÊÔĞÅÏ¢, 0:²»´ò £»1£º´ò
+       v_debug number(1); --æ˜¯å¦æ‰“è°ƒè¯•ä¿¡æ¯, 0:ä¸æ‰“ ï¼›1ï¼šæ‰“
 
-       v_SQL varchar2(8000); -- Æ´½ÓµÄ»ù´¡SQL
+       v_SQL varchar2(8000); -- æ‹¼æ¥çš„åŸºç¡€SQL
        v_subSQL varchar2(8000);
 begin
    v_SQL := '';
@@ -20596,7 +20596,7 @@ begin
    v_startTime := 0;
    v_endTime := 0;
 
-     --´¦Àí²éÑ¯¿ªÊ¼ÈÕÆÚ
+     --å¤„ç†æŸ¥è¯¢å¼€å§‹æ—¥æœŸ
      if p_startTime is not null  then
              v_startTime := to_number( to_char(to_date(p_startTime,'yyyy-MM-dd hh24:mi:ss'),'YYYYMMDD'));
              v_char_startTime := to_char(to_date(p_startTime,'yyyy-MM-dd hh24:mi:ss'),'YYYYMMDD');
@@ -20658,9 +20658,9 @@ begin
                  WHERE 1 = 1
                    AND SS.SYS_TIME >= TO_DATE(''' || v_char_startTime || ''', ''yyyy-MM-dd hh24:mi:ss'')
                    AND SS.SYS_TIME <  TO_DATE(''' || v_char_endTime   || ''', ''yyyy-MM-dd hh24:mi:ss'')
-                   --µÚÈı·½Í¨µÀ(²»²ğ·Ö)
+                   --ç¬¬ä¸‰æ–¹é€šé“(ä¸æ‹†åˆ†)
                    AND ((SS.IS_ORIGINAL_SMS = 0 and C.LINK_MODE != all(''CMPP2'',''SGIP'',''SMGP3''))
-                   --Ö±Á¬Í¨µÀ(ĞèÒª²ğ·Ö)
+                   --ç›´è¿é€šé“(éœ€è¦æ‹†åˆ†)
                     OR (SS.MOBILE_QUANTITIES=1 AND C.LINK_MODE = any(''CMPP2'',''SGIP'',''SMGP3'') and SS.SEND_STATUS =any(1,5,6)))
          ) T
          WHERE 1=1
@@ -20672,7 +20672,7 @@ begin
        DBMS_OUTPUT.PUT_LINE('v_startTime > ' || v_startTime );
        DBMS_OUTPUT.PUT_LINE('v_endTime > ' || v_endTime );
      end if;
-     if p_statType = 0 then --³¬¼¶¹ÜÀíÍ¨µÀÍ³¼Æ
+     if p_statType = 0 then --è¶…çº§ç®¡ç†é€šé“ç»Ÿè®¡
 
           v_SQL := 'select c.channel_name,o.user_name,sca.status,sum(sca.quantity) from ' || '(' || v_subSQL || ') sca
                    left join channel_info c on sca.channel_id = c.channel_id
@@ -20722,7 +20722,7 @@ begin
 
 /*      insert into temp_table_test (CREATE_SQL, CREATE_TIME)
       values (v_SQL,sysdate);*/
-     --Æ´Ö´ĞĞSQL¿ªÊ¼
+     --æ‹¼æ‰§è¡ŒSQLå¼€å§‹
 
 /*      DBMS_OUTPUT.PUT_LINE('v_SQL = ' || v_SQL);
 */
@@ -20735,34 +20735,34 @@ prompt
 prompt Creating procedure QUERY_SMS_RECEIVE
 prompt ====================================
 prompt
-create or replace procedure mc.QUERY_SMS_RECEIVE(p_startTime    in varchar2, --¿ªÊ¼Ê±¼ä£¨ÄêÔÂÈÕ)
-                                              p_endTime      in varchar2, --½áÊøÊ±¼ä £¨ÄêÔÂÈÕ)
-                                              p_statType     in number, -- Í³¼ÆÀàĞÍ 0 Õë¶Ô»ú¹¹Í³¼ÆÉÏĞĞ¶ÌĞÅ£¬1 Õë¶ÔÓÃ»§Í³¼ÆÉÏĞĞ¶ÌĞÅ
-                                              p_userID       in varchar2, --»ú¹¹ID Admin ²éËùÓĞ
-                                              p_parentOrgID  in varchar2, --»ú¹¹ID ¸¸»ú¹¹
-                                              p_orgID        in varchar2, --»ú¹¹ID ¾ßÌå»ú¹¹
-                                              p_pageNo       in number, --µ±Ç°Ò³Ãæ£¬´Ó1¿ªÊ¼
-                                              p_pageSize     in number, --Ã¿Ò³¼ÇÂ¼Êı
-                                              outRecordCount out number, --·µ»Ø¼ÇÂ¼×ÜÌõÊı
-                                              mycursor       out sys_refcursor --·µ»Ø½á¹û¼¯ÓÎ±ê
+create or replace procedure mc.QUERY_SMS_RECEIVE(p_startTime    in varchar2, --å¼€å§‹æ—¶é—´ï¼ˆå¹´æœˆæ—¥)
+                                              p_endTime      in varchar2, --ç»“æŸæ—¶é—´ ï¼ˆå¹´æœˆæ—¥)
+                                              p_statType     in number, -- ç»Ÿè®¡ç±»å‹ 0 é’ˆå¯¹æœºæ„ç»Ÿè®¡ä¸Šè¡ŒçŸ­ä¿¡ï¼Œ1 é’ˆå¯¹ç”¨æˆ·ç»Ÿè®¡ä¸Šè¡ŒçŸ­ä¿¡
+                                              p_userID       in varchar2, --æœºæ„ID Admin æŸ¥æ‰€æœ‰
+                                              p_parentOrgID  in varchar2, --æœºæ„ID çˆ¶æœºæ„
+                                              p_orgID        in varchar2, --æœºæ„ID å…·ä½“æœºæ„
+                                              p_pageNo       in number, --å½“å‰é¡µé¢ï¼Œä»1å¼€å§‹
+                                              p_pageSize     in number, --æ¯é¡µè®°å½•æ•°
+                                              outRecordCount out number, --è¿”å›è®°å½•æ€»æ¡æ•°
+                                              mycursor       out sys_refcursor --è¿”å›ç»“æœé›†æ¸¸æ ‡
                                               ) is
 
-  v_SQL            varchar2(8000); -- Æ´½ÓµÄ»ù´¡SQL
-  v_SQL_TotalCount varchar2(8000); -- ²éÑ¯¼ÇÂ¼×ÜÌõÊıSQL
-  v_SQL_Result     varchar2(8000); -- ²éÑ¯½á¹û¼¯SQL
+  v_SQL            varchar2(8000); -- æ‹¼æ¥çš„åŸºç¡€SQL
+  v_SQL_TotalCount varchar2(8000); -- æŸ¥è¯¢è®°å½•æ€»æ¡æ•°SQL
+  v_SQL_Result     varchar2(8000); -- æŸ¥è¯¢ç»“æœé›†SQL
 
-  v_hiRownum number(8); --µ±Ç°Ò³¼ÇÂ¼¶ÔÓ¦×î´óµÄÒ³Âë
-  v_loRownum number(8); --µ±Ç°Ò³¼ÇÂ¼¶ÔÓ¦×îĞ¡µÄÒ³Âë
+  v_hiRownum number(8); --å½“å‰é¡µè®°å½•å¯¹åº”æœ€å¤§çš„é¡µç 
+  v_loRownum number(8); --å½“å‰é¡µè®°å½•å¯¹åº”æœ€å°çš„é¡µç 
 begin
   v_SQL      := '';
   v_hiRownum := 15;
   v_loRownum := 0;
 
-  --Æ´Ö´ĞĞSQL¿ªÊ¼
+  --æ‹¼æ‰§è¡ŒSQLå¼€å§‹
   if p_statType = 0 then
-    --Õë¶Ô»ú¹¹Í³¼ÆÉÏĞĞ¶ÌĞÅ
+    --é’ˆå¯¹æœºæ„ç»Ÿè®¡ä¸Šè¡ŒçŸ­ä¿¡
     if p_parentOrgID is not null then
-      --Í³¼ÆËùÓĞ»ú¹¹×Ó»ú¹¹
+      --ç»Ÿè®¡æ‰€æœ‰æœºæ„å­æœºæ„
       v_SQL := 'select o.user_name,sum(t.receive_count) as receive_count
                from (
                   select  r.org_id ,count(r.receive_id) as receive_count from sms_receive r where r.sys_time >= to_date(''' ||
@@ -20771,7 +20771,7 @@ begin
                p_parentOrgID || ''' or o.user_id = ''' || p_parentOrgID ||
                ''' group by o.user_name';
     else
-      --Ö»Í³¼ÆÄ³¸ö»ú¹¹
+      --åªç»Ÿè®¡æŸä¸ªæœºæ„
       v_SQL := 'select o.user_name,sum(t.receive_count) as receive_count
                from (
                   select  r.org_id ,count(r.receive_id) as receive_count from sms_receive r where r.org_id = ''' ||
@@ -20780,9 +20780,9 @@ begin
                ''',''yyyy-MM-dd hh24:mi:ss'') group by r.org_id) t left join organization o on t.org_id = o.user_id  group by o.user_name';
     end if;
   else
-    --Õë¶ÔÓÃ»§Í³¼ÆÉÏĞĞ¶ÌĞÅ
+    --é’ˆå¯¹ç”¨æˆ·ç»Ÿè®¡ä¸Šè¡ŒçŸ­ä¿¡
     if p_userID is not null then
-      --Í³¼Æ¸Ã»ú¹¹Ä³¸öÓÃ»§
+      --ç»Ÿè®¡è¯¥æœºæ„æŸä¸ªç”¨æˆ·
       v_SQL := 'select u.user_name,sum(t.receive_count) as receive_count
                from (
                   select  r.user_id ,count(r.receive_id) as receive_count from sms_receive r where r.org_id = ''' ||
@@ -20791,7 +20791,7 @@ begin
                ''',''yyyy-MM-dd hh24:mi:ss'') and r.sys_time <= to_date(''' || p_endTime ||
                ''',''yyyy-MM-dd hh24:mi:ss'') group by r.user_id) t left join user_info u on t.user_id = u.user_id group by u.user_name';
     else
-      -- Í³¼Æ¸Ã»ú¹¹ËùÓĞÓÃ»§
+      -- ç»Ÿè®¡è¯¥æœºæ„æ‰€æœ‰ç”¨æˆ·
       v_SQL := 'select u.user_name,sum(t.receive_count) as receive_count
                from (
                   select  r.user_id ,count(r.receive_id) as receive_count from sms_receive r where r.org_id = ''' ||
@@ -20802,17 +20802,17 @@ begin
   end if;
 
   dbms_output.put_line('v_SQL = ' || v_SQL);
-  --²éÑ¯µ±Ç°Ìõ¼şÏÂ¼ÇÂ¼×ÜÌõÊı
+  --æŸ¥è¯¢å½“å‰æ¡ä»¶ä¸‹è®°å½•æ€»æ¡æ•°
   v_SQL_TotalCount := ' SELECT count(*) FROM ( ';
   v_SQL_TotalCount := v_SQL_TotalCount || v_SQL;
   v_SQL_TotalCount := v_SQL_TotalCount || ' ) ';
-  --È¡¼ÇÂ¼×ÜÌõÊı
+  --å–è®°å½•æ€»æ¡æ•°
   execute immediate v_SQL_TotalCount
     into outRecordCount;
-  --´¦Àí·ÖÒ³µÄÒ³Âë
+  --å¤„ç†åˆ†é¡µçš„é¡µç 
   v_hiRownum := p_pageNo * p_pageSize;
   v_loRownum := v_hiRownum - p_pageSize + 1;
-  --Æ´·ÖÒ³µÄ²éÑ¯SQL
+  --æ‹¼åˆ†é¡µçš„æŸ¥è¯¢SQL
   v_SQL_Result := ' select * FROM (  select A.*, rownum rn From ( ';
   v_SQL_Result := v_SQL_Result || v_SQL;
   v_SQL_Result := v_SQL_Result || ' ) A   where rownum <= ' ||
@@ -20828,24 +20828,24 @@ prompt Creating procedure QUERY_SMS_SEND
 prompt =================================
 prompt
 create or replace procedure mc.QUERY_SMS_SEND(
-                  p_startTime in varchar2,--¿ªÊ¼Ê±¼ä£¨ÄêÔÂÈÕ)
-                  p_endTime in varchar2,--½áÊøÊ±¼ä £¨ÄêÔÂÈÕ)
-                  p_statType in number, -- Í³¼ÆÀàĞÍ 2 Ò»°ã»ú¹¹Í³¼Æ£¬1 ÇşµÀ»ú¹¹·¢ËÍÍ³¼Æ 0 ³¬¼¶¹ÜÀíÔ±·¢ËÍÍ³¼Æ
-                  p_userID in varchar2,--ÓÃ»§ID Admin ²éËùÓĞ
-                  p_parentOrgID in varchar2,--»ú¹¹ID ¸¸»ú¹¹
+                  p_startTime in varchar2,--å¼€å§‹æ—¶é—´ï¼ˆå¹´æœˆæ—¥)
+                  p_endTime in varchar2,--ç»“æŸæ—¶é—´ ï¼ˆå¹´æœˆæ—¥)
+                  p_statType in number, -- ç»Ÿè®¡ç±»å‹ 2 ä¸€èˆ¬æœºæ„ç»Ÿè®¡ï¼Œ1 æ¸ é“æœºæ„å‘é€ç»Ÿè®¡ 0 è¶…çº§ç®¡ç†å‘˜å‘é€ç»Ÿè®¡
+                  p_userID in varchar2,--ç”¨æˆ·ID Admin æŸ¥æ‰€æœ‰
+                  p_parentOrgID in varchar2,--æœºæ„ID çˆ¶æœºæ„
 
-                  p_orgID in varchar2,--»ú¹¹ID ¾ßÌå»ú¹¹
-                  p_status in varchar2,-- ×´Ì¬
-                  mycursor out sys_refcursor--·µ»Ø½á¹û¼¯ÓÎ±ê
+                  p_orgID in varchar2,--æœºæ„ID å…·ä½“æœºæ„
+                  p_status in varchar2,-- çŠ¶æ€
+                  mycursor out sys_refcursor--è¿”å›ç»“æœé›†æ¸¸æ ‡
                  )
 is
-       v_startTime number(8);--´æ¿ªÊ¼ÈÕÆÚ
-       v_endTime number(8);--´æ½áÊøÈÕÆÚ
-       v_char_startTime number(8);--´æ¿ªÊ¼ÈÕÆÚ
-       v_char_endTime number(8);--´æ½áÊøÈÕÆÚ
+       v_startTime number(8);--å­˜å¼€å§‹æ—¥æœŸ
+       v_endTime number(8);--å­˜ç»“æŸæ—¥æœŸ
+       v_char_startTime number(8);--å­˜å¼€å§‹æ—¥æœŸ
+       v_char_endTime number(8);--å­˜ç»“æŸæ—¥æœŸ
 
-       v_debug number(1); --ÊÇ·ñ´òµ÷ÊÔĞÅÏ¢, 0:²»´ò £»1£º´ò
-       v_SQL varchar2(8000); -- Æ´½ÓµÄ»ù´¡SQL
+       v_debug number(1); --æ˜¯å¦æ‰“è°ƒè¯•ä¿¡æ¯, 0:ä¸æ‰“ ï¼›1ï¼šæ‰“
+       v_SQL varchar2(8000); -- æ‹¼æ¥çš„åŸºç¡€SQL
        v_subSQL varchar2(8000);
 begin
    v_SQL := '';
@@ -20853,7 +20853,7 @@ begin
    v_startTime := 0;
    v_endTime := 0;
 
-     --´¦Àí²éÑ¯¿ªÊ¼ÈÕÆÚ
+     --å¤„ç†æŸ¥è¯¢å¼€å§‹æ—¥æœŸ
     if p_startTime is not null  then
              v_startTime := to_number( to_char(to_date(p_startTime,'yyyy-MM-dd hh24:mi:ss'),'YYYYMMDD'));
              v_char_startTime := to_char(to_date(p_startTime,'yyyy-MM-dd hh24:mi:ss'),'YYYYMMDD');
@@ -20883,7 +20883,7 @@ begin
                  T.SYSDAT,
                  SUM(MOBILE_QUANTITIES) AS QUANTITY
             FROM (
-                   --°´Í¨µÀ²éÑ¯
+                   --æŒ‰é€šé“æŸ¥è¯¢
                    SELECT  SYS_TIME AS SYSDAT,
                            O.PARENTID AS PARENT_ORG_ID,
                            O.DEDUCT_MODE,
@@ -20899,17 +20899,17 @@ begin
                            AND TI.GRANTER_ID IS NULL
                            AND SS.SYS_TIME >= TO_DATE(''' || v_char_startTime || ''', ''yyyy-MM-dd hh24:mi:ss'')
                            AND SS.SYS_TIME <  TO_DATE(''' || v_char_endTime   || ''', ''yyyy-MM-dd hh24:mi:ss'')
-                          --µÚÈı·½Í¨µÀ(²»²ğ·Ö)
+                          --ç¬¬ä¸‰æ–¹é€šé“(ä¸æ‹†åˆ†)
                            AND (((SS.IS_ORIGINAL_SMS = 0 and C.LINK_MODE != all(''CMPP2'',''SGIP'',''SMGP3''))
-                           --Ö±Á¬Í¨µÀ(ĞèÒª²ğ·Ö)
+                           --ç›´è¿é€šé“(éœ€è¦æ‹†åˆ†)
                             OR (SS.MOBILE_QUANTITIES=1 AND C.LINK_MODE = any(''CMPP2'',''SGIP'',''SMGP3'') and SS.SEND_STATUS =any(1,5,6)))
                             OR SS.SEND_STATUS=any(7,8))
                  ) T
            WHERE 1=1
            AND T.SEND_STATUS =any(1,5,6,7,8)
            GROUP BY T.PARENT_ORG_ID,T.DEDUCT_MODE,T.ORG_ID, T.USER_ID, T.SYSDAT, T.SEND_STATUS';
-     --Æ´Ö´ĞĞSQL¿ªÊ¼
-     if p_statType = 2  then --Ò»°ã»ú¹¹Í³¼Æ
+     --æ‹¼æ‰§è¡ŒSQLå¼€å§‹
+     if p_statType = 2  then --ä¸€èˆ¬æœºæ„ç»Ÿè®¡
           v_SQL := 'select u.user_name,ssa.status,sum(ssa.quantity),ssa.deduct_mode from ' || '(' || v_subSQL || ') ssa
                      left join user_info u on ssa.user_id = u.user_id
                    where ssa.org_id  = ''' || p_orgID || '''' ;
@@ -20924,7 +20924,7 @@ begin
            v_SQL := v_SQL || ' group by u.user_name,ssa.status,ssa.deduct_mode';
       end if;
 
-      if p_statType = 1  then --ÇşµÀ»ú¹¹Í³¼Æ
+      if p_statType = 1  then --æ¸ é“æœºæ„ç»Ÿè®¡
           v_SQL := 'select o.user_name,ssa.status,sum(ssa.quantity),ssa.deduct_mode from ' || '(' || v_subSQL || ') ssa
                           left join organization o on ssa.org_id = o.user_id
                    where 1=1 ' ;
@@ -20945,7 +20945,7 @@ begin
            v_SQL := v_SQL || ' group by o.user_name,ssa.status,ssa.deduct_mode';
       end if;
 
-      if p_statType = 0  then --³¬¼¶¹ÜÀíÔ±»ú¹¹Í³¼Æ
+      if p_statType = 0  then --è¶…çº§ç®¡ç†å‘˜æœºæ„ç»Ÿè®¡
           v_SQL := 'select o.user_name,ssa.status,sum(ssa.quantity),ssa.deduct_mode from ' || '(' || v_subSQL || ') ssa
                           left join organization o on ssa.org_id = o.user_id
                    where 1= 1 ' ;
@@ -20960,7 +20960,7 @@ begin
            v_SQL := v_SQL || ' group by o.user_name,ssa.status,ssa.deduct_mode';
       end if;
 
-        --²åÈëÁÙÊ±±í
+        --æ’å…¥ä¸´æ—¶è¡¨
     --  insert into temp_table_test (CREATE_SQL, CREATE_TIME)values (v_SQL,sysdate);
     /* dbms_output.put_line('v_SQL = ' || v_SQL);*/
      open mycursor for v_SQL ;
@@ -20976,7 +20976,7 @@ prompt Creating procedure UPDATE_SPLITED_LONGSMS
 prompt =========================================
 prompt
 create or replace procedure mc.UPDATE_SPLITED_LONGSMS is
- ----ÁªÍ¨¡¢µçĞÅ³¤¶ÌĞÅ
+ ----è”é€šã€ç”µä¿¡é•¿çŸ­ä¿¡
   CURSOR send_longcur IS
   SELECT *
          from send t
@@ -20985,7 +20985,7 @@ create or replace procedure mc.UPDATE_SPLITED_LONGSMS is
               and rownum <= 5000
               and t.is_original_sms = 1
               and t.current_pageno = t.originalsms_totalpages;
-  ----ÁªÍ¨¡¢µçĞÅµÄÆÕÍ¨¶ÌĞÅ
+  ----è”é€šã€ç”µä¿¡çš„æ™®é€šçŸ­ä¿¡
   /* CURSOR send_shortcur IS
     SELECT *
          from send t
@@ -20997,15 +20997,15 @@ create or replace procedure mc.UPDATE_SPLITED_LONGSMS is
 
   r_send            send%rowtype;
  -- s_send            send%rowtype;
-  v_msg_total             varchar2(2000);--Æ´½ÓµÄĞÅÏ¢
+  v_msg_total             varchar2(2000);--æ‹¼æ¥çš„ä¿¡æ¯
   v_msg_count       number :=0;
   v_signature_ok    number :=0;
-  v_has_total       number :=1; --ÊÇ·ñÍêÕûµÄ¶ÌĞÅ
+  v_has_total       number :=1; --æ˜¯å¦å®Œæ•´çš„çŸ­ä¿¡
   v_send_id         varchar2(2000);
   errormessage      exception;
   begin
      open send_longcur;
-      --¼ì²é¶ÌĞÅ
+      --æ£€æŸ¥çŸ­ä¿¡
       loop
           fetch send_longcur into r_send;
           exit when send_longcur%notfound;
@@ -21015,8 +21015,8 @@ create or replace procedure mc.UPDATE_SPLITED_LONGSMS is
           v_has_total    := 1;
           v_send_id      := '';
 
-          --²éÑ¯ÆäÓà¶ÌĞÅ
-          --Ñ­»·ºÍÆ´½Ó¶ÌĞÅ
+          --æŸ¥è¯¢å…¶ä½™çŸ­ä¿¡
+          --å¾ªç¯å’Œæ‹¼æ¥çŸ­ä¿¡
           FOR a_send IN (
                          select *
                                 from send t
@@ -21027,13 +21027,13 @@ create or replace procedure mc.UPDATE_SPLITED_LONGSMS is
           LOOP
               v_msg_count := v_msg_count + 1;
 
-              --¼ì²é¶ÌĞÅĞòºÅÇé¿ö
+              --æ£€æŸ¥çŸ­ä¿¡åºå·æƒ…å†µ
               if v_msg_count != to_number(a_send.current_pageno) THEN
-                 --ĞòºÅ²»Ò»ÖÂ£¬ÔòÍÆ³öÑ­»·ºÍtrigger
+                 --åºå·ä¸ä¸€è‡´ï¼Œåˆ™æ¨å‡ºå¾ªç¯å’Œtrigger
                  v_has_total := 0;
                  exit;
               end if;
-              --Æ´½Ó³¤¶ÌĞÅ
+              --æ‹¼æ¥é•¿çŸ­ä¿¡
               v_msg_total := v_msg_total||a_send.send_msg;
               if length(v_send_id) > 0 then
                    v_send_id := v_send_id||','||''''||a_send.send_id||'''';
@@ -21042,20 +21042,20 @@ create or replace procedure mc.UPDATE_SPLITED_LONGSMS is
               end if;
           END LOOP;
 
-          --¿ÉÒÔÆ´½Ó³É³¤¶ÌĞÅ
+          --å¯ä»¥æ‹¼æ¥æˆé•¿çŸ­ä¿¡
           if v_has_total = 1 and v_msg_count = r_send.originalsms_totalpages then
-            --½ØÈ¡×îºó5¸ö×Ö½Ú¿´ÊÇ·ñ°üº¬¡°»Ø¸´TDÍË¶©¹Ø¼ü×Ö¡±
-            if instr(substr(v_msg_total,length(v_msg_total)-5),'»Ø¸´TDÍË¶©')>0
+            --æˆªå–æœ€å5ä¸ªå­—èŠ‚çœ‹æ˜¯å¦åŒ…å«â€œå›å¤TDé€€è®¢å…³é”®å­—â€
+            if instr(substr(v_msg_total,length(v_msg_total)-5),'å›å¤TDé€€è®¢')>0
               then
-               --¸üĞÂ³¤¶ÌĞÅµÄ×´Ì¬Îª-1
+               --æ›´æ–°é•¿çŸ­ä¿¡çš„çŠ¶æ€ä¸º-1
                execute immediate ('update send set send_status = -1 where send_id in (' || v_send_id || ')');
-               dbms_output.put_line('¸üĞÂµÄ¶ÌĞÅ¼ÇÂ¼Îª---£º'||'update send set send_status = -1 where send_id in (' || v_send_id || ')');
+               dbms_output.put_line('æ›´æ–°çš„çŸ­ä¿¡è®°å½•ä¸º---ï¼š'||'update send set send_status = -1 where send_id in (' || v_send_id || ')');
               commit;
             else
-              --³¤¶ÌĞÅ²»°üº¬¡®»Ø¸´TDÍË¶©¡¯¸üĞÂ×´Ì¬Îª6
-              dbms_output .put_line('²»º¬»Ø¸´TDÍË¶©µÄ³¤¶ÌĞÅ---:'||'update send set send_status = 6, report = ''UD:0001'',err_msg = ''²»º¬»Ø¸´TDÍË¶©'' , report_time = sysdate where send_id in (' || v_send_id || ')');
-               execute immediate ('update send set send_status = 6, report = ''UD:0001'',err_msg = ''²»º¬»Ø¸´TDÍË¶©'' , report_time = sysdate where send_id in (' || v_send_id || ')');
-               dbms_output .put_line('²»º¬»Ø¸´TDÍË¶©µÄ³¤¶ÌĞÅ---:'||'update send set send_status = 6, report = ''UD:0001'',err_msg = ''²»º¬»Ø¸´TDÍË¶©'' , report_time = sysdate where send_id in (' || v_send_id || ')');
+              --é•¿çŸ­ä¿¡ä¸åŒ…å«â€˜å›å¤TDé€€è®¢â€™æ›´æ–°çŠ¶æ€ä¸º6
+              dbms_output .put_line('ä¸å«å›å¤TDé€€è®¢çš„é•¿çŸ­ä¿¡---:'||'update send set send_status = 6, report = ''UD:0001'',err_msg = ''ä¸å«å›å¤TDé€€è®¢'' , report_time = sysdate where send_id in (' || v_send_id || ')');
+               execute immediate ('update send set send_status = 6, report = ''UD:0001'',err_msg = ''ä¸å«å›å¤TDé€€è®¢'' , report_time = sysdate where send_id in (' || v_send_id || ')');
+               dbms_output .put_line('ä¸å«å›å¤TDé€€è®¢çš„é•¿çŸ­ä¿¡---:'||'update send set send_status = 6, report = ''UD:0001'',err_msg = ''ä¸å«å›å¤TDé€€è®¢'' , report_time = sysdate where send_id in (' || v_send_id || ')');
                commit;
             end if;
            end if;
@@ -21063,28 +21063,28 @@ create or replace procedure mc.UPDATE_SPLITED_LONGSMS is
         end loop;
       close send_longcur;
      /* open send_shortcur;
-        loop 
+        loop
           fetch send_shortcur into s_send;
            exit when send_shortcur%notfound;
-            if  instr(substr(s_send.send_msg,length(s_send.send_msg)-5),'»Ø¸´TDÍË¶©')>0
+            if  instr(substr(s_send.send_msg,length(s_send.send_msg)-5),'å›å¤TDé€€è®¢')>0
               then
-              --¸üĞÂ¶ÌĞÅ×´Ì¬Îª-1
+              --æ›´æ–°çŸ­ä¿¡çŠ¶æ€ä¸º-1
               update send set send_status = -1 where send_id = s_send.send_id;
-              dbms_output.put_line('¸üĞÂµÄ¶ÌĞÅ¼ÇÂ¼Îª---£º'||'update send set send_status = -1 where send_id ='||s_send.send_id);
+              dbms_output.put_line('æ›´æ–°çš„çŸ­ä¿¡è®°å½•ä¸º---ï¼š'||'update send set send_status = -1 where send_id ='||s_send.send_id);
               commit;
              else
-               update send set send_status = 6 ,report = 'UD:0001',err_msg='²»º¬»Ø¸´TDÍË¶©',report_time=sysdate where send_id = s_send.send_id;
-               dbms_output .put_line('²»º¬»Ø¸´TDÍË¶©µÄ³¤¶ÌĞÅ---:'||'update send set send_status = 6, report = ''UD:0001'',err_msg = ''²»º¬»Ø¸´TDÍË¶©'' , report_time = sysdate where send_id ='||s_send.send_id);
+               update send set send_status = 6 ,report = 'UD:0001',err_msg='ä¸å«å›å¤TDé€€è®¢',report_time=sysdate where send_id = s_send.send_id;
+               dbms_output .put_line('ä¸å«å›å¤TDé€€è®¢çš„é•¿çŸ­ä¿¡---:'||'update send set send_status = 6, report = ''UD:0001'',err_msg = ''ä¸å«å›å¤TDé€€è®¢'' , report_time = sysdate where send_id ='||s_send.send_id);
                commit;
              end if;
-           
+
         end loop;
       close send_shortcur;*/
-          
-  --¸üĞÂ³¬Ê±µÄ¶ÌĞÅ,60·ÖÖÓÖ®Ç°µÄ
-  update send t set t.send_status = 6, t.err_msg = '¼ìÑéÁªÍ¨µçĞÅ¶ÌĞÅ³¬Ê±' where t.send_status = -2 and t.sys_time < (sysdate - 60/60/24);
+
+  --æ›´æ–°è¶…æ—¶çš„çŸ­ä¿¡,60åˆ†é’Ÿä¹‹å‰çš„
+  update send t set t.send_status = 6, t.err_msg = 'æ£€éªŒè”é€šç”µä¿¡çŸ­ä¿¡è¶…æ—¶' where t.send_status = -2 and t.sys_time < (sysdate - 60/60/24);
   commit;
-  
+
 end UPDATE_SPLITED_LONGSMS;
 /
 
@@ -21095,7 +21095,7 @@ prompt
 CREATE OR REPLACE PROCEDURE mc.UPDATE_USER_STATE IS
 BEGIN
 
-    --ÖØÖÃÓÃ»§×´Ì¬ÎªÓĞĞ§
+    --é‡ç½®ç”¨æˆ·çŠ¶æ€ä¸ºæœ‰æ•ˆ
     UPDATE USER_INFO U SET U.USER_STAT=1,U.LOGIN_ERROR_NUM=0 WHERE U.LOGIN_ERROR_NUM >0;
     COMMIT;
     EXCEPTION
@@ -21113,12 +21113,12 @@ CREATE OR REPLACE TRIGGER mc.trigger_afterdelete_reporttask
 AFTER delete ON sgw_report_task
 For each row
 DECLARE
---É¾³ı×´Ì¬±¨¸æºó£¬ÌîĞ´×´Ì¬±¨¸æÍÆËÍÊ±¼ä
+--åˆ é™¤çŠ¶æ€æŠ¥å‘Šåï¼Œå¡«å†™çŠ¶æ€æŠ¥å‘Šæ¨é€æ—¶é—´
 BEGIN
     update send s set s.send_time = systimestamp where SEND_ID = :old.SEND_ID;
 
     BEGIN
-      --¹úĞÅÖ¤È¯µÄ×´Ì¬±¨¸æ
+      --å›½ä¿¡è¯åˆ¸çš„çŠ¶æ€æŠ¥å‘Š
       --IF :old.User_Organization = 'fcaaf96b2b8ed794012b99e92baa0568' THEN
           INSERT INTO sgw_report_task_his
           (
@@ -21179,7 +21179,7 @@ For each row
 DECLARE
 
 BEGIN
-  --É¾³ı×´Ì¬±¨¸æºó£¬½«×´Ì¬±¨¸æÍÆËÍµÄĞÅÏ¢¹éµµ£¬²¢Ôö¼Ó¹éµµÊ±¼ä×Ö¶Î
+  --åˆ é™¤çŠ¶æ€æŠ¥å‘Šåï¼Œå°†çŠ¶æ€æŠ¥å‘Šæ¨é€çš„ä¿¡æ¯å½’æ¡£ï¼Œå¹¶å¢åŠ å½’æ¡£æ—¶é—´å­—æ®µ
     BEGIN
           INSERT INTO rt_receive_backup
           (
@@ -21229,7 +21229,7 @@ AFTER delete ON rt_report
 For each row
 
 DECLARE
---É¾³ı×´Ì¬±¨¸æÍÆËÍÈÎÎñĞÅÏ¢ºó£¬½«×´Ì¬ÍÆËÍµÄĞÅÏ¢¹éµµ£¬²¢Ôö¼Ó¹éµµÊ±¼ä×Ö¶Î
+--åˆ é™¤çŠ¶æ€æŠ¥å‘Šæ¨é€ä»»åŠ¡ä¿¡æ¯åï¼Œå°†çŠ¶æ€æ¨é€çš„ä¿¡æ¯å½’æ¡£ï¼Œå¹¶å¢åŠ å½’æ¡£æ—¶é—´å­—æ®µ
 BEGIN
 
     BEGIN
@@ -21274,20 +21274,20 @@ prompt
 prompt Creating trigger TRIGGER_AFTERINSERT_RECEIVE
 prompt ============================================
 prompt
-CREATE OR REPLACE TRIGGER mc.trigger_afterinsert_receive --²åÈë¶ÌĞÅÉÏĞĞ, ÌîĞ´ÏàÓ¦µÄÊı¾İ
+CREATE OR REPLACE TRIGGER mc.trigger_afterinsert_receive --æ’å…¥çŸ­ä¿¡ä¸Šè¡Œ, å¡«å†™ç›¸åº”çš„æ•°æ®
 AFTER INSERT ON sms_receive
 For each row
 
 DECLARE
 
---ĞèÒªÉÏĞĞµÄÓÃ»§
+--éœ€è¦ä¸Šè¡Œçš„ç”¨æˆ·
 CURSOR cmpp_org_cur IS
        SELECT user_id, user_name, ORGANIZATION_ID as org_id  from user_info where user_kind = 3;
 
 
 BEGIN
 
-    --¼ì²éÊÇ·ñ¿ÉÒÔÕÒµ½ÏàÓ¦µÄÓÃ»§
+    --æ£€æŸ¥æ˜¯å¦å¯ä»¥æ‰¾åˆ°ç›¸åº”çš„ç”¨æˆ·
     FOR s IN cmpp_org_cur LOOP
     if :NEW.user_id = s.user_id then
       --INSERT INTO sql_log VALUES(s.user_name, SYSDATE, 'trigger_afterinsert_receive userid');
@@ -21297,7 +21297,7 @@ BEGIN
         end if;
     END LOOP;
 
-    --Èç¹ûÃ»ÓĞÕÒµ½ÏàÓ¦µÄÓÃ»§£¬Ôò°´ÕÕÏàÓ¦µÄ»ú¹¹
+    --å¦‚æœæ²¡æœ‰æ‰¾åˆ°ç›¸åº”çš„ç”¨æˆ·ï¼Œåˆ™æŒ‰ç…§ç›¸åº”çš„æœºæ„
     FOR s IN cmpp_org_cur LOOP
     if :NEW.org_id = s.org_id THEN
       --INSERT INTO sql_log VALUES(s.org_id, SYSDATE, 'trigger_afterinsert_receive orgid');
@@ -21319,19 +21319,19 @@ prompt
 prompt Creating trigger TRIGGER_AFTER_UPDATE_SEND
 prompt ==========================================
 prompt
-CREATE OR REPLACE TRIGGER "MC"."TRIGGER_AFTER_UPDATE_SEND" 
+CREATE OR REPLACE TRIGGER "MC"."TRIGGER_AFTER_UPDATE_SEND"
   AFTER UPDATE ON SEND
   FOR EACH ROW
---¸üĞÂ²ğ·Ö¶ÌĞÅºó£¬¸üĞÂÔ­Ê¼¶ÌĞÅ
+--æ›´æ–°æ‹†åˆ†çŸ­ä¿¡åï¼Œæ›´æ–°åŸå§‹çŸ­ä¿¡
 DECLARE
   PRAGMA AUTONOMOUS_TRANSACTION;
 BEGIN
 
-  IF :OLD.SEND_STATUS = 1 --Ô­Ê¼×´Ì¬ÊÇ1
-     AND (:NEW.SEND_STATUS = 5 OR :NEW.SEND_STATUS = 6) --ĞÂ×´Ì¬ÊÇ5»òÕß6
-     AND :OLD.IS_ORIGINAL_SMS = 1 --ÊÇ²ğ·Ö¶ÌĞÅ
+  IF :OLD.SEND_STATUS = 1 --åŸå§‹çŠ¶æ€æ˜¯1
+     AND (:NEW.SEND_STATUS = 5 OR :NEW.SEND_STATUS = 6) --æ–°çŠ¶æ€æ˜¯5æˆ–è€…6
+     AND :OLD.IS_ORIGINAL_SMS = 1 --æ˜¯æ‹†åˆ†çŸ­ä¿¡
    THEN
-    --¸üĞÂÔ­Ê¼¶ÌĞÅ
+    --æ›´æ–°åŸå§‹çŸ­ä¿¡
     UPDATE SEND T
        SET T.REPORT_TIME = :NEW.REPORT_TIME,
            SEND_STATUS   = CASE
@@ -21365,13 +21365,13 @@ prompt
 prompt Creating trigger TRIGGER_BEFOREINSERT_SEND
 prompt ==========================================
 prompt
-CREATE OR REPLACE TRIGGER "MC"."TRIGGER_BEFOREINSERT_SEND" 
+CREATE OR REPLACE TRIGGER "MC"."TRIGGER_BEFOREINSERT_SEND"
   BEFORE insert ON send
   For each row
 DECLARE
 
 BEGIN
-  --ºÚÃûµ¥ºÅÂë¡¢Î¥½û´Ê¡¢×ÔÖ÷Ç©Ãû²»ÔÚÇ©Ãû³Ø, ½øĞĞ×´Ì¬±¨¸æÍÆËÍ
+  --é»‘åå•å·ç ã€è¿ç¦è¯ã€è‡ªä¸»ç­¾åä¸åœ¨ç­¾åæ± , è¿›è¡ŒçŠ¶æ€æŠ¥å‘Šæ¨é€
   if :NEW.send_status = 6 and substr(:NEW.Msg_Type,1,4) = 'CMPP'  then
      insert into SGW_REPORT_TASK (task_id, send_id, mobile_to, stat, destnation_id, user_organization, user_id, channel_id, report_time, push_status, next_push_time, push_times,sys_time, submit_time, done_time)
      values(SGW_REPORT_TASK_SEQ.NEXTVAL, :new.send_id, :new.mobile_to, :new.report, '10657101095536' || :new.sp_serv_no, :new.user_organization, :new.user_id, :new.channel_id, sysdate, 0, sysdate, 0,sysdate, sysdate, sysdate);
@@ -21387,12 +21387,12 @@ prompt
 prompt Creating trigger TRIGGER_INSERT_RECEIVE
 prompt =======================================
 prompt
-CREATE OR REPLACE TRIGGER "MC"."TRIGGER_INSERT_RECEIVE"  --²åÈë¶ÌĞÅÉÏĞĞ, ÌîĞ´ÏàÓ¦µÄÊı¾İ
+CREATE OR REPLACE TRIGGER "MC"."TRIGGER_INSERT_RECEIVE"  --æ’å…¥çŸ­ä¿¡ä¸Šè¡Œ, å¡«å†™ç›¸åº”çš„æ•°æ®
 BEFORE INSERT ON SMS_RECEIVE_OLD
 For each row
 
 DECLARE
---²éÑ¯·¢ËÍĞÅÏ¢
+--æŸ¥è¯¢å‘é€ä¿¡æ¯
 CURSOR send_cur IS
        SELECT t.send_id, t.mobile_to, t.ext_num, t.sys_id, t.msg_id, t.send_status, t.org_id
        FROM sms_send t
@@ -21401,82 +21401,82 @@ CURSOR send_cur IS
             and t.send_status in (1,5)
        ORDER BY t.send_time desc;
 
---²éÑ¯ÌØ·şºÅ
+--æŸ¥è¯¢ç‰¹æœå·
 CURSOR spnumber_cur IS
        SELECT *  from sms_spnumber order by spnumber asc;
 
---²éÑ¯ÍË¶©¹Ø¼ü×Ö
+--æŸ¥è¯¢é€€è®¢å…³é”®å­—
 CURSOR key_cur IS
        SELECT KEY_WORD  from SMS_UNSUBSCRIBE_KEY_WORD where status = 1 order by KEY_WORD asc;
 
---²éÑ¯ÊÇ·ñÊÇµã²¥¶ÌĞÅ
+--æŸ¥è¯¢æ˜¯å¦æ˜¯ç‚¹æ’­çŸ­ä¿¡
 CURSOR recdb_cur IS
        SELECT db_name,db_content  from recbiz_db;
 
---²éÑ¯ÊÇ·ñÊÇ¶ÌĞÅµ÷²é
+--æŸ¥è¯¢æ˜¯å¦æ˜¯çŸ­ä¿¡è°ƒæŸ¥
 CURSOR survey_cur IS
        SELECT sms_survey_id,biz_number,thank_word,end_time,start_time,status,sms_directive  from sms_survey ;
 survey_temp varchar2(200);
 sp varchar2(200);
 receive_sys_ext varchar(10);
 sys_count number;
-receive_sys_id varchar(20); 
+receive_sys_id varchar(20);
 BEGIN
   sys_count:=0;
-  --ÉèÖÃreceive_id
+  --è®¾ç½®receive_id
   if :new.RECEIVE_ID is null then
     :new.RECEIVE_ID := SMS_RECEIVE_SEQ.nextval;
   end if;
-  --ÉèÖÃÉÏĞĞÈÕÆÚ
+  --è®¾ç½®ä¸Šè¡Œæ—¥æœŸ
     :new.sys_date_id:=to_number(to_char(sysdate,'yyyyMMdd'));
 
   sp:='';
-    --²éÑ¯¶ÔÓ¦µÄ¶ÌĞÅĞÅÏ¢, ÌîĞ´ÏµÍ³±àºÅSYS_ID, MSG_ID
-    FOR s IN send_cur LOOP 
-        :new.sys_id := s.sys_id;       
-        :new.msg_id := s.msg_id;                     --ÒµÎñÏµÍ³µÄ¶ÌĞÅ±àºÅ
-        :new.org_id := s.org_id;  --»ú¹¹±àºÅ
+    --æŸ¥è¯¢å¯¹åº”çš„çŸ­ä¿¡ä¿¡æ¯, å¡«å†™ç³»ç»Ÿç¼–å·SYS_ID, MSG_ID
+    FOR s IN send_cur LOOP
+        :new.sys_id := s.sys_id;
+        :new.msg_id := s.msg_id;                     --ä¸šåŠ¡ç³»ç»Ÿçš„çŸ­ä¿¡ç¼–å·
+        :new.org_id := s.org_id;  --æœºæ„ç¼–å·
     END LOOP;
 
-    --²éÑ¯ÌØ·şºÅ, ÉèÖÃÀ©Õ¹ºÅ,Èç¹ûÓĞÌØ·şºÅ£¬ÄÇÃ´sp¾ÍÊÇ³öÈ¥ÌØ·şºÅµÄÉÏĞĞºÅÂë
+    --æŸ¥è¯¢ç‰¹æœå·, è®¾ç½®æ‰©å±•å·,å¦‚æœæœ‰ç‰¹æœå·ï¼Œé‚£ä¹ˆspå°±æ˜¯å‡ºå»ç‰¹æœå·çš„ä¸Šè¡Œå·ç 
     FOR s IN spnumber_cur LOOP
     if substr(:new.sp_num, 0, length(s.spnumber)) = s.spnumber then
        sp := substr(:new.sp_num, length(s.spnumber) + 1);
       end if;
     END LOOP;
-    --Èç¹ûÃ»ÓĞÌØ·şºÅ£¬ÄÇÃ´sp¾ÍÊÇÉÏĞĞµÄÈ«²¿ºÅÂë
+    --å¦‚æœæ²¡æœ‰ç‰¹æœå·ï¼Œé‚£ä¹ˆspå°±æ˜¯ä¸Šè¡Œçš„å…¨éƒ¨å·ç 
     if ''=sp then
       sp:=:new.sp_num;
       end if;
-     --receive_sys_ext=½ØÈ¡spµÄÁ½Î»×÷ÎªĞÅÏ¢À´Ô´
+     --receive_sys_ext=æˆªå–spçš„ä¸¤ä½ä½œä¸ºä¿¡æ¯æ¥æº
      receive_sys_ext:=substr(sp,0,2);
      :new.sys_ext:=receive_sys_ext;
      select count(*) into sys_count from subsys_code s_code  where s_code.extend_number=receive_sys_ext;
-     --Èç¹ûĞÅÏ¢À´Ô´²»Îª¿Õ£¬²éÑ¯subsys_codeÖĞµÄsubsys_code_id£¬Ìî³äsms_receive±íÖĞµÄsys_id
+     --å¦‚æœä¿¡æ¯æ¥æºä¸ä¸ºç©ºï¼ŒæŸ¥è¯¢subsys_codeä¸­çš„subsys_code_idï¼Œå¡«å……sms_receiveè¡¨ä¸­çš„sys_id
      if sys_count!=0 then
        select s_code.subsys_code_id into receive_sys_id from subsys_code s_code  where s_code.extend_number=receive_sys_ext;
        :new.sys_id:=receive_sys_id;
      end if;
-     --½ØÈ¡spÁ½Î»ºóµÄ×÷ÎªÒµÎñ±àºÅ
+     --æˆªå–spä¸¤ä½åçš„ä½œä¸ºä¸šåŠ¡ç¼–å·
      :new.ext_num:=substr(sp,3,length(sp));
 
-    --¼ìÑé¶ÌĞÅÖĞÊÇ·ñÓĞÍË¶©¹Ø¼ü×Ö,ÓĞÔò×Ô¶¯¼ÓºÚÃûµ¥
+    --æ£€éªŒçŸ­ä¿¡ä¸­æ˜¯å¦æœ‰é€€è®¢å…³é”®å­—,æœ‰åˆ™è‡ªåŠ¨åŠ é»‘åå•
     FOR s IN key_cur LOOP
-    if INSTR(trim(:new.RECEIVE_MSG), trim(s.KEY_WORD), 1, 1) = 1 then --ÒÔÍË¶©¹Ø¼ü×ÖÆğÊ¼µÄ¶ÌĞÅ
-        insert into black (black_id, black_mobile,black_desc,black_time) values(sys_guid(), :new.mobile_from,'¸Ã¿Í»§ÉÏĞĞÍË¶©¹Ø¼ü×Ö£¬ÏµÍ³ÓÚ'||to_char(sysdate,'yyyy-MM-dd hh24:mi:ss')||'×Ô¶¯½«¸Ã¿Í»§¼ÓÈëºÚÃûµ¥',sysdate);
+    if INSTR(trim(:new.RECEIVE_MSG), trim(s.KEY_WORD), 1, 1) = 1 then --ä»¥é€€è®¢å…³é”®å­—èµ·å§‹çš„çŸ­ä¿¡
+        insert into black (black_id, black_mobile,black_desc,black_time) values(sys_guid(), :new.mobile_from,'è¯¥å®¢æˆ·ä¸Šè¡Œé€€è®¢å…³é”®å­—ï¼Œç³»ç»Ÿäº'||to_char(sysdate,'yyyy-MM-dd hh24:mi:ss')||'è‡ªåŠ¨å°†è¯¥å®¢æˆ·åŠ å…¥é»‘åå•',sysdate);
       end if;
     END LOOP;
 
-    --²éÑ¯ÉÏĞĞ¶ÌĞÅÄÚÈİÖĞÊÇ·ñ°üº¬µã²¥µÄÃû×Ö
+    --æŸ¥è¯¢ä¸Šè¡ŒçŸ­ä¿¡å†…å®¹ä¸­æ˜¯å¦åŒ…å«ç‚¹æ’­çš„åå­—
     FOR s IN recdb_cur LOOP
     if NLS_UPPER(trim(:new.RECEIVE_MSG)) = s.db_name then
       :new.msg_key:=1;
       :new.reply_msg:=s.db_content;
-     -- P_DIANBO_SEND(:new.mobile_from,s.db_content,sp);--µ÷ÓÃÏòÁÙÊ±±íÖĞ²åÈëÒ»ÌõÊı¾İ
+     -- P_DIANBO_SEND(:new.mobile_from,s.db_content,sp);--è°ƒç”¨å‘ä¸´æ—¶è¡¨ä¸­æ’å…¥ä¸€æ¡æ•°æ®
       end if;
     END LOOP;
 
-     --²éÑ¯ÉÏĞĞ¶ÌĞÅÊÇ·ñÊÇ¶ÌĞÅµ÷²é
+     --æŸ¥è¯¢ä¸Šè¡ŒçŸ­ä¿¡æ˜¯å¦æ˜¯çŸ­ä¿¡è°ƒæŸ¥
     FOR s IN survey_cur LOOP
     if :new.ext_num = s.biz_number and :new.sys_time>=s.start_time and :new.sys_time<=s.end_time and s.status!='9' then
       :new.msg_key:=2;
@@ -21485,7 +21485,7 @@ BEGIN
       end if;
     END LOOP;
 
-    --ÅĞ¶ÏÉÏĞĞµÄ¶ÌĞÅÊÇ·ñÊÇ¸ù¾İ¶ÌĞÅÖ¸Áî½øĞĞ¶ÌĞÅµ÷²éµÄ
+    --åˆ¤æ–­ä¸Šè¡Œçš„çŸ­ä¿¡æ˜¯å¦æ˜¯æ ¹æ®çŸ­ä¿¡æŒ‡ä»¤è¿›è¡ŒçŸ­ä¿¡è°ƒæŸ¥çš„
     survey_temp :=substr(:new.receive_msg,0,(instr(:new.receive_msg,'#')-1));
     FOR s IN survey_cur LOOP
       if survey_temp = s.sms_directive and :new.sys_time>=s.start_time and :new.sys_time<=s.end_time and s.status!='9' then
@@ -21505,11 +21505,11 @@ prompt
 prompt Creating trigger TRIGGER_INSERT_SMS_REPORT
 prompt ==========================================
 prompt
-CREATE OR REPLACE TRIGGER "MC"."TRIGGER_INSERT_SMS_REPORT"  --²åÈë¶ÌĞÅ×´Ì¬±¨¸æ, ×Ô¶¯ĞŞ¸Ä¶ÌĞÅµÄ×´Ì¬ºÍ²¹È«×´Ì¬±¨¸æµÄÆäËûĞÅÏ¢
+CREATE OR REPLACE TRIGGER "MC"."TRIGGER_INSERT_SMS_REPORT"  --æ’å…¥çŸ­ä¿¡çŠ¶æ€æŠ¥å‘Š, è‡ªåŠ¨ä¿®æ”¹çŸ­ä¿¡çš„çŠ¶æ€å’Œè¡¥å…¨çŠ¶æ€æŠ¥å‘Šçš„å…¶ä»–ä¿¡æ¯
 BEFORE INSERT ON sms_report
 For each row
 DECLARE
-v_err_msg varchar2(30);--´íÎóĞÅÏ¢
+v_err_msg varchar2(30);--é”™è¯¯ä¿¡æ¯
 err_code_count number:=0;
 CURSOR send_cur IS
        SELECT t.send_id, t.org_id, t.batch_id, t.msg_id, t.originalsms_sendid,t.originalsms_totalpages,t.current_pageno, t.sys_id, t.is_original_sms  from sms_send t where t.sequence = :new.sequence;
@@ -21518,7 +21518,7 @@ BEGIN
         :new.report_time := sysdate;
     end if;
 
-    --²éÑ¯×´Ì¬±¨¸æµÄ´íÎóĞÅÏ¢,½«ÏàÓ¦µÄ´íÎóĞÅÏ¢ÌîĞ´ÈëERR_MSG
+    --æŸ¥è¯¢çŠ¶æ€æŠ¥å‘Šçš„é”™è¯¯ä¿¡æ¯,å°†ç›¸åº”çš„é”™è¯¯ä¿¡æ¯å¡«å†™å…¥ERR_MSG
     if :new.sms_status = 6 and :new.gw_status_desc is null then
          err_code_count := 0;
          select count(*) into err_code_count from sms_err_code where channel_id = :new.channel_id and err_code = :new.gw_status and rownum <= 1;
@@ -21526,33 +21526,33 @@ BEGIN
             select err_desc into v_err_msg from sms_err_code where channel_id = :new.channel_id and err_code = :new.gw_status and rownum <= 1;
          end if;
     end if;
-    
+
     if v_err_msg is not null then
        :new.gw_status_desc :=  v_err_msg;
     end if;
 
-    --¸üĞÂÏàÓ¦µÄ¶ÌĞÅ
+    --æ›´æ–°ç›¸åº”çš„çŸ­ä¿¡
     update sms_send t set t.send_status = :new.sms_status, t.err_id = :new.gw_status, t.err_msg = v_err_msg, t.report_time = :new.report_time where t.sequence = :new.sequence and t.send_status = 1;
 
-    --±íÃ÷³É¹¦¸üĞÂ¶ÌĞÅ×´Ì¬
+    --è¡¨æ˜æˆåŠŸæ›´æ–°çŸ­ä¿¡çŠ¶æ€
     :new.status := 1;
 
-    --²éÑ¯¶ÔÓ¦µÄ¶ÌĞÅĞÅÏ¢
+    --æŸ¥è¯¢å¯¹åº”çš„çŸ­ä¿¡ä¿¡æ¯
     FOR s IN send_cur LOOP
-        :new.send_id := s.send_id;                          --¶ÌĞÅ±àºÅ
-        :new.originalsms_sendid := s.originalsms_sendid;      --Ô­Ê¼¶ÌĞÅ±àºÅ
-        :new.batch_id := s.batch_id;                        --ÅúºÅ
-        :new.msg_id := s.msg_id;                            --ÒµÎñÏµÍ³µÄ¶ÌĞÅ±àºÅ
-        :new.originalsms_totalpages := s.originalsms_totalpages;    --³¤¶ÌĞÅÌõÊı
-        :new.current_pageno := s.current_pageno;                --³¤¶ÌĞÅÖĞµÄµÚ¼¸Ìõ
-        :new.sys_id := s.sys_id;                            --ÒµÎñÏµÍ³±àºÅ
-        --²»ÊÇÔ­Ê¼¶ÌĞÅ, ËµÃ÷´Ë¶ÌĞÅÊÇ³¤¶ÌĞÅ²ğ·ÖºóµÄ¶ÌĞÅ, ĞèÒªÍ¬²½¸üĞÂÔ­Ê¼¶ÌĞÅµÄ×´Ì¬
+        :new.send_id := s.send_id;                          --çŸ­ä¿¡ç¼–å·
+        :new.originalsms_sendid := s.originalsms_sendid;      --åŸå§‹çŸ­ä¿¡ç¼–å·
+        :new.batch_id := s.batch_id;                        --æ‰¹å·
+        :new.msg_id := s.msg_id;                            --ä¸šåŠ¡ç³»ç»Ÿçš„çŸ­ä¿¡ç¼–å·
+        :new.originalsms_totalpages := s.originalsms_totalpages;    --é•¿çŸ­ä¿¡æ¡æ•°
+        :new.current_pageno := s.current_pageno;                --é•¿çŸ­ä¿¡ä¸­çš„ç¬¬å‡ æ¡
+        :new.sys_id := s.sys_id;                            --ä¸šåŠ¡ç³»ç»Ÿç¼–å·
+        --ä¸æ˜¯åŸå§‹çŸ­ä¿¡, è¯´æ˜æ­¤çŸ­ä¿¡æ˜¯é•¿çŸ­ä¿¡æ‹†åˆ†åçš„çŸ­ä¿¡, éœ€è¦åŒæ­¥æ›´æ–°åŸå§‹çŸ­ä¿¡çš„çŠ¶æ€
         if s.is_original_sms = 1 then
           update sms_send set send_status = :new.sms_status, err_id = :new.gw_status, err_msg = v_err_msg, report_time = :new.report_time where send_id = s.originalsms_sendid and send_status = 1;
         end if;
     END LOOP;
-    
-    
+
+
 END;
 /
 
@@ -21560,12 +21560,12 @@ prompt
 prompt Creating trigger TRIGGER_ORGANIZATION
 prompt =====================================
 prompt
-create or replace trigger "MC"."TRIGGER_ORGANIZATION"  
+create or replace trigger "MC"."TRIGGER_ORGANIZATION"
 
 after  insert or update or delete on organization
 for each row
 begin
-       -- 0 ²»ĞèÒªÒªÉÏĞĞ 1 ÉÏĞĞµ½»ú¹¹ 2 ÉÏĞĞµ½ÓÃ»§
+       -- 0 ä¸éœ€è¦è¦ä¸Šè¡Œ 1 ä¸Šè¡Œåˆ°æœºæ„ 2 ä¸Šè¡Œåˆ°ç”¨æˆ·
      if inserting then
       	if :new.mo_type = 1 then
       		insert into white_org_config(org_id,mo_owner)values(:new.user_id,'ORG');
@@ -21592,7 +21592,7 @@ begin
 
     exception
     when others then
-        dbms_output.put_line('»ú¹¹´¥·¢Æ÷³öÏÖÒì³£') ;
+        dbms_output.put_line('æœºæ„è§¦å‘å™¨å‡ºç°å¼‚å¸¸') ;
 end;
 /
 
@@ -21600,37 +21600,37 @@ prompt
 prompt Creating trigger TRIGGER_RECEIVE_BEFORINSERT
 prompt ============================================
 prompt
-CREATE OR REPLACE TRIGGER mc."TRIGGER_RECEIVE_BEFORINSERT" --²åÈë¶ÌĞÅÉÏĞĞ, ÌîĞ´ÏàÓ¦µÄÊı¾İ
+CREATE OR REPLACE TRIGGER mc."TRIGGER_RECEIVE_BEFORINSERT" --æ’å…¥çŸ­ä¿¡ä¸Šè¡Œ, å¡«å†™ç›¸åº”çš„æ•°æ®
 BEFORE INSERT ON SMS_RECEIVE
 For each row
 
 DECLARE
-  --²éÑ¯ÌØ·şºÅ
+  --æŸ¥è¯¢ç‰¹æœå·
   CURSOR SPNUMBER_CUR IS
     --SELECT * FROM SMS_SPNUMBER ORDER BY SPNUMBER ASC;
     SELECT * FROM SMS_SPNUMBER ORDER BY length(SPNUMBER) desc;
-  --»ú¹¹À©Õ¹ºÅ
+  --æœºæ„æ‰©å±•å·
   CURSOR org_cur IS
          SELECT *  from ORGANIZATION order by extend_number asc;
-  --ÓÃ»§À©Õ¹ºÅ
+  --ç”¨æˆ·æ‰©å±•å·
   CURSOR user_cur IS
          SELECT *  from USER_INFO order by extend_number asc;
 
 
-  --²éÑ¯ÍË¶©¹Ø¼ü×Ö
+  --æŸ¥è¯¢é€€è®¢å…³é”®å­—
   CURSOR KEY_CUR IS
     SELECT KEY_WORD
       FROM SMS_UNSUBSCRIBE_KEY_WORD
      WHERE STATUS = 1
      ORDER BY KEY_WORD ASC;
 
-  --²éÑ¯ÊÇ·ñÊÇµã²¥¶ÌĞÅ
+  --æŸ¥è¯¢æ˜¯å¦æ˜¯ç‚¹æ’­çŸ­ä¿¡
   /*
   CURSOR RECDB_CUR IS
     SELECT DB_NAME, DB_CONTENT FROM RECBIZ_DB;
    */
 
-  EXT            VARCHAR2(200); --À©Õ¹ºÅ
+  EXT            VARCHAR2(200); --æ‰©å±•å·
   ORGEXT         VARCHAR2(200);
   USEREXT        VARCHAR2(200);
   v_ok           VARCHAR2(200);
@@ -21642,18 +21642,18 @@ BEGIN
   v_userid := '';
 
 
-  --ÉèÖÃreceive_id
+  --è®¾ç½®receive_id
   IF :NEW.RECEIVE_ID IS NULL THEN
     :NEW.RECEIVE_ID := SMS_RECEIVE_SEQ.NEXTVAL;
   END IF;
 
-  --Í¨µÀÎª14£¬²··äÁ«»¨Êı¾İ
+  --é€šé“ä¸º14ï¼Œåœèœ‚è²èŠ±æ•°æ®
   if :new.channel_id = 14 then
      :new.org_id := 'ff8080813fa793ec013fa80e75de0001';
      :new.user_id := 'ff8080813fa793ec013fa80f2e810002';
   end if;
-/*  54,55,56¶¼²»Ö§³ÖÀ©Õ¹Âë
-  54:¹ãÖİ¾ÛÀÖ ;   55,56:°²»ÕÖÇÃ÷Í¨ĞÅ*/
+/*  54,55,56éƒ½ä¸æ”¯æŒæ‰©å±•ç 
+  54:å¹¿å·èšä¹ ;   55,56:å®‰å¾½æ™ºæ˜é€šä¿¡*/
   if :new.channel_id in (54,55,56,59) then
       select a.user_id, a.user_organization into :new.USER_ID,:new.ORG_ID
         from (select s.user_id,
@@ -21667,9 +21667,9 @@ BEGIN
   end if;
 
   EXT := '';
-  --²éÑ¯¶ÔÓ¦µÄ¶ÌĞÅĞÅÏ¢, ÌîĞ´ÏµÍ³±àºÅSYS_ID, MSG_ID
+  --æŸ¥è¯¢å¯¹åº”çš„çŸ­ä¿¡ä¿¡æ¯, å¡«å†™ç³»ç»Ÿç¼–å·SYS_ID, MSG_ID
 
-  --²éÑ¯ÌØ·şºÅ, ÉèÖÃÀ©Õ¹ºÅ,Èç¹ûÓĞÌØ·şºÅ£¬ÄÇÃ´sp¾ÍÊÇ³öÈ¥ÌØ·şºÅµÄÉÏĞĞºÅÂë
+  --æŸ¥è¯¢ç‰¹æœå·, è®¾ç½®æ‰©å±•å·,å¦‚æœæœ‰ç‰¹æœå·ï¼Œé‚£ä¹ˆspå°±æ˜¯å‡ºå»ç‰¹æœå·çš„ä¸Šè¡Œå·ç 
   FOR S IN SPNUMBER_CUR LOOP
     IF SUBSTR(:NEW.SP_NUM ,0, LENGTH(S.SPNUMBER)) = S.SPNUMBER THEN
       EXT := SUBSTR(:NEW.SP_NUM, LENGTH(S.SPNUMBER) + 1);
@@ -21680,12 +21680,12 @@ BEGIN
 
   --INSERT INTO sql_log VALUES(EXT, SYSDATE, 'TRIGGER_RECEIVE_BEFORINSERT');
 
-  --¸ù¾İ»ú¹¹ĞÅÏ¢½ØÈ¡»ú¹¹±àºÅ
-  --Æ¥Åä¹æÔò, ÏÈÈ¡1Î», ÔÙÈ¡2Î», ×î¶à4Î»
+  --æ ¹æ®æœºæ„ä¿¡æ¯æˆªå–æœºæ„ç¼–å·
+  --åŒ¹é…è§„åˆ™, å…ˆå–1ä½, å†å–2ä½, æœ€å¤š4ä½
   v_ok := '0';
   IF length(ext) > 0 THEN
       BEGIN
-        --Ö§³Ö»ú¹¹À©Õ¹4Î»
+        --æ”¯æŒæœºæ„æ‰©å±•4ä½
         --for i in 1..4 LOOP
         for i IN Reverse 1..5 LOOP
           IF v_ok = '1' THEN
@@ -21694,10 +21694,10 @@ BEGIN
           IF length(ext) >= i THEN
             ORGEXT :=  SUBSTR(EXT, 0, i);
             --INSERT INTO sql_log VALUES('orgext ' || ORGEXT, SYSDATE, 'TRIGGER_RECEIVE_BEFORINSERT 2');
-            --Ñ­»·¼ì²é
+            --å¾ªç¯æ£€æŸ¥
               FOR S IN org_cur LOOP
                 IF length(s.extend_number) = i AND orgext = s.extend_number THEN
-                  --½ØÈ¡Ê£ÏÂµÄÀ©Õ¹ºÅ
+                  --æˆªå–å‰©ä¸‹çš„æ‰©å±•å·
                   EXT := SUBSTR(EXT, i + 1, length(ext));
                   --INSERT INTO sql_log VALUES(EXT, SYSDATE, 'TRIGGER_RECEIVE_BEFORINSERT ext');
                   v_orgid := s.user_id;
@@ -21710,8 +21710,8 @@ BEGIN
         end loop;
 
         --INSERT INTO sql_log VALUES('userext ' || ORGEXT, SYSDATE, 'TRIGGER_RECEIVE_BEFORINSERT ext2 = ' || ext);
-        --¸ù¾İÓÃ»§À©Õ¹ºÅ½ØÈ¡ÓÃ»§±àºÅ
-        --È·¶¨»ú¹¹ºóÈ·¶¨ÓÃ»§
+        --æ ¹æ®ç”¨æˆ·æ‰©å±•å·æˆªå–ç”¨æˆ·ç¼–å·
+        --ç¡®å®šæœºæ„åç¡®å®šç”¨æˆ·
         IF v_ok = '1' THEN
           v_ok := '0';
           --for i in 1..4 LOOP
@@ -21722,10 +21722,10 @@ BEGIN
             IF length(ext) >= i THEN
               USEREXT :=  SUBSTR(EXT, 0, i);
               --INSERT INTO sql_log VALUES('userext ' || userEXT, SYSDATE, 'TRIGGER_RECEIVE_BEFORINSERT userext = ' || userext );
-              --Ñ­»·¼ì²é
+              --å¾ªç¯æ£€æŸ¥
                 FOR user_row IN user_cur LOOP
                   IF length(user_row.extend_number) = i AND userext = user_row.extend_number AND user_row.organization_id = v_orgid THEN
-                    --½ØÈ¡Ê£ÏÂµÄÀ©Õ¹ºÅ
+                    --æˆªå–å‰©ä¸‹çš„æ‰©å±•å·
                     EXT := SUBSTR(EXT, i + 1, length(ext));
                     --INSERT INTO sql_log VALUES(EXT, SYSDATE, 'TRIGGER_RECEIVE_BEFORINSERT final ext = ' || ext || ', userid = ' || user_row.user_id || ', userext = ' || userext || ', s.ext' ||user_row.extend_number);
                     v_userid := user_row.user_id;
@@ -21742,41 +21742,41 @@ BEGIN
 
 
 
-  --¼ìÑé¶ÌĞÅÖĞÊÇ·ñÓĞÍË¶©¹Ø¼ü×Ö,ÓĞÔò×Ô¶¯¼ÓºÚÃûµ¥
+  --æ£€éªŒçŸ­ä¿¡ä¸­æ˜¯å¦æœ‰é€€è®¢å…³é”®å­—,æœ‰åˆ™è‡ªåŠ¨åŠ é»‘åå•
   FOR S IN KEY_CUR LOOP
     IF INSTR(TRIM(:NEW.RECEIVE_MSG), TRIM(S.KEY_WORD), 1, 1) > 0 THEN
-      --ÒÔÍË¶©¹Ø¼ü×ÖÆğÊ¼µÄ¶ÌĞÅ
+      --ä»¥é€€è®¢å…³é”®å­—èµ·å§‹çš„çŸ­ä¿¡
       INSERT INTO BLACK
         (BLACK_ID, BLACK_MOBILE, BLACK_DESC, BLACK_TIME)
       VALUES
         (SYS_GUID(),
          :NEW.MOBILE_FROM,
-         '¸Ã¿Í»§ÉÏĞĞÍË¶©¹Ø¼ü×Ö£¬ÏµÍ³ÓÚ' || TO_CHAR(SYSDATE, 'yyyy-MM-dd hh24:mi:ss') ||
-         '×Ô¶¯½«¸Ã¿Í»§¼ÓÈëºÚÃûµ¥',
+         'è¯¥å®¢æˆ·ä¸Šè¡Œé€€è®¢å…³é”®å­—ï¼Œç³»ç»Ÿäº' || TO_CHAR(SYSDATE, 'yyyy-MM-dd hh24:mi:ss') ||
+         'è‡ªåŠ¨å°†è¯¥å®¢æˆ·åŠ å…¥é»‘åå•',
          SYSDATE);
           exit;
     END IF;
-   
+
   END LOOP;
 
-  --¶ÌĞÅÓĞËùÊô»ú¹¹£¬µ«ÊÇÃ»ÓĞËùÊôÓÃ»§Ê±£¬ÔòÉèÖÃ»ú¹¹¹ÜÀíÔ±ÎªÆäËùÊôÓÃ»§
+  --çŸ­ä¿¡æœ‰æ‰€å±æœºæ„ï¼Œä½†æ˜¯æ²¡æœ‰æ‰€å±ç”¨æˆ·æ—¶ï¼Œåˆ™è®¾ç½®æœºæ„ç®¡ç†å‘˜ä¸ºå…¶æ‰€å±ç”¨æˆ·
   if :new.org_id is not null and :new.user_id is null then
      select t.user_id into :new.user_id from user_info t where t.organization_id = :new.org_id and t.user_type = 1 and rownum <= 1;
   end if;
 
-  --ÖĞÖ¤ÈÈµãÌØÊâ¹æÔò
+  --ä¸­è¯çƒ­ç‚¹ç‰¹æ®Šè§„åˆ™
   if INSTR(TRIM(:NEW.Sp_Num), '106903590528', 1, 1) = 1 then
      :new.org_id := 'ff8080814577e4ed0145cf15467f439e';
      :new.user_id := 'ff808081463c75c0014641d8dc5c072c';
   end if;
 
   /*
-  --²éÑ¯ÉÏĞĞ¶ÌĞÅÄÚÈİÖĞÊÇ·ñ°üº¬µã²¥µÄÃû×Ö
+  --æŸ¥è¯¢ä¸Šè¡ŒçŸ­ä¿¡å†…å®¹ä¸­æ˜¯å¦åŒ…å«ç‚¹æ’­çš„åå­—
   FOR S IN RECDB_CUR LOOP
     IF NLS_UPPER(TRIM(:NEW.RECEIVE_MSG)) = S.DB_NAME THEN
       :NEW.MSG_KEY   := 1;
       :NEW.REPLY_MSG := S.DB_CONTENT;
-      -- P_DIANBO_SEND(:new.mobile_from,s.db_content,sp);--µ÷ÓÃÏòÁÙÊ±±íÖĞ²åÈëÒ»ÌõÊı¾İ
+      -- P_DIANBO_SEND(:new.mobile_from,s.db_content,sp);--è°ƒç”¨å‘ä¸´æ—¶è¡¨ä¸­æ’å…¥ä¸€æ¡æ•°æ®
     END IF;
   END LOOP;
   */
@@ -21790,41 +21790,41 @@ prompt
 prompt Creating trigger TRIGGER_REPORT_SEND
 prompt ====================================
 prompt
-CREATE OR REPLACE TRIGGER "MC"."TRIGGER_REPORT_SEND" --²åÈë¶ÌĞÅ×´Ì¬±¨¸æ, ÌîĞ´ÏàÓ¦µÄÊı¾İ
+CREATE OR REPLACE TRIGGER "MC"."TRIGGER_REPORT_SEND" --æ’å…¥çŸ­ä¿¡çŠ¶æ€æŠ¥å‘Š, å¡«å†™ç›¸åº”çš„æ•°æ®
 AFTER UPDATE ON send
 For each row
 DECLARE
     pragma autonomous_transaction;
     v_spnumber VARCHAR2(20);
 
---ĞèÒª×´Ì¬±¨¸æµÄ»ú¹¹
+--éœ€è¦çŠ¶æ€æŠ¥å‘Šçš„æœºæ„
 BEGIN
 
-       --»ú¹¹±àºÅ, ×´Ì¬±¨¸æ´ÓÎŞµ½ÓĞ£¬ ×´Ì¬Îª³É¹¦»òÕßÊ§°Ü
+       --æœºæ„ç¼–å·, çŠ¶æ€æŠ¥å‘Šä»æ— åˆ°æœ‰ï¼Œ çŠ¶æ€ä¸ºæˆåŠŸæˆ–è€…å¤±è´¥
       if :NEW.report is not null and :old.report is null and :NEW.send_status in(5,6) AND  substr(:NEW.Msg_Type,1,4) = 'CMPP' and :new.report != 'IA:0006' THEN
-         --¶¯Ì¬¸ù¾İchannel_id ÕÒÌØ·şºÅ
+         --åŠ¨æ€æ ¹æ®channel_id æ‰¾ç‰¹æœå·
          SELECT ac.sp_number||nvl(:OLD.SP_SERV_NO,'') INTO v_spnumber
                 FROM sgw_account_channel ac
                 inner JOIN sgw_account_info cmpp ON ac.sgw_id = cmpp.sgw_id
                                                    AND cmpp.user_id = :OLD.user_id
                 WHERE ac.channel_id = :OLD.channel_id AND ac.mobile_com = :OLD.mobile_com ;
 
-                --ÅĞ¶ÏÊÇ·ñÊÇÍ¸´«¶ÌĞÅ
-                --Í¸´«¶ÌĞÅ
+                --åˆ¤æ–­æ˜¯å¦æ˜¯é€ä¼ çŸ­ä¿¡
+                --é€ä¼ çŸ­ä¿¡
                 IF :OLD.ORIGINALSMS_SENDID IS NOT NULL THEN
-                    --ÓÃ²ğ·Ö¶ÌĞÅµÄ×´Ì¬£¬¸üĞÂÔ­Ê¼¶ÌĞÅµÄ×´Ì¬
+                    --ç”¨æ‹†åˆ†çŸ­ä¿¡çš„çŠ¶æ€ï¼Œæ›´æ–°åŸå§‹çŸ­ä¿¡çš„çŠ¶æ€
                     UPDATE send send SET send.send_status = :new.send_status,
                                          send.report      = :new.report,
                                          send.report_time = :new.report_time
                                    WHERE
                                          send.send_id     = :old.ORIGINALSMS_SENDID
                                     AND  send.send_status !=5;
-                    --ÏòÈÎÎñ±íÌí¼Ó¼ÇÂ¼
+                    --å‘ä»»åŠ¡è¡¨æ·»åŠ è®°å½•
                     insert into SGW_REPORT_TASK (task_id, send_id, mobile_to, stat, destnation_id, user_organization, user_id, channel_id, report_time, push_status, next_push_time, push_times,sys_time, submit_time, done_time)
                     values(SGW_REPORT_TASK_SEQ.NEXTVAL, :old.ORIGINALSMS_SENDID, :new.mobile_to, :new.report, v_spnumber || :new.sp_serv_no, :new.user_organization, :new.user_id, :new.channel_id, :new.report_time, 0, sysdate, 0,sysdate, sysdate, sysdate);
 
-                ELSE  --·ÇÍ¸´«¶ÌĞÅ
-                    --ÏòÈÎÎñ±íÌí¼Ó¼ÇÂ¼
+                ELSE  --éé€ä¼ çŸ­ä¿¡
+                    --å‘ä»»åŠ¡è¡¨æ·»åŠ è®°å½•
                     insert into SGW_REPORT_TASK (task_id, send_id, mobile_to, stat, destnation_id, user_organization, user_id, channel_id, report_time, push_status, next_push_time, push_times,sys_time, submit_time, done_time)
                     values(SGW_REPORT_TASK_SEQ.NEXTVAL, :new.send_id, :new.mobile_to, :new.report, v_spnumber || :new.sp_serv_no, :new.user_organization, :new.user_id, :new.channel_id, :new.report_time, 0, sysdate, 0,sysdate, sysdate, sysdate);
 
@@ -21840,7 +21840,7 @@ prompt
 prompt Creating trigger TRIGGER_WHITE_ORG_CONFIG
 prompt =========================================
 prompt
-create or replace trigger "MC"."TRIGGER_WHITE_ORG_CONFIG"  
+create or replace trigger "MC"."TRIGGER_WHITE_ORG_CONFIG"
 
 after  insert or update or delete on white_org_config
 for each row
@@ -21858,7 +21858,7 @@ begin
 
     exception
     when others then
-        dbms_output.put_line('°×Ãûµ¥»ú¹¹ÅäÖÃ´¥·¢Æ÷³öÏÖÒì³£') ;
+        dbms_output.put_line('ç™½åå•æœºæ„é…ç½®è§¦å‘å™¨å‡ºç°å¼‚å¸¸') ;
 end;
 /
 
